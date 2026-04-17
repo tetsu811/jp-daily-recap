@@ -249,8 +249,8 @@ def _fetch_stock_news_one(code, name, max_items=2):
                 pub_date = datetime.strptime(pub, '%a, %d %b %Y %H:%M:%S %Z').astimezone(JST).date()
             except Exception:
                 pass
-            # 個股新聞放寬到 3 天內
-            if pub_date and (today - pub_date).days > 3:
+            # 個股新聞僅取今日/昨日(<=1 天)
+            if pub_date and (today - pub_date).days > 1:
                 continue
             headlines.append({'title': title, 'link': link, 'date': str(pub_date) if pub_date else ''})
             if len(headlines) >= max_items:
@@ -294,10 +294,12 @@ CLAUDE_MODEL = 'claude-sonnet-4-5'
 
 
 def build_summary_prompt(report):
-    """把 17 個板塊的今日資料組成一個 prompt,一次叫 Claude 產出所有 summary。"""
+    """把 17 個板塊的今日資料組成一個 prompt,一次叫 Claude 產出所有 summary。
+    餵 sector 新聞 + 權重貢獻股的個股新聞,讓總結能 reference 具體催化劑。"""
     lines = [
-        "你是日股分析師。下面是今日東証 17 業種表現。每個板塊給我一句 30 字內的繁體中文解釋,專注於「為什麼今天動這樣」— 可從新聞、領漲/領跌個股、市值權重貢獻推論。",
-        "沒明確原因就寫「廣泛式,無具體催化劑」。",
+        "你是日股分析師。下面是今日東証 17 業種表現。每個板塊給我一句 30 字內的繁體中文解釋,",
+        "專注於「為什麼今天動這樣」 — 優先引用具體事件(法人調升/降評、配息變動、業績預警、併購、新品、訴訟、產業政策等),",
+        "不要只說「權重股拖累」這種廢話。沒明確原因再寫「廣泛式,無具體催化劑」。",
         "",
         "輸出格式(一行一個板塊,嚴格遵守):",
         "板塊名|解釋句",
@@ -306,22 +308,29 @@ def build_summary_prompt(report):
     ]
     for r in report:
         main_chg = r['mcap_chg'] if r.get('mcap_chg') is not None else r['avg_chg']
-        contrib_str = ', '.join(
-            f"{c['name']}{c['chg']:+.1f}%(貢獻{c['contribution_pp']:+.2f}pp)"
-            for c in r.get('top_contributors', [])[:3]
-        )
         gainer_str = ', '.join(f"{g['name']}{g['chg']:+.1f}%" for g in r['top_gainers'][:2])
         loser_str = ', '.join(f"{l['name']}{l['chg']:+.1f}%" for l in r['top_losers'][:2])
-        news_str = '; '.join(n['title'][:60] for n in r.get('news', [])[:3])
+        sector_news_str = '; '.join(n['title'][:60] for n in r.get('news', [])[:2])
         lines.append(f"\n【{r['sector']}】{main_chg:+.2f}% (成分 {r['n']} 檔)")
-        if contrib_str:
-            lines.append(f"  權重主導: {contrib_str}")
+        # 每個權重主導股 + 它的個股新聞(最多 1 條)
+        contribs = r.get('top_contributors', [])[:3]
+        if contribs:
+            lines.append("  權重主導 + 個股催化劑:")
+            for c in contribs:
+                row = f"    {c['name']} {c['chg']:+.1f}% (貢獻{c['contribution_pp']:+.2f}pp, 權{c.get('weight',0)*100:.0f}%)"
+                stock_news = c.get('news', [])
+                if stock_news:
+                    # 去掉那種 "AIが解説" 制式文章,留真新聞
+                    real = [n for n in stock_news if 'AI' not in n['title'] and '解説' not in n['title']]
+                    if real:
+                        row += f" — 新聞:{real[0]['title'][:80]}"
+                lines.append(row)
         if gainer_str:
-            lines.append(f"  領漲: {gainer_str}")
+            lines.append(f"  其他領漲: {gainer_str}")
         if loser_str:
-            lines.append(f"  領跌: {loser_str}")
-        if news_str:
-            lines.append(f"  新聞: {news_str}")
+            lines.append(f"  其他領跌: {loser_str}")
+        if sector_news_str:
+            lines.append(f"  產業新聞: {sector_news_str}")
     lines.append("")
     lines.append("請現在產出,嚴格格式 `板塊名|解釋句`,一行一個。不要加任何前後說明。")
     return '\n'.join(lines)
@@ -688,29 +697,40 @@ def _stock_row_inline(s, highlight_key=None):
 
 def _news_tile_inline(news_items):
     tile_style = 'background:#fbfaf6;border:1px solid #ece8df;border-radius:4px;padding:8px 10px;grid-column:span 2;'
-    title_style = 'font-size:12px;color:#888;margin-bottom:4px;font-weight:500;'
+    summary_style = 'font-size:12px;color:#888;cursor:pointer;font-weight:500;list-style:none;'
     empty_style = 'font-size:12px;color:#bbb;padding:4px 0;'
     link_style = 'display:block;padding:3px 0;font-size:12px;color:#1a4d8c;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'
+    count = len(news_items) if news_items else 0
     if not news_items:
-        body = f'<div style="{empty_style}">暫無相關新聞</div>'
-    else:
-        body = ''.join(
-            f'<a href="{n["link"]}" target="_blank" rel="noopener" style="{link_style}">• {n["title"]}</a>'
-            for n in news_items[:3]
-        )
-    return f'<div style="{tile_style}"><div style="{title_style}">📰 今日相關新聞</div>{body}</div>'
+        return f'<div style="{tile_style}"><div style="{summary_style}">📰 今日相關新聞 (0)</div></div>'
+    body = ''.join(
+        f'<a href="{n["link"]}" target="_blank" rel="noopener" style="{link_style}">• {n["title"]}</a>'
+        for n in news_items[:3]
+    )
+    # 預設收合,要點才展開
+    return (
+        f'<details style="{tile_style}">'
+        f'<summary style="{summary_style}">📰 今日相關新聞 ({count}) ▸</summary>'
+        f'<div style="margin-top:4px;">{body}</div>'
+        f'</details>'
+    )
 
 
 def _news_tile(news_items):
     """Non-inline (desktop) version"""
+    count = len(news_items) if news_items else 0
     if not news_items:
-        body = "<div class='tile-empty'>暫無相關新聞</div>"
-    else:
-        body = ''.join(
-            f'<a href="{n["link"]}" target="_blank" rel="noopener" class="news-link">• {n["title"]}</a>'
-            for n in news_items[:3]
-        )
-    return f"<div class='tile news-tile'><div class='tile-title'>📰 今日相關新聞</div>{body}</div>"
+        return "<div class='tile news-tile'><div class='tile-title'>📰 今日相關新聞 (0)</div></div>"
+    body = ''.join(
+        f'<a href="{n["link"]}" target="_blank" rel="noopener" class="news-link">• {n["title"]}</a>'
+        for n in news_items[:3]
+    )
+    return (
+        f"<details class='tile news-tile'>"
+        f"<summary class='tile-title'>📰 今日相關新聞 ({count}) ▸</summary>"
+        f"<div>{body}</div>"
+        f"</details>"
+    )
 
 
 def _tile_inline(title, stocks, key=None, empty_text='— 無 —'):
