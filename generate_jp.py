@@ -306,61 +306,143 @@ EMBED_STYLE = """<style>
 </style>"""
 
 
-def render_embed(indices, report):
-    """嵌入 WordPress 用的版本 — inline HTML + 命名空間 CSS。
+# ---------- inline-style renderers (WP embed 用,避開 <style>/class 過濾) ----------
 
-    WP 主題 + 快取 plugin 會剝 iframe 的 width/height/frameborder 屬性,
-    srcdoc 雖然留住但 iframe 變成 default 300x150 太小。
-    改用 inline HTML + .jpr-root 命名空間 + `all: revert !important` 阻斷主題繼承。"""
+_ROW_STYLE = 'display:grid;grid-template-columns:48px 1fr auto 62px;gap:6px;padding:3px 0;font-size:13px;align-items:baseline;'
+_CODE_STYLE = 'color:#888;font-size:12px;font-variant-numeric:tabular-nums;'
+_NAME_STYLE = 'overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#2a2a2a;'
+_CHG_STYLE = 'font-variant-numeric:tabular-nums;font-weight:500;'
+_EXTRA_STYLE = 'font-size:11px;color:#888;text-align:right;'
+
+
+def _color(chg):
+    return '#c0392b' if chg > 0 else ('#27874b' if chg < 0 else '#888')
+
+
+def _stock_row_inline(s, highlight_key=None):
+    chg_color = _color(s['chg'])
+    chg_str = f"{s['chg']:+.2f}%"
+    extra = ''
+    if highlight_key == 'vol':
+        extra = f'<div style="{_EXTRA_STYLE}">量 {s["vol_ratio"]:.1f}×</div>'
+    elif highlight_key == 'rsi' and s.get('rsi') is not None:
+        extra = f'<div style="{_EXTRA_STYLE}">RSI {s["rsi"]:.0f}</div>'
+    else:
+        extra = '<div></div>'
+    return (
+        f'<div style="{_ROW_STYLE}">'
+        f'<div style="{_CODE_STYLE}">{s["code"]}</div>'
+        f'<div style="{_NAME_STYLE}">{s["name"]}</div>'
+        f'<div style="{_CHG_STYLE}color:{chg_color};">{chg_str}</div>'
+        f'{extra}'
+        f'</div>'
+    )
+
+
+def _tile_inline(title, stocks, key=None, empty_text='— 無 —'):
+    tile_style = 'background:#fbfaf6;border:1px solid #ece8df;border-radius:4px;padding:8px 10px;'
+    title_style = 'font-size:12px;color:#888;margin-bottom:4px;font-weight:500;'
+    empty_style = 'font-size:12px;color:#bbb;padding:4px 0;'
+    if not stocks:
+        body = f'<div style="{empty_style}">{empty_text}</div>'
+    else:
+        body = ''.join(_stock_row_inline(s, highlight_key=key) for s in stocks)
+    return f'<div style="{tile_style}"><div style="{title_style}">{title}</div>{body}</div>'
+
+
+def _sector_card_inline(s):
+    chg_color = _color(s['avg_chg'])
+    bar_color = '#c0392b' if s['avg_chg'] > 0 else '#27874b'
+    width = min(abs(s['avg_chg']) * 15, 100)
+    card_style = 'background:#fff;border:1px solid #e5e2dc;border-radius:6px;margin-bottom:10px;overflow:hidden;'
+    summary_style = 'cursor:pointer;list-style:none;padding:12px 14px;'
+    head_style = 'display:flex;justify-content:space-between;align-items:baseline;gap:12px;'
+    name_style = 'font-size:15px;font-weight:600;color:#2a2a2a;'
+    chg_style = f'font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;color:{chg_color};'
+    meta_style = 'font-size:11px;color:#888;margin-top:2px;'
+    bar_bg = 'height:3px;background:#f0ede8;margin-top:8px;border-radius:2px;overflow:hidden;'
+    bar_fg = f'background:{bar_color};height:100%;width:{width}%;border-radius:2px;'
+    tiles_style = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;padding:0 14px 14px;'
+
+    tiles_html = (
+        _tile_inline('🔥 放量突破 TOP3', s['volume_breakouts'], key='vol', empty_text='今日無放量創新高') +
+        _tile_inline('📈 漲幅 TOP3', s['top_gainers']) +
+        _tile_inline('📉 跌幅 TOP3', s['top_losers']) +
+        _tile_inline('💡 底部放量 TOP3', s['bottom_volume'], key='vol', empty_text='今日無底部放量')
+    )
+    return (
+        f'<details open style="{card_style}">'
+        f'<summary style="{summary_style}">'
+        f'<div style="{head_style}">'
+        f'<div style="{name_style}">{s["sector"]}</div>'
+        f'<div style="{chg_style}">{s["avg_chg"]:+.2f}%</div>'
+        f'</div>'
+        f'<div style="{meta_style}">成分 {s["n"]} 檔 | 漲 {s["advancers"]} 跌 {s["decliners"]} | 中位 {s["median_chg"]:+.2f}%</div>'
+        f'<div style="{bar_bg}"><div style="{bar_fg}"></div></div>'
+        f'</summary>'
+        f'<div style="{tiles_style}">{tiles_html}</div>'
+        f'</details>'
+    )
+
+
+def _index_card_inline(idx):
+    chg_color = _color(idx['chg'])
+    card_style = 'flex:1 1 140px;background:#fff;border:1px solid #e5e2dc;border-radius:6px;padding:10px 12px;'
+    name_style = 'font-size:12px;color:#888;'
+    close_style = 'font-size:18px;font-weight:600;margin-top:2px;color:#2a2a2a;'
+    chg_style_block = f'font-size:13px;margin-top:2px;color:{chg_color};'
+    if idx.get('is_breadth'):
+        adv = idx.get('advancers', 0)
+        dec = idx.get('decliners', 0)
+        return (
+            f'<div style="{card_style}">'
+            f'<div style="{name_style}">{idx["name"]}</div>'
+            f'<div style="font-size:18px;font-weight:600;margin-top:2px;color:{chg_color};">{idx["chg"]:+.2f}%</div>'
+            f'<div style="font-size:13px;margin-top:2px;color:#2a2a2a;">'
+            f'漲 <span style="color:#c0392b;">{adv}</span> / 跌 <span style="color:#27874b;">{dec}</span>'
+            f'</div>'
+            f'</div>'
+        )
+    return (
+        f'<div style="{card_style}">'
+        f'<div style="{name_style}">{idx["name"]}</div>'
+        f'<div style="{close_style}">{idx["close"]:,.2f}</div>'
+        f'<div style="{chg_style_block}">{idx["chg"]:+.2f}%</div>'
+        f'</div>'
+    )
+
+
+def render_embed(indices, report):
+    """嵌入 WordPress 用的版本 — 全 inline style。
+
+    WP KSES 會剝掉 <style> 區塊和 <script>,快取 plugin 也會動 iframe
+    屬性。唯一保證過關的是 inline `style=""` 屬性 (admins 可用)。"""
     gen_ts = datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')
     data_date = indices[0]['date'].strftime('%Y-%m-%d') if indices else '—'
-    idx_html = ''.join(_index_card(i) for i in indices)
-    sec_html = ''.join(_sector_card(s) for s in report)
+    idx_html = ''.join(_index_card_inline(i) for i in indices)
+    sec_html = ''.join(_sector_card_inline(s) for s in report)
     # 關鍵:第一條 `.jpr-root, .jpr-root *` 用 all:revert 清掉主題繼承
     # 然後再 layer 我們的 styles,所有規則 !important 防主題 override
-    css = """<style>
-.jpr-root, .jpr-root * { all: revert !important; box-sizing: border-box !important; }
-.jpr-root { display: block !important; background: #fafaf7 !important; color: #2a2a2a !important; font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", "Noto Sans TC", sans-serif !important; font-size: 14px !important; line-height: 1.5 !important; padding: 16px !important; border-radius: 6px !important; }
-.jpr-root header { margin: 0 0 16px !important; display: block !important; }
-.jpr-root h1 { font-size: 18px !important; margin: 0 0 4px !important; font-weight: 600 !important; color: #2a2a2a !important; }
-.jpr-root .sub { color: #888 !important; font-size: 12px !important; }
-.jpr-root .indices { display: flex !important; gap: 10px !important; margin: 12px 0 20px !important; flex-wrap: wrap !important; }
-.jpr-root .index-card { flex: 1 1 140px !important; background: #fff !important; border: 1px solid #e5e2dc !important; border-radius: 6px !important; padding: 10px 12px !important; }
-.jpr-root .idx-name { font-size: 12px !important; color: #888 !important; }
-.jpr-root .idx-close { font-size: 18px !important; font-weight: 600 !important; margin-top: 2px !important; color: #2a2a2a !important; }
-.jpr-root .idx-chg { font-size: 13px !important; margin-top: 2px !important; }
-.jpr-root .sector-card { background: #fff !important; border: 1px solid #e5e2dc !important; border-radius: 6px !important; margin-bottom: 10px !important; overflow: hidden !important; display: block !important; }
-.jpr-root .sector-summary { cursor: pointer !important; list-style: none !important; padding: 12px 14px !important; user-select: none !important; display: block !important; }
-.jpr-root .sector-summary::-webkit-details-marker { display: none !important; }
-.jpr-root .sec-head { display: flex !important; justify-content: space-between !important; align-items: baseline !important; gap: 12px !important; }
-.jpr-root .sec-name { font-size: 15px !important; font-weight: 600 !important; color: #2a2a2a !important; }
-.jpr-root .sec-chg { font-size: 15px !important; font-weight: 600 !important; font-variant-numeric: tabular-nums !important; }
-.jpr-root .sec-meta { font-size: 11px !important; color: #888 !important; margin-top: 2px !important; }
-.jpr-root .sec-bar { height: 3px !important; background: #f0ede8 !important; margin-top: 8px !important; border-radius: 2px !important; overflow: hidden !important; }
-.jpr-root .bar-up { background: #c0392b !important; height: 100% !important; border-radius: 2px !important; }
-.jpr-root .bar-down { background: #27874b !important; height: 100% !important; border-radius: 2px !important; }
-.jpr-root .tiles { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important; gap: 8px !important; padding: 0 14px 14px !important; }
-.jpr-root .tile { background: #fbfaf6 !important; border: 1px solid #ece8df !important; border-radius: 4px !important; padding: 8px 10px !important; }
-.jpr-root .tile-title { font-size: 12px !important; color: #888 !important; margin-bottom: 4px !important; font-weight: 500 !important; }
-.jpr-root .tile-empty { font-size: 12px !important; color: #bbb !important; padding: 4px 0 !important; }
-.jpr-root .stock-row { display: grid !important; grid-template-columns: 48px 1fr auto auto !important; gap: 6px !important; padding: 3px 0 !important; font-size: 13px !important; align-items: baseline !important; }
-.jpr-root .stock-row .code { color: #888 !important; font-variant-numeric: tabular-nums !important; font-size: 12px !important; }
-.jpr-root .stock-row .name { overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; color: #2a2a2a !important; }
-.jpr-root .stock-row .chg { font-variant-numeric: tabular-nums !important; font-weight: 500 !important; }
-.jpr-root .stock-row .extra { font-size: 11px !important; color: #888 !important; min-width: 52px !important; text-align: right !important; }
-.jpr-root .up { color: #c0392b !important; }
-.jpr-root .down { color: #27874b !important; }
-.jpr-root footer { margin-top: 24px !important; padding-top: 12px !important; border-top: 1px solid #e5e2dc !important; color: #888 !important; font-size: 11px !important; display: block !important; }
-</style>"""
-    return f"""{css}
-<div class="jpr-root">
-<header>
-  <h1>日股復盤・板塊地圖</h1>
-  <div class="sub">資料日 {data_date} | 產生時間 {gen_ts}</div>
-  <div class="indices">{idx_html}</div>
-</header>
-<main>{sec_html}</main>
-<footer>資料來源 Yahoo Finance。板塊漲跌 = 該業種成分股等權重日漲幅平均。放量突破 = 量 ≥ 20MA × 2 且收盤創 20 日新高。底部放量 = 放量且距 120 日低點 10% 內。僅供參考,非投資建議。</footer>
+    # 全 inline style,用 font-family 在 root 繼承,其他要手動設
+    # 注意:font-family 內用單引號 — 因為外層 style="" 是雙引號
+    root_style = (
+        "background:#fafaf7;color:#2a2a2a;"
+        "font-family:-apple-system,'Hiragino Sans','Noto Sans JP','Noto Sans TC',sans-serif;"
+        "font-size:14px;line-height:1.5;padding:16px;border-radius:6px;"
+    )
+    header_style = 'margin:0 0 16px;'
+    h1_style = 'font-size:18px;margin:0 0 4px;font-weight:600;color:#2a2a2a;'
+    sub_style = 'color:#888;font-size:12px;'
+    indices_style = 'display:flex;gap:10px;margin:12px 0 20px;flex-wrap:wrap;'
+    footer_style = 'margin-top:24px;padding-top:12px;border-top:1px solid #e5e2dc;color:#888;font-size:11px;'
+    return f"""<div style="{root_style}">
+<div style="{header_style}">
+  <div style="{h1_style}">日股復盤・板塊地圖</div>
+  <div style="{sub_style}">資料日 {data_date} | 產生時間 {gen_ts}</div>
+  <div style="{indices_style}">{idx_html}</div>
+</div>
+<div>{sec_html}</div>
+<div style="{footer_style}">資料來源 Yahoo Finance。板塊漲跌 = 該業種成分股等權重日漲幅平均。放量突破 = 量 ≥ 20MA × 2 且收盤創 20 日新高。底部放量 = 放量且距 120 日低點 10% 內。僅供參考,非投資建議。</div>
 </div>"""
 
 
