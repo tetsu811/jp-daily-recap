@@ -307,17 +307,61 @@ EMBED_STYLE = """<style>
 
 
 def render_embed(indices, report):
-    """嵌入 WordPress 用的版本 — iframe srcdoc 真隔離,避免主題 CSS 污染。
+    """嵌入 WordPress 用的版本 — inline HTML + 命名空間 CSS。
 
-    WP KSES 會過濾 <script> 和 inline style,所以用 HTML width/height
-    屬性 + 固定高度(over-sized,確保所有板塊展開都塞得下)。"""
-    standalone = render_html(indices, report)
-    escaped = (standalone
-               .replace('&', '&amp;')
-               .replace('"', '&quot;')
-               .replace("'", '&#39;'))
-    # 17 業種全展開約 6500-9500px,抓 12000 保險。iframe 多餘高度是空白,比 scroll 好。
-    return f'<iframe srcdoc="{escaped}" width="100%" height="12000" frameborder="0"></iframe>'
+    WP 主題 + 快取 plugin 會剝 iframe 的 width/height/frameborder 屬性,
+    srcdoc 雖然留住但 iframe 變成 default 300x150 太小。
+    改用 inline HTML + .jpr-root 命名空間 + `all: revert !important` 阻斷主題繼承。"""
+    gen_ts = datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')
+    data_date = indices[0]['date'].strftime('%Y-%m-%d') if indices else '—'
+    idx_html = ''.join(_index_card(i) for i in indices)
+    sec_html = ''.join(_sector_card(s) for s in report)
+    # 關鍵:第一條 `.jpr-root, .jpr-root *` 用 all:revert 清掉主題繼承
+    # 然後再 layer 我們的 styles,所有規則 !important 防主題 override
+    css = """<style>
+.jpr-root, .jpr-root * { all: revert !important; box-sizing: border-box !important; }
+.jpr-root { display: block !important; background: #fafaf7 !important; color: #2a2a2a !important; font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", "Noto Sans TC", sans-serif !important; font-size: 14px !important; line-height: 1.5 !important; padding: 16px !important; border-radius: 6px !important; }
+.jpr-root header { margin: 0 0 16px !important; display: block !important; }
+.jpr-root h1 { font-size: 18px !important; margin: 0 0 4px !important; font-weight: 600 !important; color: #2a2a2a !important; }
+.jpr-root .sub { color: #888 !important; font-size: 12px !important; }
+.jpr-root .indices { display: flex !important; gap: 10px !important; margin: 12px 0 20px !important; flex-wrap: wrap !important; }
+.jpr-root .index-card { flex: 1 1 140px !important; background: #fff !important; border: 1px solid #e5e2dc !important; border-radius: 6px !important; padding: 10px 12px !important; }
+.jpr-root .idx-name { font-size: 12px !important; color: #888 !important; }
+.jpr-root .idx-close { font-size: 18px !important; font-weight: 600 !important; margin-top: 2px !important; color: #2a2a2a !important; }
+.jpr-root .idx-chg { font-size: 13px !important; margin-top: 2px !important; }
+.jpr-root .sector-card { background: #fff !important; border: 1px solid #e5e2dc !important; border-radius: 6px !important; margin-bottom: 10px !important; overflow: hidden !important; display: block !important; }
+.jpr-root .sector-summary { cursor: pointer !important; list-style: none !important; padding: 12px 14px !important; user-select: none !important; display: block !important; }
+.jpr-root .sector-summary::-webkit-details-marker { display: none !important; }
+.jpr-root .sec-head { display: flex !important; justify-content: space-between !important; align-items: baseline !important; gap: 12px !important; }
+.jpr-root .sec-name { font-size: 15px !important; font-weight: 600 !important; color: #2a2a2a !important; }
+.jpr-root .sec-chg { font-size: 15px !important; font-weight: 600 !important; font-variant-numeric: tabular-nums !important; }
+.jpr-root .sec-meta { font-size: 11px !important; color: #888 !important; margin-top: 2px !important; }
+.jpr-root .sec-bar { height: 3px !important; background: #f0ede8 !important; margin-top: 8px !important; border-radius: 2px !important; overflow: hidden !important; }
+.jpr-root .bar-up { background: #c0392b !important; height: 100% !important; border-radius: 2px !important; }
+.jpr-root .bar-down { background: #27874b !important; height: 100% !important; border-radius: 2px !important; }
+.jpr-root .tiles { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important; gap: 8px !important; padding: 0 14px 14px !important; }
+.jpr-root .tile { background: #fbfaf6 !important; border: 1px solid #ece8df !important; border-radius: 4px !important; padding: 8px 10px !important; }
+.jpr-root .tile-title { font-size: 12px !important; color: #888 !important; margin-bottom: 4px !important; font-weight: 500 !important; }
+.jpr-root .tile-empty { font-size: 12px !important; color: #bbb !important; padding: 4px 0 !important; }
+.jpr-root .stock-row { display: grid !important; grid-template-columns: 48px 1fr auto auto !important; gap: 6px !important; padding: 3px 0 !important; font-size: 13px !important; align-items: baseline !important; }
+.jpr-root .stock-row .code { color: #888 !important; font-variant-numeric: tabular-nums !important; font-size: 12px !important; }
+.jpr-root .stock-row .name { overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; color: #2a2a2a !important; }
+.jpr-root .stock-row .chg { font-variant-numeric: tabular-nums !important; font-weight: 500 !important; }
+.jpr-root .stock-row .extra { font-size: 11px !important; color: #888 !important; min-width: 52px !important; text-align: right !important; }
+.jpr-root .up { color: #c0392b !important; }
+.jpr-root .down { color: #27874b !important; }
+.jpr-root footer { margin-top: 24px !important; padding-top: 12px !important; border-top: 1px solid #e5e2dc !important; color: #888 !important; font-size: 11px !important; display: block !important; }
+</style>"""
+    return f"""{css}
+<div class="jpr-root">
+<header>
+  <h1>日股復盤・板塊地圖</h1>
+  <div class="sub">資料日 {data_date} | 產生時間 {gen_ts}</div>
+  <div class="indices">{idx_html}</div>
+</header>
+<main>{sec_html}</main>
+<footer>資料來源 Yahoo Finance。板塊漲跌 = 該業種成分股等權重日漲幅平均。放量突破 = 量 ≥ 20MA × 2 且收盤創 20 日新高。底部放量 = 放量且距 120 日低點 10% 內。僅供參考,非投資建議。</footer>
+</div>"""
 
 
 def render_html(indices, report):
