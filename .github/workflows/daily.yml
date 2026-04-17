@@ -38,22 +38,24 @@ jobs:
             git push
           fi
 
-  deploy-pages:
-    needs: generate
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-      - id: deployment
-        uses: actions/deploy-pages@v4
+  # === GitHub Pages 部署 ===
+  # 此 job 在 private repo 下需 GitHub Pro 才能跑;改 public 後可解註解。
+  # deploy-pages:
+  #   needs: generate
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     pages: write
+  #     id-token: write
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         ref: main
+  #     - uses: actions/configure-pages@v5
+  #     - uses: actions/upload-pages-artifact@v3
+  #       with:
+  #         path: '.'
+  #     - id: deployment
+  #       uses: actions/deploy-pages@v4
