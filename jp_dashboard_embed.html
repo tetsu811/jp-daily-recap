@@ -1,4 +1,4 @@
-<iframe id="jpr-iframe" srcdoc="<!DOCTYPE html>
+<iframe srcdoc="<!DOCTYPE html>
 <html lang=&quot;zh-Hant&quot;>
 <head>
 <meta charset=&quot;UTF-8&quot;>
@@ -127,7 +127,7 @@
 <body>
 <header>
   <h1>日股復盤・板塊地圖</h1>
-  <div class=&quot;sub&quot;>資料日 2026-04-17 | 產生時間 2026-04-17 16:48 JST</div>
+  <div class=&quot;sub&quot;>資料日 2026-04-17 | 產生時間 2026-04-17 17:03 JST</div>
   <div class=&quot;indices&quot;><div class=&#39;index-card&#39;><div class=&#39;idx-name&#39;>日経平均</div><div class=&#39;idx-close&#39;>58,475.90</div><div class=&#39;idx-chg down&#39;>-1.75%</div></div><div class=&#39;index-card&#39;><div class=&#39;idx-name&#39;>TOPIX (1306)</div><div class=&#39;idx-close&#39;>399.10</div><div class=&#39;idx-chg down&#39;>-1.31%</div></div><div class=&#39;index-card&#39;><div class=&#39;idx-name&#39;>TOPIX Core30 (1305)</div><div class=&#39;idx-close&#39;>4,030.00</div><div class=&#39;idx-chg down&#39;>-1.32%</div></div><div class=&#39;index-card breadth&#39;><div class=&#39;idx-name&#39;>成分股等權平均</div><div class=&#39;idx-close down&#39;>-0.85%</div><div class=&#39;idx-chg&#39;>漲 <span class=&#39;up&#39;>118</span> / 跌 <span class=&#39;down&#39;>340</span></div></div></div>
 </header>
 <main>
@@ -138,28 +138,4 @@
 </footer>
 </body>
 </html>
-" style="width:100%;height:600px;border:none;display:block;" loading="lazy"></iframe>
-<script>
-(function(){
-  var f = document.getElementById('jpr-iframe');
-  if(!f) return;
-  var resize = function(){
-    try {
-      var h = f.contentDocument.documentElement.scrollHeight;
-      f.style.height = (h + 8) + 'px';
-    } catch(e) {}
-  };
-  f.addEventListener('load', function(){
-    resize();
-    try {
-      var ro = new ResizeObserver(resize);
-      ro.observe(f.contentDocument.body);
-      // <details> open/close trigger
-      f.contentDocument.querySelectorAll('details').forEach(function(d){
-        d.addEventListener('toggle', resize);
-      });
-    } catch(e) {}
-  });
-  window.addEventListener('resize', resize);
-})();
-</script>
+" width="100%" height="12000" frameborder="0"></iframe>
