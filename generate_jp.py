@@ -234,6 +234,17 @@ def _sector_card(s):
 
 def _index_card(idx):
     chg_cls = 'up' if idx['chg'] > 0 else ('down' if idx['chg'] < 0 else '')
+    if idx.get('is_breadth'):
+        # breadth card: 顯示等權%、漲跌家數比
+        adv = idx.get('advancers', 0)
+        dec = idx.get('decliners', 0)
+        return (
+            f"<div class='index-card breadth'>"
+            f"<div class='idx-name'>{idx['name']}</div>"
+            f"<div class='idx-close {chg_cls}'>{idx['chg']:+.2f}%</div>"
+            f"<div class='idx-chg'>漲 <span class='up'>{adv}</span> / 跌 <span class='down'>{dec}</span></div>"
+            f"</div>"
+        )
     return (
         f"<div class='index-card'>"
         f"<div class='idx-name'>{idx['name']}</div>"
@@ -392,6 +403,37 @@ def render_html(indices, report):
 """
 
 
+def synthesize_breadth(report):
+    """所有成分股等權平均 + 漲跌家數 — 當 N225 / TOPIX 的對照組。"""
+    all_chgs = []
+    advancers = decliners = unchanged = 0
+    last_date = None
+    for sec in report:
+        for src in (sec['top_gainers'], sec['top_losers']):
+            for s in src:
+                last_date = s.get('date', last_date)
+        # use full sector lists via re-traverse: top_gainers/losers only have 3 each
+    # Better: compute from advancers/decliners totals already in report
+    for sec in report:
+        advancers += sec['advancers']
+        decliners += sec['decliners']
+        # avg_chg already weighted within sector; recompute total via n*avg_chg
+        all_chgs.extend([sec['avg_chg']] * sec['n'])
+    if not all_chgs:
+        return None
+    import numpy as np
+    return {
+        'name': '成分股等權平均',
+        'code': 'BREADTH',
+        'close': float(np.mean(all_chgs)),  # actually % change, label as such in card
+        'chg': float(np.mean(all_chgs)),
+        'date': last_date or datetime.now(JST).date(),
+        'is_breadth': True,
+        'advancers': advancers,
+        'decliners': decliners,
+    }
+
+
 def main():
     sectors = load_sectors()
     ticker_map = build_ticker_map(sectors)
@@ -401,6 +443,9 @@ def main():
     report = build_sector_report(ticker_map, df)
     ok = sum(r['n'] for r in report)
     print(f"Processed {ok}/{len(ticker_map)} tickers across {len(report)} sectors")
+    breadth = synthesize_breadth(report)
+    if breadth:
+        idx_data.append(breadth)
     html = render_html(idx_data, report)
     OUTPUT_HTML.write_text(html, encoding='utf-8')
     print(f"✓ Wrote {OUTPUT_HTML}")
