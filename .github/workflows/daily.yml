@@ -24,6 +24,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate dashboard
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python generate_jp.py
 
       - name: Commit & push if changed

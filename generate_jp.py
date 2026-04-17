@@ -10,9 +10,14 @@
 """
 import json
 import sys
+import time
 import warnings
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from urllib import parse as urlparse
+from urllib import request as urlrequest
+from xml.etree import ElementTree as ET
 
 import numpy as np
 import pandas as pd
@@ -24,6 +29,9 @@ HERE = Path(__file__).parent
 SECTORS_JSON = HERE / 'sectors.json'
 OUTPUT_HTML = HERE / 'jp_dashboard.html'
 OUTPUT_EMBED = HERE / 'jp_dashboard_embed.html'
+MCAP_CACHE = HERE / 'market_caps.json'
+NEWS_CACHE = HERE / 'news_cache.json'
+MCAP_REFRESH_DAYS = 30
 JST = timezone(timedelta(hours=9))
 
 
@@ -130,7 +138,211 @@ def stock_metrics(df, ticker):
     }
 
 
-def build_sector_report(ticker_map, df):
+# ---------- B. News RSS (Google News JP) ----------
+
+SECTOR_NEWS_QUERIES = {
+    "食品": ["食品株", "食料品 決算"],
+    "エネルギー資源": ["原油", "石油株", "エネルギー株"],
+    "建設・資材": ["建設株", "ゼネコン"],
+    "素材・化学": ["化学株", "素材株"],
+    "医薬品": ["製薬 株", "医薬品株"],
+    "自動車・輸送機": ["自動車株", "トヨタ 日産"],
+    "鉄鋼・非鉄": ["鉄鋼株", "非鉄金属"],
+    "機械": ["機械株", "工作機械"],
+    "電機・精密": ["半導体株", "電機 精密"],
+    "情報通信・サービスその他": ["IT株 日本", "通信株"],
+    "電気・ガス": ["電力株", "ガス会社 株"],
+    "運輸・物流": ["海運株", "鉄道株"],
+    "商社・卸売": ["商社株", "総合商社"],
+    "小売": ["小売株", "百貨店"],
+    "銀行": ["銀行株", "メガバンク"],
+    "金融(除く銀行)": ["証券株", "保険株"],
+    "不動産": ["不動産株", "REIT"],
+}
+
+
+def _fetch_news_one(sector, queries, max_items=3):
+    headlines = []
+    q = ' OR '.join(f'"{k}"' for k in queries)
+    url = f"https://news.google.com/rss/search?q={urlparse.quote(q)}&hl=ja&gl=JP&ceid=JP:ja"
+    try:
+        req = urlrequest.Request(url, headers={'User-Agent': 'jp-recap/1.0'})
+        with urlrequest.urlopen(req, timeout=15) as r:
+            xml = r.read()
+        root = ET.fromstring(xml)
+        today = datetime.now(JST).date()
+        for item in root.findall('.//item')[:12]:
+            title_el = item.find('title')
+            link_el = item.find('link')
+            pub_el = item.find('pubDate')
+            if title_el is None:
+                continue
+            title = title_el.text or ''
+            link = link_el.text if link_el is not None else ''
+            pub = pub_el.text if pub_el is not None else ''
+            # Parse pubDate to filter today+yesterday
+            pub_date = None
+            try:
+                pub_date = datetime.strptime(pub, '%a, %d %b %Y %H:%M:%S %Z').astimezone(JST).date()
+            except Exception:
+                pass
+            if pub_date and (today - pub_date).days > 1:
+                continue
+            # Strip trailing " - source" Google News adds
+            title_clean = title.rsplit(' - ', 1)[0].strip()
+            headlines.append({'title': title_clean, 'link': link, 'date': str(pub_date) if pub_date else ''})
+            if len(headlines) >= max_items:
+                break
+    except Exception as e:
+        print(f"  news err ({sector}): {e}", file=sys.stderr)
+    return sector, headlines
+
+
+def fetch_news_all(sector_names):
+    """Parallel fetch Google News RSS for each sector."""
+    out = {}
+    to_fetch = [(s, SECTOR_NEWS_QUERIES.get(s, [])) for s in sector_names]
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futures = [ex.submit(_fetch_news_one, s, qs) for s, qs in to_fetch if qs]
+        for f in as_completed(futures):
+            sector, items = f.result()
+            out[sector] = items
+    # Cache for debug
+    try:
+        NEWS_CACHE.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
+    except Exception:
+        pass
+    return out
+
+
+# ---------- C. Claude LLM one-sentence summaries ----------
+
+CLAUDE_MODEL = 'claude-sonnet-4-5'
+
+
+def build_summary_prompt(report):
+    """把 17 個板塊的今日資料組成一個 prompt,一次叫 Claude 產出所有 summary。"""
+    lines = [
+        "你是日股分析師。下面是今日東証 17 業種表現。每個板塊給我一句 30 字內的繁體中文解釋,專注於「為什麼今天動這樣」— 可從新聞、領漲/領跌個股、市值權重貢獻推論。",
+        "沒明確原因就寫「廣泛式,無具體催化劑」。",
+        "",
+        "輸出格式(一行一個板塊,嚴格遵守):",
+        "板塊名|解釋句",
+        "",
+        "---資料---",
+    ]
+    for r in report:
+        main_chg = r['mcap_chg'] if r.get('mcap_chg') is not None else r['avg_chg']
+        contrib_str = ', '.join(
+            f"{c['name']}{c['chg']:+.1f}%(貢獻{c['contribution_pp']:+.2f}pp)"
+            for c in r.get('top_contributors', [])[:3]
+        )
+        gainer_str = ', '.join(f"{g['name']}{g['chg']:+.1f}%" for g in r['top_gainers'][:2])
+        loser_str = ', '.join(f"{l['name']}{l['chg']:+.1f}%" for l in r['top_losers'][:2])
+        news_str = '; '.join(n['title'][:60] for n in r.get('news', [])[:3])
+        lines.append(f"\n【{r['sector']}】{main_chg:+.2f}% (成分 {r['n']} 檔)")
+        if contrib_str:
+            lines.append(f"  權重主導: {contrib_str}")
+        if gainer_str:
+            lines.append(f"  領漲: {gainer_str}")
+        if loser_str:
+            lines.append(f"  領跌: {loser_str}")
+        if news_str:
+            lines.append(f"  新聞: {news_str}")
+    lines.append("")
+    lines.append("請現在產出,嚴格格式 `板塊名|解釋句`,一行一個。不要加任何前後說明。")
+    return '\n'.join(lines)
+
+
+def fetch_summaries(report, api_key):
+    """呼叫 Claude API,回傳 {sector_name: summary_sentence}"""
+    import os
+    prompt = build_summary_prompt(report)
+    body = json.dumps({
+        'model': CLAUDE_MODEL,
+        'max_tokens': 2000,
+        'messages': [{'role': 'user', 'content': prompt}],
+    }).encode('utf-8')
+    req = urlrequest.Request(
+        'https://api.anthropic.com/v1/messages',
+        data=body,
+        method='POST',
+        headers={
+            'x-api-key': api_key,
+            'anthropic-version': '2023-06-01',
+            'content-type': 'application/json',
+        },
+    )
+    try:
+        with urlrequest.urlopen(req, timeout=60) as r:
+            data = json.loads(r.read())
+    except Exception as e:
+        print(f"  LLM err: {e}", file=sys.stderr)
+        return {}
+    text = data.get('content', [{}])[0].get('text', '')
+    out = {}
+    for line in text.splitlines():
+        line = line.strip()
+        if '|' not in line:
+            continue
+        name, _, sentence = line.partition('|')
+        name = name.strip()
+        sentence = sentence.strip()
+        if name and sentence:
+            out[name] = sentence
+    return out
+
+
+def load_market_caps(tickers):
+    """載入/更新市值快取。快取 > 30 天才重抓,避免每天都打 .info (慢)。"""
+    import time
+    now_ts = time.time()
+    cache = {}
+    if MCAP_CACHE.exists():
+        try:
+            cache = json.loads(MCAP_CACHE.read_text(encoding='utf-8'))
+        except Exception:
+            cache = {}
+    fetched_ts = cache.get('_fetched_at', 0)
+    age_days = (now_ts - fetched_ts) / 86400
+    if age_days < MCAP_REFRESH_DAYS and all(t in cache for t in tickers):
+        print(f"  mcap cache hit (age {age_days:.1f}d)")
+        return {t: cache[t] for t in tickers}
+    print(f"  mcap cache stale or incomplete, refetching (age {age_days:.1f}d)")
+    caps = {}
+    for i, t in enumerate(tickers):
+        try:
+            info = yf.Ticker(t).fast_info
+            mc = getattr(info, 'market_cap', None)
+            if mc:
+                caps[t] = float(mc)
+        except Exception as e:
+            pass
+        if (i + 1) % 50 == 0:
+            print(f"  mcap {i+1}/{len(tickers)}")
+    caps['_fetched_at'] = now_ts
+    MCAP_CACHE.write_text(json.dumps(caps, ensure_ascii=False, indent=2), encoding='utf-8')
+    return {t: caps[t] for t in tickers if t in caps}
+
+
+def compute_contributions(stocks, mcap_map):
+    """Add mcap + weight + contribution to each stock; sort by contribution magnitude."""
+    total_mcap = 0
+    for s in stocks:
+        mc = mcap_map.get(s['ticker'], 0)
+        s['mcap'] = mc
+        total_mcap += mc
+    for s in stocks:
+        if total_mcap > 0 and s['mcap']:
+            s['weight'] = s['mcap'] / total_mcap
+            s['contribution_pp'] = s['weight'] * s['chg']  # 百分點貢獻
+        else:
+            s['weight'] = 0
+            s['contribution_pp'] = 0
+    return total_mcap
+
+
+def build_sector_report(ticker_map, df, mcap_map=None):
     by_sector = {}
     for ticker, (sector, name) in ticker_map.items():
         m = stock_metrics(df, ticker)
@@ -157,9 +369,18 @@ def build_sector_report(ticker_map, df):
         )[:3]
         top_gainers = sorted(stocks, key=lambda x: x['chg'], reverse=True)[:3]
         top_losers = sorted(stocks, key=lambda x: x['chg'])[:3]
+        # 市值加權(A):
+        if mcap_map:
+            compute_contributions(stocks, mcap_map)
+            top_contributors = sorted(stocks, key=lambda x: abs(x['contribution_pp']), reverse=True)[:3]
+            mcap_weighted_chg = sum(s['contribution_pp'] for s in stocks)
+        else:
+            top_contributors = []
+            mcap_weighted_chg = None
         report.append({
             'sector': sector,
             'avg_chg': float(chgs.mean()),
+            'mcap_chg': mcap_weighted_chg,
             'median_chg': float(np.median(chgs)),
             'advancers': int((chgs > 0).sum()),
             'decliners': int((chgs < 0).sum()),
@@ -168,8 +389,10 @@ def build_sector_report(ticker_map, df):
             'bottom_volume': bottom_volume,
             'top_gainers': top_gainers,
             'top_losers': top_losers,
+            'top_contributors': top_contributors,
         })
-    report.sort(key=lambda x: x['avg_chg'], reverse=True)
+    # Sort by market-cap weighted change if available, else equal-weighted
+    report.sort(key=lambda x: x.get('mcap_chg') if x.get('mcap_chg') is not None else x['avg_chg'], reverse=True)
     return report
 
 
@@ -184,6 +407,10 @@ def _stock_row(s, highlight_key=None):
         extra = f"<span class='extra'>量 {s['vol_ratio']:.1f}×</span>"
     elif highlight_key == 'rsi' and s.get('rsi') is not None:
         extra = f"<span class='extra'>RSI {s['rsi']:.0f}</span>"
+    elif highlight_key == 'contrib':
+        c = s.get('contribution_pp', 0)
+        w = s.get('weight', 0) * 100
+        extra = f"<span class='extra'>{c:+.2f}pp 權{w:.0f}%</span>"
     return (
         f"<div class='stock-row'>"
         f"<span class='code'>{s['code']}</span>"
@@ -208,26 +435,33 @@ def _tile(title, stocks, key=None, empty_text='— 無 —'):
 
 
 def _sector_card(s):
-    chg_cls = 'up' if s['avg_chg'] > 0 else ('down' if s['avg_chg'] < 0 else '')
-    width = min(abs(s['avg_chg']) * 15, 100)
-    bar_side = 'bar-up' if s['avg_chg'] > 0 else 'bar-down'
+    main_chg = s['mcap_chg'] if s.get('mcap_chg') is not None else s['avg_chg']
+    chg_cls = 'up' if main_chg > 0 else ('down' if main_chg < 0 else '')
+    width = min(abs(main_chg) * 15, 100)
+    bar_side = 'bar-up' if main_chg > 0 else 'bar-down'
+    meta_parts = [f"成分 {s['n']} 檔", f"漲 {s['advancers']} 跌 {s['decliners']}"]
+    if s.get('mcap_chg') is not None:
+        meta_parts.append(f"等權 {s['avg_chg']:+.2f}%")
+    meta_parts.append(f"中位 {s['median_chg']:+.2f}%")
+    summary_html = f"<div class='sec-summary'>💬 {s['summary']}</div>" if s.get('summary') else ''
     return (
         f"<details class='sector-card' open>"
         f"<summary class='sector-summary'>"
         f"<div class='sec-head'>"
         f"<span class='sec-name'>{s['sector']}</span>"
-        f"<span class='sec-chg {chg_cls}'>{s['avg_chg']:+.2f}%</span>"
+        f"<span class='sec-chg {chg_cls}'>{main_chg:+.2f}%</span>"
         f"</div>"
-        f"<div class='sec-meta'>"
-        f"成分 {s['n']} 檔 | 漲 {s['advancers']} 跌 {s['decliners']} | 中位 {s['median_chg']:+.2f}%"
-        f"</div>"
+        f"<div class='sec-meta'>{' | '.join(meta_parts)}</div>"
         f"<div class='sec-bar'><div class='{bar_side}' style='width:{width}%'></div></div>"
         f"</summary>"
+        f"{summary_html}"
         f"<div class='tiles'>"
+        f"{_tile('🎯 權重貢獻 TOP3', s.get('top_contributors', []), key='contrib', empty_text='無市值資料')}"
         f"{_tile('🔥 放量突破 TOP3', s['volume_breakouts'], key='vol', empty_text='今日無放量創新高')}"
         f"{_tile('📈 漲幅 TOP3', s['top_gainers'])}"
         f"{_tile('📉 跌幅 TOP3', s['top_losers'])}"
         f"{_tile('💡 底部放量 TOP3', s['bottom_volume'], key='vol', empty_text='今日無底部放量')}"
+        f"{_news_tile(s.get('news', []))}"
         f"</div>"
         f"</details>"
     )
@@ -308,7 +542,7 @@ EMBED_STYLE = """<style>
 
 # ---------- inline-style renderers (WP embed 用,避開 <style>/class 過濾) ----------
 
-_ROW_STYLE = 'display:grid;grid-template-columns:48px 1fr auto 62px;gap:6px;padding:3px 0;font-size:13px;align-items:baseline;'
+_ROW_STYLE = 'display:grid;grid-template-columns:48px 1fr auto 100px;gap:6px;padding:3px 0;font-size:13px;align-items:baseline;'
 _CODE_STYLE = 'color:#888;font-size:12px;font-variant-numeric:tabular-nums;'
 _NAME_STYLE = 'overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#2a2a2a;'
 _CHG_STYLE = 'font-variant-numeric:tabular-nums;font-weight:500;'
@@ -327,6 +561,11 @@ def _stock_row_inline(s, highlight_key=None):
         extra = f'<div style="{_EXTRA_STYLE}">量 {s["vol_ratio"]:.1f}×</div>'
     elif highlight_key == 'rsi' and s.get('rsi') is not None:
         extra = f'<div style="{_EXTRA_STYLE}">RSI {s["rsi"]:.0f}</div>'
+    elif highlight_key == 'contrib':
+        contrib = s.get('contribution_pp', 0)
+        weight = s.get('weight', 0) * 100
+        # contribution 以 pp 顯示(百分點),e.g. -0.31pp 代表把板塊拉低 0.31 個百分點
+        extra = f'<div style="{_EXTRA_STYLE}">{contrib:+.2f}pp 權{weight:.0f}%</div>'
     else:
         extra = '<div></div>'
     return (
@@ -337,6 +576,33 @@ def _stock_row_inline(s, highlight_key=None):
         f'{extra}'
         f'</div>'
     )
+
+
+def _news_tile_inline(news_items):
+    tile_style = 'background:#fbfaf6;border:1px solid #ece8df;border-radius:4px;padding:8px 10px;grid-column:span 2;'
+    title_style = 'font-size:12px;color:#888;margin-bottom:4px;font-weight:500;'
+    empty_style = 'font-size:12px;color:#bbb;padding:4px 0;'
+    link_style = 'display:block;padding:3px 0;font-size:12px;color:#1a4d8c;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'
+    if not news_items:
+        body = f'<div style="{empty_style}">暫無相關新聞</div>'
+    else:
+        body = ''.join(
+            f'<a href="{n["link"]}" target="_blank" rel="noopener" style="{link_style}">• {n["title"]}</a>'
+            for n in news_items[:3]
+        )
+    return f'<div style="{tile_style}"><div style="{title_style}">📰 今日相關新聞</div>{body}</div>'
+
+
+def _news_tile(news_items):
+    """Non-inline (desktop) version"""
+    if not news_items:
+        body = "<div class='tile-empty'>暫無相關新聞</div>"
+    else:
+        body = ''.join(
+            f'<a href="{n["link"]}" target="_blank" rel="noopener" class="news-link">• {n["title"]}</a>'
+            for n in news_items[:3]
+        )
+    return f"<div class='tile news-tile'><div class='tile-title'>📰 今日相關新聞</div>{body}</div>"
 
 
 def _tile_inline(title, stocks, key=None, empty_text='— 無 —'):
@@ -351,9 +617,11 @@ def _tile_inline(title, stocks, key=None, empty_text='— 無 —'):
 
 
 def _sector_card_inline(s):
-    chg_color = _color(s['avg_chg'])
-    bar_color = '#c0392b' if s['avg_chg'] > 0 else '#27874b'
-    width = min(abs(s['avg_chg']) * 15, 100)
+    # 用市值加權當主要展示,等權重當對照
+    main_chg = s['mcap_chg'] if s.get('mcap_chg') is not None else s['avg_chg']
+    chg_color = _color(main_chg)
+    bar_color = '#c0392b' if main_chg > 0 else '#27874b'
+    width = min(abs(main_chg) * 15, 100)
     card_style = 'background:#fff;border:1px solid #e5e2dc;border-radius:6px;margin-bottom:10px;overflow:hidden;'
     summary_style = 'cursor:pointer;list-style:none;padding:12px 14px;'
     head_style = 'display:flex;justify-content:space-between;align-items:baseline;gap:12px;'
@@ -362,24 +630,39 @@ def _sector_card_inline(s):
     meta_style = 'font-size:11px;color:#888;margin-top:2px;'
     bar_bg = 'height:3px;background:#f0ede8;margin-top:8px;border-radius:2px;overflow:hidden;'
     bar_fg = f'background:{bar_color};height:100%;width:{width}%;border-radius:2px;'
-    tiles_style = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;padding:0 14px 14px;'
+    tiles_style = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;padding:0 14px 14px;'
+
+    meta_parts = [f'成分 {s["n"]} 檔', f'漲 {s["advancers"]} 跌 {s["decliners"]}']
+    if s.get('mcap_chg') is not None:
+        meta_parts.append(f'等權 {s["avg_chg"]:+.2f}%')
+        meta_parts.append(f'中位 {s["median_chg"]:+.2f}%')
+    else:
+        meta_parts.append(f'中位 {s["median_chg"]:+.2f}%')
+    meta_text = ' | '.join(meta_parts)
 
     tiles_html = (
+        _tile_inline('🎯 權重貢獻 TOP3', s.get('top_contributors', []), key='contrib', empty_text='無市值資料') +
         _tile_inline('🔥 放量突破 TOP3', s['volume_breakouts'], key='vol', empty_text='今日無放量創新高') +
         _tile_inline('📈 漲幅 TOP3', s['top_gainers']) +
         _tile_inline('📉 跌幅 TOP3', s['top_losers']) +
-        _tile_inline('💡 底部放量 TOP3', s['bottom_volume'], key='vol', empty_text='今日無底部放量')
+        _tile_inline('💡 底部放量 TOP3', s['bottom_volume'], key='vol', empty_text='今日無底部放量') +
+        _news_tile_inline(s.get('news', []))
     )
+    summary_html = ''
+    if s.get('summary'):
+        summary_inline_style = 'background:#f5f2ea;border-left:3px solid #c2a25a;padding:6px 10px;margin:6px 14px 0;font-size:13px;color:#3a3a3a;border-radius:2px;'
+        summary_html = f'<div style="{summary_inline_style}">💬 {s["summary"]}</div>'
     return (
         f'<details open style="{card_style}">'
         f'<summary style="{summary_style}">'
         f'<div style="{head_style}">'
         f'<div style="{name_style}">{s["sector"]}</div>'
-        f'<div style="{chg_style}">{s["avg_chg"]:+.2f}%</div>'
+        f'<div style="{chg_style}">{main_chg:+.2f}%</div>'
         f'</div>'
-        f'<div style="{meta_style}">成分 {s["n"]} 檔 | 漲 {s["advancers"]} 跌 {s["decliners"]} | 中位 {s["median_chg"]:+.2f}%</div>'
+        f'<div style="{meta_style}">{meta_text}</div>'
         f'<div style="{bar_bg}"><div style="{bar_fg}"></div></div>'
         f'</summary>'
+        f'{summary_html}'
         f'<div style="{tiles_style}">{tiles_html}</div>'
         f'</details>'
     )
@@ -576,6 +859,27 @@ def render_html(indices, report):
     color: var(--muted);
     font-size: 11px;
   }}
+  .sec-summary {{
+    background: #f5f2ea;
+    border-left: 3px solid #c2a25a;
+    padding: 6px 10px;
+    margin: 6px 14px 0;
+    font-size: 13px;
+    color: #3a3a3a;
+    border-radius: 2px;
+  }}
+  .news-link {{
+    display: block;
+    padding: 3px 0;
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }}
+  .news-link:hover {{ text-decoration: underline; }}
+  .news-tile {{ grid-column: span 2; }}
 </style>
 </head>
 <body>
@@ -632,7 +936,28 @@ def main():
     print(f"Sectors: {len([k for k in sectors if not k.startswith('_') and k != '指数'])}, tickers: {len(ticker_map)}")
     idx_data = fetch_indices(sectors.get('指数', []))
     df = fetch_all(list(ticker_map.keys()))
-    report = build_sector_report(ticker_map, df)
+    mcap_map = load_market_caps(list(ticker_map.keys()))
+    print(f"Market caps loaded: {len(mcap_map)}/{len(ticker_map)}")
+    report = build_sector_report(ticker_map, df, mcap_map=mcap_map)
+    # B. News per sector
+    print("Fetching news...")
+    news_map = fetch_news_all([r['sector'] for r in report])
+    for r in report:
+        r['news'] = news_map.get(r['sector'], [])
+    print(f"News fetched: {sum(len(r['news']) for r in report)} items across {sum(1 for r in report if r['news'])} sectors")
+    # C. LLM summaries (optional, requires ANTHROPIC_API_KEY)
+    import os
+    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    if api_key:
+        print("Generating LLM summaries...")
+        summaries = fetch_summaries(report, api_key)
+        for r in report:
+            r['summary'] = summaries.get(r['sector'], '')
+        print(f"Summaries generated: {sum(1 for r in report if r.get('summary'))}/{len(report)}")
+    else:
+        print("ANTHROPIC_API_KEY not set — skipping LLM summaries")
+        for r in report:
+            r['summary'] = ''
     ok = sum(r['n'] for r in report)
     print(f"Processed {ok}/{len(ticker_map)} tickers across {len(report)} sectors")
     breadth = synthesize_breadth(report)
