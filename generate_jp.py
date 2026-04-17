@@ -307,39 +307,17 @@ EMBED_STYLE = """<style>
 
 
 def render_embed(indices, report):
-    """嵌入 WordPress 用的版本 — iframe srcdoc 真隔離,
-    避免主題 CSS 污染。自動隨內容高度調整。"""
+    """嵌入 WordPress 用的版本 — iframe srcdoc 真隔離,避免主題 CSS 污染。
+
+    WP KSES 會過濾 <script> 和 inline style,所以用 HTML width/height
+    屬性 + 固定高度(over-sized,確保所有板塊展開都塞得下)。"""
     standalone = render_html(indices, report)
-    # srcdoc 必須 HTML-escape 雙引號,單引號要 escape 為 &#39; 以便用單引號包
     escaped = (standalone
                .replace('&', '&amp;')
                .replace('"', '&quot;')
                .replace("'", '&#39;'))
-    return f"""<iframe id="jpr-iframe" srcdoc="{escaped}" style="width:100%;height:600px;border:none;display:block;" loading="lazy"></iframe>
-<script>
-(function(){{
-  var f = document.getElementById('jpr-iframe');
-  if(!f) return;
-  var resize = function(){{
-    try {{
-      var h = f.contentDocument.documentElement.scrollHeight;
-      f.style.height = (h + 8) + 'px';
-    }} catch(e) {{}}
-  }};
-  f.addEventListener('load', function(){{
-    resize();
-    try {{
-      var ro = new ResizeObserver(resize);
-      ro.observe(f.contentDocument.body);
-      // <details> open/close trigger
-      f.contentDocument.querySelectorAll('details').forEach(function(d){{
-        d.addEventListener('toggle', resize);
-      }});
-    }} catch(e) {{}}
-  }});
-  window.addEventListener('resize', resize);
-}})();
-</script>"""
+    # 17 業種全展開約 6500-9500px,抓 12000 保險。iframe 多餘高度是空白,比 scroll 好。
+    return f'<iframe srcdoc="{escaped}" width="100%" height="12000" frameborder="0"></iframe>'
 
 
 def render_html(indices, report):
