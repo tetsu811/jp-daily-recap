@@ -23,6 +23,7 @@ warnings.filterwarnings('ignore')
 HERE = Path(__file__).parent
 SECTORS_JSON = HERE / 'sectors.json'
 OUTPUT_HTML = HERE / 'jp_dashboard.html'
+OUTPUT_EMBED = HERE / 'jp_dashboard_embed.html'
 JST = timezone(timedelta(hours=9))
 
 
@@ -254,6 +255,93 @@ def _index_card(idx):
     )
 
 
+EMBED_STYLE = """<style>
+  .jpr-root {
+    --jpr-bg: #fafaf7;
+    --jpr-card: #ffffff;
+    --jpr-border: #e5e2dc;
+    --jpr-text: #2a2a2a;
+    --jpr-muted: #888;
+    --jpr-up: #c0392b;
+    --jpr-down: #27874b;
+    background: var(--jpr-bg);
+    color: var(--jpr-text);
+    font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", "Noto Sans TC", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .jpr-root * { box-sizing: border-box; }
+  .jpr-root header { margin-bottom: 16px; }
+  .jpr-root h1 { font-size: 18px; margin: 0 0 4px; font-weight: 600; }
+  .jpr-root .sub { color: var(--jpr-muted); font-size: 12px; }
+  .jpr-root .indices { display: flex; gap: 10px; margin: 12px 0 20px; flex-wrap: wrap; }
+  .jpr-root .index-card { flex: 1 1 140px; background: var(--jpr-card); border: 1px solid var(--jpr-border); border-radius: 6px; padding: 10px 12px; }
+  .jpr-root .idx-name { font-size: 12px; color: var(--jpr-muted); }
+  .jpr-root .idx-close { font-size: 18px; font-weight: 600; margin-top: 2px; }
+  .jpr-root .idx-chg { font-size: 13px; margin-top: 2px; }
+  .jpr-root .sector-card { background: var(--jpr-card); border: 1px solid var(--jpr-border); border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
+  .jpr-root .sector-summary { cursor: pointer; list-style: none; padding: 12px 14px; user-select: none; }
+  .jpr-root .sector-summary::-webkit-details-marker { display: none; }
+  .jpr-root .sec-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .jpr-root .sec-name { font-size: 15px; font-weight: 600; }
+  .jpr-root .sec-chg { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .jpr-root .sec-meta { font-size: 11px; color: var(--jpr-muted); margin-top: 2px; }
+  .jpr-root .sec-bar { height: 3px; background: #f0ede8; margin-top: 8px; border-radius: 2px; overflow: hidden; }
+  .jpr-root .bar-up { background: var(--jpr-up); height: 100%; border-radius: 2px; }
+  .jpr-root .bar-down { background: var(--jpr-down); height: 100%; border-radius: 2px; }
+  .jpr-root .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; padding: 0 14px 14px; }
+  .jpr-root .tile { background: #fbfaf6; border: 1px solid #ece8df; border-radius: 4px; padding: 8px 10px; }
+  .jpr-root .tile-title { font-size: 12px; color: var(--jpr-muted); margin-bottom: 4px; font-weight: 500; }
+  .jpr-root .tile-empty { font-size: 12px; color: #bbb; padding: 4px 0; }
+  .jpr-root .stock-row { display: grid; grid-template-columns: 48px 1fr auto auto; gap: 6px; padding: 3px 0; font-size: 13px; align-items: baseline; }
+  .jpr-root .stock-row .code { color: var(--jpr-muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+  .jpr-root .stock-row .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .jpr-root .stock-row .chg { font-variant-numeric: tabular-nums; font-weight: 500; }
+  .jpr-root .stock-row .extra { font-size: 11px; color: var(--jpr-muted); min-width: 52px; text-align: right; }
+  .jpr-root .up { color: var(--jpr-up); }
+  .jpr-root .down { color: var(--jpr-down); }
+  .jpr-root footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--jpr-border); color: var(--jpr-muted); font-size: 11px; }
+</style>"""
+
+
+def render_embed(indices, report):
+    """嵌入 WordPress 用的版本 — iframe srcdoc 真隔離,
+    避免主題 CSS 污染。自動隨內容高度調整。"""
+    standalone = render_html(indices, report)
+    # srcdoc 必須 HTML-escape 雙引號,單引號要 escape 為 &#39; 以便用單引號包
+    escaped = (standalone
+               .replace('&', '&amp;')
+               .replace('"', '&quot;')
+               .replace("'", '&#39;'))
+    return f"""<iframe id="jpr-iframe" srcdoc="{escaped}" style="width:100%;height:600px;border:none;display:block;" loading="lazy"></iframe>
+<script>
+(function(){{
+  var f = document.getElementById('jpr-iframe');
+  if(!f) return;
+  var resize = function(){{
+    try {{
+      var h = f.contentDocument.documentElement.scrollHeight;
+      f.style.height = (h + 8) + 'px';
+    }} catch(e) {{}}
+  }};
+  f.addEventListener('load', function(){{
+    resize();
+    try {{
+      var ro = new ResizeObserver(resize);
+      ro.observe(f.contentDocument.body);
+      // <details> open/close trigger
+      f.contentDocument.querySelectorAll('details').forEach(function(d){{
+        d.addEventListener('toggle', resize);
+      }});
+    }} catch(e) {{}}
+  }});
+  window.addEventListener('resize', resize);
+}})();
+</script>"""
+
+
 def render_html(indices, report):
     gen_ts = datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')
     data_date = indices[0]['date'].strftime('%Y-%m-%d') if indices else '—'
@@ -449,6 +537,9 @@ def main():
     html = render_html(idx_data, report)
     OUTPUT_HTML.write_text(html, encoding='utf-8')
     print(f"✓ Wrote {OUTPUT_HTML}")
+    embed = render_embed(idx_data, report)
+    OUTPUT_EMBED.write_text(embed, encoding='utf-8')
+    print(f"✓ Wrote {OUTPUT_EMBED}")
 
 
 if __name__ == '__main__':

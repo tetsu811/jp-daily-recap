@@ -30,13 +30,27 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add jp_dashboard.html
+          git add jp_dashboard.html jp_dashboard_embed.html
           if git diff --cached --quiet; then
             echo "No changes."
           else
             git commit -m "Daily recap $(date -u +'%Y-%m-%d')"
             git push
           fi
+
+      - name: Publish to WordPress
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_PASS: ${{ secrets.WP_PASS }}
+          WP_PAGE_ID: ${{ secrets.WP_PAGE_ID }}
+          WP_STATUS: ${{ vars.WP_STATUS || 'publish' }}
+        run: |
+          if [ -z "$WP_URL" ]; then
+            echo "WP_* secrets not set — skip publish (set them in repo Settings → Secrets to enable)"
+            exit 0
+          fi
+          python wp_publish.py
 
   # === GitHub Pages 部署 ===
   # 此 job 在 private repo 下需 GitHub Pro 才能跑;改 public 後可解註解。

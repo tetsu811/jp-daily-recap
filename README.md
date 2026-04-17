@@ -39,16 +39,30 @@ open jp_dashboard.html
 ```
 `code` 為 TSE 4 位數,腳本會自動加 `.T` 後綴。指數類用 `^` 前綴(如 `^N225`)或 ETF 代號(如 `1306.T`)。
 
-## WordPress 嵌入
+## WordPress 嵌入(自動)
 
-1. Push 到 GitHub,啟用 Settings → Pages → Source: GitHub Actions
-2. 部署完成後 URL: `https://<user>.github.io/<repo>/jp_dashboard.html`
-3. WordPress 文章插入 HTML block:
-   ```html
-   <iframe src="https://<user>.github.io/<repo>/jp_dashboard.html"
-           width="100%" height="2400" frameborder="0"
-           style="border:none;"></iframe>
-   ```
+每天 workflow 跑完會把 `jp_dashboard_embed.html`(iframe srcdoc 隔離版)透過 REST API 推到 WP page。
+
+**第一次設定:**
+1. WP Admin → Users → Profile → 滑到底 Application Passwords
+   - Name: `jp-recap` → Add New → 複製 24 位密碼
+2. GitHub repo → Settings → Secrets and variables → Actions → New repository secret
+   - `WP_URL` = `https://tetsu811.com`
+   - `WP_USER` = WP 用戶名
+   - `WP_PASS` = 上面複製的 24 位
+3. 手動跑一次 workflow(Actions → Daily JP Market Recap → Run workflow)
+   - 會建立一個 **draft** page,印出 page id
+4. 把 page id 設為 secret:
+   - `WP_PAGE_ID` = 上一步的 id
+5. 之後每天會 update 同一頁。預設 `publish`,要改 draft 就在 Variables 加 `WP_STATUS=draft`
+
+**手動本地推:**
+```bash
+WP_URL=https://tetsu811.com WP_USER=xxx WP_PASS='xxxx xxxx ...' python wp_publish.py
+```
+
+**WPCode 替代方案:**
+若想用 WPCode plugin,把 `jp_dashboard_embed.html` 內容貼到一個新 HTML snippet,用 shortcode 在文章插入。但這樣每天要手動貼 — 不如走 REST API 自動。
 
 ## 待辦/可改進
 
