@@ -109,6 +109,12 @@ def stock_metrics(df, ticker):
     if prev_close <= 0:
         return None
     chg = (last_close - prev_close) / prev_close * 100
+    # 5-day change (close vs 5 sessions ago)
+    chg_5d = None
+    if len(sub) >= 6:
+        prev_5 = float(close.iloc[-6])
+        if prev_5 > 0:
+            chg_5d = (last_close - prev_5) / prev_5 * 100
     last_vol = float(vol.iloc[-1])
     avg_vol_20 = float(vol.iloc[-21:-1].mean())
     vol_ratio = last_vol / avg_vol_20 if avg_vol_20 > 0 else 0.0
@@ -126,6 +132,7 @@ def stock_metrics(df, ticker):
     near_low = (last_close - low_min) / low_min * 100 if low_min > 0 else 0
     return {
         'chg': chg,
+        'chg_5d': chg_5d,
         'close': last_close,
         'vol_ratio': vol_ratio,
         'broke_20d_high': last_close > high_20,
@@ -212,6 +219,72 @@ def fetch_news_all(sector_names):
         NEWS_CACHE.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
     except Exception:
         pass
+    return out
+
+
+def _fetch_stock_news_one(code, name, max_items=2):
+    """個股新聞 — 用公司名 + 股價/決算 關鍵字。"""
+    # 去掉 HD、グループ 等 noise 讓搜尋更準
+    short = name.replace('ホールディングス', '').replace('HD', '').replace('グループ', '').strip()
+    query = f'"{short}" 株価 OR 決算 OR 業績'
+    url = f"https://news.google.com/rss/search?q={urlparse.quote(query)}&hl=ja&gl=JP&ceid=JP:ja"
+    headlines = []
+    try:
+        req = urlrequest.Request(url, headers={'User-Agent': 'jp-recap/1.0'})
+        with urlrequest.urlopen(req, timeout=15) as r:
+            xml = r.read()
+        root = ET.fromstring(xml)
+        today = datetime.now(JST).date()
+        for item in root.findall('.//item')[:8]:
+            title_el = item.find('title')
+            link_el = item.find('link')
+            pub_el = item.find('pubDate')
+            if title_el is None:
+                continue
+            title = (title_el.text or '').rsplit(' - ', 1)[0].strip()
+            link = link_el.text if link_el is not None else ''
+            pub = pub_el.text if pub_el is not None else ''
+            pub_date = None
+            try:
+                pub_date = datetime.strptime(pub, '%a, %d %b %Y %H:%M:%S %Z').astimezone(JST).date()
+            except Exception:
+                pass
+            # 個股新聞放寬到 3 天內
+            if pub_date and (today - pub_date).days > 3:
+                continue
+            headlines.append({'title': title, 'link': link, 'date': str(pub_date) if pub_date else ''})
+            if len(headlines) >= max_items:
+                break
+    except Exception as e:
+        print(f"  stock-news err ({code} {name}): {e}", file=sys.stderr)
+    return code, headlines
+
+
+def fetch_stock_news_for_report(report):
+    """為每個板塊的 top_contributors 抓個股新聞"""
+    # Collect all (code, name) pairs
+    tasks = []
+    seen = set()
+    for r in report:
+        for s in r.get('top_contributors', [])[:3]:
+            key = s['code']
+            if key in seen:
+                continue
+            seen.add(key)
+            tasks.append((s['code'], s['name']))
+    print(f"Fetching stock-level news for {len(tasks)} contributors...")
+    out = {}
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futures = [ex.submit(_fetch_stock_news_one, c, n) for c, n in tasks]
+        for f in as_completed(futures):
+            code, items = f.result()
+            out[code] = items
+    # Attach back to stocks
+    for r in report:
+        for s in r.get('top_contributors', [])[:3]:
+            s['news'] = out.get(s['code'], [])
+    total_headlines = sum(len(v) for v in out.values())
+    print(f"Stock news fetched: {total_headlines} headlines for {sum(1 for v in out.values() if v)}/{len(tasks)} stocks")
     return out
 
 
@@ -374,13 +447,27 @@ def build_sector_report(ticker_map, df, mcap_map=None):
             compute_contributions(stocks, mcap_map)
             top_contributors = sorted(stocks, key=lambda x: abs(x['contribution_pp']), reverse=True)[:3]
             mcap_weighted_chg = sum(s['contribution_pp'] for s in stocks)
+            # 5d mcap-weighted chg
+            total_mcap = sum(s.get('mcap', 0) for s in stocks)
+            if total_mcap > 0:
+                mcap_chg_5d = sum(
+                    (s.get('chg_5d') or 0) * (s.get('mcap', 0) / total_mcap) for s in stocks
+                )
+            else:
+                mcap_chg_5d = None
         else:
             top_contributors = []
             mcap_weighted_chg = None
+            mcap_chg_5d = None
+        # 5d equal-weight
+        chgs_5d = [s['chg_5d'] for s in stocks if s.get('chg_5d') is not None]
+        avg_chg_5d = float(np.mean(chgs_5d)) if chgs_5d else None
         report.append({
             'sector': sector,
             'avg_chg': float(chgs.mean()),
+            'avg_chg_5d': avg_chg_5d,
             'mcap_chg': mcap_weighted_chg,
+            'mcap_chg_5d': mcap_chg_5d,
             'median_chg': float(np.median(chgs)),
             'advancers': int((chgs > 0).sum()),
             'decliners': int((chgs < 0).sum()),
@@ -411,6 +498,12 @@ def _stock_row(s, highlight_key=None):
         c = s.get('contribution_pp', 0)
         w = s.get('weight', 0) * 100
         extra = f"<span class='extra'>{c:+.2f}pp 權{w:.0f}%</span>"
+    news_html = ''
+    if highlight_key == 'contrib' and s.get('news'):
+        news_html = "<div class='stock-news'>" + ''.join(
+            f'<a href="{n["link"]}" target="_blank" rel="noopener">↳ {n["title"]}</a>'
+            for n in s['news'][:2]
+        ) + "</div>"
     return (
         f"<div class='stock-row'>"
         f"<span class='code'>{s['code']}</span>"
@@ -418,6 +511,7 @@ def _stock_row(s, highlight_key=None):
         f"<span class='chg {chg_cls}'>{chg_str}</span>"
         f"{extra}"
         f"</div>"
+        f"{news_html}"
     )
 
 
@@ -443,6 +537,11 @@ def _sector_card(s):
     if s.get('mcap_chg') is not None:
         meta_parts.append(f"等權 {s['avg_chg']:+.2f}%")
     meta_parts.append(f"中位 {s['median_chg']:+.2f}%")
+    chg5 = s.get('mcap_chg_5d') if s.get('mcap_chg_5d') is not None else s.get('avg_chg_5d')
+    if chg5 is not None:
+        meta_parts.append(f"5日 {chg5:+.2f}%")
+    if s.get('alpha_pp') is not None:
+        meta_parts.append(f"vs TOPIX {s['alpha_pp']:+.2f}pp")
     summary_html = f"<div class='sec-summary'>💬 {s['summary']}</div>" if s.get('summary') else ''
     return (
         f"<details class='sector-card' open>"
@@ -564,11 +663,10 @@ def _stock_row_inline(s, highlight_key=None):
     elif highlight_key == 'contrib':
         contrib = s.get('contribution_pp', 0)
         weight = s.get('weight', 0) * 100
-        # contribution 以 pp 顯示(百分點),e.g. -0.31pp 代表把板塊拉低 0.31 個百分點
         extra = f'<div style="{_EXTRA_STYLE}">{contrib:+.2f}pp 權{weight:.0f}%</div>'
     else:
         extra = '<div></div>'
-    return (
+    row = (
         f'<div style="{_ROW_STYLE}">'
         f'<div style="{_CODE_STYLE}">{s["code"]}</div>'
         f'<div style="{_NAME_STYLE}">{s["name"]}</div>'
@@ -576,6 +674,16 @@ def _stock_row_inline(s, highlight_key=None):
         f'{extra}'
         f'</div>'
     )
+    # Per-stock news (只 contrib tile 顯示)
+    if highlight_key == 'contrib' and s.get('news'):
+        news_style = 'padding-left:54px;padding-bottom:4px;'
+        link_style = 'display:block;font-size:11px;color:#1a4d8c;text-decoration:none;padding:1px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'
+        news_html = ''.join(
+            f'<a href="{n["link"]}" target="_blank" rel="noopener" style="{link_style}">↳ {n["title"]}</a>'
+            for n in s['news'][:2]
+        )
+        row += f'<div style="{news_style}">{news_html}</div>'
+    return row
 
 
 def _news_tile_inline(news_items):
@@ -635,9 +743,14 @@ def _sector_card_inline(s):
     meta_parts = [f'成分 {s["n"]} 檔', f'漲 {s["advancers"]} 跌 {s["decliners"]}']
     if s.get('mcap_chg') is not None:
         meta_parts.append(f'等權 {s["avg_chg"]:+.2f}%')
-        meta_parts.append(f'中位 {s["median_chg"]:+.2f}%')
-    else:
-        meta_parts.append(f'中位 {s["median_chg"]:+.2f}%')
+    meta_parts.append(f'中位 {s["median_chg"]:+.2f}%')
+    # 5d 輪動
+    chg5 = s.get('mcap_chg_5d') if s.get('mcap_chg_5d') is not None else s.get('avg_chg_5d')
+    if chg5 is not None:
+        meta_parts.append(f'5日 {chg5:+.2f}%')
+    # alpha vs TOPIX
+    if s.get('alpha_pp') is not None:
+        meta_parts.append(f'vs TOPIX {s["alpha_pp"]:+.2f}pp')
     meta_text = ' | '.join(meta_parts)
 
     tiles_html = (
@@ -880,6 +993,9 @@ def render_html(indices, report):
   }}
   .news-link:hover {{ text-decoration: underline; }}
   .news-tile {{ grid-column: span 2; }}
+  .stock-news {{ padding-left: 54px; padding-bottom: 4px; }}
+  .stock-news a {{ display: block; font-size: 11px; color: var(--accent); text-decoration: none; padding: 1px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+  .stock-news a:hover {{ text-decoration: underline; }}
 </style>
 </head>
 <body>
@@ -939,12 +1055,21 @@ def main():
     mcap_map = load_market_caps(list(ticker_map.keys()))
     print(f"Market caps loaded: {len(mcap_map)}/{len(ticker_map)}")
     report = build_sector_report(ticker_map, df, mcap_map=mcap_map)
-    # B. News per sector
+    # #4 — alpha vs TOPIX (use TOPIX 1306 ETF as benchmark)
+    topix = next((i for i in idx_data if 'TOPIX (1306)' in i.get('name', '')), None)
+    topix_chg = topix['chg'] if topix else None
+    for r in report:
+        if topix_chg is not None and r.get('mcap_chg') is not None:
+            r['alpha_pp'] = r['mcap_chg'] - topix_chg
+        else:
+            r['alpha_pp'] = None
+    # B. News per sector + per top-contributor stock
     print("Fetching news...")
     news_map = fetch_news_all([r['sector'] for r in report])
     for r in report:
         r['news'] = news_map.get(r['sector'], [])
     print(f"News fetched: {sum(len(r['news']) for r in report)} items across {sum(1 for r in report if r['news'])} sectors")
+    fetch_stock_news_for_report(report)
     # C. LLM summaries (optional, requires ANTHROPIC_API_KEY)
     import os
     api_key = os.environ.get('ANTHROPIC_API_KEY')
