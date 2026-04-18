@@ -40,19 +40,8 @@ jobs:
             git push
           fi
 
-      - name: Publish to WordPress
-        env:
-          WP_URL: ${{ secrets.WP_URL }}
-          WP_USER: ${{ secrets.WP_USER }}
-          WP_PASS: ${{ secrets.WP_PASS }}
-          WP_PAGE_ID: ${{ secrets.WP_PAGE_ID }}
-          WP_STATUS: ${{ vars.WP_STATUS || 'publish' }}
-        run: |
-          if [ -z "$WP_URL" ]; then
-            echo "WP_* secrets not set — skip publish (set them in repo Settings → Secrets to enable)"
-            exit 0
-          fi
-          python wp_publish.py
+      # WP page 2716 is now a static iframe pointing to GitHub Pages URL.
+      # Content updates happen via the Pages deploy below, so no more WP REST push.
 
   deploy-pages:
     needs: generate
