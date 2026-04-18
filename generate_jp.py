@@ -862,174 +862,346 @@ def render_embed(indices, report):
 </div>"""
 
 
+def _heat_color(chg):
+    """JP convention: red=up, green=down.
+    Return (bg hex, text color) based on chg in %.
+    Range ~[-5, +5] mapped to gradient."""
+    # clamp
+    c = max(-5.0, min(5.0, chg))
+    if c >= 0:
+        # 0% → very pale red; +5% → deep red (127,29,29)
+        t = c / 5.0  # 0..1
+        r = int(255 - (255 - 127) * t)
+        g = int(255 - (255 - 29) * t)
+        b = int(255 - (255 - 29) * t)
+        # interpolate from #fff5f5 (255,245,245) to #7f1d1d (127,29,29) -- use pale base
+        r = int(255 - (255 - 127) * t)
+        g = int(245 - (245 - 29) * t)
+        b = int(245 - (245 - 29) * t)
+    else:
+        t = -c / 5.0  # 0..1
+        # #f0fdf4 (240,253,244) → #14532d (20,83,45)
+        r = int(240 - (240 - 20) * t)
+        g = int(253 - (253 - 83) * t)
+        b = int(244 - (244 - 45) * t)
+    # text: dark if bg is pale; white if bg is deep
+    pale = (r + g + b) / 3 > 180
+    return f'rgb({r},{g},{b})', '#0f172a' if pale else '#fff'
+
+
+def _us_stock_row(s, sector_weight_info=True):
+    """US-style expandable stock row with tech + news inside."""
+    chg = s.get('chg', 0)
+    chg_cls = 'up' if chg > 0 else ('dn' if chg < 0 else 'mu')
+    weight_span = ''
+    if sector_weight_info and s.get('weight') is not None:
+        w = s['weight'] * 100
+        c = s.get('contribution_pp', 0)
+        weight_span = (
+            f'<span class="val mu" style="color:var(--mu);font-weight:500;min-width:82px;font-size:11px" '
+            f'title="權重 {w:.2f}% / 貢獻 {c:+.2f}pp">貢 {c:+.2f}pp</span>'
+        )
+    vol_pill = ''
+    vr = s.get('vol_ratio', 0)
+    if vr >= 1.5:
+        vol_pill = f' <span class="pill am" title="量/20日均 = {vr:.2f}">放量</span>'
+    # Tech block
+    rsi = s.get('rsi')
+    rsi_txt = f'{rsi:.0f}'
+    rsi_cls = 'mu'
+    if rsi is not None:
+        if rsi >= 70: rsi_cls, rsi_txt = 'dn', f'{rsi:.0f} 超買'
+        elif rsi <= 30: rsi_cls, rsi_txt = 'up', f'{rsi:.0f} 超賣'
+        else: rsi_cls, rsi_txt = 'mu', f'{rsi:.0f} 中性'
+    else:
+        rsi_txt, rsi_cls = '—', 'mu'
+    chg_5d = s.get('chg_5d')
+    chg5d_cls = 'up' if (chg_5d or 0) > 0 else ('dn' if (chg_5d or 0) < 0 else 'mu')
+    chg5d_txt = f'{chg_5d:+.2f}%' if chg_5d is not None else '—'
+    ma20 = s.get('ma20')
+    ma_cls = 'up' if (ma20 and s.get('close', 0) > ma20) else 'dn'
+    ma_arrow = '↑' if ma_cls == 'up' else '↓'
+    tech = f"""<div class="sd-block">
+  <h5>📐 技術面</h5>
+  <div class="sd-grid">
+    <div><span class="k">當日</span><span class="v {chg_cls}">{chg:+.2f}%</span></div>
+    <div><span class="k">近 5 日</span><span class="v {chg5d_cls}">{chg5d_txt}</span></div>
+    <div><span class="k">量 / 20 日均</span><span class="v {'am' if vr >= 1.5 else 'mu'}">×{vr:.2f}</span></div>
+    <div><span class="k">RSI(14)</span><span class="v {rsi_cls}">{rsi_txt}</span></div>
+  </div>
+  <div class="sd-ma"><span class="pill {ma_cls}">MA20 {ma_arrow} ¥{ma20:,.0f}</span></div>
+</div>"""
+    # News block
+    news_items = s.get('news', [])
+    if news_items:
+        news_rows = ''.join(
+            f'<div class="sd-news-item"><a href="{n["link"]}" target="_blank" rel="noopener">{n["title"]}</a>'
+            f'<div class="sd-news-meta">{n.get("date","")}</div></div>'
+            for n in news_items[:3]
+        )
+    else:
+        news_rows = '<div class="sd-news-meta">無當日相關新聞</div>'
+    news = f'<div class="sd-block"><h5>📰 新聞</h5>{news_rows}</div>'
+    return f"""<details class="stock-row"><summary class="row-item">
+  <span class="sym">{s['code']}</span>
+  <span class="nm" title="{s['name']}">{s['name']}{vol_pill}</span>
+  <span class="val {chg_cls}">{chg:+.2f}%</span>{weight_span}
+  <span class="chev">▾</span>
+</summary><div class="stock-detail">{tech}{news}</div></details>"""
+
+
+def _us_simple_row(s):
+    """Compact row (no details, for 放量/底部 column)."""
+    chg = s.get('chg', 0)
+    chg_cls = 'up' if chg > 0 else ('dn' if chg < 0 else 'mu')
+    vr = s.get('vol_ratio', 0)
+    return f"""<div class="row-item">
+  <span class="sym">{s['code']}</span>
+  <span class="nm" title="{s['name']}">{s['name']}</span>
+  <span class="val {chg_cls}">{chg:+.2f}%</span>
+  <span class="val am" style="min-width:52px">×{vr:.2f}</span>
+</div>"""
+
+
+def _us_drill(r):
+    """Drill-down panel per sector."""
+    main_chg = r['mcap_chg'] if r.get('mcap_chg') is not None else r['avg_chg']
+    chg_cls = 'up' if main_chg > 0 else ('dn' if main_chg < 0 else 'mu')
+    # Meta line
+    meta_parts = [f'成分 {r["n"]} 檔']
+    if r.get('mcap_chg') is not None:
+        meta_parts.append(f'等權 {r["avg_chg"]:+.2f}%')
+    meta_parts.append(f'中位 {r["median_chg"]:+.2f}%')
+    chg5 = r.get('mcap_chg_5d') or r.get('avg_chg_5d')
+    if chg5 is not None:
+        meta_parts.append(f'5日 {chg5:+.2f}%')
+    if r.get('alpha_pp') is not None:
+        meta_parts.append(f'vs TOPIX {r["alpha_pp"]:+.2f}pp')
+    # AI summary
+    summary_html = ''
+    if r.get('summary'):
+        summary_html = f'<div class="ai-summary">💬 {r["summary"]}</div>'
+    # 4 columns:
+    # pos contributors + gainers
+    pos_contribs = [s for s in r.get('top_contributors', []) if s.get('contribution_pp', 0) >= 0][:3]
+    neg_contribs = [s for s in r.get('top_contributors', []) if s.get('contribution_pp', 0) < 0][:3]
+    # merge with top_gainers/losers excluding dupes
+    pos_codes = {s['code'] for s in pos_contribs}
+    neg_codes = {s['code'] for s in neg_contribs}
+    extra_gainers = [s for s in r['top_gainers'] if s['code'] not in pos_codes and s['chg'] > 0][:3]
+    extra_losers = [s for s in r['top_losers'] if s['code'] not in neg_codes and s['chg'] < 0][:3]
+    pos_rows = ''.join(_us_stock_row(s) for s in pos_contribs + extra_gainers)
+    neg_rows = ''.join(_us_stock_row(s) for s in neg_contribs + extra_losers)
+    # 放量
+    vol_items = r.get('volume_breakouts', []) + r.get('bottom_volume', [])
+    seen_v = set()
+    vol_rows_list = []
+    for v in vol_items:
+        if v['code'] not in seen_v:
+            seen_v.add(v['code'])
+            vol_rows_list.append(v)
+    vol_rows = ''.join(_us_simple_row(v) for v in vol_rows_list[:5])
+    if not vol_rows:
+        vol_rows = '<div class="row-item" style="color:var(--mu);font-size:12px">今日無放量突破</div>'
+    # 新聞 sector-level
+    news_items = r.get('news', [])
+    if news_items:
+        news_rows = ''.join(
+            f'<div class="news-item"><a href="{n["link"]}" target="_blank" rel="noopener">{n["title"]}</a>'
+            f'<div class="meta">{n.get("date","")}</div></div>'
+            for n in news_items[:4]
+        )
+    else:
+        news_rows = '<div class="meta" style="padding:8px 0">暫無產業新聞</div>'
+    return f"""<div class="drill" data-sector="{r['sector']}">
+  <h2>{r['sector']} <span class="val {chg_cls}" style="font-size:18px;margin-left:8px">{main_chg:+.2f}%</span></h2>
+  <div class="meta">{' · '.join(meta_parts)}</div>
+  {summary_html}
+  <div class="grid-4">
+    <div class="col pos">
+      <h4>▲ 今日推升</h4>
+      {pos_rows or '<div class="row-item" style="color:var(--mu)">無</div>'}
+    </div>
+    <div class="col neg">
+      <h4>▼ 今日拖累</h4>
+      {neg_rows or '<div class="row-item" style="color:var(--mu)">無</div>'}
+    </div>
+    <div class="col vol">
+      <h4>⚡ 放量 / 底部放量</h4>
+      {vol_rows}
+    </div>
+    <div class="col news">
+      <h4>📰 相關新聞</h4>
+      {news_rows}
+    </div>
+  </div>
+</div>"""
+
+
+def _us_heatmap_card(r):
+    main_chg = r['mcap_chg'] if r.get('mcap_chg') is not None else r['avg_chg']
+    bg, txt = _heat_color(main_chg)
+    vr_avg = None
+    # summary meta: avg vol ratio of top contributors (approx)
+    contribs = r.get('top_contributors', [])
+    if contribs:
+        vr_avg = sum(c.get('vol_ratio', 0) for c in contribs) / len(contribs)
+    chg5 = r.get('mcap_chg_5d') or r.get('avg_chg_5d')
+    sub_line = []
+    if vr_avg is not None:
+        sub_line.append(f'量×{vr_avg:.2f}')
+    if chg5 is not None:
+        arrow = '↑' if chg5 > 0 else '↓'
+        sub_line.append(f'{arrow}5日 {chg5:+.2f}%')
+    return f"""<div class="sector-card" data-sector="{r['sector']}" style="background:{bg};color:{txt}" onclick="selectSector('{r['sector']}')">
+  <div class="name">{r['sector']}</div>
+  <div class="chg">{main_chg:+.2f}%</div>
+  <div class="sub">{' · '.join(sub_line)}</div>
+</div>"""
+
+
+def _us_market_card(idx):
+    chg_cls = 'up' if idx['chg'] > 0 else ('dn' if idx['chg'] < 0 else 'mu')
+    if idx.get('is_breadth'):
+        adv = idx.get('advancers', 0)
+        dec = idx.get('decliners', 0)
+        return f"""<div class="mk">
+  <div class="lbl">{idx['name']}</div>
+  <div class="px {chg_cls}" style="font-size:20px">{idx['chg']:+.2f}%</div>
+  <div class="chg">漲 <span class="up">{adv}</span> / 跌 <span class="dn">{dec}</span></div>
+</div>"""
+    return f"""<div class="mk">
+  <div class="lbl">{idx['name']}</div>
+  <div class="px">{idx['close']:,.2f}</div>
+  <div class="chg {chg_cls}">{idx['chg']:+.2f}%</div>
+</div>"""
+
+
 def render_html(indices, report):
     gen_ts = datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')
-    data_date = indices[0]['date'].strftime('%Y-%m-%d') if indices else '—'
-    idx_html = ''.join(_index_card(i) for i in indices)
-    sec_html = ''.join(_sector_card(s) for s in report)
+    data_date = indices[0]['date'].strftime('%Y-%m-%d') if indices else datetime.now(JST).strftime('%Y-%m-%d')
+    idx_html = ''.join(_us_market_card(i) for i in indices)
+    heat_html = ''.join(_us_heatmap_card(r) for r in report)
+    drill_html = ''.join(_us_drill(r) for r in report)
 
     return f"""<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>日股復盤 {data_date}</title>
+<title>日股板塊復盤 — {data_date}</title>
 <style>
-  :root {{
-    --bg: #fafaf7;
-    --card: #ffffff;
-    --border: #e5e2dc;
-    --text: #2a2a2a;
-    --muted: #888;
-    --up: #c0392b;
-    --down: #27874b;
-    --accent: #1a4d8c;
-  }}
-  * {{ box-sizing: border-box; }}
-  body {{
-    margin: 0;
-    padding: 16px;
-    font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", "Noto Sans TC", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 14px;
-    line-height: 1.5;
-  }}
-  header {{ margin-bottom: 16px; }}
-  h1 {{
-    font-size: 18px;
-    margin: 0 0 4px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-  }}
-  .sub {{ color: var(--muted); font-size: 12px; }}
-  .indices {{
-    display: flex;
-    gap: 10px;
-    margin: 12px 0 20px;
-    flex-wrap: wrap;
-  }}
-  .index-card {{
-    flex: 1 1 140px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 10px 12px;
-  }}
-  .idx-name {{ font-size: 12px; color: var(--muted); }}
-  .idx-close {{ font-size: 18px; font-weight: 600; margin-top: 2px; }}
-  .idx-chg {{ font-size: 13px; margin-top: 2px; }}
-  .sector-card {{
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }}
-  .sector-summary {{
-    cursor: pointer;
-    list-style: none;
-    padding: 12px 14px;
-    user-select: none;
-  }}
-  .sector-summary::-webkit-details-marker {{ display: none; }}
-  .sec-head {{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
-  }}
-  .sec-name {{ font-size: 15px; font-weight: 600; }}
-  .sec-chg {{ font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }}
-  .sec-meta {{ font-size: 11px; color: var(--muted); margin-top: 2px; }}
-  .sec-bar {{
-    height: 3px;
-    background: #f0ede8;
-    margin-top: 8px;
-    border-radius: 2px;
-    overflow: hidden;
-    position: relative;
-  }}
-  .bar-up {{ background: var(--up); height: 100%; border-radius: 2px; }}
-  .bar-down {{ background: var(--down); height: 100%; border-radius: 2px; }}
-  .tiles {{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 8px;
-    padding: 0 14px 14px;
-  }}
-  .tile {{
-    background: #fbfaf6;
-    border: 1px solid #ece8df;
-    border-radius: 4px;
-    padding: 8px 10px;
-  }}
-  .tile-title {{
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 4px;
-    font-weight: 500;
-  }}
-  .tile-empty {{ font-size: 12px; color: #bbb; padding: 4px 0; }}
-  .stock-row {{
-    display: grid;
-    grid-template-columns: 48px 1fr auto auto;
-    gap: 6px;
-    padding: 3px 0;
-    font-size: 13px;
-    align-items: baseline;
-  }}
-  .stock-row .code {{ color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }}
-  .stock-row .name {{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
-  .stock-row .chg {{ font-variant-numeric: tabular-nums; font-weight: 500; }}
-  .stock-row .extra {{ font-size: 11px; color: var(--muted); min-width: 52px; text-align: right; }}
-  .up {{ color: var(--up); }}
-  .down {{ color: var(--down); }}
-  footer {{
-    margin-top: 24px;
-    padding-top: 12px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 11px;
-  }}
-  .sec-summary {{
-    background: #f5f2ea;
-    border-left: 3px solid #c2a25a;
-    padding: 6px 10px;
-    margin: 6px 14px 0;
-    font-size: 13px;
-    color: #3a3a3a;
-    border-radius: 2px;
-  }}
-  .news-link {{
-    display: block;
-    padding: 3px 0;
-    font-size: 12px;
-    color: var(--accent);
-    text-decoration: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }}
-  .news-link:hover {{ text-decoration: underline; }}
-  .news-tile {{ grid-column: span 2; }}
-  .stock-news {{ padding-left: 54px; padding-bottom: 4px; }}
-  .stock-news a {{ display: block; font-size: 11px; color: var(--accent); text-decoration: none; padding: 1px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
-  .stock-news a:hover {{ text-decoration: underline; }}
+:root{{--bl:#2563eb;--gr:#16a34a;--rd:#dc2626;--am:#d97706;--bg:#f8fafc;--brd:#e2e8f0;--txt:#1e293b;--mu:#64748b;--card:#fff;--hover:#eef2ff;--up:#c0392b;--dn:#27874b}}
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Hiragino Sans','Noto Sans JP','Noto Sans TC',system-ui,sans-serif;background:var(--bg);color:var(--txt);font-size:14px;line-height:1.5}}
+.hdr{{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 40%,#b91c1c 100%);color:#fff;padding:22px 28px 16px}}
+.hdr h1{{font-size:20px;font-weight:800;margin-bottom:4px;letter-spacing:-0.3px}}
+.hdr .sub{{font-size:11.5px;opacity:.9}}
+.nav-link{{color:#fecaca;font-size:11.5px;text-decoration:none;margin-left:14px;border-bottom:1px dashed #fecaca;padding-bottom:1px}}
+.nav-link:hover{{opacity:.7}}
+.market{{display:flex;gap:10px;padding:14px 28px;background:var(--card);border-bottom:1px solid var(--brd);flex-wrap:wrap}}
+.mk{{background:var(--bg);border:1px solid var(--brd);border-radius:8px;padding:10px 16px;min-width:140px}}
+.mk .lbl{{font-size:10.5px;color:var(--mu);font-weight:600;letter-spacing:0.3px}}
+.mk .px{{font-size:18px;font-weight:700;margin-top:2px}}
+.mk .chg{{font-size:12px;font-weight:600;margin-top:1px}}
+.chg.up,.val.up,.px.up{{color:var(--up)}}
+.chg.dn,.val.dn,.px.dn{{color:var(--dn)}}
+.chg.mu,.val.mu{{color:var(--mu)}}
+.up{{color:var(--up)}}.dn{{color:var(--dn)}}
+.pane{{padding:20px 28px}}
+.ttl{{font-size:15px;font-weight:700;margin-bottom:4px}}
+.desc{{font-size:12.5px;color:var(--mu);margin-bottom:16px;line-height:1.7}}
+.heat{{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}}
+.sector-card{{border-radius:10px;padding:14px 16px;cursor:pointer;position:relative;transition:transform .12s,box-shadow .12s;border:1px solid rgba(0,0,0,.08)}}
+.sector-card:hover{{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.14)}}
+.sector-card.active{{outline:3px solid #111;outline-offset:2px}}
+.sector-card .name{{font-size:15px;font-weight:800}}
+.sector-card .chg{{font-size:22px;font-weight:800;margin-top:8px;letter-spacing:-0.5px}}
+.sector-card .sub{{font-size:10.5px;opacity:.85;margin-top:3px}}
+.drill{{margin-top:20px;padding:18px 20px;background:var(--card);border:1px solid var(--brd);border-radius:12px;display:none}}
+.drill.active{{display:block}}
+.drill h2{{font-size:17px;font-weight:800;margin-bottom:4px}}
+.drill .meta{{font-size:12px;color:var(--mu);margin-bottom:12px;line-height:1.7}}
+.ai-summary{{background:#fff7ed;border-left:3px solid #f59e0b;padding:10px 14px;margin-bottom:14px;font-size:13px;line-height:1.7;color:#78350f;border-radius:2px}}
+.grid-4{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}}
+.col h4{{font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;padding-bottom:6px;border-bottom:2px solid var(--brd)}}
+.col.pos h4{{color:var(--up);border-bottom-color:#fecaca}}
+.col.neg h4{{color:var(--dn);border-bottom-color:#bbf7d0}}
+.col.vol h4{{color:var(--am);border-bottom-color:#fed7aa}}
+.col.news h4{{color:var(--bl);border-bottom-color:#bfdbfe}}
+.row-item{{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px dashed #eef2f7;font-size:12.5px}}
+.row-item:last-child{{border-bottom:none}}
+.row-item .sym{{font-weight:700;color:var(--txt);min-width:46px}}
+.row-item .nm{{flex:1;color:var(--mu);font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0 8px}}
+.row-item .val{{font-weight:700;font-variant-numeric:tabular-nums;min-width:60px;text-align:right}}
+.row-item .chev{{color:var(--mu);font-size:10px;margin-left:6px}}
+.pill{{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10.5px;font-weight:700}}
+.pill.up{{background:#fee2e2;color:var(--up)}}
+.pill.dn{{background:#dcfce7;color:var(--dn)}}
+.pill.am{{background:#fef3c7;color:#b45309}}
+details.stock-row{{border-bottom:1px dashed #eef2f7;margin:0}}
+details.stock-row:last-child{{border-bottom:none}}
+details.stock-row > summary{{list-style:none;cursor:pointer;padding:7px 0;display:flex;align-items:center;justify-content:space-between;font-size:12.5px;transition:background .1s}}
+details.stock-row > summary::-webkit-details-marker{{display:none}}
+details.stock-row > summary:hover{{background:#f8fafc}}
+details.stock-row[open] > summary .chev{{transform:rotate(180deg)}}
+.stock-detail{{background:#f8fafc;padding:10px 12px;border-radius:6px;margin:4px 0 8px}}
+.sd-block{{padding:6px 0;border-bottom:1px dashed #e2e8f0}}
+.sd-block:last-child{{border-bottom:none}}
+.sd-block h5{{font-size:11.5px;font-weight:700;color:var(--mu);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px}}
+.sd-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:6px 14px;margin-bottom:6px}}
+.sd-grid .k{{font-size:10.5px;color:var(--mu);display:block}}
+.sd-grid .v{{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums}}
+.sd-ma{{margin-top:4px}}
+.sd-news-item{{padding:4px 0;border-bottom:1px dashed #eef2f7;font-size:12px}}
+.sd-news-item:last-child{{border-bottom:none}}
+.sd-news-item a{{color:var(--txt);text-decoration:none}}
+.sd-news-item a:hover{{color:var(--bl);text-decoration:underline}}
+.sd-news-meta{{font-size:10.5px;color:var(--mu);margin-top:1px}}
+.news-item{{padding:8px 0;border-bottom:1px dashed #eef2f7;font-size:13px}}
+.news-item:last-child{{border-bottom:none}}
+.news-item a{{color:var(--txt);text-decoration:none;line-height:1.5}}
+.news-item a:hover{{color:var(--bl);text-decoration:underline}}
+.news-item .meta{{font-size:10.5px;color:var(--mu);margin-top:2px}}
+.ft{{text-align:center;color:var(--mu);font-size:11.5px;padding:20px 28px;border-top:1px solid var(--brd);line-height:1.8;background:var(--card)}}
 </style>
 </head>
 <body>
-<header>
-  <h1>日股復盤・板塊地圖</h1>
-  <div class="sub">資料日 {data_date} | 產生時間 {gen_ts}</div>
-  <div class="indices">{idx_html}</div>
-</header>
-<main>
-  {sec_html}
-</main>
-<footer>
-  資料來源 Yahoo Finance。板塊漲跌為該板塊成分股等權重日漲幅平均。放量突破 = 成交量 ≥ 20 日均量 2 倍 且 收盤創 20 日新高。底部放量 = 放量且價位距區間低點 10% 以內。僅供參考,非投資建議。
-</footer>
+<div class="hdr">
+  <h1>日股板塊復盤</h1>
+  <div class="sub">更新：{data_date}（每個交易日收盤後自動更新,JST 15:30）
+    <a class="nav-link" href="https://tetsu811.github.io/cb-dashboard/us_index.html">→ 美股板塊</a>
+    <a class="nav-link" href="https://tetsu811.github.io/cb-dashboard/etf_index.html">→ ETF 資金流向</a>
+    <a class="nav-link" href="https://tetsu811.github.io/cb-dashboard/index.html">→ 可轉債儀表板</a>
+  </div>
+</div>
+<div class="market">{idx_html}</div>
+<div class="pane">
+  <div class="ttl">板塊熱力圖</div>
+  <div class="desc">東証 17 業種 × 469 檔大中型股 · 市值加權漲跌排序 · 顏色越深表示漲/跌幅越大(紅漲綠跌,日股慣例)。點擊任一板塊查看「為什麼」——包含推升股、拖累股、放量個股、AI 分析與相關新聞。</div>
+  <div class="heat">{heat_html}</div>
+  {drill_html}
+</div>
+<div class="ft">
+  資料來源：Yahoo Finance (yfinance) + Google News (日本語) + Anthropic Claude  &nbsp;|&nbsp; 僅供研究參考,不構成投資建議  &nbsp;|&nbsp; 產生時間 {gen_ts}
+</div>
+<script>
+function selectSector(sector){{
+  document.querySelectorAll('.sector-card').forEach(function(c){{
+    c.classList.toggle('active', c.dataset.sector===sector);
+  }});
+  document.querySelectorAll('.drill').forEach(function(d){{
+    d.classList.toggle('active', d.dataset.sector===sector);
+  }});
+  var drill = document.querySelector('.drill.active');
+  if(drill) drill.scrollIntoView({{behavior:'smooth', block:'start'}});
+}}
+// auto-select first sector on load
+window.addEventListener('DOMContentLoaded', function(){{
+  var first = document.querySelector('.sector-card');
+  if(first) selectSector(first.dataset.sector);
+}});
+</script>
 </body>
 </html>
 """
