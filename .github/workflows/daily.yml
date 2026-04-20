@@ -2,8 +2,8 @@ name: Daily JP Market Recap
 
 on:
   schedule:
-    # 日股 15:00 JST 收盤,15:30 JST 跑批 = 06:30 UTC
-    - cron: '30 6 * * 1-5'
+    # 日股 15:30 JST 收盤後,16:00 JST 跑批(給 yfinance 30分鐘資料結算時間) = 07:00 UTC
+    - cron: '0 7 * * 1-5'
   workflow_dispatch:
 
 permissions:

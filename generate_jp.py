@@ -60,11 +60,14 @@ def build_ticker_map(sectors: dict):
 
 def fetch_indices(index_list):
     """Fetch index values one-by-one (small list, handles ^ tickers)."""
+    today_jst = datetime.now(JST).date()
+    end_date = (today_jst + timedelta(days=1)).strftime('%Y-%m-%d')
+    start_date = (today_jst - timedelta(days=14)).strftime('%Y-%m-%d')
     out = []
     for item in index_list:
         code = item['code']
         try:
-            hist = yf.Ticker(code).history(period='10d', auto_adjust=False)
+            hist = yf.Ticker(code).history(start=start_date, end=end_date, auto_adjust=False)
             if len(hist) < 2:
                 continue
             last = float(hist['Close'].iloc[-1])
@@ -82,16 +85,32 @@ def fetch_indices(index_list):
 
 
 def fetch_all(tickers):
-    """Batch-download ~90d OHLCV. Returns multi-index DataFrame."""
+    """Batch-download ~120d OHLCV. Returns multi-index DataFrame.
+    Uses explicit start/end dates to avoid yfinance returning stale period data."""
     print(f"Downloading {len(tickers)} tickers (yfinance batch)...")
+    today_jst = datetime.now(JST).date()
+    end_date = (today_jst + timedelta(days=1)).strftime('%Y-%m-%d')
+    start_date = (today_jst - timedelta(days=130)).strftime('%Y-%m-%d')
     df = yf.download(
         tickers=' '.join(tickers),
-        period='120d',
+        start=start_date,
+        end=end_date,
         group_by='ticker',
         threads=True,
         progress=False,
         auto_adjust=False,
     )
+    # Freshness check: warn if latest data is more than 3 calendar days old
+    try:
+        last_ts = df.index[-1]
+        last_date = last_ts.date() if hasattr(last_ts, 'date') else last_ts
+        delta = (today_jst - last_date).days
+        if delta > 3:
+            print(f"  [WARN] Batch download last date is {last_date} ({delta}d ago) — data may be stale!", file=sys.stderr)
+        else:
+            print(f"  Batch data through {last_date} ({delta}d ago)")
+    except Exception:
+        pass
     return df
 
 
