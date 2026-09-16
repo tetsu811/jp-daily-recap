@@ -67,7 +67,7 @@ def fetch_indices(index_list):
     for item in index_list:
         code = item['code']
         try:
-            hist = yf.Ticker(code).history(start=start_date, end=end_date, auto_adjust=False)
+            hist = yf.Ticker(code).history(start=start_date, end=end_date, auto_adjust=False).dropna(subset=['Close'])
             if len(hist) < 2:
                 continue
             last = float(hist['Close'].iloc[-1])
@@ -847,6 +847,16 @@ def _index_card_inline(idx):
     )
 
 
+
+def health_status_html():
+    try:
+        h = json.loads(Path('health.json').read_text())
+        dates = sorted({v for v in h['observations'].values() if v})
+        date_text = ' / '.join(dates) if dates else '無有效資料'
+        return f"<div class='sub' role='status'>個股來源日期：{date_text} ｜ 可用 {h['available']}/{h['expected']} 檔 ｜ 缺資料 {len(h['missing'])} 檔（未列入漲跌計算） ｜ AI 摘要 {h.get('summaries',0)}/17（為 0 時代表分析服務未完成）</div>"
+    except (OSError, ValueError, KeyError):
+        return "<p role='status'>資料品質檢查尚未完成</p>"
+
 def render_embed(indices, report):
     """嵌入 WordPress 用的版本 — 全 inline style。
 
@@ -874,6 +884,7 @@ def render_embed(indices, report):
 <div style="{header_style}">
   <div style="{h1_style}">日股復盤・板塊地圖</div>
   <div style="{sub_style}">資料日 {data_date} | 產生時間 {gen_ts}</div>
+  {health_status_html()}
   <div style="{indices_style}">{idx_html}</div>
 </div>
 <div>{sec_html}</div>
@@ -1194,6 +1205,7 @@ details.stock-row[open] > summary .chev{{transform:rotate(180deg)}}
     <a class="nav-link" href="https://tetsu811.github.io/cb-dashboard/index.html">→ 可轉債儀表板</a>
   </div>
 </div>
+{health_status_html()}
 <div class="market">{idx_html}</div>
 <div class="pane">
   <div class="ttl">板塊熱力圖</div>
@@ -1304,6 +1316,8 @@ def main():
         print("ANTHROPIC_API_KEY not set — skipping LLM summaries")
         for r in report:
             r['summary'] = ''
+    health["summaries"] = sum(bool(r.get("summary")) for r in report)
+    Path("health.json").write_text(json.dumps(health,ensure_ascii=False,indent=2))
     ok = sum(r['n'] for r in report)
     print(f"Processed {ok}/{len(ticker_map)} tickers across {len(report)} sectors")
     breadth = synthesize_breadth(report)
