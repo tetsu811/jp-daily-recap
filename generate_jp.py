@@ -1209,7 +1209,7 @@ details.stock-row[open] > summary .chev{{transform:rotate(180deg)}}
 <div class="market">{idx_html}</div>
 <div class="pane">
   <div class="ttl">板塊熱力圖</div>
-  <div class="desc">東証 17 業種 × 469 檔大中型股 · 市值加權漲跌排序 · 顏色越深表示漲/跌幅越大(紅漲綠跌,日股慣例)。點擊任一板塊查看「為什麼」——包含推升股、拖累股、放量個股、AI 分析與相關新聞。</div>
+  <div class="desc">東証 17 業種 × {sum(r["n"] for r in report)} 檔大中型股 · 市值加權漲跌排序 · 顏色越深表示漲/跌幅越大(紅漲綠跌,日股慣例)。點擊任一板塊查看「為什麼」——包含推升股、拖累股、放量個股、AI 分析與相關新聞。</div>
   <div class="heat">{heat_html}</div>
   {drill_html}
 </div>
