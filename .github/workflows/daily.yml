@@ -3,11 +3,15 @@ name: Daily JP Market Recap
 on:
   schedule:
     # 日股 15:30 JST 收盤後,16:00 JST 跑批(給 yfinance 30分鐘資料結算時間) = 07:00 UTC
-    - cron: '0 7 * * 1-5'
+    - cron: '17 7,10 * * 1-5'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: jp-market-update
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -32,7 +36,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add jp_dashboard.html jp_dashboard_embed.html
+          git add jp_dashboard.html jp_dashboard_embed.html health.json
           if git diff --cached --quiet; then
             echo "No changes."
           else
@@ -60,6 +64,7 @@ jobs:
       - name: Build pages artifact (dashboard only)
         run: |
           mkdir -p _site
+          cp health.json _site/health.json
           cp jp_dashboard.html _site/index.html
           cp jp_dashboard.html _site/jp_dashboard.html
           cp jp_dashboard_embed.html _site/ || true

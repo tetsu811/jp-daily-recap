@@ -1098,7 +1098,7 @@ def _us_market_card(idx):
 
 def render_html(indices, report):
     gen_ts = datetime.now(JST).strftime('%Y-%m-%d %H:%M JST')
-    data_date = indices[0]['date'].strftime('%Y-%m-%d') if indices else datetime.now(JST).strftime('%Y-%m-%d')
+    data_date = indices[0]['date'].strftime('%Y-%m-%d') if indices else '來源日期未提供'
     idx_html = ''.join(_us_market_card(i) for i in indices)
     heat_html = ''.join(_us_heatmap_card(r) for r in report)
     drill_html = ''.join(_us_drill(r) for r in report)
@@ -1188,7 +1188,7 @@ details.stock-row[open] > summary .chev{{transform:rotate(180deg)}}
 <body>
 <div class="hdr">
   <h1>日股板塊復盤</h1>
-  <div class="sub">更新：{data_date}（每個交易日收盤後自動更新,JST 15:30）
+  <div class="sub">行情日期：{data_date} · 產生於 {gen_ts}（盤後更新；來源可能延遲）
     <a class="nav-link" href="https://tetsu811.github.io/cb-dashboard/us_index.html">→ 美股板塊</a>
     <a class="nav-link" href="https://tetsu811.github.io/cb-dashboard/etf_index.html">→ ETF 資金流向</a>
     <a class="nav-link" href="https://tetsu811.github.io/cb-dashboard/index.html">→ 可轉債儀表板</a>
@@ -1266,6 +1266,16 @@ def main():
     mcap_map = load_market_caps(list(ticker_map.keys()))
     print(f"Market caps loaded: {len(mcap_map)}/{len(ticker_map)}")
     report = build_sector_report(ticker_map, df, mcap_map=mcap_map)
+    observations = {}
+    for ticker in ticker_map:
+        metrics = stock_metrics(df, ticker)
+        observations[ticker] = metrics['date'].isoformat() if metrics else None
+    missing = [ticker for ticker, date in observations.items() if not date]
+    stale = [ticker for ticker, date in observations.items() if date and (datetime.now(JST).date() - datetime.fromisoformat(date).date()).days > 5]
+    health = {'checked_at':datetime.now(JST).isoformat(), 'expected':len(ticker_map), 'available':len(ticker_map)-len(missing), 'missing':missing, 'stale':stale, 'observations':observations}
+    Path('health.json').write_text(json.dumps(health, ensure_ascii=False, indent=2))
+    if not idx_data or len(missing) > len(ticker_map)*0.1 or len(stale) > len(ticker_map)*0.1:
+        raise RuntimeError('Market data incomplete or stale; previous published dashboard retained')
     # #4 — alpha vs TOPIX (use TOPIX 1306 ETF as benchmark)
     topix = next((i for i in idx_data if 'TOPIX (1306)' in i.get('name', '')), None)
     topix_chg = topix['chg'] if topix else None
