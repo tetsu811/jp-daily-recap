@@ -853,7 +853,7 @@ def health_status_html():
     return (f"<div id='market-health' data-session='{h['expected_session']}' role='status' style='padding:12px;background:#fff3cd;color:#332701'>"
             f"最新完整交易日 {h['expected_session']} ｜ 行情 {h['available']}/{h['expected']} 檔 ｜ "
             f"核對時間 {h['checked_at']} ｜ 日線盤後更新</div>"
-            "<script src='freshness.js'></script>")
+            "<script src='https://tetsu811.github.io/jp-daily-recap/freshness.js'></script>")
 
 
 def render_embed(indices, report):

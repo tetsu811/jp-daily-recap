@@ -2,7 +2,7 @@
   const node = document.getElementById('market-health');
   if (!node) return;
   try {
-    const response = await fetch('health.json?t=' + Date.now(), {cache:'no-store'});
+    const response = await fetch('https://tetsu811.github.io/jp-daily-recap/health.json?t=' + Date.now(), {cache:'no-store'});
     if (!response.ok) throw new Error('health unavailable');
     const h = await response.json();
     const overdue = Date.now() - Date.parse(h.checked_at) > 30*60*60*1000;

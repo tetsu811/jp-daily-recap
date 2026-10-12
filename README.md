@@ -1,6 +1,6 @@
 # 日股復盤儀表板
 
-GitHub Pages 每日產生東証 17 業種板塊地圖，WordPress 以固定 iframe 嵌入。更新不需要本機開機或 WordPress 密碼。
+GitHub Pages 每日產生東証 17 業種板塊地圖，主站投資工具入口共用同一份產出。更新不需要本機開機或 WordPress 密碼。
 
 ## 行情與更新
 
@@ -29,4 +29,4 @@ python generate_jp.py
 
 主要板塊漲跌使用市值加權，並提供等權對照。放量突破為成交量達前 20 日均量 2 倍且收盤突破前 20 日高點。低檔放量使用可取得的歷史低點，歷史長度依来源而異。資料為盤後日線，不是盤中即時報價。
 
-`sectors.json` 管理成分股；`market_data.py` 處理來源、日期與上市狀態；`generate_jp.py` 產生儀表板；`.github/workflows/daily.yml` 負責測試、更新及部署。WordPress 固定 iframe 指向 https://tetsu811.github.io/jp-daily-recap/ 。
+`sectors.json` 管理成分股；`market_data.py` 處理來源、日期與上市狀態；`generate_jp.py` 產生儀表板；`.github/workflows/daily.yml` 負責測試、更新及部署。GitHub Pages 位址為 https://tetsu811.github.io/jp-daily-recap/ 。更新狀態使用絕對網址，確保主站直接轉載頁面或 iframe 嵌入時都能讀到正確狀態。
