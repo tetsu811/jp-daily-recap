@@ -57,3 +57,14 @@ def test_all_sources_stale_are_not_success(monkeypatch,tmp_path):
     _,details=m.fetch_bars(['7203.T'],'2026-10-09')
     assert details['7203.T']['status']=='unavailable'
     assert details['7203.T']['date']=='2026-10-08'
+
+def test_yahoo_japan_index_has_no_volume_column():
+    html='<table><thead><tr><th>日付</th><th>始値</th><th>高値</th><th>安値</th><th>終値</th></tr></thead><tbody><tr><th>2026/10/9</th><td>100</td><td>102</td><td>99</td><td>101</td></tr></tbody></table>'
+    f=m.parse_yahoo_japan(html,'2026-10-09',True)
+    assert len(f)==1 and f.iloc[-1].Close==101 and f.iloc[-1].Volume==0
+
+def test_yahoo_japan_index_symbol_mapping(monkeypatch):
+    urls=[]
+    monkeypatch.setattr(m,'get_html',lambda url: urls.append(url) or '')
+    m.yahoo_japan_history('^N225','2026-10-09')
+    assert urls==['https://finance.yahoo.co.jp/quote/998407.O/history']

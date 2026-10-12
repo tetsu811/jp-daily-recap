@@ -50,6 +50,8 @@ def get_html(url):
             return response.text
         except requests.RequestException as exc:
             last_error = exc
+            if isinstance(exc, requests.HTTPError) and exc.response is not None and exc.response.status_code in (400, 401, 403, 404, 405):
+                raise
             if attempt == 0:
                 time.sleep(1)
     raise last_error
@@ -104,14 +106,16 @@ def parse_yahoo_japan(html, target, is_index=False):
             continue
         for tr in table.select('tbody tr'):
             cells = tr.find_all(['th', 'td'], recursive=False)
-            if len(cells) < 6:
+            if len(cells) < (5 if is_index else 6):
                 continue
             raw_date = cells[0].get_text(strip=True)
             if not re.fullmatch(r'\d{4}/\d{1,2}/\d{1,2}', raw_date):
                 continue
             try:
                 date = datetime.strptime(raw_date, '%Y/%m/%d').date().isoformat()
-                rows.append([date, *[number(c.get_text()) for c in cells[1:6]]])
+                values = [number(c.get_text()) for c in cells[1:5]]
+                volume = 0 if is_index else number(cells[5].get_text())
+                rows.append([date, *values, volume])
             except ValueError:
                 continue
     return clean(pd.DataFrame(rows, columns=['Date', *COLS]).set_index('Date'), target, is_index)
@@ -144,6 +148,19 @@ def kabutan_history(symbol, target, need_history=False):
             if len(frame) >= 60:
                 break
             more = parse_kabutan(get_html(url + f'&ashi=day&page={page}'), target, symbol.startswith('^'))
+            frame = merge_history(frame, more)
+    return frame
+
+
+def yahoo_japan_history(symbol, target, need_history=False):
+    code = '998407.O' if symbol == '^N225' else symbol
+    url = f'https://finance.yahoo.co.jp/quote/{code}/history'
+    frame = parse_yahoo_japan(get_html(url), target, symbol.startswith('^'))
+    if need_history:
+        for page in range(2, 5):
+            if len(frame) >= 60:
+                break
+            more = parse_yahoo_japan(get_html(url + f'?page={page}'), target, symbol.startswith('^'))
             frame = merge_history(frame, more)
     return frame
 
@@ -190,7 +207,7 @@ def fetch_bars(symbols, target):
         if symbol in forced or not current(frame):
             for name, fetcher in [
                 ('Kabutan', lambda: kabutan_history(symbol, target, len(frame) < 21)),
-                ('Yahoo Japan', lambda: parse_yahoo_japan(get_html(f'https://finance.yahoo.co.jp/quote/{symbol}/history'), target, is_index)),
+                ('Yahoo Japan', lambda: yahoo_japan_history(symbol, target, len(frame) < 21)),
             ]:
                 try:
                     candidate = fetcher()
@@ -201,6 +218,8 @@ def fetch_bars(symbols, target):
                         # A split-basis mismatch may have discarded the old history.
                         if name == 'Kabutan':
                             merged = kabutan_history(symbol, target, True)
+                        else:
+                            merged = yahoo_japan_history(symbol, target, True)
                         if not current(merged):
                             raise ValueError('Insufficient consistent history')
                     frame, source = merged, name
