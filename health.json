@@ -1,14 +1,12 @@
 {
-  "checked_at": "2026-10-13T00:38:49.638999+09:00",
+  "checked_at": "2026-10-13T00:41:36.068644+09:00",
   "expected_session": "2026-10-09",
-  "status": "error",
+  "status": "ok",
   "expected": 458,
   "available": 458,
   "missing": [],
   "stale": [],
-  "problems": [
-    "^N225"
-  ],
+  "problems": [],
   "observations": {
     "2502.T": "2026-10-09",
     "2503.T": "2026-10-09",
@@ -470,8 +468,8 @@
     "3284.T": "2026-10-09"
   },
   "sources": {
-    "Yahoo Finance": 459,
-    "Yahoo Japan": 2
+    "Yahoo Finance": 458,
+    "Yahoo Japan": 3
   },
   "details": {
     "2502.T": {
@@ -3686,12 +3684,11 @@
     },
     "^N225": {
       "date": "2026-10-09",
-      "source": "Yahoo Finance",
-      "status": "unavailable",
+      "source": "Yahoo Japan",
+      "status": "ok",
       "bars": 149,
       "errors": [
-        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=0000",
-        "Yahoo Japan: HTTPError: 404 Client Error: Not Found for url: https://finance.yahoo.co.jp/quote/%5EN225/history"
+        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=0000"
       ]
     },
     "1306.T": {
@@ -3731,5 +3728,5 @@
       "reason": "Acquisition by another company(Share consolidation)"
     }
   },
-  "error": "RuntimeError: Expected 2026-10-09; incomplete symbols: ['^N225']"
+  "summaries": 0
 }
