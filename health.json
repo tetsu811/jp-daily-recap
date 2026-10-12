@@ -1,12 +1,14 @@
 {
-  "checked_at": "2026-10-13T00:33:27.448697+09:00",
+  "checked_at": "2026-10-13T00:38:49.638999+09:00",
   "expected_session": "2026-10-09",
-  "status": "ok",
+  "status": "error",
   "expected": 458,
   "available": 458,
   "missing": [],
   "stale": [],
-  "problems": [],
+  "problems": [
+    "^N225"
+  ],
   "observations": {
     "2502.T": "2026-10-09",
     "2503.T": "2026-10-09",
@@ -468,8 +470,8 @@
     "3284.T": "2026-10-09"
   },
   "sources": {
-    "Yahoo Finance": 458,
-    "Kabutan": 3
+    "Yahoo Finance": 459,
+    "Yahoo Japan": 2
   },
   "details": {
     "2502.T": {
@@ -1426,10 +1428,12 @@
     },
     "7203.T": {
       "date": "2026-10-09",
-      "source": "Kabutan",
+      "source": "Yahoo Japan",
       "status": "ok",
       "bars": 149,
-      "errors": []
+      "errors": [
+        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=7203"
+      ]
     },
     "7211.T": {
       "date": "2026-10-09",
@@ -2021,10 +2025,12 @@
     },
     "6758.T": {
       "date": "2026-10-09",
-      "source": "Kabutan",
+      "source": "Yahoo Japan",
       "status": "ok",
       "bars": 149,
-      "errors": []
+      "errors": [
+        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=6758"
+      ]
     },
     "6762.T": {
       "date": "2026-10-09",
@@ -3680,10 +3686,13 @@
     },
     "^N225": {
       "date": "2026-10-09",
-      "source": "Kabutan",
-      "status": "ok",
+      "source": "Yahoo Finance",
+      "status": "unavailable",
       "bars": 149,
-      "errors": []
+      "errors": [
+        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=0000",
+        "Yahoo Japan: HTTPError: 404 Client Error: Not Found for url: https://finance.yahoo.co.jp/quote/%5EN225/history"
+      ]
     },
     "1306.T": {
       "date": "2026-10-09",
@@ -3722,5 +3731,5 @@
       "reason": "Acquisition by another company(Share consolidation)"
     }
   },
-  "summaries": 0
+  "error": "RuntimeError: Expected 2026-10-09; incomplete symbols: ['^N225']"
 }
