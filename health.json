@@ -1,13 +1,12 @@
 {
-  "checked_at": "2026-10-09T23:22:31.475977+09:00",
-  "expected": 462,
-  "available": 462,
+  "checked_at": "2026-10-13T00:33:27.448697+09:00",
+  "expected_session": "2026-10-09",
+  "status": "ok",
+  "expected": 458,
+  "available": 458,
   "missing": [],
-  "stale": [
-    "5202.T",
-    "7240.T",
-    "6486.T"
-  ],
+  "stale": [],
+  "problems": [],
   "observations": {
     "2502.T": "2026-10-09",
     "2503.T": "2026-10-09",
@@ -64,7 +63,6 @@
     "5938.T": "2026-10-09",
     "5333.T": "2026-10-09",
     "5201.T": "2026-10-09",
-    "5202.T": "2026-09-30",
     "5214.T": "2026-10-09",
     "5301.T": "2026-10-09",
     "1951.T": "2026-10-09",
@@ -158,7 +156,6 @@
     "7276.T": "2026-10-09",
     "7282.T": "2026-10-09",
     "3116.T": "2026-10-09",
-    "7240.T": "2026-09-30",
     "7238.T": "2026-10-09",
     "5108.T": "2026-10-09",
     "5101.T": "2026-10-09",
@@ -216,7 +213,6 @@
     "6315.T": "2026-10-09",
     "6235.T": "2026-10-09",
     "6432.T": "2026-10-09",
-    "6486.T": "2026-09-30",
     "6488.T": "2026-10-09",
     "6498.T": "2026-10-09",
     "6383.T": "2026-10-09",
@@ -313,7 +309,6 @@
     "9505.T": "2026-10-09",
     "9506.T": "2026-10-09",
     "9507.T": "2026-10-09",
-    "9508.T": "2026-10-08",
     "9509.T": "2026-10-09",
     "9513.T": "2026-10-09",
     "9531.T": "2026-10-09",
@@ -471,6 +466,3261 @@
     "8995.T": "2026-10-09",
     "3236.T": "2026-10-09",
     "3284.T": "2026-10-09"
+  },
+  "sources": {
+    "Yahoo Finance": 458,
+    "Kabutan": 3
+  },
+  "details": {
+    "2502.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2503.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2501.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2801.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2802.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2897.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2269.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2267.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2264.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2270.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2201.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2206.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2212.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2229.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2282.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2593.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2607.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2002.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2875.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2871.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2531.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1333.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2809.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2810.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2811.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2914.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2587.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2613.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1379.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2222.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2208.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2204.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1605.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5019.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5020.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5021.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1662.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1518.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1801.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1802.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1803.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1812.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1808.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1820.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5076.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1925.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1928.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1911.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1963.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5232.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5233.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5332.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5938.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5333.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5201.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5214.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5301.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1951.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1878.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1893.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5334.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1860.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1944.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1721.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1417.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5210.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1942.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1719.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1939.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3401.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3402.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3405.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3407.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4004.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4005.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4021.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4042.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4061.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4063.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4091.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4183.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4188.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4202.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4203.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4204.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4205.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4208.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4182.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4272.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4401.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4403.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4452.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4612.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4613.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4631.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4911.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4912.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4919.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4922.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4927.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4901.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4902.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6988.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4118.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4088.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4045.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4928.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4097.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4216.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4970.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4527.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4980.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4634.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3863.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3861.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3865.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4502.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4503.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4506.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4507.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4519.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4523.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4528.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4536.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4540.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4543.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4544.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4568.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4578.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4151.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4587.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4574.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4565.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4549.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7201.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7202.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7203.T": {
+      "date": "2026-10-09",
+      "source": "Kabutan",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7211.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7259.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7261.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7267.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7269.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7270.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7272.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6902.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7276.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7282.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3116.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7238.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5108.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5101.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5110.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7012.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7003.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7199.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6995.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5401.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5411.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5406.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5423.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5471.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5482.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5541.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5631.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5706.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5711.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5713.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5714.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5801.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5802.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5803.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5741.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5393.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5715.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5563.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5707.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5805.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6103.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6113.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6135.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6141.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6146.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6273.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6301.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6302.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6305.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6326.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6361.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6367.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6465.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6471.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6472.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6473.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6481.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6586.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6954.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6005.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6268.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6324.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7011.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7013.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9962.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6315.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6235.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6432.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6488.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6498.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6383.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6457.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6448.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6371.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6444.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6501.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6503.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6504.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6506.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6594.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6701.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6702.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6724.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6752.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6758.T": {
+      "date": "2026-10-09",
+      "source": "Kabutan",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6762.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6770.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6841.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6857.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6861.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6869.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6920.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6963.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6971.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6976.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6981.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7731.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7733.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7735.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7741.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7751.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7752.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8035.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6727.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6723.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7912.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7911.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6645.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6951.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6804.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6806.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6807.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6855.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6890.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6907.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6925.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6996.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6997.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6479.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6753.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6754.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9432.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9433.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9434.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9984.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4307.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4684.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4689.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4704.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4716.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4751.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4755.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3659.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3765.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4324.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4385.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2371.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2413.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2432.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2121.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4776.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "6532.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9449.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7974.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7832.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9697.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9684.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3697.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3692.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3656.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3623.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4477.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "4480.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9418.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9436.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9468.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2127.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9501.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9502.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9503.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9504.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9505.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9506.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9507.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9509.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9513.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9531.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9532.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9533.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9514.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9534.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9535.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9536.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9001.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9005.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9007.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9008.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9009.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9020.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9021.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9022.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9041.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9042.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9045.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9048.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9064.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9101.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9104.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9107.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9147.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9201.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9202.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9301.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9023.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9069.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9075.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9081.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9006.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9143.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9362.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8001.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8002.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8015.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8031.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8053.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8058.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2768.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8020.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3105.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8060.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8113.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3107.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8074.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8075.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8088.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8133.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3086.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3099.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3382.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8252.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8233.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8267.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3391.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3349.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3088.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9843.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9831.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3048.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3197.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3543.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7550.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9861.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9983.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8227.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7453.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3092.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2670.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "2730.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8273.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7532.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3563.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3097.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7611.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8005.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8043.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8174.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3148.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3091.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "9989.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8194.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8306.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8316.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8411.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7186.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8303.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8308.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8331.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5831.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8354.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8358.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8359.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8366.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8377.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7337.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8418.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8473.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8570.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8572.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8591.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7182.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "7181.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8304.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8334.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8336.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8337.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8341.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8344.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8360.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8367.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "5832.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8601.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8604.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8697.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8725.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8750.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8766.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8795.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8630.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8424.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8425.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8439.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8566.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8585.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8593.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8595.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8616.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8628.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8698.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8783.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8771.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8801.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8802.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8804.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8830.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3289.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3231.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3003.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3288.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8848.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8892.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3291.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3252.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3290.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3471.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8929.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8934.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8975.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8985.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "8995.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3236.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "3284.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "^N225": {
+      "date": "2026-10-09",
+      "source": "Kabutan",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1306.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    },
+    "1305.T": {
+      "date": "2026-10-09",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 149,
+      "errors": []
+    }
+  },
+  "excluded_delisted": {
+    "6486.T": {
+      "date": "2026-09-29",
+      "name": "EAGLE INDUSTRY CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of NOK Group Corporation (Stock Transfer)"
+    },
+    "7240.T": {
+      "date": "2026-09-29",
+      "name": "NOK CORPORATION",
+      "reason": "Becoming a wholly owned subsidiary of NOK Group Corporation (Stock Transfer)"
+    },
+    "9508.T": {
+      "date": "2026-09-29",
+      "name": "Kyushu Electric Power Company,Incorporated",
+      "reason": "Becoming a wholly owned subsidiary of KYUDEN Holdings Inc. (Stock Transfer)"
+    },
+    "5202.T": {
+      "date": "2026-09-28",
+      "name": "Nippon Sheet Glass Company,Limited",
+      "reason": "Acquisition by another company(Share consolidation)"
+    }
   },
   "summaries": 0
 }

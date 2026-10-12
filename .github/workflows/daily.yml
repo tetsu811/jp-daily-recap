@@ -2,9 +2,14 @@ name: Daily JP Market Recap
 
 on:
   schedule:
-    # 日股 15:30 JST 收盤後,16:00 JST 跑批(給 yfinance 30分鐘資料結算時間) = 07:00 UTC
-    - cron: '17 7,10 * * 1-5'
+    # UTC: after Tokyo close, then retries; weekend/holiday runs verify status too.
+    - cron: '23 7,9,12,15,23 * * *'
   workflow_dispatch:
+    inputs:
+      force_backup:
+        description: 'Exercise Kabutan failover for Toyota, Sony and Nikkei'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -16,40 +21,52 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
-
       - name: Install deps
         run: pip install -r requirements.txt
-
-      - name: Generate dashboard
+      - name: Validate date and source handling
+        run: python -m pytest -q
+      - name: Generate dashboard with retries
+        id: generate
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python generate_jp.py
-
-      - name: Commit & push if changed
+          JP_FORCE_BACKUP: ${{ inputs.force_backup && '7203.T,6758.T,^N225' || '' }}
+        run: |
+          for attempt in 1 2 3; do
+            if python -u generate_jp.py; then exit 0; fi
+            if [ "$attempt" -lt 3 ]; then sleep 60; fi
+          done
+          exit 1
+      - name: Commit data and health, including failures
+        if: always() && steps.generate.outcome != 'skipped'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add jp_dashboard.html jp_dashboard_embed.html health.json
-          if git diff --cached --quiet; then
-            echo "No changes."
-          else
-            git commit -m "Daily recap $(date -u +'%Y-%m-%d')"
+          for file in market_cache.json.gz listing_status.json market_caps.json news_cache.json; do
+            if [ -f "$file" ]; then git add "$file"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Japanese dated market data and health"
             git pull --rebase --autostash origin main
             git push
           fi
-
-      # WP page 2716 is now a static iframe pointing to GitHub Pages URL.
-      # Content updates happen via the Pages deploy below, so no more WP REST push.
+      - name: Signal an unsuccessful refresh
+        if: steps.generate.outcome == 'failure'
+        run: exit 1
 
   deploy-pages:
     needs: generate
+    if: always() && !cancelled()
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -62,13 +79,13 @@ jobs:
         with:
           ref: main
       - uses: actions/configure-pages@v5
-      - name: Build pages artifact (dashboard only)
+      - name: Build pages artifact
         run: |
           mkdir -p _site
-          cp health.json _site/health.json
+          cp health.json freshness.js _site/
           cp jp_dashboard.html _site/index.html
           cp jp_dashboard.html _site/jp_dashboard.html
-          cp jp_dashboard_embed.html _site/ || true
+          cp jp_dashboard_embed.html _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '_site'

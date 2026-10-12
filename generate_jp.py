@@ -849,13 +849,12 @@ def _index_card_inline(idx):
 
 
 def health_status_html():
-    try:
-        h = json.loads(Path('health.json').read_text())
-        dates = sorted({v for v in h['observations'].values() if v})
-        date_text = ' / '.join(dates) if dates else '無有效資料'
-        return f"<div class='sub' role='status'>個股來源日期：{date_text} ｜ 可用 {h['available']}/{h['expected']} 檔 ｜ 缺資料 {len(h['missing'])} 檔（未列入漲跌計算） ｜ AI 摘要 {h.get('summaries',0)}/17（為 0 時代表分析服務未完成）</div>"
-    except (OSError, ValueError, KeyError):
-        return "<p role='status'>資料品質檢查尚未完成</p>"
+    h = json.loads(Path('health.json').read_text())
+    return (f"<div id='market-health' data-session='{h['expected_session']}' role='status' style='padding:12px;background:#fff3cd;color:#332701'>"
+            f"最新完整交易日 {h['expected_session']} ｜ 行情 {h['available']}/{h['expected']} 檔 ｜ "
+            f"核對時間 {h['checked_at']} ｜ 日線盤後更新</div>"
+            "<script src='freshness.js'></script>")
+
 
 def render_embed(indices, report):
     """嵌入 WordPress 用的版本 — 全 inline style。
@@ -888,7 +887,7 @@ def render_embed(indices, report):
   <div style="{indices_style}">{idx_html}</div>
 </div>
 <div>{sec_html}</div>
-<div style="{footer_style}">資料來源 Yahoo Finance。板塊漲跌 = 該業種成分股等權重日漲幅平均。放量突破 = 量 ≥ 20MA × 2 且收盤創 20 日新高。底部放量 = 放量且距 120 日低點 10% 內。僅供參考,非投資建議。</div>
+<div style="{footer_style}">資料來源 Yahoo Finance／株探／Yahoo Japan（備援）。板塊漲跌 = 該業種成分股等權重日漲幅平均。放量突破 = 量 ≥ 20MA × 2 且收盤創 20 日新高。底部放量 = 放量且距 120 日低點 10% 內。僅供參考,非投資建議。</div>
 </div>"""
 
 
@@ -1214,7 +1213,7 @@ details.stock-row[open] > summary .chev{{transform:rotate(180deg)}}
   {drill_html}
 </div>
 <div class="ft">
-  資料來源：Yahoo Finance (yfinance) + Google News (日本語) + Anthropic Claude  &nbsp;|&nbsp; 僅供研究參考,不構成投資建議  &nbsp;|&nbsp; 產生時間 {gen_ts}
+  資料來源：Yahoo Finance / 株探 / Yahoo Japan + Google News (日本語) + Anthropic Claude  &nbsp;|&nbsp; 僅供研究參考,不構成投資建議  &nbsp;|&nbsp; 產生時間 {gen_ts}
 </div>
 <script>
 function selectSector(sector){{
@@ -1273,21 +1272,33 @@ def main():
     sectors = load_sectors()
     ticker_map = build_ticker_map(sectors)
     print(f"Sectors: {len([k for k in sectors if not k.startswith('_') and k != '指数'])}, tickers: {len(ticker_map)}")
-    idx_data = fetch_indices(sectors.get('指数', []))
-    df = fetch_all(list(ticker_map.keys()))
-    mcap_map = load_market_caps(list(ticker_map.keys()))
-    print(f"Market caps loaded: {len(mcap_map)}/{len(ticker_map)}")
-    report = build_sector_report(ticker_map, df, mcap_map=mcap_map)
-    observations = {}
-    for ticker in ticker_map:
-        metrics = stock_metrics(df, ticker)
-        observations[ticker] = metrics['date'].isoformat() if metrics else None
-    missing = [ticker for ticker, date in observations.items() if not date]
-    stale = [ticker for ticker, date in observations.items() if date and (datetime.now(JST).date() - datetime.fromisoformat(date).date()).days > 5]
-    health = {'checked_at':datetime.now(JST).isoformat(), 'expected':len(ticker_map), 'available':len(ticker_map)-len(missing), 'missing':missing, 'stale':stale, 'observations':observations}
+    from market_data import expected_session, active_tickers, fetch_bars
+    from collections import Counter
+    target = expected_session()
+    ticker_map, excluded = active_tickers(ticker_map, target)
+    index_list = sectors.get('指数', [])
+    symbols = list(ticker_map) + [i['code'] for i in index_list]
+    df, details = fetch_bars(symbols, target)
+    observations = {s:details[s]['date'] for s in ticker_map}
+    missing = [s for s in ticker_map if not observations[s]]
+    stale = [s for s in ticker_map if details[s]['status'] != 'ok']
+    problems = [s for s in details if details[s]['status'] != 'ok']
+    health = {'checked_at':datetime.now(JST).isoformat(), 'expected_session':target,
+              'status':'error' if problems else 'ok', 'expected':len(ticker_map),
+              'available':len(ticker_map)-len(stale), 'missing':missing, 'stale':stale,
+              'problems':problems, 'observations':observations, 'sources':dict(Counter(d['source'] for d in details.values())),
+              'details':details, 'excluded_delisted':excluded}
     Path('health.json').write_text(json.dumps(health, ensure_ascii=False, indent=2))
-    if not idx_data or len(missing) > len(ticker_map)*0.1 or len(stale) > len(ticker_map)*0.1:
-        raise RuntimeError('Market data incomplete or stale; previous published dashboard retained')
+    if problems:
+        raise RuntimeError(f'Expected {target}; incomplete symbols: {problems}')
+    idx_data = []
+    for item in index_list:
+        hist = df[item['code']].dropna(subset=['Close'])
+        last, prev = hist['Close'].iloc[-1], hist['Close'].iloc[-2]
+        idx_data.append({'code':item['code'], 'name':item['name'], 'close':float(last),
+                         'chg':float((last/prev-1)*100), 'date':hist.index[-1].date()})
+    mcap_map = load_market_caps(list(ticker_map))
+    report = build_sector_report(ticker_map, df, mcap_map=mcap_map)
     # #4 — alpha vs TOPIX (use TOPIX 1306 ETF as benchmark)
     topix = next((i for i in idx_data if 'TOPIX (1306)' in i.get('name', '')), None)
     topix_chg = topix['chg'] if topix else None
@@ -1332,4 +1343,15 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as exc:
+        path = HERE / 'health.json'
+        try:
+            health = json.loads(path.read_text())
+        except (OSError, ValueError):
+            health = {}
+        health.update(status='error', checked_at=datetime.now(JST).isoformat(),
+                      error=f'{type(exc).__name__}: {str(exc)[:400]}')
+        path.write_text(json.dumps(health, ensure_ascii=False, indent=2))
+        raise

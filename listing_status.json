@@ -1,0 +1,696 @@
+{
+  "checked_at": "2026-10-12T15:33:14.607437+00:00",
+  "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
+  "delisted": {
+    "2388.T": {
+      "date": "2027-04-01",
+      "name": "Wedge Holdings CO.,LTD.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "8254.T": {
+      "date": "2027-03-01",
+      "name": "Saikaya Department Store Co.,Ltd.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "4760.T": {
+      "date": "2027-03-01",
+      "name": "ALPHA CO.,LTD.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "1382.T": {
+      "date": "2027-01-01",
+      "name": "HOB Co.,Ltd.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "8141.T": {
+      "date": "2026-10-29",
+      "name": "Shinko Shoji Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "5484.T": {
+      "date": "2026-10-19",
+      "name": "Tohoku Steel Co.,Ltd.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "7183.T": {
+      "date": "2026-10-09",
+      "name": "Anshin Guarantor Service Co.,Ltd.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "7490.T": {
+      "date": "2026-10-09",
+      "name": "NISSIN SHOJI CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "9691.T": {
+      "date": "2026-10-09",
+      "name": "RYOMO SYSTEMS CO.,LTD.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "3787.T": {
+      "date": "2026-10-01",
+      "name": "Techno Mathematical Co.,Ltd.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "6147.T": {
+      "date": "2026-10-01",
+      "name": "YAMAZAKI CO.,LTD.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "7851.T": {
+      "date": "2026-10-01",
+      "name": "KAWASE COMPUTER SUPPLIES CO.,LTD.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "3670.T": {
+      "date": "2026-10-01",
+      "name": "Kyoritsu Computer & Communication Co.,Ltd.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "7709.T": {
+      "date": "2026-10-01",
+      "name": "KUBOTEK CORPORATION",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "7985.T": {
+      "date": "2026-10-01",
+      "name": "NEPON Inc.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "7946.T": {
+      "date": "2026-10-01",
+      "name": "KOYOSHA INC.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "7255.T": {
+      "date": "2026-10-01",
+      "name": "SAKURAI LTD.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "4316.T": {
+      "date": "2026-10-01",
+      "name": "BeMap,Inc.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "7082.T": {
+      "date": "2026-09-29",
+      "name": "Jimoty,Inc.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "6486.T": {
+      "date": "2026-09-29",
+      "name": "EAGLE INDUSTRY CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of NOK Group Corporation (Stock Transfer)"
+    },
+    "7240.T": {
+      "date": "2026-09-29",
+      "name": "NOK CORPORATION",
+      "reason": "Becoming a wholly owned subsidiary of NOK Group Corporation (Stock Transfer)"
+    },
+    "9223.T": {
+      "date": "2026-09-29",
+      "name": "ASNOVA Co.,Ltd.",
+      "reason": "Becoming a wholly owned subsidiary of ASNOVA Companies Inc. (Stock Transfer)"
+    },
+    "9508.T": {
+      "date": "2026-09-29",
+      "name": "Kyushu Electric Power Company,Incorporated",
+      "reason": "Becoming a wholly owned subsidiary of KYUDEN Holdings Inc. (Stock Transfer)"
+    },
+    "7426.T": {
+      "date": "2026-09-28",
+      "name": "Yamadai Corporation",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "5202.T": {
+      "date": "2026-09-28",
+      "name": "Nippon Sheet Glass Company,Limited",
+      "reason": "Acquisition by another company(Share consolidation)"
+    },
+    "4800.T": {
+      "date": "2026-09-28",
+      "name": "Oricon Inc.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "3856.T": {
+      "date": "2026-09-26",
+      "name": "Abalance Corporation",
+      "reason": "Prior to the submission of the Written Confirmation of Internal Management System, the Exchange deems that the internal management system, etc. is no longer likely to be adequately developed or that it is no longer likely to be adequately implemented."
+    },
+    "1948.T": {
+      "date": "2026-09-25",
+      "name": "The Kodensha,Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "9914.T": {
+      "date": "2026-09-21",
+      "name": "Uematsu Shokai Co.,Ltd.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "2180.T": {
+      "date": "2026-09-16",
+      "name": "SUNNY SIDE UP GROUP Inc.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "1909.T": {
+      "date": "2026-09-14",
+      "name": "Nippon Dry-Chemical CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "3480.T": {
+      "date": "2026-09-02",
+      "name": "J.S.B.Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "3079.T": {
+      "date": "2026-08-28",
+      "name": "DVx Inc.",
+      "reason": "Becoming a wholly owned subsidiary of OLBA DVx HEALTHCARE,Inc.(Stock Swap)"
+    },
+    "5660.T": {
+      "date": "2026-08-28",
+      "name": "KOBELCO WIRE COMPANY,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of Kobe Steel,Ltd.(Stock Swap)"
+    },
+    "2162.T": {
+      "date": "2026-08-28",
+      "name": "nms Holdings Corporation",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "5103.T": {
+      "date": "2026-08-25",
+      "name": "Showa Holdings Co.,Ltd.",
+      "reason": "The Exchange deems that the internal management system, etc. of the company is unlikely to be adequately developed or unlikely to be adequately implemented"
+    },
+    "4171.T": {
+      "date": "2026-08-13",
+      "name": "Global Information,Inc.",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "8283.T": {
+      "date": "2026-08-10",
+      "name": "PALTAC CORPORATION",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "6197.T": {
+      "date": "2026-08-06",
+      "name": "Solasto Corporation",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "2763.T": {
+      "date": "2026-07-30",
+      "name": "FTGroup CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of HIKARI TSUSHIN,INC.(Stock Swap)"
+    },
+    "4367.T": {
+      "date": "2026-07-30",
+      "name": "KOEI CHEMICAL COMPANY,LIMITED",
+      "reason": "Becoming a wholly owned subsidiary of SUMITOMO CHEMICAL COMPANY,LIMITED(Stock Swap)"
+    },
+    "6096.T": {
+      "date": "2026-07-29",
+      "name": "RareJob,Inc.",
+      "reason": "Becoming a wholly owned subsidiary of GAKKEN HOLDINGS CO.,LTD.(Stock Swap)"
+    },
+    "3271.T": {
+      "date": "2026-07-28",
+      "name": "The Global Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "5903.T": {
+      "date": "2026-07-22",
+      "name": "SHINPO CO.,LTD.",
+      "reason": "MBO(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "7317.T": {
+      "date": "2026-07-17",
+      "name": "Matsuya R&D Co.,Ltd",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "7940.T": {
+      "date": "2026-07-09",
+      "name": "WAVELOCK HOLDINGS CO.,LTD.",
+      "reason": "Acquisition by another company(Share consolidation)"
+    },
+    "3681.T": {
+      "date": "2026-07-01",
+      "name": "V-cube,Inc.",
+      "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "3198.T": {
+      "date": "2026-06-29",
+      "name": "SFP Holdings Co.,Ltd.",
+      "reason": "Merging with create restaurants holdings inc.(Corporate Merger)"
+    },
+    "8289.T": {
+      "date": "2026-06-29",
+      "name": "Olympic Group Corporation",
+      "reason": "Becoming a wholly owned subsidiary of Pan Pacific International Holdings Corporation(Stock Swap)"
+    },
+    "4449.T": {
+      "date": "2026-06-29",
+      "name": "giftee Inc.",
+      "reason": "Becoming a wholly owned subsidiary of giftee Group,Inc.(Stock Transfer)"
+    },
+    "3546.T": {
+      "date": "2026-06-26",
+      "name": "Alleanza Holdings Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "4494.T": {
+      "date": "2026-06-26",
+      "name": "Vario Secure Inc.",
+      "reason": "Becoming a wholly owned subsidiary of HEROZ,Inc.(Stock Swap)"
+    },
+    "5856.T": {
+      "date": "2026-06-26",
+      "name": "Life Intelligent Enterprise Holdings Co.,Ltd.",
+      "reason": "The Exchange deems that the company's internal management system, etc. is not adequately developed or that it is no longer likely to be adequately implemented upon reviewing a Written Confirmation of Internal Management System submitted by the company"
+    },
+    "7922.T": {
+      "date": "2026-06-25",
+      "name": "SANKO SANGYO CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "6403.T": {
+      "date": "2026-06-24",
+      "name": "SUIDO KIKO KAISHA,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "2686.T": {
+      "date": "2026-06-23",
+      "name": "GFOOT CO.,LTD.",
+      "reason": "Acquisition by controlling shareholder, etc.(Share consolidation)"
+    },
+    "9927.T": {
+      "date": "2026-06-19",
+      "name": "WATT MANN CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "4659.T": {
+      "date": "2026-06-19",
+      "name": "AJIS CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "2540.T": {
+      "date": "2026-06-18",
+      "name": "YOMEISHU SEIZO CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "9338.T": {
+      "date": "2026-06-16",
+      "name": "INFORICH INC.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "6670.T": {
+      "date": "2026-06-16",
+      "name": "MCJ Co.,Ltd.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "3294.T": {
+      "date": "2026-06-15",
+      "name": "e'grand Co.,Ltd",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "4974.T": {
+      "date": "2026-06-12",
+      "name": "TAKARA BIO INC.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "4556.T": {
+      "date": "2026-06-11",
+      "name": "KAINOS Laboratories,Inc.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "7229.T": {
+      "date": "2026-06-10",
+      "name": "YUTAKA GIKEN CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "7999.T": {
+      "date": "2026-06-10",
+      "name": "MUTOH HOLDINGS CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "9067.T": {
+      "date": "2026-06-04",
+      "name": "MARUWN CORPORATION",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "6201.T": {
+      "date": "2026-06-01",
+      "name": "TOYOTA INDUSTRIES CORPORATION",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "1726.T": {
+      "date": "2026-06-01",
+      "name": "Br.Holdings Corporation",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "6173.T": {
+      "date": "2026-06-01",
+      "name": "Aqualine Ltd.",
+      "reason": "The Exchange deems that the company's internal management system, etc. is not adequately developed or that it is no longer likely to be adequately implemented upon reviewing a Written Confirmation of Internal Management System submitted by the company"
+    },
+    "4384.T": {
+      "date": "2026-05-29",
+      "name": "RAKSUL INC.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "1776.T": {
+      "date": "2026-05-29",
+      "name": "SUMIKEN MITSUI ROAD CO., LTD.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "5727.T": {
+      "date": "2026-05-28",
+      "name": "TOHO TITANIUM COMPANY,LIMITED",
+      "reason": "Becoming a wholly owned subsidiary of JX Advanced Metals Corporation(Stock Swap)"
+    },
+    "6489.T": {
+      "date": "2026-05-28",
+      "name": "Maezawa Industries,Inc.",
+      "reason": "Becoming a wholly owned subsidiary of MAEZAWA Holdings CO.,LTD.(Stock Transfer)"
+    },
+    "7925.T": {
+      "date": "2026-05-28",
+      "name": "MAEZAWA KASEI INDUSTRIES CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of MAEZAWA Holdings CO.,LTD.(Stock Transfer)"
+    },
+    "2692.T": {
+      "date": "2026-05-19",
+      "name": "ITOCHU-SHOKUHIN Co.,Ltd.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "6901.T": {
+      "date": "2026-05-15",
+      "name": "SAWAFUJI ELECTRIC CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "3593.T": {
+      "date": "2026-05-15",
+      "name": "HOGY MEDICAL CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "4917.T": {
+      "date": "2026-05-15",
+      "name": "MANDOM CORPORATION",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "7088.T": {
+      "date": "2026-05-13",
+      "name": "Forum Engineering Inc.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "4530.T": {
+      "date": "2026-05-11",
+      "name": "HISAMITSU PHARMACEUTICAL CO.,INC.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "2344.T": {
+      "date": "2026-05-08",
+      "name": "HEIAN CEREMONY SERVICE CO.,LTD.",
+      "reason": "Acquisition by controlling shareholder, etc.(Share consolidation)"
+    },
+    "6565.T": {
+      "date": "2026-05-01",
+      "name": "ABHOTEL CO.,LTD.",
+      "reason": "Delisted based on application"
+    },
+    "5259.T": {
+      "date": "2026-04-28",
+      "name": "BBD Initiative Inc.",
+      "reason": "Merging with Headwaters Co.,Ltd(Corporate Merger)"
+    },
+    "8209.T": {
+      "date": "2026-04-27",
+      "name": "FRIENDLY CORPORATION",
+      "reason": "Acquisition by controlling shareholder, etc.(Share consolidation)"
+    },
+    "7105.T": {
+      "date": "2026-04-27",
+      "name": "Mitsubishi Logisnext Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "3541.T": {
+      "date": "2026-04-27",
+      "name": "Nousouken Corporation",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "3902.T": {
+      "date": "2026-04-24",
+      "name": "Medical Data Vision Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "7739.T": {
+      "date": "2026-04-21",
+      "name": "CANON ELECTRONICS INC.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "7092.T": {
+      "date": "2026-04-20",
+      "name": "Fast Fitness Japan Incorporated",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "4690.T": {
+      "date": "2026-04-15",
+      "name": "NIPPON PALLET POOL CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "202A.T": {
+      "date": "2026-04-14",
+      "name": "MAMEZO CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "7250.T": {
+      "date": "2026-04-13",
+      "name": "PACIFIC INDUSTRIAL CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "7450.T": {
+      "date": "2026-04-01",
+      "name": "SUNDAY CO.,LTD.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "7455.T": {
+      "date": "2026-03-30",
+      "name": "PARIS MIKI HOLDINGS Inc.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "2196.T": {
+      "date": "2026-03-30",
+      "name": "ESCRIT INC.",
+      "reason": "Merging with ON THE PAGE,Inc.(Corporate Merger)"
+    },
+    "5352.T": {
+      "date": "2026-03-30",
+      "name": "KROSAKI HARIMA CORPORATION",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "3924.T": {
+      "date": "2026-03-30",
+      "name": "R&D COMPUTER CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of Toranvia Co.,Ltd.(Stock Transfer)"
+    },
+    "4333.T": {
+      "date": "2026-03-30",
+      "name": "TOHO SYSTEM SCIENCE CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of Toranvia Co.,Ltd.(Stock Transfer)"
+    },
+    "6210.T": {
+      "date": "2026-03-30",
+      "name": "TOYO INNOVEX Co.,Ltd.",
+      "reason": "Becoming a wholly owned subsidiary of GMS Group Co.,Ltd.(Stock Transfer)"
+    },
+    "6293.T": {
+      "date": "2026-03-30",
+      "name": "NISSEI PLASTIC INDUSTRIAL CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of GMS Group Co.,Ltd.(Stock Transfer)"
+    },
+    "7205.T": {
+      "date": "2026-03-30",
+      "name": "HINO MOTORS,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of ARCHION Corporation(Stock Swap)"
+    },
+    "7420.T": {
+      "date": "2026-03-30",
+      "name": "SATORI ELECTRIC CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of MIRAINI HOLDINGS CO.,LTD.(Stock Transfer)"
+    },
+    "7467.T": {
+      "date": "2026-03-30",
+      "name": "HAGIWARA ELECTRIC HOLDINGS CO.,LTD.",
+      "reason": "Becoming a wholly owned subsidiary of MIRAINI HOLDINGS CO.,LTD.(Stock Transfer)"
+    },
+    "8515.T": {
+      "date": "2026-03-30",
+      "name": "AIFUL CORPORATION",
+      "reason": "Becoming a wholly owned subsidiary of Muninova Holdings Inc.(Stock Transfer)"
+    },
+    "1841.T": {
+      "date": "2026-03-27",
+      "name": "SANYU CONSTRUCTION CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "7923.T": {
+      "date": "2026-03-27",
+      "name": "TOIN CORPORATION",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "7116.T": {
+      "date": "2026-03-25",
+      "name": "DAIWA TSUSHIN Co.,Ltd",
+      "reason": "Acquisition by controlling shareholder, etc.(Share consolidation)"
+    },
+    "7635.T": {
+      "date": "2026-03-24",
+      "name": "SUGITA ACE CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "3961.T": {
+      "date": "2026-03-23",
+      "name": "Silver Egg Technology CO.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "6406.T": {
+      "date": "2026-03-23",
+      "name": "FUJITEC CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "6734.T": {
+      "date": "2026-03-23",
+      "name": "Newtech Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "2389.T": {
+      "date": "2026-03-19",
+      "name": "DIGITAL HOLDINGS,INC.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "3655.T": {
+      "date": "2026-03-17",
+      "name": "BrainPad Inc.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "5386.T": {
+      "date": "2026-03-17",
+      "name": "TSURUYA CO.,LTD.",
+      "reason": "Delisted based on application"
+    },
+    "2374.T": {
+      "date": "2026-03-13",
+      "name": "SAINT-CARE HOLDING CORPORATION",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "7718.T": {
+      "date": "2026-03-13",
+      "name": "STAR MICRONICS CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "9719.T": {
+      "date": "2026-03-12",
+      "name": "SCSK Corporation",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "4957.T": {
+      "date": "2026-03-06",
+      "name": "YASUHARA CHEMICAL CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "1949.T": {
+      "date": "2026-03-03",
+      "name": "SUMITOMO DENSETSU CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "3526.T": {
+      "date": "2026-02-26",
+      "name": "ASHIMORI INDUSTRY CO.,LTD.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "9600.T": {
+      "date": "2026-02-26",
+      "name": "I-NET CORP.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "7445.T": {
+      "date": "2026-02-26",
+      "name": "RIGHT ON Co.,Ltd.",
+      "reason": "Becoming a wholly owned subsidiary of WORLD CO.,LTD.(Stock Swap)"
+    },
+    "5596.T": {
+      "date": "2026-02-25",
+      "name": "OutlookConsulting Co.,Ltd.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "9776.T": {
+      "date": "2026-02-16",
+      "name": "SAPPORO CLINICAL LABORATORY INC.",
+      "reason": "Acquisition by another company(Share consolidation)"
+    },
+    "7817.T": {
+      "date": "2026-02-05",
+      "name": "PARAMOUNT BED HOLDINGS CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "5476.T": {
+      "date": "2026-01-29",
+      "name": "Nippon Koshuha Steel Co.,Ltd.",
+      "reason": "Becoming a wholly owned subsidiary of Kobe Steel,Ltd.(Stock Swap)"
+    },
+    "6060.T": {
+      "date": "2026-01-29",
+      "name": "Cocolonet CO., LTD.",
+      "reason": "Becoming a wholly owned subsidiary of SAN HOLDINGS,INC.(Stock Swap)"
+    },
+    "5191.T": {
+      "date": "2026-01-29",
+      "name": "Sumitomo Riko Company Limited",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "4080.T": {
+      "date": "2026-01-28",
+      "name": "TANAKA CHEMICAL CORPORATION",
+      "reason": "Becoming a wholly owned subsidiary of SUMITOMO CHEMICAL COMPANY,LIMITED(Stock Swap)"
+    },
+    "6312.T": {
+      "date": "2026-01-27",
+      "name": "Freund Corporation",
+      "reason": "MBO(TOB,Share consolidation)"
+    },
+    "5017.T": {
+      "date": "2026-01-20",
+      "name": "Fuji Oil Company,Ltd.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "2743.T": {
+      "date": "2026-01-16",
+      "name": "PIXEL COMPANYZ INC.",
+      "reason": "Prior to the submission of the Written Confirmation of Internal Management System, the Exchange deems that the internal management system, etc. is no longer likely to be adequately developed or that it is no longer likely to be adequately implemented."
+    },
+    "6542.T": {
+      "date": "2026-01-14",
+      "name": "Founder's Consultants Holdings Inc.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "176A.T": {
+      "date": "2026-01-14",
+      "name": "Rezil Inc.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "6957.T": {
+      "date": "2026-01-13",
+      "name": "SHIBAURA ELECTRONICS CO.,LTD.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
+    },
+    "4745.T": {
+      "date": "2026-01-08",
+      "name": "Tokyo Individualized Educational Institute,INC.",
+      "reason": "Acquisition by controlling shareholder, etc.(Share consolidation)"
+    },
+    "3094.T": {
+      "date": "2026-01-05",
+      "name": "SUPER VALUE CO.,LTD.",
+      "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    }
+  }
+}
