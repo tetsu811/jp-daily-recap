@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-15T21:42:57.141579+09:00",
+  "checked_at": "2026-10-16T04:14:26.447515+09:00",
   "expected_session": "2026-10-15",
   "status": "ok",
   "expected": 458,
@@ -468,8 +468,8 @@
     "3284.T": "2026-10-15"
   },
   "sources": {
-    "Yahoo Finance": 457,
-    "Yahoo Japan": 4
+    "Yahoo Finance": 458,
+    "cache": 3
   },
   "details": {
     "2502.T": {
@@ -1545,12 +1545,10 @@
     },
     "7003.T": {
       "date": "2026-10-15",
-      "source": "Yahoo Japan",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 152,
-      "errors": [
-        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=7003"
-      ]
+      "errors": []
     },
     "7199.T": {
       "date": "2026-10-15",
@@ -1610,12 +1608,10 @@
     },
     "5541.T": {
       "date": "2026-10-15",
-      "source": "Yahoo Japan",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 152,
-      "errors": [
-        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=5541"
-      ]
+      "errors": []
     },
     "5631.T": {
       "date": "2026-10-15",
@@ -2508,12 +2504,10 @@
     },
     "9418.T": {
       "date": "2026-10-15",
-      "source": "Yahoo Japan",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 152,
-      "errors": [
-        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=9418"
-      ]
+      "errors": []
     },
     "9436.T": {
       "date": "2026-10-15",
@@ -2832,12 +2826,10 @@
     },
     "9362.T": {
       "date": "2026-10-15",
-      "source": "Yahoo Japan",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 152,
-      "errors": [
-        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=9362"
-      ]
+      "errors": []
     },
     "8001.T": {
       "date": "2026-10-15",
@@ -3688,21 +3680,21 @@
     },
     "^N225": {
       "date": "2026-10-15",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 152,
       "errors": []
     },
     "1306.T": {
       "date": "2026-10-15",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 152,
       "errors": []
     },
     "1305.T": {
       "date": "2026-10-15",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 152,
       "errors": []
