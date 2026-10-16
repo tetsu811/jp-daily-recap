@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T21:31:01.816360+09:00",
+  "checked_at": "2026-10-17T03:50:49.566060+09:00",
   "expected_session": "2026-10-16",
   "status": "ok",
   "expected": 458,
@@ -468,7 +468,8 @@
     "3284.T": "2026-10-16"
   },
   "sources": {
-    "Yahoo Finance": 461
+    "Yahoo Finance": 458,
+    "cache": 3
   },
   "details": {
     "2502.T": {
@@ -3679,21 +3680,21 @@
     },
     "^N225": {
       "date": "2026-10-16",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 153,
       "errors": []
     },
     "1306.T": {
       "date": "2026-10-16",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 153,
       "errors": []
     },
     "1305.T": {
       "date": "2026-10-16",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 153,
       "errors": []
