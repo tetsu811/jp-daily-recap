@@ -1,7 +1,35 @@
 {
-  "金融(除く銀行)": [],
+  "金融(除く銀行)": [
+    {
+      "title": "丸三証券(株)【8613】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9WblhDNjhUR2dxSzl1a0U2RzRNM3JpbzNuMlN0RXBoM2N6UXdhb3pqTW5QUTFCOTNsWkpMNkhOVnJycnlhMGJhOTRzR1VHUTdVWWc?oc=5",
+      "date": "2026-10-17"
+    }
+  ],
   "情報通信・サービスその他": [],
+  "銀行": [
+    {
+      "title": "UBS、スイス脱出の切り札 メガバンク・野村は統合相手の伏兵か",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBkWmRWbGE5TkxlRDJRZXZpMTIxMlhwTDZpOUt0ZWRSS2hVLWFKckZYeEJHUmh2bFVQcTF3dWs3bWo1VmlUbGI3UllDVlBsNk41cjZHTFhHZVRhYl9BNnpPOTJiYmZZOWhwRG9OZQ?oc=5",
+      "date": "2026-10-18"
+    },
+    {
+      "title": "混み合う銀行株 次の主役は?｜Newsモーニングサテライト（モーサテ）",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBhclBVT2hvX1dYQTdtb1lDZzhWM3FHekRZT2lIMkVRczZyM1ZMOXdOcjVydGk3V3hSeWhzLWxmT3RBY3kyNGxVY1NDU3R5ZjkzRHJuQXZmSEdEZklM?oc=5",
+      "date": "2026-10-17"
+    },
+    {
+      "title": "混み合う銀行株 次の主役は?【プロの眼】",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lT2NrMmtMS0hmc0w5S3ZsUUxLQ2pQZ0V5VmtHb0drU2RaMTNST1NGWEQ5aHpWczNFaWh2YkVrXzhZRlpUb3Vsdk0wcVlTeEVkTWhteDNWa2hiYzVabXM0MQ?oc=5",
+      "date": "2026-10-18"
+    }
+  ],
   "電機・精密": [
+    {
+      "title": "米半導体株が全面安、SOX指数は2008年以来最長の8日連続安 執筆 - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XcUEtQjVLYnAyZ0FVVFNmakJKM2lEVzVxclBkNnllaHpVOGllUnI3OVVRVTl1dDZhalhMdmI4NVozckRTdjNYS0N5d3YtX0NNSk5WTFNsbnRMYW1VSmJMRmE2MnhTMGdQY0gwOFE1aXM?oc=5",
+      "date": "2026-10-17"
+    },
     {
       "title": "「嫌な下げ方」をしている半導体株｜池田伸太郎",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tTkY1emRETENVNXYySFBNb19vYUFtN0tObUZyUmJHRU9ENW9DVnBoMzNWWXlBNnVaUzN0eTNqQVN2dzdjV1gxZHJRMmRkS2loTkE?oc=5",
@@ -11,54 +39,28 @@
       "title": "米半導体株が異例の急落、空売り勢は7営業日で320億ドルの含み益",
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAtUUNKY1hLaHlNWkRyX0I4bkR3YkZoenYwQ3hVYmRKNHVwdHJvSVVyWmtMTFNRWl9qMHF5YVYwQzlBX0ZwRUs2eEkzYTlCZzlJUU4xSzc3Rkw0cTViaGVCNzd1MU9SX0lWZGhDejQwQU9Jd0ZY?oc=5",
       "date": "2026-10-17"
+    }
+  ],
+  "不動産": [
+    {
+      "title": "【ＲＥＩＴ高配当利回り】ランキング (10月16日現在)(株探ニュース)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMGQyeFZwcElYUE5YN3V0MFZ0Sk5LbFZLRFZsUTlxcWVZVHp3V2FBMTU0U2p2aGVrM0hwUmszdS1PV1lDVktONEc0ZXNqbjNNNEpvMWtFQl9FMVV5NnR5T3NYUTNVVDVvYzdHWHM5TGJGa00yb2tpdXQ0b01ISGlmYWhEbFJrRTA?oc=5",
+      "date": "2026-10-18"
     },
     {
-      "title": "《資産2.7億円・おけいどん氏が注目》半導体・AIの“メガ潮流”に乗る「まだまだ成長期待」のお宝株3選 世界トップシェアの製造装置メーカー、材料メーカー、国策銘柄が揃い踏み",
-      "link": "https://news.google.com/rss/articles/CBMiswhBVV95cUxQOXJITXc3UHd6cktUX0M3WWY1ZXhJTnFMSUVFUTBiSU5pNkNLV09Jb0JWMGFUc0p6NHJCczN3QVhvTHFLRHk5OFh1Q1lOY1Q5RktiR1phaWNsZlBId2o5VHA1NGRuZ2ZvQlBPclotcUdpOGIwblJIQlowc3dycG13X1BxMW9pRXVWQjFmbExkT3lCbGsxYXhZNVd2cGk2STF4ZjhyWFZ3Z2FHMEFhWC05aFVyOExqR1lxdEdBRXp1dlNhTEhQYzZVclZrQUlGQ2tGUktWVVpzd2ZiV3pZODdsbXdvb3BJUEFKdGNEYXI4aTlSYl9QMDdDV211MGhELTBkMU5WZGF6Tm94WnFLdXY2RXNCcjA0eXFValRXNTY1NjNOcjc5Q3liSTB0dFpRVzh2eVR4VzZVNEJkcnlGVktFVVVvdFFXeXAxaUlaelVQa0M0NmlhcWR6am5scE54ZkpCOWw0WXNOMlNvTDV0LVNheEpUa2w1b0tZc3l1SU1Sai16UEFTX1E5MHpwQWl1YjlNX3NNa1QzangxRTB2WV9xWW1abENLREhnRjJrZWFzcHJKWVBkVUZ6aGd0TDR1T241d2J4ZUpIY3J4dTlXYVYtSzVsSUQ2eUw2VWZUYzBtMDM3YktBbTU2cG4wRXBLajNWd3oydEE5Z0tIVmF6d0ZKLUhiZVR1SUFIT0lTcUVuZWhMZ0dtSHRKNUNIQ0lVTjRndFEtczBnUDZ3NWplSFFpVnpwQTJDS3VIUmFWVW1QeGxRWTQ0c0FnWmJUYzJCRUFOQzM2bURLNHI5bHRXZmVBQkdPcFR3OHI0YTBDRnAxYm01OGpRRzdlR2pXaFJHdzR1ZzRQdUk3ZmRqOXVzczdtU1RsNzNCTktJSTFQMVlFUEd2a0FrQXlXZnk2Q2RnUzJWTlpCVG1pREQ4SFgwa1I0MlUtUUplYjVTbktCVndQVThVeVV4OXJEdU90dGtvSWliQXBHZmI4VUdNZW5sU3hKLVVjVm1tYmM3WU9heDdnQlVkUVFhak9jVHJxZEJrbWtDWTROSWMwZnhPMmJXYTQ1aG43RERvMVRreWNuYms0Z3luZFUwUDduZ1NaMVI4dnRQdVA4bnZJbS12dUhwWlg4RlFvZEpERXNsTENwOG9PM0lRWm9vSTdNbWNYMWZ6UC1kUGJwS3ZvVEk0T0l1cG1pcHJyU3VKQUp4S3dzMmUtV0hYOFhXemgzNHdpcXlfWnl6WkhCUmN2UzdUdXlieDRNdmViR0tQSHhucWxnSnBZN0VpU3FaWW4zeVgyOWcyNWN5aGZDbXo3azdPZDJJS3ZtU2x2WTA0S3VNOTllcGx1cmE1bmp5bHRDdWhlOGd3Q1dzYWJiZndkNElIbjBFSmVReU9YSlluVmQ3bTZrZ1JkRWJjZUs5NVJid3ZpU0I1b0xpSGJv?oc=5",
+      "title": "【ＲＥＩＴ高配当利回り】ランキング (10月16日現在)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE91T21iTTN5TE1HTWd4NGl1bGV4Q3pQN195d1l4clRxUXlpa2VwdGcyejBlTDRfVlZFNy0wVTkwMDZmSWJDYkV6aWx4NzA2UWxQVzZTSFpsNzFHeXBhMk5tLQ?oc=5",
+      "date": "2026-10-18"
+    },
+    {
+      "title": "長期インフレ時代が到来！「外国株式・外国REIT」保有が強い対策になる理由",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtN3JYQ0x6Y0I0NVlBbjNxVVBHbXdhUDM2YU5DY0ZZQkgxOTRzUW8wdFM5bjlRb1Y1SUVDczZiTWxTdEtJSl9GcEFWUy0tb09ER2IySXJEUUxmQQ?oc=5",
       "date": "2026-10-17"
     }
   ],
-  "銀行": [
-    {
-      "title": "混み合う銀行株 次の主役は?｜Newsモーニングサテライト（モーサテ）",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBhclBVT2hvX1dYQTdtb1lDZzhWM3FHekRZT2lIMkVRczZyM1ZMOXdOcjVydGk3V3hSeWhzLWxmT3RBY3kyNGxVY1NDU3R5ZjkzRHJuQXZmSEdEZklM?oc=5",
-      "date": "2026-10-17"
-    },
-    {
-      "title": "日本のメガバンク3行、円連動ステーブルコインの共同実証実験を完了",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1rcnFqbTlqdlJJT1ZMLUllY3dSanBpaDRwTEk0WlJFVHl3bEF0M3lHXzBwVGh0UkJMRHhCd0RWVGF5X1lSU25wc0x3Vlh5NGY3YXhTRE5KYXZKZVZfS0FacU5qVlgxazJzVDVCS1JiZkNMTTFJ?oc=5",
-      "date": "2026-10-17"
-    },
-    {
-      "title": "3メガバンク共同発行ステーブルコイン、実証完了──JPYC・JPYSCとどう違う？",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBqLVNRaHVVd20yeTdBY29xeGZWSHI0U0g0Y0hnai1xQUdKTzEySGRjd2ZTOUFqSF84Q1lsd0Vxb0tSTm0xSmpYZmttTE13ZGw4d2NLeEQ2YjByUEJZSkhVejlCSklCcjNMdnNIQ2FtVWVkSmdNRlg0?oc=5",
-      "date": "2026-10-17"
-    }
-  ],
-  "自動車・輸送機": [],
-  "不動産": [],
-  "機械": [],
   "商社・卸売": [],
-  "建設・資材": [],
-  "素材・化学": [],
-  "エネルギー資源": [
-    {
-      "title": "NY原油、1バレル100ドル超える 供給懸念で約1カ月ぶりの高値",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsZnNvaXBtYUtCbDg4RXNjYVphM3pVNkJiby1TQzBQMWg3Q1REaF9URzlTWmRyUmNqZGlCWHJ1b1Q5clEwRFIwLWg4bE5qZlUtalBlUU1GRFZabzlJTGdpd3BCZUVXZ0U?oc=5",
-      "date": "2026-10-17"
-    },
-    {
-      "title": "トランプ氏、ロシア産原油の新関税発動せず 原油高騰で対ロ融和路線",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DZ0c1Wnh0WThRZmMzcms3NFBtNnEyNUtSVUxnYU90ZWg0NDlWMmk3N1FYdk9lUnJMcHlNeGZPNVdweGNOOGEyMzV6cDVhQW5qVmcydjlnS0tPUU1yMFRqbElRVFlWdEFEU2thNg?oc=5",
-      "date": "2026-10-17"
-    },
-    {
-      "title": "ＷＴＩ原油先物、１か月ぶりに１バレル＝１００ドル突破…供給停滞への懸念強まる",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DYkI5T21ua2tRYjZ3bUNxX1NCcEF1Nlh6amNLUDg4Q3A2cE9HaWJLb1hlSEpOZEZFSzZLLTNSWG53dTQyQmtINC1pQUdRWnE2Z0hKREtwYVBWbVJOMW1VOWNBZUg?oc=5",
-      "date": "2026-10-17"
-    }
-  ],
-  "鉄鋼・非鉄": [],
+  "機械": [],
+  "自動車・輸送機": [],
   "医薬品": [
     {
       "title": "中外製薬(株)【CHGCY】：株価・株式情報",
@@ -66,6 +68,9 @@
       "date": "2026-10-17"
     }
   ],
+  "建設・資材": [],
+  "素材・化学": [],
+  "鉄鋼・非鉄": [],
   "食品": [
     {
       "title": "ハウス食品(株)【2810】：株価・株式情報",
@@ -77,7 +82,7 @@
     {
       "title": "秩父鉄道(株)【9012】：株価・株式情報（夜間PTS含む）",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9XbVNDWDRialdRc0FXdllkVUZNM3lsQTh2UFA0MFVsZWhqU2J5a1AyRHFnZlR6NkRMeTA2X1ZGQUZMbjBuVTUyclFzSm53VXFMWnc?oc=5",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     },
     {
       "title": "「海運王」から「鉄道王」へ…なぜヴァンダービルトは借金まみれの鉄道株を買い進めたのか 赤字の陰に隠れた“マンハッタン直結”の真価",
@@ -85,20 +90,37 @@
       "date": "2026-10-17"
     }
   ],
+  "エネルギー資源": [
+    {
+      "title": "大阪ガス、2030年代に原油使わずナフサ生産 コスト同等に",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VajhQekNGVDZMdDJoRkdsMlRrTFUtRVRZTng5ZlowSVREOFh6Z2dXeXBYOGZEaTdwV2VYM1N4LUJ6bWlYNTdhUGpNZ2hpWEkzNmpwNUZxUEEyQ1lFMmdVTTZXbEZBQ2tSSUoyXw?oc=5",
+      "date": "2026-10-18"
+    },
+    {
+      "title": "フーシ派とサウジアラビア 攻撃応酬で“脱ホルムズ”の原油調達に暗雲か",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0wb0tvOUkyWk9IWE56VE5wZDdYYkltazhPdVdkR0Z5LW5uRS1YSVpnN2VQYnBrak9tYzE5UnZSS0ltczgwUkU3U2EzVjVNZXFTb0F6UndlV2M4ZjdZQ3d0QVlNSUhteGszenY5dGd1clJVNTBZREpOMjh3?oc=5",
+      "date": "2026-10-18"
+    },
+    {
+      "title": "ＷＴＩ原油先物、１か月ぶりに１バレル＝１００ドル突破…供給停滞への懸念強まる",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9DYkI5T21ua2tRYjZ3bUNxX1NCcEF1Nlh6amNLUDg4Q3A2cE9HaWJLb1hlSEpOZEZFSzZLLTNSWG53dTQyQmtINC1pQUdRWnE2Z0hKREtwYVBWbVJOMW1VOWNBZUg?oc=5",
+      "date": "2026-10-17"
+    }
+  ],
   "小売": [
+    {
+      "title": "百貨店アパレル3社の夏商戦、天候不順で不振 9月は秋物好調で売上高増",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5fMWNfTlZadF9HVkdxeThLbDBaY3MyUE15MHFDZ2RtWkp3b3dhME5TMTZCemp3QXhjNk15bGc5RlBhcFFkUlgxaU5CZ0Rfam9GTkI1MVhLSThPMGVNUnM3UU5GaW5zRmdLSXpjNg?oc=5",
+      "date": "2026-10-18"
+    },
+    {
+      "title": "阪急百貨店で阪神Vセールは神戸だけ 地元顧客の強い要望、ご当地球団を応援|社会",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Bb2xiVnNadE1iMTVTWW5pTDE2NnF6UEF5YURsVmJEbzFSU2N0VWx1RFFqZzRsSG5VaVd2cS1iZDVGQVZzX3c5OUZEUloxU0dRUFR3WFlaVk1qMVNic2FiUzhXOEpqOHJlNGppMURR?oc=5",
+      "date": "2026-10-17"
+    },
     {
       "title": "韓国ブランドを伊勢丹・プランタンへ…新世界百貨店、海外進出支援で成果（KOREA WAVE）",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4VzREZ1JnY092V2NxYkRtWTdGdXpZY2Y1bVVIV2c5MXhUR0FtWW81VjJGWnJveVNMYjVsanQyMUphVmlXRTgwYVBoVm94YkhwTUVXM3RIZ2E4Rkw4MDdLSmota2JnMW5oQUxNWlhySlQ1V3hLbVVvcTk4Y2gwNUU?oc=5",
-      "date": "2026-10-17"
-    },
-    {
-      "title": "高島屋が増配、年間44円に　百貨店3社の配当・株主優待を比較",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9zX1R4ZzVFYVpMOURqOXdvdGxZVGpjbEE0dUpEUnJEXzI1OXhlWjZyeUF5cHRhMXBJcnZrQzFubEJ3RE82Z1J2ZHZmY181N2F3WUFHTm5XMktCbEdnOU9pdlBXONIBaEFVX3lxTE5uOHd0Y0c0eWxFWUhhQmIzWG4tTDk1andTa3NwaVlrcGc3QjRDcHFxWjE3aWNvX1h5Sk0yclFZTER6MVcwOVRzanh4bmpHdUpxOHRyeW5fN19saENGTVhTRzNqR05fcXBs?oc=5",
-      "date": "2026-10-17"
-    },
-    {
-      "title": "韓国ブランドを伊勢丹・プランタンへ…新世界百貨店、海外進出支援で成果",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TS3lGOW16dlFDZHpnZ1VMWlQtQzdEb3YwMjBnTHpnUTRCTFNnV1pUQjVzYm5kbklzQ0FLZzdhZXlLWGJzdDRQelBrbDJGb3pSYi16ddIBVEFVX3lxTE9TS3lGOW16dlFDZHpnZ1VMWlQtQzdEb3YwMjBnTHpnUTRCTFNnV1pUQjVzYm5kbklzQ0FLZzdhZXlLWGJzdDRQelBrbDJGb3pSYi16dQ?oc=5",
       "date": "2026-10-17"
     }
   ],
@@ -106,11 +128,6 @@
     {
       "title": "東北電力(株)【TEPCY】：株価・株式情報",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5VczdrYjBCUUZ0ZE8wUDZkNmRreUg2OHF2czg1QzlQd1hvMUVobjlDVzB5Q2VuenFUVHVTWTNNQ2Jqc3JOcjJHb1VIa3FqVEtY?oc=5",
-      "date": "2026-10-17"
-    },
-    {
-      "title": "関西電力(株)【KAEPY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE54bGVvOG1fOG5leWJWM3N4Tkd4MTZScHlsa0VYRzRpVUhZQ0lHOGNtUVFaU1g1XzBxT1RhR0c4TVlKY1VJTGc5R0pXSzJVRE5r?oc=5",
       "date": "2026-10-17"
     }
   ]
