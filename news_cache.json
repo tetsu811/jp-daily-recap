@@ -1,9 +1,56 @@
 {
-  "電気・ガス": [
+  "電気・ガス": [],
+  "不動産": [
     {
-      "title": "関西電力株【9503】：株価・株式情報 Yahoo!ファイナンス および他 2 ページ 個人 Microsoft​ Edge 2023 10 31 22 38 00 Jess Walton (1CWrZmFw72)",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcmdXS2ljRm5VTkIyblItZTB4Umd2X1VIUlZrZ0MxeDVQVmVTXzQtM1NTM2VqckJFU19rWDZyT3dSQklTODVBSV9DU2pVZzRzLTVNSWxKSHhVM054ajZHU0V3dEJxOF9aVmtfdmZvQVNqMmZ3M3o1MEtDaFVRaGJNNzJ3?oc=5",
-      "date": "2026-10-18"
+      "title": "金利上昇に直面するREIT市場 含み益還元と資本効率の向上が必要に",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAzdjZUeW5WR1hwRXByX0tqRFJwbmNQRkFHV2dOMGVPNkcwYzlDQlk2OXBIQjRoOVNjRXhTMUpKZ0EtTUtMRkRYYnJQRmV2SDJFVGJ3OGVidVFJRzlZQzFXTVFwUzM0MDhRSFdRalNSZDVSQTFhWTRKUGVDa0tWdw?oc=5",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "J-REITトピックス",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41V0JLZ0pCeUUyMnVZdnVmY2NacGxqSm1zczZWclhMSkQ5U0RjLXlmbUpkbEs0a0RwZG50TThSRTAtbTZXMWpvNi1yZWtmN0RudkE?oc=5",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Morningstar 日本株式ジェンダー・ダイバーシティ・ティルト指数(除くREIT)の構成銘柄に選定",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MdnhJeThrcUZRNnRUem1mQnF2MWk2bzlXMUtYY2IxZ3JFUVZhS1A3VmxMX0ZtOWZZM3RaWEpxcU1sX1NUX3BfNWJxXzBWdWZndGRKb2VMSjBJQmp6dHl0V2Y1VUxscGVKMXc?oc=5",
+      "date": "2026-10-19"
+    }
+  ],
+  "建設・資材": [
+    {
+      "title": "国内初「森林ファンド」 1000億円投資、金融・商社・ゼネコンが連合",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5FWlA3R0RQaGE2Z0p6OGI4MUJxaHRjeHlZSVpNSmp0TW03M0lzTHh6M3Y4MEdtWVNrM3NuRG9ZdWE0dFJvUlNKY3ljS0h4SWtEZG83TmJPV3UyenY5ci1kYzN3dHBaRkN6cXRLOA?oc=5",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "準大手・中堅ゼネコントップに聞く（5）安藤ハザマ社長・国谷一彦氏",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54a0lSTGlNeHBqYVZlSmNLQVVZVmFHMzhOODNZLVdtQUZaWnhCalBsMGVBV1lXQlA1ZVBEeVlLTmNSNmMtMGJwMjdkRGN2ZzU5ckRkaUFBaTg?oc=5",
+      "date": "2026-10-20"
+    }
+  ],
+  "金融(除く銀行)": [
+    {
+      "title": "パイパー・サンドラー、決算発表前にネプチューン保険株の格付けを維持 執筆 - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ZWFM1WERRaWlkUS1EMFM0dDdUODEzdnpjRWl3MU4xQXpPRi1KNHcyR3dBUnFWeGhqLWhVRC0yNDlTc0NyUkMtSWI3ZUQzb2lTVjlQc2hUU0I5c05CdUotZktKMzBBUTZyZzdvUy1kT05UdE5W?oc=5",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "米長期金利上昇で注目される生命保険株3選",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTlFjdno2LTEwVUlxNHdzX2F2LXZxZDhQelR0OVU2M2xqeTdlYUdVVzlJOGcxWXdGWTJLV0ZfM0JFSC1CREVGejdzUDJoZVZqLWZDSkxlMi12LWYwQV9mLWVaT0R5OFZ1eklTWElySkttT09NYVAtQXpGVEdUYUdySnB6anlOenNSOGdiYWQ4VFNmSHFDcE90c210ZWLSAZwBQVVfeXFMUE5RY3Z6Ni0xMFVJcTR3c19hdi12cWQ4UHpUdDlVNjNsank3ZWFHVVc5SThnMVl3RlkyS1dGXzNCRUgtQkRFRno3c1AyaGVWai1mQ0pMZTItdi1mMEFfZi1lWk9EeThWdXpJU1hJckpLbU9PTWFQLUF6RlRHVGFHckpwemp5TnpzUjhnYmFkOFRTZkhxQ3BPdHNtdGVi?oc=5",
+      "date": "2026-10-19"
+    }
+  ],
+  "運輸・物流": [
+    {
+      "title": "秩父鉄道(株)【9012】：株価・株式情報（夜間PTS含む）",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9XbVNDWDRialdRc0FXdllkVUZNM3lsQTh2UFA0MFVsZWhqU2J5a1AyRHFnZlR6NkRMeTA2X1ZGQUZMbjBuVTUyclFzSm53VXFMWnc?oc=5",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "九州旅客鉄道(株)【9142】：今の株価の理由は？値動きの背景をAIが解説",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NM0ljZ3lYNk1vSmFsb3R6d0tzRk5sdW11NVAyUGdjWnJhMzFudGZ1WHdTQnhRM3dJbGF5anFSQ3lWNW5jZVpaRE1mNDRhQ1hld3Jvc2l0MnlCclBiLWww?oc=5",
+      "date": "2026-10-19"
     }
   ],
   "エネルギー資源": [
@@ -13,51 +60,14 @@
       "date": "2026-10-19"
     },
     {
-      "title": "【速報】NY原油先物は反落、100.31ドル(フィスコ)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVl9heERpYjRvbldyRTdzT2hQRndoMkxjbS16S0VoXy1GNnBNVUYwUFU0VTVjUVdaQkVvSnZFVmd2OV9Hbk56VWdSOF9IOVFBaWhRcDBqR2R2Vkhtc2lRcnBocEtIS0g3X3lDamdwNDZTN1ZMUVBWd0J2OEF2UThUYWQ1NzVxQmc?oc=5",
+      "title": "原油市場他： 米国とイランの協議進展への期待から下落するものの、イエメンのフーシ派武装勢力のサウジアラビアに対する攻撃拡大等により上昇する原油価格：石油・天然ガス資源情報",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1OaGQtaldaQ0lGTmY0clBEcURnajRweDkwcXZlQjQ5Q2FCVXJDT3hLRlRtUU1fZExWU3V1TlRnek8yWnpuS0tUUTVUT05VdVdUX2tqdGdFVnlFUmRJUFlZUGc1SVBRNWt6UWdhd19Zb2RLcG1EeFpLQXVFaUo?oc=5",
       "date": "2026-10-19"
     },
     {
-      "title": "円相場 対ドルで小幅に値下がり 原油先物価格上昇傾向を背景に",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE41a09Tcy12eHpOMVBJaUNvWk1rY1ZZc3NpLW8xSWtSTzBqeW56YmQySkNKVHFPMFViUkdPLUJ1VmVMejJ1ZXduTmMyQjVBRW0tR3VTdHdJdktmYW1YaEhR?oc=5",
-      "date": "2026-10-19"
-    }
-  ],
-  "金融(除く銀行)": [],
-  "運輸・物流": [
-    {
-      "title": "中国輸出急増で注目したい アジアの海運株と港湾株3選",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeXRNN3dSdmQ4ZVRhaklUcmZQSWRPajNjTDBhZE9DMWpfUWJZSnVRaHZxQVlKdXcweVdLZExURXRpbzBUeXc5aHlRZEdVSmgwd1NneTN0OXNISkJuTjJMaHJESEc2YWVqcHRGOUNQek8xM0d1S1FBbUhHQTVQQ0pwUTlYMTdyNUhFM3FxR3dXSnJTTzdiSU5vLWlPTkRMempYdGp2TFJHOENIVDNNM0Ziek9KelM3OEttUVJR0gG7AUFVX3lxTE15dE03d1J2ZDhlVGFqSVRyZlBJZE9qM2NMMGFkT0Mxal9RYllKdVFodnFBWUp1dzB5V0tkTFRFdGlvMFR5dzloeVFkR1VKaDB3U2d5M3Q5c0hKQm5OMkxockRIRzZhZWpwdEY5Q1B6TzEzR3VLUUFtSEdBNVBDSnBROVgxN3I1SEUzcXFHd1dKclNPN2JJTm8taU9OREx6alh0anZMUkc4Q0hUM00zRmJ6T0p6Uzc4S21RUlE?oc=5",
-      "date": "2026-10-18"
-    }
-  ],
-  "商社・卸売": [
-    {
-      "title": "Z世代の「年収2000万円超の総合商社離れ」4つの理由…大企業で高年収を得ながら“やりたい仕事”は無理ゲーなのか",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1udmRyYjR1LUhfVURlcF90dlRCcFQyTHgySGlkSnR2ellFTkZsUUNRWXVoTVh0UFdkSVhJdEJCVGxoZWZnNlBZX1VyaEtIYjgtdG9rUzB5Nnc0ZzVn?oc=5",
-      "date": "2026-10-19"
-    },
-    {
-      "title": "【NEXTバフェット銘柄を大予想！】総合商社に続くのは誰もが知るあの会社？/三菱UFJFG・JR東海・KDDI…金の山は次はどこへ向かう？/複利を味方に！【MATSUI DIALOG】＜松井証券＞ Draymond Green (8EPbvvJlc7)",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xSVZrOF8wNEZvT3M4N0t1UFJRcUpXdUlWQzRkalY0TTVyRXlZamZkS1l5b3d1OV84ay1tZzhWSnlfODlFRnZmdHFxMk84VEc3YXpRY0Z2R1VFX0VWQ3NRYVdodnpUNzV0YlVr?oc=5",
-      "date": "2026-10-19"
-    }
-  ],
-  "不動産": [
-    {
-      "title": "金利上昇に直面するREIT市場 含み益還元と資本効率の向上が必要に",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAzdjZUeW5WR1hwRXByX0tqRFJwbmNQRkFHV2dOMGVPNkcwYzlDQlk2OXBIQjRoOVNjRXhTMUpKZ0EtTUtMRkRYYnJQRmV2SDJFVGJ3OGVidVFJRzlZQzFXTVFwUzM0MDhRSFdRalNSZDVSQTFhWTRKUGVDa0tWdw?oc=5",
-      "date": "2026-10-19"
-    },
-    {
-      "title": "Morningstar 日本株式ジェンダー・ダイバーシティ・ティルト指数(除くREIT)の構成銘柄に選定",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MdnhJeThrcUZRNnRUem1mQnF2MWk2bzlXMUtYY2IxZ3JFUVZhS1A3VmxMX0ZtOWZZM3RaWEpxcU1sX1NUX3BfNWJxXzBWdWZndGRKb2VMSjBJQmp6dHl0V2Y1VUxscGVKMXc?oc=5",
-      "date": "2026-10-19"
-    },
-    {
-      "title": "GLP投資法人が第29期決算、自己投資口の取得を発表(JAPAN-REIT.COM)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOT2N0cVBfVUZWcDVqVHFCZVlTc29HWk1FWDM0TFVzMFlKOF94RDBiZF81Z2lCVE9iNll4OTc4OG1TeUVJTGxadjFBUTdtUnF1NUhUcmhtVTc0cUVWT2YzRjBMa0V6WmQ4eGFqY1lxY0VzOEt3dDlCQVJaSkxoTDZXS05VbmhqZUE?oc=5",
-      "date": "2026-10-19"
+      "title": "NY外為：ドル続伸、米長期金利上昇、世界の債券相場下落に連れ、原油は反落(フィスコ)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWmZqT2dSTkZXaTJoNVZkd1hHcnM4ME45RHVtR0JiS3gwWjBjQ3l3aDhuR2VkbDA0THlFam9rdTduX1RwdFVVTmZBQ1cwUWFMdTB0VHpMY2U5Z3BZNjlrYXJ4VGw5Vm8yTWNhdWVoZl8xaWk5ay0yd2VFbTJhQlZtYmVqY1ZSN0k?oc=5",
+      "date": "2026-10-20"
     }
   ],
   "銀行": [
@@ -68,65 +78,36 @@
     },
     {
       "title": "欧州株 銀行株が売られる、英バークレイズが２．７％超の下げ",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45bWxveDQ2RDlmTFE4QTZBWTZMNENQVUc3eUJteTZZN09ZeW4tcDhINVRmQlhOUnpDTGxtTkF4ZV9fWlM4dVJmekY5MDdBeXNWUTZtWTFWNEw5ejdlREUzYw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5fT2ZJc3RfWjYwVUVwQ3YyRXVNSE1hRTNsd2g5Rno4THhmZHI0UFNON0YzNDRXdkZLc3hKWDlkRWdfQ1ZJeGZMeA?oc=5",
       "date": "2026-10-19"
     },
     {
-      "title": "欧州株 銀行株が売られる、英バークレイズが２．７％超の下げ",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5fT2ZJc3RfWjYwVUVwQ3YyRXVNSE1hRTNsd2g5Rno4THhmZHI0UFNON0YzNDRXdkZLc3hKWDlkRWdfQ1ZJeGZMeA?oc=5",
+      "title": "アクシス銀行株が本日急落した理由 執筆 - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1XZVRodWxfRjFNTm9HWFhaRnctM3QzdmsycTZUd1BSX1RGTUhVM0RycnlneDFCdnVoR2k1d2VhVGtpczdfNXZBNi1VUWVhMDB2S0lfUFlGSTJsWHdjcDFhUjZDWV9iMlBOOGVKV3o5eU9iQ2RXd09r?oc=5",
       "date": "2026-10-19"
     }
   ],
-  "建設・資材": [
+  "商社・卸売": [
     {
-      "title": "国内初「森林ファンド」 1000億円投資、金融・商社・ゼネコンが連合",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5FWlA3R0RQaGE2Z0p6OGI4MUJxaHRjeHlZSVpNSmp0TW03M0lzTHh6M3Y4MEdtWVNrM3NuRG9ZdWE0dFJvUlNKY3ljS0h4SWtEZG83TmJPV3UyenY5ci1kYzN3dHBaRkN6cXRLOA?oc=5",
+      "title": "Z世代の「年収2000万円超の総合商社離れ」4つの理由…大企業で高年収を得ながら“やりたい仕事”は無理ゲーなのか",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1udmRyYjR1LUhfVURlcF90dlRCcFQyTHgySGlkSnR2ellFTkZsUUNRWXVoTVh0UFdkSVhJdEJCVGxoZWZnNlBZX1VyaEtIYjgtdG9rUzB5Nnc0ZzVn?oc=5",
       "date": "2026-10-19"
     }
   ],
   "食品": [],
-  "素材・化学": [],
   "医薬品": [
-    {
-      "title": "中外製薬(株)【4519】：株価・株式情報（夜間PTS含む）",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9OSmQ2UGFkV3BhZlZFVlhsbnhxSG15bVdPaDNEakl1OUpNcGtrWkhWSWtTTjVHMklUbUV1LXltN1dhUnZDaUNnWWZjX1NSbzlMV2c?oc=5",
-      "date": "2026-10-19"
-    },
     {
       "title": "アステラス製薬(株)【ALPMY】：株価・株式情報",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1PTFd2N1FEV016Uzh2V0h4dThDZXdJV3l2WG5TQ1YyM1VGdFIzM2RkNGlrUTlOLXBXZmR4SDFFQUdmSzlaTU9sa21DaFVPdUxW?oc=5",
       "date": "2026-10-19"
     }
   ],
-  "情報通信・サービスその他": [
-    {
-      "title": "ファイバーＧについて、光通信(株)は保有割合が増加したと報告 [変更報告書No.9]",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5aaXJQS2t1bTRFSEk5M1FRX1ZmWFZYVE9iRUxqYjNnTmwxMGw0TERobFhPQWZwQVVJaTE2LUhXQXZQVldqMUM3SHFhMWpXUU1uT3c?oc=5",
-      "date": "2026-10-19"
-    },
-    {
-      "title": "BofAが欧州通信株の第3四半期ボラティリティに投資機会を見出す 執筆 - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VM1U0dV85UkllYUdiWkpZN1BxOWxTSm5udVRiWVBYd2RodGo4RVJSUkpSNy11ZDI2eGJGMGJCdGFiVnlwMjJWYzFxbFE5clJjQl8xWWh2WjVoNlFqbTVRcEEyVk4wUzVYVnRtaDZhcXk?oc=5",
-      "date": "2026-10-19"
-    }
-  ],
-  "自動車・輸送機": [
-    {
-      "title": "三菱自動車(株)【7211】：今の株価の理由は？値動きの背景をAIが解説",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tS1BIYjdiYzE4cXdoT0k4Mmp1SkxjbDNURWxxQ0I1THdHRTBHSTdOTl9qTlZadFZoTldBcTN0ZmpTaEhka3VRQW1vc2tZcTJtQUNqa282X3ViSFh4QThR?oc=5",
-      "date": "2026-10-19"
-    },
-    {
-      "title": "トヨタ・日産・ホンダ・BMW・フォードの技術トップが講演！日欧米のSDV関連7団体が集結。「第2回 SDV EXPO [秋] -車載ソフトウェア開発展-」来場登録受付中",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlVkVGYWxGelZvYWdrVnNTOW5zek5DV3JtWE5aWXZ0SWExUzM3ZmRkNFh5ZDdscndnNDA1YU16ZWZDc056elJKSVBseFVaWHJ1NzBrQ3dibVpjbVk?oc=5",
-      "date": "2026-10-18"
-    }
-  ],
+  "素材・化学": [],
   "電機・精密": [
     {
-      "title": "午前の日経平均は反落、ＡＩ・半導体株売られ一時6万4000円割れ",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPeXgxZk9pbEZpRXBUclI5eVB0RzNWVWpkbWstTVhGRGFWampPOHJaY09NSVZIZTNOU0k2QzVTRk9aZWVPRW01VDBYVHJIMzFnQVhuUEhUZm5renp0MHB1RUVvNTJJWmdGeTRGdlpuWFd3TjFOampSRWZsV0pYTmlzRWtrb0lTZw?oc=5",
-      "date": "2026-10-19"
+      "title": "米国株式市場＝ナスダック主導で反発、半導体株に買い戻し",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPeC0tcTNDZ0RYMkJIbUJzU0dLdGhtVzhrZ3k0VERvNl9TekJuQTdqekRGY3VGWXB2WWRVVDdnY18xdHZJaWJLVVlfWGU2YjBFcC1JaVRXcS05cnF4ZTh0XzFEZUQ5WllwUjgtb1hZcWZMS1h5VHZsMkNOa3dONmFDNEU0dl9qZw?oc=5",
+      "date": "2026-10-20"
     },
     {
       "title": "【暗号資産】債券金利の高止まりと半導体株の反落で、リスクオフに警戒",
@@ -134,12 +115,17 @@
       "date": "2026-10-19"
     },
     {
-      "title": "【アメリカNOW！】AI・半導体株の下落の裏で上昇しているヘルスケア株",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5nV01iOFVxa2wzQ0N1QTNUSjVnbHlNdjFBSnZsSm10VEp5UGlyeHNMTE9sT3otdlNfVkxMMGticDJxVXl3Wl96eVFnS3VKZFg4aldaNUFka09Xd09rQ1FSeGRZN1NtWDF2NUZhZS11TDZ4dzhwaDY0X3RR?oc=5",
-      "date": "2026-10-19"
+      "title": "米国株式市場＝ナスダック主導で反発、半導体株に買い戻し",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpeFlqSXRjV1NLczdaemNNQ1ZsbG5VLUZ6NDVLYjZ2U09BeFlOYmxrOUpBYlBMVkhlbTR5LTdpcXlCaC1sSjB5RmdfTDN0TTd2cDFKTmp0bElzdw?oc=5",
+      "date": "2026-10-20"
     }
   ],
   "小売": [
+    {
+      "title": "阪急阪神百貨店 約126万件の個人情報流出と発表",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10MG5HaENSeXdqX0VpUmhaVUdrVFU4UGpvMEVLcDNDR1BiRXFFNU5JRjFpVUxVSzRMNFUxZWlQM0FoSm9NWkJmZ2JkaERBOFYzTHVXZnA5MA?oc=5",
+      "date": "2026-10-19"
+    },
     {
       "title": "阪急阪神百貨店で個人情報流出 顧客氏名やメアドなど126万件対象",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85YUpLQmRRcC1yS05tVjVYUHBnQ0hVcE1ZQnVZbEJLdm9DazAycVctU1NYNHFpbE5ITW50QkRKYV9wTVAyUk1rTzZWLVpiaVFJSTF3bnQ2end1dnZDTS1lWXRwT052Vzg?oc=5",
@@ -148,11 +134,6 @@
     {
       "title": "阪急阪神百貨店 約126万件漏洩か",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5xS3pNQll6R3lEb2QwcWJydS1TR2x4REN3aXFqdDdXb0U1cHR1S0RsRmNCZEpsaG5jQ1BuMDJSd2t1WVlvRmxsUGJ4dHFrWW1q?oc=5",
-      "date": "2026-10-19"
-    },
-    {
-      "title": "阪急阪神百貨店、個人情報流出 顧客の氏名など126万件の一部",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CQkgxWTdmeUIwTkJkM05KdVY1V1lLVFVtcmNuaVk3YmFYVVhYdUxtRmVBNU0tX2dRYWFuUGdfVDMwUTdjMmlDbXRWY3RyUUtTV0l3b05nVnB0Vmh5NjcwYnptWDN6akJOYzJXcg?oc=5",
       "date": "2026-10-19"
     }
   ],
@@ -173,6 +154,19 @@
       "date": "2026-10-19"
     }
   ],
+  "情報通信・サービスその他": [
+    {
+      "title": "ファイバーＧについて、光通信(株)は保有割合が増加したと報告 [変更報告書No.9]",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5aaXJQS2t1bTRFSEk5M1FRX1ZmWFZYVE9iRUxqYjNnTmwxMGw0TERobFhPQWZwQVVJaTE2LUhXQXZQVldqMUM3SHFhMWpXUU1uT3c?oc=5",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "BofAが欧州通信株の第3四半期ボラティリティに投資機会を見出す 執筆 - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VM1U0dV85UkllYUdiWkpZN1BxOWxTSm5udVRiWVBYd2RodGo4RVJSUkpSNy11ZDI2eGJGMGJCdGFiVnlwMjJWYzFxbFE5clJjQl8xWWh2WjVoNlFqbTVRcEEyVk4wUzVYVnRtaDZhcXk?oc=5",
+      "date": "2026-10-19"
+    }
+  ],
+  "自動車・輸送機": [],
   "鉄鋼・非鉄": [
     {
       "title": "本日の【業種】騰落ランキング ＝ 大引け 【上昇トップ】鉱業 【下落トップ】非鉄金属 [15:35](株探ニュース)",
@@ -180,13 +174,13 @@
       "date": "2026-10-19"
     },
     {
-      "title": "先物・OP市況－業種別ランキングは非鉄金属が最下位",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5WTDU1TVZlUHpZc19Xemt0MnJIcTFHUy1MMklqdzlpOXcwRlh4SXg2WGRDcTlFcjNBc3BPcjVsOVJCZUFCVWFSMkVDd2FqcHJUVE85NzV3SnpnYkt2Q1dTNmkyNkpwWFBURWNHbGpkeUc?oc=5",
+      "title": "本日の【業種】騰落ランキング ＝ 大引け 【上昇トップ】鉱業 【下落トップ】非鉄金属 [15:35]",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mcGpRVVhjd2VNbVU2WjZZcU5Yc20ySmNmaXJWRW5RRU9VblFkMHh6RTlNejgtQ19pUFpRajBVZVQxQ2N5SENGekxVZm1fZmt4cHhCdG1LaWtYWUFWMm9iaA?oc=5",
       "date": "2026-10-19"
     },
     {
-      "title": "本日の【業種】騰落ランキング ＝ 前引け 【上昇トップ】鉱業 【下落トップ】非鉄金属 [11:31](株探ニュース)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOT25OY1M4Nks4VUsyaDRBdTlOakZNOWdxNHRLeDdqQWRWNjBkYmE3MWdIbXlvd2dfZWJ6eFg4UUVJS0x1QVJXcG9KbjMyQTVaUmZRdmxXZ2ZxZndvTHRYWkNNU0k4ZjdOaEJqejhXNk1hS2t6cnhNU0xhSGFPRHVZb2NWMDBpNVk?oc=5",
+      "title": "先物・OP市況－業種別ランキングは非鉄金属が最下位",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5WTDU1TVZlUHpZc19Xemt0MnJIcTFHUy1MMklqdzlpOXcwRlh4SXg2WGRDcTlFcjNBc3BPcjVsOVJCZUFCVWFSMkVDd2FqcHJUVE85NzV3SnpnYkt2Q1dTNmkyNkpwWFBURWNHbGpkeUc?oc=5",
       "date": "2026-10-19"
     }
   ]
