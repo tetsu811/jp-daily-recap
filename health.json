@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T05:38:05.561290+09:00",
+  "checked_at": "2026-10-20T10:53:59.521965+09:00",
   "expected_session": "2026-10-19",
   "status": "ok",
   "expected": 458,
@@ -810,7 +810,7 @@
     },
     "1963.T": {
       "date": "2026-10-19",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 154,
       "errors": []
@@ -3680,7 +3680,7 @@
     },
     "^N225": {
       "date": "2026-10-19",
-      "source": "cache",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 154,
       "errors": []
