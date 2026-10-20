@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T01:53:16.535077+00:00",
+  "checked_at": "2026-10-20T12:46:34.947625+00:00",
   "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
   "delisted": {
     "2388.T": {
@@ -691,6 +691,11 @@
       "date": "2026-01-05",
       "name": "SUPER VALUE CO.,LTD.",
       "reason": "Acquisition by controlling shareholder, etc.(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "7523.T": {
+      "date": "2026-11-11",
+      "name": "ART VIVANT CO.,LTD.",
+      "reason": "MBO(TOB,Share consolidation)"
     }
   }
 }
