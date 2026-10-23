@@ -1,22 +1,56 @@
 {
-  "運輸・物流": [
+  "自動車・輸送機": [
     {
-      "title": "秩父鉄道(株)【9012】：株価・株式情報（夜間PTS含む）",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9XbVNDWDRialdRc0FXdllkVUZNM3lsQTh2UFA0MFVsZWhqU2J5a1AyRHFnZlR6NkRMeTA2X1ZGQUZMbjBuVTUyclFzSm53VXFMWnc?oc=5",
+      "title": "トヨタ自動車(株)【TM】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBBVUdJM0U0aFlkR0FQN05mMW1YR2VRTlVLdEE1d19aRE9MWndrR1NnWTJZb1VtZmtjSGxRTzZseVZQaVhNU1NNUUJFSU8?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "九州旅客鉄道(株)【KYHHY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE50Z2NTY0UzTGhvRGNSYXRIT3BMdWZtN0d1SW9DMzJLZU1TQkU5UDNMb0FZVXpELWNETU43UFlOSW5yMUkxNEVaV1RkV2ZRNjNt?oc=5",
-      "date": "2026-10-22"
+      "title": "トヨタ・日産・Honda『TECH DRIVERS』26年度開催決定",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1KNGhoNWQ3RkxXRGNHZkpmMzVzU3dFczZzWnJxVW9oRnA2czJUNVdCQnJiODc1T296TEw4aWlQZy04bGRNU0E?oc=5",
+      "date": "2026-10-23"
     },
     {
-      "title": "西日本旅客鉄道(株)【WJRYY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE55RTUwZUoyNEN1VlJnSk5aZDhINUIwY0x5ek5HWWZhN0MtcEVBckk2OGpPX3VRamxtVE9TMlBMei12a1V0WHg0MGNiZUFwenFP?oc=5",
-      "date": "2026-10-22"
+      "title": "海外事業が売上高および粗利益の主要な貢献源に",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZlJRbC1FaS04S0JvOERxQU1oVHNFaGVkZEFSck80ZGhPclZVVzFraTQ1RHNNd0JvbE9hYTlfRlc5NHJlQ09ISjVkSllOaWZwYTFzVHdxSF9MLTU1cmh6VV9tNjk4Z0prLUhxci1vcEk1dURMTkdRTHp3MmdWTVZUUllzVUh5bklqZ192N0JRUUdES1pzaGVSOXlpRUdzVTc0TkZRa2t1Q3AtV1hJVHc?oc=5",
+      "date": "2026-10-23"
+    }
+  ],
+  "電気・ガス": [
+    {
+      "title": "東京電力(株)【9501】：今の株価の理由は？値動きの背景をAIが解説",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE55N0kySzVrTEdZSnUtX0RpQmVWakthNm8zVXV3OXJoMUZiaTRzb3d2WDBxWWFsTGVqdXhQYWdvN3FWQnhDdlZYeHQ1bml1TkR2YXZ2V1RxVmRrOUI0cDZn?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "株式会社みずほ銀行が北海道電力(株)＜9509＞株式の変更報告書を提出",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVluSHpNbExPaVo0YmFXWUlYa0NSMlhZN29OeE5McUtvS2FQOUQwRTMzRUhIRWI4dExabnUycngxblRSMERhUUcxUWFPaFJLeVQxdVZWRFhxcF9kdi1Za05RWFhtTXBaaVRGdDRJbnNsaTRNNXJQT3pwd3VrQXNBQ0IzTzVjTjExNFHSAYoBQVVfeXFMTTVZbkh6TWxMT2laNGJhV1lJWGtDUjJYWTdvTnhOTHFLb0thUDlEMEUzM0VISEViOHRMWm51MnJ4MW5UUjBEYVFHMVFhT2hSS3lUMXVWVkRYcXBfZHYtWWtOUVhYbU1wWmlURnQ0SW5zbGk0TTVyUE96cHd1a0FzQUNCM081Y04xMTRR?oc=5",
+      "date": "2026-10-23"
+    }
+  ],
+  "不動産": [
+    {
+      "title": "不動産株が上昇、三菱地所が3%高 国内金利低下で",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBIUkg5NHZWb1Q5aWJpdXlGMzVSeGMySVdXRjVuejVFOHJWT1l5VV9sRDVfTDd3aXFqVWxvRlFGckdleU9SS2JYWDlJRkt5ZXBpOE9Cb1dseThER3hraTdFSXoxWnh2TEVxaHdWZg?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "三井不動産商業ファンド投資法人が三井アウトレットパーク横浜ベイサイドを2027年3月取得",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTm01aXNtT0ZrVzZnME0xZ194c1paWkVFM3FvRkJQZDA1ZzVBbnlJWlhNTlJ6VVVERjNTTXRITmhoN285TERuNWFiZFVhTHQ5OUc0MHJveTRhb0JqZXFFSkE3RVo3amVNeWhoUFFMX3FmRURpU0tnemlPNFJQTThTSGNaQWJFN3M?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "東証REIT指数先物：23日清算値＝7ポイント高、1658.5ポイント",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hYW1zNWRDZWFZYTByaTI1UG5PMU5TNVNuSU9DV3NGeHNib3J6R3VQVUZPRXdhUksxTUtYQW9ZODRPRklNdE0xRThIZ3Fid19XQ3c?oc=5",
+      "date": "2026-10-23"
     }
   ],
   "金融(除く銀行)": [
+    {
+      "title": "本土前引け：3日続落、一時3600ポイント割れ 保険株は全面高(トレーダーズ・ウェブ)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbmFfR21ZdlNob0ZNZm51ZFg3LUFKUm5lQmhzWVRKMXZqNnVmMkN5UnpISlhqNzNTZXRzZnktOEJwcXB4LUNIeFQ5YTIwWFZlRklXZ2x0eUliVWROQm13Z2tfdTBMNTNlSFFIQ2FUdldmazF4VGw2MEtGRENlaTE0Tmx1MGJ0VTA?oc=5",
+      "date": "2026-10-23"
+    },
     {
       "title": "韓国株式市場の急落で証券株のバリュエーション後退…PBR1倍未満が95%に",
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9iSHpuT29PQ1c2NjdRb0JmWXRsVE9UMGtUQ2xjN0JMeElJRmRYWV9venF6emY3NzNDSGEzdUxldjFjaEJ1bFI4X2lVVDJYZmtkWURCZFA1VC1MQzh0TG0tbHRsekRHd0F5RkZBTlM1ZTA5RXdu?oc=5",
@@ -30,101 +64,23 @@
       "date": "2026-10-22"
     }
   ],
-  "エネルギー資源": [
-    {
-      "title": "日本の原油・ナフサの代替調達は持続する？ 安定供給を巡る2つのリスク 野村證券エコノミストが解説",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tb1JuLVB0dC01bjFWY2JHdWN4LW9CZGZIWEVZbWI4eFNBOXZQdlE2RDNBRFpWNVNMTERQRnJGZlVrZ09iNmVWcHEzWU9RSEM4emZGQmUzUk00aEF3cG53?oc=5",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "トランプ氏、イランが中間選挙前に原油価格を引き上げようとしていると発言",
-      "link": "https://news.google.com/rss/articles/CBMi7wNBVV95cUxQMUs0cHJyNWk3Xzkza255UFdVVGRyNmtLVDJ5czVwT3V6TGhqdngyQmJsaHJfdk5aUXVYMGJ5MGNjTjJ1amhkdndDUTEtYV85ZklSWTR6Q2l0dFNURWViVXZwcFVDTUdJU2NvX0U5enp4MlNZZU9wX05xUHAzY0FiMDFMcW91Smo2V1l0bEUyVnBfXzdxU0tRcjNOeU0tb0ptdnNxU3pOSld3cm1FSE5QeGN6dVJCWXI5SHNhWVpwVHJ4RlZ1bnNlQ2FJVTh0SDlSa21wbk84WGNpQlpENFRFSlRmZG9VUnFfUXJRamZxajkzUWoxXzVkc1ZRTEhYMkl4LWpmVEVQVkZnVW5zN2VJbE9PeTVkU2VJal9ubU5qWFJPNmFsZ3pZdVg4Ry1mMlVIblVoMUJIOTQzaFgwTWFrQkNJa2VJNjU3R0lHRkQ2RXNMZVo2V2RFaFZEakc3bWhMZ1V4cGtveF9LdndTMjFiRHNYdWV4YkRWQlE3V3FlLUkySEQ4M0FCeVdpOTBEMVN2ZElDUTFZRkYwc3lPZ0h3c2N5WUZ1N0dBd2p2eHBlRkxyV3VOZFhNYTVuNklpQndVRDd4MjFWSFFCM01JQ1hNVFpTOUxEMkxVOURHZE13bU40djlhOGt1ei0zY2lwZUE?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "原油先物4％高、5カ月ぶり高値 サウジ攻撃で供給懸念",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YM1VmTDVDUWVLUGRfMWpmVS1WQm0xb1phN2hrb0lvVUlqd3pIUFZSTGtUUlAzSmtlbl9FVlJ1TW5CdkpGcmw1TXNReUFEYzJQTUhYWXo5cWE4TUp4dFl3MG9sbHZpemVyd3BuQk9IbmlIVXdtRmF0T28zVzJMUQ?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
-  "電気・ガス": [
-    {
-      "title": "東京電力(株)【9501】：今の株価の理由は？値動きの背景をAIが解説",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1FLU53MFRkZVpONnFvcmJJTkF5anN6OURqdEtYd1NTMXBxOVBTUEJ6UFZ2Y0Y4ODR5RE94OEM3b0RuXzFPWkVmWXVQVVNIWEdkNzFnNlZSZzczd1Jvd2xj?oc=5",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "株式会社みずほ銀行が北海道電力(株)＜9509＞株式の変更報告書を提出",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSXF3TGY3ZmR0OWR5YkpmNmJ0ZVNld0k2QU9sVnJDQm5SQ1NCMC00VUZ6SHVoVzMtVG5DdEV5ZEdZek1tdmQwMGhaMkxLY3Y4WTAzbDYxWk9rNERIcWFLRkZyWldmV01NNGdJSktPU3ZTbGlQajkwdEQ5ZTZKVm0zQUlLTGTSAYoBQVVfeXFMTTVZbkh6TWxMT2laNGJhV1lJWGtDUjJYWTdvTnhOTHFLb0thUDlEMEUzM0VISEViOHRMWm51MnJ4MW5UUjBEYVFHMVFhT2hSS3lUMXVWVkRYcXBfZHYtWWtOUVhYbU1wWmlURnQ0SW5zbGk0TTVyUE96cHd1a0FzQUNCM081Y04xMTRR?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
-  "商社・卸売": [
-    {
-      "title": "【レジェンド農家ベスト22】「100億円企業」になる6つの法人はどこ？総合商社やデベロッパーが資本提携する豪農たちが利益率など経営データを一挙公開！",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBkSS16MWZFaVJGRDJqSXRrOWJaN1NpaXRXaG5XOEdpbXRNaXRpYWxUQmtHNXVFNUgyQ1R5cXpoTlB4QUc3c0FjUl9CdGHSAU9BVV95cUxNSkNVd3c5ZVJkVHJJSnZBV2VGMkhBLW5wTjVYeXlidmlHNVhQaUtsdnY3OHJSYTRFam1mdzlZZkxPSnZUT0NLNjNDS3pkQ1JN?oc=5",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "「フードを替えても、よくならない」飼い主の切実な相談にサロンはどう応える？ペット総合商社P&Lジャパンと5Strands Japanが共同開発！サロン専売モデル『アレミッケ for PRO』を全国発売開始",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05bU1NcnYxRl9BY2Ixd09CTkxhTmdIRjdjaWswQXRPYmNlSEcxUHFtc2RCYkZWcDJZcExET1ZFYVV6aTVILWlFbm5wMllodlk?oc=5",
-      "date": "2026-10-22"
-    }
-  ],
-  "不動産": [
-    {
-      "title": "不動産株に買い、長期金利低下と日銀利上げ見送り観測が追い風(ウエルスアドバイザー)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZm1VczU1RmhKWHBkaDdGWFZnR1ozd0U4aUJWcTVUWDhzZC10eERZclIyQ1F5U1JjNDdSY084UEhVSm9zVFhOVk0xZ1ZNVXVZdVJ5RmdPSVBTNVY3bGsxNG5QMTYxbURacVdTWmpibDRDS3FocXltRGxCdWNNZTRTNWVGVEZjckE?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "【J-REIT】2026年度上半期の物件取得と売却動向",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ZTVFTdUIyYUNIa0t3dnNKT1hkcEdaamVWc0tUQVVXTzJUTGNlUENSb0tiOUxBRTJxcldvZ09YUUlVU1lFZmF6X1BHT1U1YXNkeFVJamFOMNIBV0FVX3lxTE1ZTVFTdUIyYUNIa0t3dnNKT1hkcEdaamVWc0tUQVVXTzJUTGNlUENSb0tiOUxBRTJxcldvZ09YUUlVU1lFZmF6X1BHT1U1YXNkeFVJamFOMA?oc=5",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "金利の期間構造がJ-REIT収益率に及ぼす影響",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE90bDNaV2xCQThvVXlxLVZ4Uzd4dF9qVlhRam9VaVNWb3dDYnNrZU5aMjJDX3RsWmMtSF9pWVNWWlcwbXhxcWdoSnVSZE4wa25rWllmM1dvX090ajdCSk5xYnlET09BQmxfZEt5UU1oX2VTWXJvQTBWcm9TVzhiM2vSAX9BVV95cUxPdGwzWldsQkE4b1V5cS1WeFM3eHRfalZYUWpvVWlTVm93Q2Jza2VOWjIyQ190bFpjLUhfaVlTVlpXMG14cXFnaEp1UmROMGtua1pZZjNXb19PdGo3QkpOcWJ5RE9PQUJsX2RLeVFNaF9lU1lyb0EwVnJvU1c4YjNr?oc=5",
-      "date": "2026-10-22"
-    }
-  ],
   "小売": [
     {
-      "title": "期間限定 POP UP STORE 「手塚治虫：火の鳥印百貨店」グランドフィナーレ開催決定！",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB6endlV0ItWTRIRzlrei1IUjBYb1dieVFnZW1sSFpkbWpRenBSWGFjU1o2bHFMTlBfZTJBX29EZGx1WUhEV1NRS2hoNEMwVVFIeFJPRzNLUFVESU5zbHc?oc=5",
+      "title": "9月百貨店売上4.2％増、早めの秋やインバウンド好調で＝百貨店協会",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOVhybEdnVlB0ZU0yNUQzMHNGSGwtRnFHX0Y5bm1HQ1ZXVkh2aVRFdktVX0tnb0ZoUE52UUt0WHgxbV81UzROemN0Um1lOWpUSFYxWWhTdFRhZmpaelljOVVnR0NHcnJTb1N3eGZKZWlST0hodzJlNFNfZ28wbkhWbE1rQUNiZw?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "東北のご当地グルメから話題のスイーツまで！初登場11店含む約７０店舗が一堂に集結 「大東北展」 を開催します",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9JRjZsdXo5VjdJOENlSUlETW0yVnhITk90ZmhuUHZ6T3dMUGhoZUZWNWNjN3J5TzI5djEtVnFBc1FmZkU?oc=5",
+      "title": "決算のディスコ軟調・ブロンコB高値、イオンなど小売株に買い/日経平均続落【今日の注目株＆日本株市場見通し】「デイリーZAi」10月23日号(ダイヤモンド・ザイ)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQktUWmlyS2RSX2FlUjBGb3RyYTNSYm1mbEU0d1FuRmhleGRmbkFJcXJNQmQ3WV9jekRJVWVqbzhyNDJCaWlkWU5RaE9tcHc0THIxcDZWdTVjWmNnV2ZEV2hZNHRtU1FMZ3RUdjBteWdHa3prczlwVW9RSEpCbzlRWWNsMHBNSEk?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "【解説】“ＰＨＰ” 道内への影響一覧 百貨店・球団・銀行も アプリも緊急メンテナンス…現在復旧",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE05OEZiRDJOZzA4RGhXMklxYkNlSzZIdXJMYWF4V3p0eWowcGdTZUhWbno1TDM5NTJ2YnRmUmh5SEtRWVlnN09qZlF5cngzMjVMeWxjZFJFcEQxdURBVEQ3MWl4M3pEaU1DeUljN044LXFlclVzMVROM1daRk1tdE0?oc=5",
-      "date": "2026-10-22"
+      "title": "9月の百貨店売上高、4.2%増 気温低く秋物がけん引",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiNEtONHFVblVlSkdpLV95MVJGdFMydy1UT1RhaC1RNGo3dlNKZ3BQeVFaSC1BNmtTS05ITnhJVHo5M1FtZmtfb0FDZ20zaXUxck5TMUFDaUtNM2lfWkFuTlRKQ3FfSy1kRzhBQw?oc=5",
+      "date": "2026-10-23"
     }
   ],
-  "食品": [],
-  "情報通信・サービスその他": [],
-  "機械": [
-    {
-      "title": "「JIMTOF2026」開幕に向けて 日本工作機械工業会 会長 坂本繁友",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE40N1lXZXdWcDZEWkhzamdPLVJOQzdFbzBHX1ZpNlhXSWkySzZZUG16ZjlSZDVZWjlSOW53QVRCVVh1bnBlaUFYRFFR?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "工作機械受注、9月60％増 北米・アジア活況 最高更新",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odlJDemlhM1doZnFzalNPUjM2WHZReWJIbUR3RFI2anIxN3lWZmVGYzY3OEQwbVJMRmJ1MmtmcFZjNTUzV1lxdWxTbnVwbjVTN043YnVuX2Q?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "三菱電機、ヒューマノイドと工作機械が連携して加工 JIMTOF2026でデモ",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9TREkyTEFzcEQzbGl3dW5wS184SmExV2ZvZlZBV2MwYkJWWDhwazRSQ0dhMnVPTVBtSVFBaUdkeDRzdWRrRllmNkt0SURJTHpHclN1ZUFUQVpoLUctdnRYcWVuZmdhV01mSGY3NjNqbw?oc=5",
-      "date": "2026-10-22"
-    }
-  ],
-  "素材・化学": [],
   "建設・資材": [
     {
       "title": "株価ピークから半値近くに…ゼネコン4社「鹿島・大林組・大成・清水」真の実力！ 人手不足で構造転換、再評価される注目銘柄は？（Finasee）",
@@ -132,59 +88,122 @@
       "date": "2026-10-22"
     },
     {
-      "title": "リニア静岡工区、年内着工は難しいか 「来春」との見方も、談合事件に関する国交省のゼネコン処分が影響",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1yUGVEQ0FWQWVjUkE5aEJndDZvVmhHWml6YkR0Z0J4dXUyUUxwekFRd3BJNzdLbUpzM2Y0NVRSamNITHFtNWdzQ0xSc2szXzhQWG9EZg?oc=5",
+      "title": "リニア静岡工区、2026年内着工は困難か ゼネコン談合事件の影響で 「早くても2027年春」との見方も",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBsbW1jOEVnS3dBSnU3V2tqQ0dlSGs5TTRBTndwaGhCNkFHdUtXMkNOMjJETV9GeGEzMDRqcWgteURsTDZIYnU3NlZ4YllibU90VWk4UWsyQQ?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "準大手・中堅ゼネコントップに聞く（6）西松建設社長・細川雅一氏",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fZTlGNXp4UVhxVUdLLWRCQ1JxeE1nNGYtdmZjQTI3ODA4aXB3NFdnblMyTmFoeHFzWDlGNk1RZktSdEdkczJHZmlVTjduMGp5ejRXcTlnclk?oc=5",
+      "title": "【「建てるだけ」のゼネコンはもう古い】 | 髙松 孝年 | 文藝春秋PLUS",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ERFdXWE1aYVFnYUZBNHktM2JrYVBaVDBEMk5jWnpBMDZXVEl0UXQxLXo1LU1fdWlvOG5Ra2cyV3N6clVtdmxvcHFKODd6cjl3Q3gwOVpqVzZUZ1k?oc=5",
+      "date": "2026-10-23"
+    }
+  ],
+  "素材・化学": [
+    {
+      "title": "住友化学(株)【4005】：今の株価の理由は？値動きの背景をAIが解説",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QbjVMc3E2SnVNQWdmT3MwSnZOSmY3VlZpZWY1WHpVbmxuWEZyaXJ2UWM5bFNDUTNrOU5wYVptOUpObzhLbHV5SF85N1pXZjZZeGRubkdNRVNtUHk3WG9r?oc=5",
       "date": "2026-10-22"
     }
   ],
-  "自動車・輸送機": [
+  "エネルギー資源": [
     {
-      "title": "三菱自動車(株)【MMTOY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1USTFpam5sNXg5WEpiaEVJZVhYbEdELTFaa1p5cWpTUkxZV3A0WnZNb3FNZFdrY0tNYUlXOVcxazhreE85RzBLZmdUcTByaVNu?oc=5",
+      "title": "金4000ドル割れ、原油高響く 米債買いの換「金」売りも",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96Y1dOeWdYTkQ1bDM2VlBKd05uMlB5N0I4eEtVdmJraDF3dlRCRDhFTklMcTBLbHJoYmROZVRmUGtNUUk3QXUwS2puOU1ZbFc1emZRak42US16eVpJTnJXb0ZqVDJlQ0Eyem42eA?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "トヨタ自動車(株)【7203】：今の株価の理由は？値動きの背景をAIが解説",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ZZGdsaERPWFJGS2hIekZwall6QzFzWndlMk5uc3J5ci1MX0tyUmRLYVlVTFJ4QTFLSGQxQ1M2TXgtS0RRb2RTX1pHMW9FWEw4T2hJS1lSdENuNUhlT0U0?oc=5",
+      "title": "フーシ派の新たな攻撃で原油価格が1ドル以上上昇",
+      "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPOERvU3VIb0RlVnFDcHBXZjAwRHRIUWpOYXF2UHliemlKZmpkUHNCWmp3R1ZYZEFFbm5PZ3gzODd1SHh6cVlZRlNjclMtSjV5Mnc1c1VBcXVNUU1Gb1phczJjeEpEZ0JLTk5QVlYtOGZoY0JhT0Fmd1RPamJwenNCTHlJWnpxamJHR3pWTkhZelhfM3lNbnFNWVJZQzJ4cGdvZ3hUZVIyeDdPRXE3X2drdGFjWURNYmMtNVl2WEJTZ1BUc1RNQ0FBd3h3aWRCRkVFcFF1bGk3NDJUNVE4ellVTzVuR0lwZ1BBNzhnbHZsY0lWWVMxS2pLaXZCU3NuYWFJY2dXY2ZfQUtfb3dRNVJWc2xwc2RtRF9BaFFOeURVTEJoSTcyWTZjcWc1ZndsM3VibnA0WnprckQySGpBRmRCU2l2emZnYkRmVzJCa1RYVWZrLUNDTFRDTXRzejg?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "東京為替：ドル・円は切り返し、原油相場にらみ",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5xeU5aaTQ2ZksxejUyeE9xQUJhb1JrcE12VUEwSi1QQmppbG5wWUFiRVZaTEZ3OS0tV1E2MFBVT3ZQYmxXVDBqa3ZkNzRaTDdKWmc?oc=5",
+      "date": "2026-10-23"
+    }
+  ],
+  "商社・卸売": [
+    {
+      "title": "三菱商事の株価の今後は？他の総合商社と何が違う？上昇した理由を徹底解説！",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rYW52Ykg0aE5LRkNqZ25aeVdmX0NaVENCd2ZoYldmTEZJaGs5eDNCZVZzX1RVeTh4eHB3bHlGS0tfR0ZrT2JlYVRBMkxWelUyam8yRzVaWWI1cjktaUdPZA?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "日本総合商社の丸紅が色調化粧品ブランド「ロムアンド(rom&nd)」を運営するコスダック上場企業のアイファミリーSC持分を公開買収方式で買い入れる。 このようなニュースが伝えられ、アイファミリ..",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5LQkg4emd6RFNfVnlRQjUzenJxTWo4cHJEOTdYM2pGVmlnbHZUWm14dnRCeGxwTlpTUm1IYmZKdFNwQUVzV2ktdFFYbGJMVE0?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "【レジェンド農家ベスト22】「100億円企業」になる6つの法人はどこ？総合商社やデベロッパーが資本提携する豪農たちが利益率など経営データを一挙公開！",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBkSS16MWZFaVJGRDJqSXRrOWJaN1NpaXRXaG5XOEdpbXRNaXRpYWxUQmtHNXVFNUgyQ1R5cXpoTlB4QUc3c0FjUl9CdGHSAU9BVV95cUxNSkNVd3c5ZVJkVHJJSnZBV2VGMkhBLW5wTjVYeXlidmlHNVhQaUtsdnY3OHJSYTRFam1mdzlZZkxPSnZUT0NLNjNDS3pkQ1JN?oc=5",
       "date": "2026-10-22"
     }
   ],
-  "銀行": [
+  "機械": [
     {
-      "title": "みずほＦＧ－急落 日米の長期金利が急低下 銀行株に売り(トレーダーズ・ウェブ)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOEpwWVVwN0JsQ1pmM3F1SUZhOWNrUmkzT1Q2a3owTm14QjFOMkV5SXBDd1M2VEVtQVloVUhFa0xoVTBJRDFtZXdyS2IxNjlZd01iQ2ZzY190cUdUY29ralJTaWxCRUVEY0Z3emx3RlZZUWQwTEJoM2N3blp6R1llWmVYbVg1ZzQ?oc=5",
+      "title": "工作機械主軸の状態監視へ、NTNがセンサー内蔵軸受ユニットの受注開始",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB4OHRfNWxJSzgwWnlGSjMxNWtWTnZfTFRySFJHWUQyZjJGd3VHX3NxeXFrUE9lZm1xTjBPUkVVN3Vac2Rhako4NGRyb3BHTE5rSlZVVXRSMmEzS0stVFRUYzZLakNrY2l2TVc4ZlZ6MA?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "メガやネット銀、インドでIT開発 三菱UFJはベンガルールでAIツール",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBmUGZmZTlyUGpBQldydGdFRDdwZ192OFRlSzY4R29MdGZPMVFKNWpPaDZEWHk0eUhpSHB3MzdvOGFaMXg3ZF9xSU5lRW43Qk01ZVFGZ1dTT0lXQXotckJlTWRzczh0a09HRUdJUg?oc=5",
+      "title": "車向け工作機械受注、9月は26%増 部品メーカー伸びる",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wMTk1dk5VUFZGSVVyUnN2azF1aFRmM0hGQm5SSkdRN3lZcWZHdWZ6QmJnYk1ZaXc2amNVX0hmT1R4WWZBeExPWm5lZjFUUXRfUFZYdVQwUkUyTWpUOEoyMV9iYmRTSTN5bW9zNU5FQmtYTGpFOU9kcW1BX1dKQjA?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "「JIMTOF2026」開幕に向けて 日本工作機械工業会 会長 坂本繁友",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE40N1lXZXdWcDZEWkhzamdPLVJOQzdFbzBHX1ZpNlhXSWkySzZZUG16ZjlSZDVZWjlSOW53QVRCVVh1bnBlaUFYRFFR?oc=5",
+      "date": "2026-10-23"
+    }
+  ],
+  "情報通信・サービスその他": [
+    {
+      "title": "手間いらずについて、光通信(株)は保有割合が増加したと報告 [変更報告書No.7]",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PY0dRdDZ6ZlJSdUdBU0dJZHc1cU9HV2J1UldvMUg1aFZRRnFrTWtENFd6VFRmMWhVakh2aTJGaXhpVXZsWTRjLTQ3dVkyM2dqX3c?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "日本通信(株)【9424】：今の株価の理由は？値動きの背景をAIが解説",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QUTJGUEtKcTA0akx0bWxRQjhiWFA2RkNiSXkxRlZNVm9kYXBGQVhIbkNXbmtuWEd3a1lZU2FfQ2RyeFd6SHc2ZXdyTlVmcFE2cUZ1SHNkYWFkZk5Zekpn?oc=5",
       "date": "2026-10-22"
     },
     {
-      "title": "PHPの脆弱性発覚、メガバンク・ANAなど国内企業でサイト停止相次ぐ",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBlWjN3NnA0bnJDT0wyS01WMlFvQWQ3ckliMW9STm5oaUpxNGJzOWQ1bUNwb0VQaXRMS003b3JQZ3JsTHdidFpsS2ZpNEU5Z2Vkdmhwei1FODM0TU16cXNXci12RkNvNE1oTVFtQ2N3TTJ1SHBIbFhj?oc=5",
+      "title": "ＨＣＨについて、光通信(株)は保有割合が増加したと報告 [変更報告書No.10]",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NMkZKdlVpbm80YXlVVW5OclhBQW00Qmxockt4WlBlakZBSFR3Y1JwSzBGdHl1cEIzR2VCaS1uSWtGeHZBQlhqNWVrS3JSWTdsTGc?oc=5",
+      "date": "2026-10-23"
+    }
+  ],
+  "運輸・物流": [
+    {
+      "title": "秩父鉄道(株)【9012】：株価・株式情報（夜間PTS含む）",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9XbVNDWDRialdRc0FXdllkVUZNM3lsQTh2UFA0MFVsZWhqU2J5a1AyRHFnZlR6NkRMeTA2X1ZGQUZMbjBuVTUyclFzSm53VXFMWnc?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "香港株動向｜海運株の下落傾向が継続、米国は「シャドーフリート」の原油タンカーを合法化する方針、機関投資家は海運企業全体の株価に下押し圧力がかかると予想",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbHZCYUhsS1p1Ml9yWnJzRjJ2UTdaUVdVTHprVXA2Y0pRcnA3cm9YYmd6X0tweXR2NXdNS1lCQVhSRDFFUjdjMk1PSmkzZk9VMEt2MURMV1UxMHZ3cGp6eFVOWTFoLU0zbE1YVTI5OVo4VzdpQTR0MVdBUXFtSW9PMjdGN2hrX0psN2pvLXdQS1pHTXN1TlREcFNINXZmSmxkcTFTc3FSdzNlM2JObl9TSQ?oc=5",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "九州旅客鉄道(株)【KYHHY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE50Z2NTY0UzTGhvRGNSYXRIT3BMdWZtN0d1SW9DMzJLZU1TQkU5UDNMb0FZVXpELWNETU43UFlOSW5yMUkxNEVaV1RkV2ZRNjNt?oc=5",
       "date": "2026-10-22"
     }
   ],
   "電機・精密": [
     {
-      "title": "SKハイニックス、米子会社ソリダイムの上場検討中断 半導体株安で",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41SG9BZk05dVFIeHVZR3FKazY4T3Q1Q0hyTlNmYUpKY3V0RzNrRzI0MGxwclkxUkc0ZElabEE3ZFAxTEw3Mk5wZUluN2pFQjRVZllUQWxaMlF5RURXNDUwOWcxaE1aUDJ5TUFMWg?oc=5",
+      "title": "AI半導体株に売りの時限爆弾 迫る追い証リスク ヴェリタスEYE（10月23日）",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1VVTJieTJJZUdnSGpYVjIyM2NTaTliai03LUprOEZMSG5yNm9OS3B6WnV3Z3k2elZBdjhiYTY1MUp6QmJfMVUzYndDV1pZZFE2MzVWaDQ5ckpHeHBlbjkwMVNaMmpOSUFZU2ZYSHVNNzlhbi0xcEVyV3lDM2RzUQ?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "日経平均は続落で寄り付く、ＡＩ・半導体株が売り先行 6万2000円割れ",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWVh2X1ppUG5KcklXNEJna2xPc3EzZHpQdmsxVnFyWTUwU0g1V196SGNQWWdnaGRzZ1R0STNidlFBV2Z5Zm04YTJ1NEdkSERaR3ZjeThfeTEtRmRQeG1QbGZGWGM4VmFBNGVDQUJUYmVJYld0RG9GUGlDVmgwMmhwdU9xdjdPQQ?oc=5",
+      "title": "午前の日経平均は大幅続落、ＡＩ・半導体株が先導 一巡後は安値もみ合い",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPN1p6eFh3dkwxYnJBLVdQN19XQnJRdDJaUnZiRTNYbDBETmEtMzNrVGE0MjNhVnlrNjd2SzBWMUlHMmlBUUk4RlpHNUc0SW9hbmc3VUxXd1piUjh4cXRwZklRMzdzTW54VUt4MktMWGNWWlE3WTVDWjlRUFRtS3NGTEp3YmxtQQ?oc=5",
       "date": "2026-10-23"
     },
     {
-      "title": "【3つのデータを読む】AIバブル崩壊は早計…半導体株急落も年度末に日経平均〇万円？",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04T0dha0Ztbm5PTTVSMTMwbnlqZDJfZjA2Uk9nR3VhWEY1Y2toOTVpRVJBLVdKdHJQUVQ0aUZnMjBFM2F2RmhXckJwTEZLSWM?oc=5",
+      "title": "「ブラックサーズデー」再来？ 日韓台を襲った「AI・半導体株急落」の正体とは ｜FinTech Journal",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAyX3B5U2RYSkZqVmhtQmc1LWxhOXZ6X0g0NEFnZjNjcVhZZmVNbWZITDE3S3BaMHBSNm9pUzdzb3dwODJQdURtbkw2SVplRlE?oc=5",
       "date": "2026-10-23"
     }
   ],
@@ -200,9 +219,27 @@
       "date": "2026-10-23"
     },
     {
-      "title": "東証業種別ランキング：非鉄金属が下落率トップ",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZmJCQXdJLTVJVjA5cUtqY3JvT3BjQjlmNGJMVnV5TS1DZ1R0NDltNVQtUU5MSC1fSW1iTGYtNGFpV3BPQVpfMlZ5RnFFUWhkdUs1OWhhS0hZZldhZHY0SUtMMnRZYm9rMzNvZzE2aElWN0ZVRnRKc3RiWElzUGVBZG1Ic09pYkdwSEZTS2Q5MzMyaW5WaS1Bck1pbUh0THpwY0M1aFRCdGk1R2QwNE9GUWZyTHpCdnlLNFl4SnNIaS03dHppVnNYUG9vckRUa1RobGtRUFpfT3ByTG8xSmfSAYwBQVVfeXFMTTZySWdrT2JrS1AyOVMxNlJtNk5ZUFlaTFN0aEZZU2tEOFloUVdUc1VWVkxfUGx6RW5pR09vbTBsU1BPUjBHV1BUam1MWUJ1Ym1uSkgxUVFIcTFhbWpiYU9UMWxkb2FvZHpQTzFVTENncmxVSlJDcjUwbFBJRkxwM3RPbDZLR01DM2Zld2s?oc=5",
-      "date": "2026-10-22"
+      "title": "本日の【業種】騰落ランキング ＝ 前引け 【上昇トップ】不動産業 【下落トップ】非鉄金属 [11:31](株探ニュース)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNnFjckM3NFdYQ2ZqTUNCcDNZSU41VHlDbnNkTFZxNkZEaDY4RWNqcHJkQ3pyTXA2eG9SRzFuWjhuZDJmWlp0bU8tOVAzc3RQa0NjU2Y4TEVKQXJwUEdiUHU1ZjljaDQwUFF3aU11OUtXQUREWjlGVmQ1MEc0VHpYZXJvZ0dWQTA?oc=5",
+      "date": "2026-10-23"
     }
-  ]
+  ],
+  "銀行": [
+    {
+      "title": "3メガバンク、免許証の本人確認廃止（共同通信）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oYThURWFyQmtUaW9xVTlBVXRSeEdRdU1PRTV5SmRKUXJlV1JpaVlfVElDVjhGUFBvWFU4bjVOWU43azUtaUpTdVYxaDNDTW84QWpqN0pWaDQ5bzRJaGRIeWFldDZVbFl1bXBrYUY5RXpFT2RoVUpYZUVtRjhqYlU?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "3メガバンク、免許証での本人確認を廃止 前倒しで不正対策",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14U3Y2YzBkMkJoM2FzRk5vS2VoWkYzZTZuT0g1U0Z6cU94SGhJNUNianNVa1FNWWlvUHcxZmh3Q3g3T1I0V2tnLXh3X2ptcDJDZDVKWHM0cjNJampEelVnZ19UVlJ4Y2huMFYwWA?oc=5",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "メガバンク、免許証での本人確認を終了 不正アクセス対策を前倒し [情報漏洩・個人情報流出の最新ニュース]",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04ZGloTjI1THlacE5GbU45cF80bTlMNWlXRnVxM0RuQ3dOX0Q1ck91TG02anhiWTJSaW42NUhWMnpkR0xaYjljYkZOcEJxdFQ2T1FtNUV0WjVRa0xrRXFhTk5TMWtyNk0?oc=5",
+      "date": "2026-10-23"
+    }
+  ],
+  "食品": []
 }
