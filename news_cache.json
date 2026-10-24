@@ -1,23 +1,10 @@
 {
-  "電気・ガス": [],
-  "自動車・輸送機": [
-    {
-      "title": "三菱自動車(株)【MMTOY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1USTFpam5sNXg5WEpiaEVJZVhYbEdELTFaa1p5cWpTUkxZV3A0WnZNb3FNZFdrY0tNYUlXOVcxazhreE85RzBLZmdUcTByaVNu?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "トヨタ・日産・Honda『TECH DRIVERS』26年度開催決定",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1KNGhoNWQ3RkxXRGNHZkpmMzVzU3dFczZzWnJxVW9oRnA2czJUNVdCQnJiODc1T296TEw4aWlQZy04bGRNU0E?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "自動車業界最大手三社 トヨタ・日産・Honda合同イベント『TECH DRIVERS』が2026年度も開催決定！AI時代、自動車業界の開発現場はどう変わる？",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0zYWRyX3RObVpVU2hVeEtHTWFLc2ZxNFQ0dUlrcGZrcXgwak9KYW9aTGVoZjR6VG05bU80VGViWDdROTNjREFLY0dB?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
   "不動産": [
+    {
+      "title": "REIT間取引に見る収益向上策",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wZERsa2N6S2dBaC11MHJ6WE01aENEQ0ZZd2tuZ2JnZXpXSGtNTkVJaENTN3VnX1ZCQno5OC1IWFNWdmJIS09uXzNKMWFxcTFvWmZHb2l0NFEyWkZuVFowZmdXTGQ?oc=5",
+      "date": "2026-10-24"
+    },
     {
       "title": "SBI・J-REIT(分配)ファンド(年4回決算型)【89311245】：基準価格・投資信託情報",
       "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83THZYMHAzSUpiV0lJMnMwRVBqR2I2cjQyLTlsNC1aYmVGZWNhcW1aQi02eF80WTVBdGowWHNoZmZJRS1CbWkyWV9MeHdsMS1jMF9kVw?oc=5",
@@ -27,11 +14,13 @@
       "title": "日本都市ファンド投資法人が第49期決算、JMFレジデンス桜ノ宮等3物件売却を発表",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPR3RhWkZVdDZSVTRWcWZUbGd3WU9BQlAyV21mVmRGeExTenc3OWdXNzhBbzdiRjkzRzFTcGc2dTA5bVM3RmtCUWNtcERpWm1WNWJGME80SVg0b0laVy1Hb2pfQWFMRmh5TGlBYWVGYVQzbC0ydDFnbFZmQVJ3bXh1alV3NlFxWFk?oc=5",
       "date": "2026-10-24"
-    },
+    }
+  ],
+  "金融(除く銀行)": [
     {
-      "title": "年間3万4,000円の副収入！決算月分散REITで作る「毎月分配金」ポートフォリオ",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tV2RjdDBwUjJtVmo0QWl3bzJOWTlIX2ZZZzFISGlhR2ZZdTNwU3B0UXRLai13R1NLSnhuc0VfTzJGYzM5c0lMMFdXal82NDRiTkVWVTFhekZ4Zw?oc=5",
-      "date": "2026-10-23"
+      "title": "岩井コスモホールディングス(株)【8707】：株価・株式情報（夜間PTS含む）",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1pV2IyRkREVjBxLVQxTlNCdnFTQ0tFUHh0aEQ0UDR1RTZXNC1EVk42T0lZNGRKN1RsbXFaN2xtUTVaUFdjMGJucmVZb2tPYWVJOGc?oc=5",
+      "date": "2026-10-24"
     }
   ],
   "医薬品": [
@@ -42,93 +31,42 @@
     }
   ],
   "食品": [],
-  "小売": [
+  "電気・ガス": [],
+  "建設・資材": [
     {
-      "title": "東北のご当地グルメから話題のスイーツまで！初登場11店含む約７０店舗が一堂に集結 「大東北展」 を開催します",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9JRjZsdXo5VjdJOENlSUlETW0yVnhITk90ZmhuUHZ6T3dMUGhoZUZWNWNjN3J5TzI5djEtVnFBc1FmZkU?oc=5",
-      "date": "2026-10-23"
-    },
+      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
+      "date": "2026-10-25"
+    }
+  ],
+  "小売": [
     {
       "title": "【オリエントスター】Orient Star Skeleton 先行予約受付中",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1MODRjYmVnWmQwSFZxcVVkREdTVG5qSU12NDhHdTBhVlZDcFBKdUk5b2pPOVA4SmgzcGVEQmxBdW85WU9SblczUEdpTEM0UlU2NklDeW5UVUZiM29Q?oc=5",
       "date": "2026-10-24"
     },
     {
-      "title": "9月百貨店売上4.2％増、早めの秋やインバウンド好調で＝百貨店協会",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOVhybEdnVlB0ZU0yNUQzMHNGSGwtRnFHX0Y5bm1HQ1ZXVkh2aVRFdktVX0tnb0ZoUE52UUt0WHgxbV81UzROemN0Um1lOWpUSFYxWWhTdFRhZmpaelljOVVnR0NHcnJTb1N3eGZKZWlST0hodzJlNFNfZ28wbkhWbE1rQUNiZw?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
-  "建設・資材": [
-    {
-      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
+      "title": "厨房併設のブランドが関西の百貨店初登場 「アトリエうかい」阪急うめだ本店にオープン",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1tOThFUVZvNEpHZmpyMENYOFd0X3oxTDlCSkdGd0xBb0pJUDk0Mk9scHJGNF9nT3lLNjRxemdZcWI0TVJtaTVYVlFOYw?oc=5",
       "date": "2026-10-24"
     },
     {
-      "title": "リニア静岡工区、2026年内着工は困難か ゼネコン談合事件の影響で 「早くても2027年春」との見方も",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBsbW1jOEVnS3dBSnU3V2tqQ0dlSGs5TTRBTndwaGhCNkFHdUtXMkNOMjJETV9GeGEzMDRqcWgteURsTDZIYnU3NlZ4YllibU90VWk4UWsyQQ?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "JR東海「独禁法違反認定、大変遺憾」＝リニア談合、ゼネコン処分で(時事通信)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPX0d0NEdHWFBERFBWZFgxT0lCNFdPRlZnVjQ0aWYzVW1oSkV2dm1WU3BvbFhheXZtYVBvTWdRNVc3SUxTbFpvQ3MyVG9xS19HYnREZ1lDX3VxbFg3eFBDdGRFMTNBZ0F4anRnR0pwb1Ixd3JtSHlIa0xzcks3SVZxRzlMcE04Wkk?oc=5",
-      "date": "2026-10-23"
+      "title": "「愛とアートに国境はない」 石川・金沢市の百貨店で現代アーティストの作品展示販売会（2026年10月23日掲載）",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNR21JbW9SR1NUVVNSbFdxdmlxMFhvZlFROXRQSWloSmVnYk02OVV1S05mNnJhajNraTFiT1ZhN0lRcjZJV1F5bUFmMGs1QURKX1ZFVVQzRk1aVTNDZnhLc3h6eVJYc3k2TUtmVlp3ZnpJN2dpdlZkb2xONUNnYmhsR3dtdw?oc=5",
+      "date": "2026-10-24"
     }
   ],
-  "金融(除く銀行)": [
-    {
-      "title": "本土前引け：3日続落、一時3600ポイント割れ 保険株は全面高(トレーダーズ・ウェブ)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbmFfR21ZdlNob0ZNZm51ZFg3LUFKUm5lQmhzWVRKMXZqNnVmMkN5UnpISlhqNzNTZXRzZnktOEJwcXB4LUNIeFQ5YTIwWFZlRklXZ2x0eUliVWROQm13Z2tfdTBMNTNlSFFIQ2FUdldmazF4VGw2MEtGRENlaTE0Tmx1MGJ0VTA?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "本土前引け：3日続落、一時3600ポイント割れ 保険株は全面高",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1rZXBKSzVHeGJGd0ZJT2Z4YzBRY19lYnF2MVpBQnVKclJnY19KRFhrNEVQV0RPcmhrOVNTU203MzNxMTcwWEpaX0RwcF9iSTZnV2M2ZUkwNkZJU3hRTm5mdkQxWGo5YURKX2dONkMzNA?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "本土前引け：3日続落、一時3600ポイント割れ 保険株は全面高",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9aOVZyY3dQSm9JVWVLUUM2bGdWV3p5cEhlZ2V0SEhIM0ZSNTNPUC1scWRHNHZxdk0tQS1mVGE3TzhZcElXWG42eTBxSTMtNWc3SGxsWEpFRVdYV3FqT3VvX0p1bTlFcWhUU0N6RXYyNA?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
+  "自動車・輸送機": [],
   "素材・化学": [],
-  "運輸・物流": [],
-  "情報通信・サービスその他": [
+  "商社・卸売": [
     {
-      "title": "手間いらずについて、光通信(株)は保有割合が増加したと報告 [変更報告書No.7]",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UdFRMeEY2QTdzZ1k2ZUwxdUtDSFhpZmgtcEN0R2N2bzItWlQ0UlF1QjlMRTZEcVo5T0thMXY5MkRtMzRFNTNPcXYtXzlaUjNEWWtjYUVrYkZlZU9TTmE2ZA?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "ハイテク株が堅調に推移する中、ナスダックは小幅高。スペースXへの懸念が通信株を圧迫",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5pNkoyRmJtRXZsZ21uYTJxM2xlMEllZk5CdDMxRUZfdGxhc2Z5OGVTbmN4eGFpWVFLbV96VGFMMHhJOURScW1jVFYwZmEzbVdtRVc3MVgtYkF4cldEV1JRcENWV2JqQy1QWVpLbUdsUzI5TVhERV9v?oc=5",
+      "title": "日本総合商社の丸紅が色調化粧品ブランド「ロムアンド(rom&nd)」を運営するコスダック上場企業のアイファミリーSC持分を公開買収方式で買い入れる。このようなニュースが伝えられ、アイファミリー..",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QVE10UmJ3REVzTjA1dU1JcFVmcVR6NzlVbm5UMzRZZUpQREE1Q29kR0wwRUJqSElTX25sRXA0a3ROWjF2RnYyTkF1dzNrV00?oc=5",
       "date": "2026-10-24"
-    },
-    {
-      "title": "SpaceXのモバイル事業への野望が、通信株に再び打撃を与えている。最新の動向が意味することとは。",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOamt1SHFMU2JGYTZQaUlKQ2lyU2JiSDRlUFVFTU9CMUR0QjZVSWY3c1JTd1RiVm56MGxtM3ZzZjhJdDg5aHc3b1pPVVRPbUZnWnktSmhMM25Pa3NsZklCYUh5MW1OMVVTTTNGM3N3Uk9Kc1duNUVicUduZ2duOFVKcy1TSE84dXRIbFNQa1IzcUZVVmI5X1RReXI0OUpBb2FkbC1RdWcxOWZRMXBqN2JuaDE4Zw?oc=5",
-      "date": "2026-10-23"
     }
   ],
-  "電機・精密": [
-    {
-      "title": "AI半導体株に売りの時限爆弾 迫る追い証リスク ヴェリタスEYE（10月23日） - 日経ヴェリタス",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1VVTJieTJJZUdnSGpYVjIyM2NTaTliai03LUprOEZMSG5yNm9OS3B6WnV3Z3k2elZBdjhiYTY1MUp6QmJfMVUzYndDV1pZZFE2MzVWaDQ5ckpHeHBlbjkwMVNaMmpOSUFZU2ZYSHVNNzlhbi0xcEVyV3lDM2RzUQ?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "AI半導体株に売りの時限爆弾 迫る追い証リスク",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1hNy1Yb3h2cUl5aC05WU1wNTFpZkJqQVRKS21nVGM1QlVBa05rTlRDU0J5ZW03SEtJVFdVNTN6aGhhZDlkLWFMY1VnNDBnZVhOdmItQQ?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "日経平均は続落で寄り付く、ＡＩ・半導体株が売り先行 6万2000円割れ",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWVh2X1ppUG5KcklXNEJna2xPc3EzZHpQdmsxVnFyWTUwU0g1V196SGNQWWdnaGRzZ1R0STNidlFBV2Z5Zm04YTJ1NEdkSERaR3ZjeThfeTEtRmRQeG1QbGZGWGM4VmFBNGVDQUJUYmVJYld0RG9GUGlDVmgwMmhwdU9xdjdPQQ?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
+  "運輸・物流": [],
+  "情報通信・サービスその他": [],
   "エネルギー資源": [
     {
       "title": "原油はあるのに燃料が足りない 世界を苦境に陥れている「石油危機」の本質",
@@ -146,57 +84,19 @@
       "date": "2026-10-24"
     }
   ],
-  "機械": [
+  "鉄鋼・非鉄": [],
+  "機械": [],
+  "電機・精密": [
     {
-      "title": "工作機械主軸の状態監視へ、NTNがセンサー内蔵軸受ユニットの受注開始",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB4OHRfNWxJSzgwWnlGSjMxNWtWTnZfTFRySFJHWUQyZjJGd3VHX3NxeXFrUE9lZm1xTjBPUkVVN3Vac2Rhako4NGRyb3BHTE5rSlZVVXRSMmEzS0stVFRUYzZLakNrY2l2TVc4ZlZ6MA?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "車向け工作機械受注、9月は26%増 部品メーカー伸びる",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wMTk1dk5VUFZGSVVyUnN2azF1aFRmM0hGQm5SSkdRN3lZcWZHdWZ6QmJnYk1ZaXc2amNVX0hmT1R4WWZBeExPWm5lZjFUUXRfUFZYdVQwUkUyTWpUOEoyMV9iYmRTSTN5bW9zNU5FQmtYTGpFOU9kcW1BX1dKQjA?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "日刊工業アーカイブス／東京・晴海で見本市 工作機械、世界をリード",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15eEw4aU5FX1dzZ3dXdTNGclAxMnBaR1JLNlpfai01cnFxRS04TGRnRmlMODYtRTVyNG42Wm9iVHNCUDBVcGRmd2lWSDdadU5KUHNocnk5Mkk?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
-  "商社・卸売": [
-    {
-      "title": "日本総合商社の丸紅が色調化粧品ブランド「ロムアンド(rom&nd)」を運営するコスダック上場企業のアイファミリーSC持分を公開買収方式で買い入れる。このようなニュースが伝えられ、アイファミリー..",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QVE10UmJ3REVzTjA1dU1JcFVmcVR6NzlVbm5UMzRZZUpQREE1Q29kR0wwRUJqSElTX25sRXA0a3ROWjF2RnYyTkF1dzNrV00?oc=5",
+      "title": "日経平均続落 売り一巡後はAI・半導体株下げ止まり、内需株シフトも【日経CNBC/きょうのポイント、明日のヒント】",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lZTNFZWJSeFl1WnBud0lZOGl6Ymg3MmpXTkZpNFYtMTl4TXNoSkg4X2UwY1BVVm9yb18yR3JrMjVXTFBhTE5HTWpZVFA3bnZNTktqblV4VjJXQnVnanlRSkhtM092YkU?oc=5",
       "date": "2026-10-24"
     },
     {
-      "title": "三菱商事の株価の今後は？他の総合商社と何が違う？上昇した理由を徹底解説！",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rYW52Ykg0aE5LRkNqZ25aeVdmX0NaVENCd2ZoYldmTEZJaGs5eDNCZVZzX1RVeTh4eHB3bHlGS0tfR0ZrT2JlYVRBMkxWelUyam8yRzVaWWI1cjktaUdPZA?oc=5",
-      "date": "2026-10-23"
+      "title": "底抜けが漂う半導体株、決算に反発を託せるか｜池田伸太郎",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxcnlQUHk5VzBNdlRZb3o4Z2ZtNXBKalMxX0dMcXpCZ09HSG55Q1M3RWdiSUxYU1N2dEN6NWJad19zVTl4NmhoRHJKMmk1YjM3X2c?oc=5",
+      "date": "2026-10-24"
     }
   ],
-  "鉄鋼・非鉄": [
-    {
-      "title": "寄前【板状況】＜業種＞動向 【上昇トップ】不動産業 【下落トップ】非鉄金属 [08:52]",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lcWcyeTBkNEUwVDdvVXdqVHB3Nm8ydjNXTHYxN1lVUktrLXRMVURZNkoyY3lyREw1VmRxeWtfNjFKWUtkNTNYQnZfYUlqczltd1JKdDN3TGJ6ak1Bb0g0dQ?oc=5",
-      "date": "2026-10-23"
-    }
-  ],
-  "銀行": [
-    {
-      "title": "3メガバンク、免許証の本人確認廃止（共同通信）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oYThURWFyQmtUaW9xVTlBVXRSeEdRdU1PRTV5SmRKUXJlV1JpaVlfVElDVjhGUFBvWFU4bjVOWU43azUtaUpTdVYxaDNDTW84QWpqN0pWaDQ5bzRJaGRIeWFldDZVbFl1bXBrYUY5RXpFT2RoVUpYZUVtRjhqYlU?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "第4段階に入った東北メディカル・メガバンク、診療情報との連携や大規模プロテオーム解析などを展開",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9SVUx3YnhjVEJ0cmlDNWJ2SXlFWXJXdnhoelBXMFZBMHhvMm16b3N0TWxtZ29aMXM0dkRaYUg3TXN1NENLWjFsdUU4ZXo2TURmM3l2U1dYV0UxY0dVMUhHOWxCc3p6UQ?oc=5",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "3メガバンク、免許証確認廃止 相次ぐ個人情報流出受け ネットの口座開設厳格化",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB0Z3VvTXVXb2FuQ0RNYU1pbDZ5MkFCeGZocVdZVElpeVlRdGVZM1c5dE95NVVha3k5YlA2QXk1V1E3YXNiaHE1Tl96ZXRxY01Bc2xkcFQ1YlFpYVZTaEU4ZF9NbmF5VmJQVTZDNDAzTEZfZnlrTUE?oc=5",
-      "date": "2026-10-23"
-    }
-  ]
+  "銀行": []
 }
