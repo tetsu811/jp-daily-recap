@@ -1,33 +1,13 @@
 {
-  "金融(除く銀行)": [
-    {
-      "title": "金利上昇期に保険株、魅力浮上配当魅力度と期待は最近停滞株主還元の側面で不確実性は依然として残っている",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5CTkZyZHpzQ1ZDNHZrcnV0VFlZVG90MUFBTlRNWXZvV1lRNjluZ25UTUpqcEd3T2wtc0xNelFXX0NnU1U4SV85Ujl0OWZhN3c?oc=5",
-      "date": "2026-10-24"
-    }
-  ],
-  "食品": [],
   "自動車・輸送機": [
+    {
+      "title": "三菱自動車(株)【MMTOY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1USTFpam5sNXg5WEpiaEVJZVhYbEdELTFaa1p5cWpTUkxZV3A0WnZNb3FNZFdrY0tNYUlXOVcxazhreE85RzBLZmdUcTByaVNu?oc=5",
+      "date": "2026-10-26"
+    },
     {
       "title": "トヨタ自動車(株)【TM】：株価・株式情報",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBBVUdJM0U0aFlkR0FQN05mMW1YR2VRTlVLdEE1d19aRE9MWndrR1NnWTJZb1VtZmtjSGxRTzZseVZQaVhNU1NNUUJFSU8?oc=5",
-      "date": "2026-10-25"
-    }
-  ],
-  "建設・資材": [
-    {
-      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "大アサリの稚貝が大量に… 画期的な養殖技術 漁師と大手ゼネコンがタッグ ｢最強のパターン｣ 愛知･篠島",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5PLXpIaUtqbkQtZlpaanlaMUVqNmtpZGdhVGh6UjQySGlYczlobXNYTEhrWWQ4MUE3RjN0b1ZVTS02clB6MjBnbllUSXpBUEZiUV9LZHhaUQ?oc=5",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "大アサリの稚貝が大量に… 画期的な養殖技術 漁師と大手ゼネコンがタッグ ｢最強のパターン｣ 愛知･篠島",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Ub3lfcEVrcWNmWGppdzVDUnBVYUFEWERjZm1jWlZpWk93eEFCQVJzM1QwNU5NUWRqU0V6U21xVkZDUUJ5TjJrQmRqR0F1WDJwcWJXQjBzaHdtN3MwVWlreA?oc=5",
       "date": "2026-10-25"
     }
   ],
@@ -38,7 +18,30 @@
       "date": "2026-10-25"
     }
   ],
+  "食品": [],
+  "建設・資材": [
+    {
+      "title": "大アサリの稚貝が大量に… 画期的な養殖技術 漁師と大手ゼネコンがタッグ ｢最強のパターン｣ 愛知･篠島",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5PLXpIaUtqbkQtZlpaanlaMUVqNmtpZGdhVGh6UjQySGlYczlobXNYTEhrWWQ4MUE3RjN0b1ZVTS02clB6MjBnbllUSXpBUEZiUV9LZHhaUQ?oc=5",
+      "date": "2026-10-25"
+    },
+    {
+      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
+      "date": "2026-10-25"
+    },
+    {
+      "title": "大アサリの稚貝が大量に… 画期的な養殖技術 漁師と大手ゼネコンがタッグ ｢最強のパターン｣ 愛知･篠島",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Ub3lfcEVrcWNmWGppdzVDUnBVYUFEWERjZm1jWlZpWk93eEFCQVJzM1QwNU5NUWRqU0V6U21xVkZDUUJ5TjJrQmRqR0F1WDJwcWJXQjBzaHdtN3MwVWlreA?oc=5",
+      "date": "2026-10-25"
+    }
+  ],
   "不動産": [
+    {
+      "title": "Oneリート投資法人が第26期決算を発表、1口当たり実績分配金は2,553円",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObjlmR3huZ3RWTmRuQjAyY093OHYtdnRUQUNBNFYwQnE1RGN6Z05WUjFBLVZ5WkVsdlY5Q2htcWswaEgtbjhDaGw3WGswVTVKVjh6ZlNwbU1fcVlaZW9sZjIyVlVLUV84VjdTenh5S0FLTUxPWkdvQWpDdHpaLXRhLXBKQlo3RGs?oc=5",
+      "date": "2026-10-25"
+    },
     {
       "title": "【ＲＥＩＴ高配当利回り】ランキング (10月23日現在)",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBsSkg1aXZZa0VMNGg5bHBmWVd2OGZWS3pwWFlZWm5KcUtXX3NYYXIzTkxBeHBLUlRxN3UtcFdfb0QxX3k4eWdVb2IxN1BlbHJfUGN1WDdqT2lFVUJ3c3J4dQ?oc=5",
@@ -48,11 +51,13 @@
       "title": "【ＲＥＩＴ高配当利回り】ランキング (10月23日現在)(株探ニュース)",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM2JoaFlLYkJKeklJMUh3VVZCZ29hZDg3RFpJMUVmekJ6LXVlbWNkYlBRZVdPRzNNSi10U2JIakt4ZmhGb3djQ3M5aVpCYnVBU1dmSV85QTEwWGRRdC1WbkRaWjJRQXNlMk95aXN1ZTZiUVZkbHZlWEZ0R1NXMmxodGFLMFBwalk?oc=5",
       "date": "2026-10-25"
-    },
+    }
+  ],
+  "金融(除く銀行)": [
     {
-      "title": "REIT間取引に見る収益向上策",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wZERsa2N6S2dBaC11MHJ6WE01aENEQ0ZZd2tuZ2JnZXpXSGtNTkVJaENTN3VnX1ZCQno5OC1IWFNWdmJIS09uXzNKMWFxcTFvWmZHb2l0NFEyWkZuVFowZmdXTGQ?oc=5",
-      "date": "2026-10-24"
+      "title": "東京本社勤務も経験 地方からキャリア描ける環境 東京海上日動火災保険（株） 岡山市 名田 美千子さん （48） 岡山支店 倉敷支社 マネージャー",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5lSVIyRk5XbEtDUFFFbkFJYl9UTjdHcWZFbzlfaS1Nc052TDh5V0c0WGs5ZkhrYWYybnJ3MllqSHhDTmlMZTdRZTRsaVpZM1RleUE?oc=5",
+      "date": "2026-10-25"
     }
   ],
   "医薬品": [
@@ -64,13 +69,13 @@
   ],
   "小売": [
     {
-      "title": "多様さで「おせち」離れさせない 百貨店が商戦入り 幅広いニーズに訴える：ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XUTkydUJFNG5xUEVRVmRBcXVLN3hNbXdpU1E2QnFmaWNXMG4yeHN0VHRNS0t4NXF2ZnhyM3owNFRqSVg1V25ZdWZXSXhmenMzTHJxVGxDMHlLZG5MaktB?oc=5",
+      "title": "クリスマスまで2カ月、韓国百貨店が早くも装飾準備…恒例イベントの予約競争に関心（KOREA WAVE）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLZ1c1dmNYYkVLMFNSc3haWGZJM1R1QnFxMzBDU0trdjFabi1ibFVaREoxQVgzMmNUMmpWXzh3MXVTN0xyRnA4SHFaWmljN2xaUFNkX1BNS1g3dTRNb2M4WjVFMFAxMTRjTFR5NUZCVnRJbGNLb2dhdUJuWHVGams?oc=5",
       "date": "2026-10-25"
     },
     {
-      "title": "クリスマスまで2カ月、韓国百貨店が早くも装飾準備…恒例イベントの予約競争に関心（KOREA WAVE）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLZ1c1dmNYYkVLMFNSc3haWGZJM1R1QnFxMzBDU0trdjFabi1ibFVaREoxQVgzMmNUMmpWXzh3MXVTN0xyRnA4SHFaWmljN2xaUFNkX1BNS1g3dTRNb2M4WjVFMFAxMTRjTFR5NUZCVnRJbGNLb2dhdUJuWHVGams?oc=5",
+      "title": "多様さで「おせち」離れさせない 百貨店が商戦入り 幅広いニーズに訴える：ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XUTkydUJFNG5xUEVRVmRBcXVLN3hNbXdpU1E2QnFmaWNXMG4yeHN0VHRNS0t4NXF2ZnhyM3owNFRqSVg1V25ZdWZXSXhmenMzTHJxVGxDMHlLZG5MaktB?oc=5",
       "date": "2026-10-25"
     },
     {
@@ -80,25 +85,18 @@
     }
   ],
   "情報通信・サービスその他": [],
-  "電機・精密": [
-    {
-      "title": "日経平均続落 売り一巡後はAI・半導体株下げ止まり、内需株シフトも【日経CNBC/きょうのポイント、明日のヒント】",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lZTNFZWJSeFl1WnBud0lZOGl6Ymg3MmpXTkZpNFYtMTl4TXNoSkg4X2UwY1BVVm9yb18yR3JrMjVXTFBhTE5HTWpZVFA3bnZNTktqblV4VjJXQnVnanlRSkhtM092YkU?oc=5",
-      "date": "2026-10-25"
-    }
-  ],
   "素材・化学": [
     {
-      "title": "住友化学(株)【SOMMY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1aXQ5eVBaWmlnRGpmNElxd082WlVTLU1LalB1Z2RlazBIcjF2WWRXd3pnNXk2bDRBLXh3STJBNEc2ZTZ5ZUJBajB5SnFTT1Fw?oc=5",
+      "title": "三菱ガス化学(株)【MBSHY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zNGhXTHhMcjVWRzNtWnN6YlRXSHRTb0VseFlrTTA1azZOc29Kc1pMNndYc2Z5NE03UVJhWkFpNWZZbjhYckJXcTJGTEJXVDhZ?oc=5",
       "date": "2026-10-25"
     }
   ],
-  "商社・卸売": [
+  "エネルギー資源": [
     {
-      "title": "日本総合商社の丸紅が色調化粧品ブランド「ロムアンド(rom&nd)」を運営するコスダック上場企業のアイファミリーSC持分を公開買収方式で買い入れる。このようなニュースが伝えられ、アイファミリー..",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QVE10UmJ3REVzTjA1dU1JcFVmcVR6NzlVbm5UMzRZZUpQREE1Q29kR0wwRUJqSElTX25sRXA0a3ROWjF2RnYyTkF1dzNrV00?oc=5",
-      "date": "2026-10-24"
+      "title": "ビットコインは8万ドルを維持できるか──米原油在庫が300万バレル減、インフレ長期化を示唆【価格分析】(NADA NEWS)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTHNZaWt2SWhYSW1UQTZOMGdFZmc4SkFUXzJNakNBdEY2SGk5SUNQM18wc0FwSnFNNEYybVNkZWZjVG4zYmdYNVdFX1M4UGthWlZ6SmFJLWZjcE14ZUVyYVg3N081QTd6QnpmRy1leXNLTHlXWll6cjUzR1NsTml4Z1JxZXd3Z2M?oc=5",
+      "date": "2026-10-25"
     }
   ],
   "運輸・物流": [
@@ -115,24 +113,15 @@
       "date": "2026-10-25"
     }
   ],
-  "エネルギー資源": [
+  "鉄鋼・非鉄": [],
+  "電機・精密": [
     {
-      "title": "インドネシアのレギュラーガソリン、1㍑90円 原油高でも4年据え置き",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9IcTAtbzlpSVZnNHBCSmJSM2VVbkhkWm9TNFc3T1AtcGdxWlZTTmVFeXZtWmFadWszenFFYnVMQmh6UXl4ZTNxSWZXRlBYeTl6S2d3SHZKeFp0cXoyUE0zWk5udEtBeW9sc1lDTg?oc=5",
+      "title": "日経平均続落 売り一巡後はAI・半導体株下げ止まり、内需株シフトも【日経CNBC/きょうのポイント、明日のヒント】",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lZTNFZWJSeFl1WnBud0lZOGl6Ymg3MmpXTkZpNFYtMTl4TXNoSkg4X2UwY1BVVm9yb18yR3JrMjVXTFBhTE5HTWpZVFA3bnZNTktqblV4VjJXQnVnanlRSkhtM092YkU?oc=5",
       "date": "2026-10-25"
-    },
-    {
-      "title": "原油高止まり…背景にホルムズ迂回のコスト増 中東産輸出はイラン攻撃前の75％超に回復",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBBRmJvOWNwMkNIMEFlQXEwNG03U3ZsX296LV9pdXRFeS1nMkRxbTBtU1FxNXdEdmdPN0xnTkh2bHRHSjk0SGRSbkphU3ozOUVRbkRKbXdvSVRsMnlTVV9aeGw0bHAzeHJ3ZHZpZFVkYmR1RzdvcWc?oc=5",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "原油先物3ドル超上昇、半年ぶり高値 フーシ派攻撃で供給懸念",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE82c0VqUXZQc21FZUJ2VHFES1Y1TExsYnhPS2haRFU1a3JILUtpRU5ReGVXU1pfb1FRb2ZzaEc1NGZ5ZFF4V2tUVXYxS2I0MTZ0MkhQUTdaOVFNcFJCSDE0UENUeHNPMC1wT0VXWWhlVGRKWlhHM2tEOFl1NzRwdw?oc=5",
-      "date": "2026-10-24"
     }
   ],
-  "鉄鋼・非鉄": [],
+  "商社・卸売": [],
   "銀行": [
     {
       "title": "2年半で金利は500倍に…メガバンク・ネット銀行・個人向け国債、預け先で利息はどれだけ変わる？",
