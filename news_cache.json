@@ -1,18 +1,52 @@
 {
+  "医薬品": [
+    {
+      "title": "小林製薬(株)【4967】：株価・株式情報（夜間PTS含む）",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wRkVFX0VMbFcwM0pGTk5nc1Z3dTVoS3pELXBJaldNWjdrc0dRNUdBV2Vta3BadnZ2Um9oNFBQTFd2ZHNMQlZtWUNPaG9tb3BMbFE?oc=5",
+      "date": "2026-10-25"
+    },
+    {
+      "title": "シンバイオ製薬(株)【SYMQY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpLXdnazFVYk9IYmEwbm1TM2lvZTV4UWloWHpWMEpvcFk5WXVwVXlRTnBqSk44aDVDLW5ncnV5WnF5QTVtQWpweG5UZm9Edmkt?oc=5",
+      "date": "2026-10-24"
+    }
+  ],
+  "自動車・輸送機": [],
+  "電気・ガス": [],
+  "小売": [
+    {
+      "title": "「そごう撤退→市が20億円貸し付けて三越を誘致」…百貨店が消えた徳島中心街「衰退→再生」の難しい“顛末”",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yLWM0TEluN1lOZzRXRTU1bXlZNVV3NDlGT081MlloX3lGVFdiX0ZEWXF4ZF9YYmE5WFA3ekJYVW5UYlZSWVh5NXhqc1prSndLRWRyVV9BdkZvR3pJNHBuTGFka29LbG4zZXBlLVpFZ0kxUDNBM3NTRnVHV3RHdE0?oc=5",
+      "date": "2026-10-25"
+    }
+  ],
   "不動産": [
+    {
+      "title": "SBI・J-REIT(分配)ファンド(年4回決算型)【89311245】：基準価格・投資信託情報",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83THZYMHAzSUpiV0lJMnMwRVBqR2I2cjQyLTlsNC1aYmVGZWNhcW1aQi02eF80WTVBdGowWHNoZmZJRS1CbWkyWV9MeHdsMS1jMF9kVw?oc=5",
+      "date": "2026-10-25"
+    },
     {
       "title": "REIT間取引に見る収益向上策",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wZERsa2N6S2dBaC11MHJ6WE01aENEQ0ZZd2tuZ2JnZXpXSGtNTkVJaENTN3VnX1ZCQno5OC1IWFNWdmJIS09uXzNKMWFxcTFvWmZHb2l0NFEyWkZuVFowZmdXTGQ?oc=5",
       "date": "2026-10-24"
     },
     {
-      "title": "SBI・J-REIT(分配)ファンド(年4回決算型)【89311245】：基準価格・投資信託情報",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83THZYMHAzSUpiV0lJMnMwRVBqR2I2cjQyLTlsNC1aYmVGZWNhcW1aQi02eF80WTVBdGowWHNoZmZJRS1CbWkyWV9MeHdsMS1jMF9kVw?oc=5",
-      "date": "2026-10-24"
+      "title": "【ＲＥＩＴ高配当利回り】ランキング (10月23日現在)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBsSkg1aXZZa0VMNGg5bHBmWVd2OGZWS3pwWFlZWm5KcUtXX3NYYXIzTkxBeHBLUlRxN3UtcFdfb0QxX3k4eWdVb2IxN1BlbHJfUGN1WDdqT2lFVUJ3c3J4dQ?oc=5",
+      "date": "2026-10-25"
+    }
+  ],
+  "食品": [],
+  "建設・資材": [
+    {
+      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
+      "date": "2026-10-25"
     },
     {
-      "title": "日本都市ファンド投資法人が第49期決算、JMFレジデンス桜ノ宮等3物件売却を発表",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPR3RhWkZVdDZSVTRWcWZUbGd3WU9BQlAyV21mVmRGeExTenc3OWdXNzhBbzdiRjkzRzFTcGc2dTA5bVM3RmtCUWNtcERpWm1WNWJGME80SVg0b0laVy1Hb2pfQWFMRmh5TGlBYWVGYVQzbC0ydDFnbFZmQVJ3bXh1alV3NlFxWFk?oc=5",
+      "title": "ゼネコン熱狂、建設DX",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWlA1MHpacDg3akRrZzI4c2hnVkpJRTVqVk9lU3A2R2xVTWxDQXlfNGR5ZHJZYVl0SW92V0lPMGp6Nzg1Y2dNVWJwRlF3ZjdTZ2RtQmdZQ0duOWxNUWNiYVBTVmlQdHFJdExxSHJ6bzNuRnJTODF3N1FMZXliSk1zRVpCVjVUSV9qYU8xVE1OZ0dyNVlpaTB1UVlmVkFmZkxBbU9ybXM3X04xbWkwTC1xcGZGX3RwRkczY0xFMkxwX1A3bFlRWjhv?oc=5",
       "date": "2026-10-24"
     }
   ],
@@ -21,80 +55,46 @@
       "title": "岩井コスモホールディングス(株)【8707】：株価・株式情報（夜間PTS含む）",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1pV2IyRkREVjBxLVQxTlNCdnFTQ0tFUHh0aEQ0UDR1RTZXNC1EVk42T0lZNGRKN1RsbXFaN2xtUTVaUFdjMGJucmVZb2tPYWVJOGc?oc=5",
       "date": "2026-10-24"
-    }
-  ],
-  "医薬品": [
+    },
     {
-      "title": "シンバイオ製薬(株)【SYMQY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpLXdnazFVYk9IYmEwbm1TM2lvZTV4UWloWHpWMEpvcFk5WXVwVXlRTnBqSk44aDVDLW5ncnV5WnF5QTVtQWpweG5UZm9Edmkt?oc=5",
+      "title": "金利上昇期に保険株、魅力浮上配当魅力度と期待は最近停滞株主還元の側面で不確実性は依然として残っている",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5CTkZyZHpzQ1ZDNHZrcnV0VFlZVG90MUFBTlRNWXZvV1lRNjluZ25UTUpqcEd3T2wtc0xNelFXX0NnU1U4SV85Ujl0OWZhN3c?oc=5",
       "date": "2026-10-24"
     }
   ],
-  "食品": [],
-  "電気・ガス": [],
-  "建設・資材": [
+  "素材・化学": [],
+  "商社・卸売": [],
+  "情報通信・サービスその他": [],
+  "運輸・物流": [],
+  "エネルギー資源": [
     {
-      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
+      "title": "インドネシアのレギュラーガソリン、1㍑90円 原油高でも4年据え置き",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9IcTAtbzlpSVZnNHBCSmJSM2VVbkhkWm9TNFc3T1AtcGdxWlZTTmVFeXZtWmFadWszenFFYnVMQmh6UXl4ZTNxSWZXRlBYeTl6S2d3SHZKeFp0cXoyUE0zWk5udEtBeW9sc1lDTg?oc=5",
+      "date": "2026-10-25"
+    },
+    {
+      "title": "フーシ派 サウジの原油輸送パイプライン攻撃を発表 原油輸送の重要ルート（TBS NEWS DIG Powered by JNN）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8weWp3anBFTjJjQkdqUElOdGlJSjFGV3d0REJ3Y0RfN1QtendRdFR1VHlEa3VLUEV2OWlqRVAwaWVTcktWMjBVcDVzODJqajMyYVF5bjlsYzVvdzJuUmtIQzdqbjRDSTBDMXRBeXc0ZENMNVVMNlJ1aTdqR3FMQ00?oc=5",
+      "date": "2026-10-25"
+    },
+    {
+      "title": "原油高止まり…背景にホルムズ迂回のコスト増 中東産輸出はイラン攻撃前の75％超に回復",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBBRmJvOWNwMkNIMEFlQXEwNG03U3ZsX296LV9pdXRFeS1nMkRxbTBtU1FxNXdEdmdPN0xnTkh2bHRHSjk0SGRSbkphU3ozOUVRbkRKbXdvSVRsMnlTVV9aeGw0bHAzeHJ3ZHZpZFVkYmR1RzdvcWc?oc=5",
+      "date": "2026-10-24"
+    }
+  ],
+  "機械": [
+    {
+      "title": "【比較】受注6割増でも赤字？ DMG森精機・オークマら5社「工作機械バブル」の大勝ちは ｜Seizo Trend",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zOVZGQm9lU3huODVyYkRjRUo2YlltZWhVNHlEMkI4VVd3T1dIRndZZEpMOWk5ZnZwYlVNZnRlWFdGYndDaFczSVBZSG5SZ1U?oc=5",
       "date": "2026-10-25"
     }
   ],
-  "小売": [
-    {
-      "title": "【オリエントスター】Orient Star Skeleton 先行予約受付中",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1MODRjYmVnWmQwSFZxcVVkREdTVG5qSU12NDhHdTBhVlZDcFBKdUk5b2pPOVA4SmgzcGVEQmxBdW85WU9SblczUEdpTEM0UlU2NklDeW5UVUZiM29Q?oc=5",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "厨房併設のブランドが関西の百貨店初登場 「アトリエうかい」阪急うめだ本店にオープン",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1tOThFUVZvNEpHZmpyMENYOFd0X3oxTDlCSkdGd0xBb0pJUDk0Mk9scHJGNF9nT3lLNjRxemdZcWI0TVJtaTVYVlFOYw?oc=5",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "「愛とアートに国境はない」 石川・金沢市の百貨店で現代アーティストの作品展示販売会（2026年10月23日掲載）",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNR21JbW9SR1NUVVNSbFdxdmlxMFhvZlFROXRQSWloSmVnYk02OVV1S05mNnJhajNraTFiT1ZhN0lRcjZJV1F5bUFmMGs1QURKX1ZFVVQzRk1aVTNDZnhLc3h6eVJYc3k2TUtmVlp3ZnpJN2dpdlZkb2xONUNnYmhsR3dtdw?oc=5",
-      "date": "2026-10-24"
-    }
-  ],
-  "自動車・輸送機": [],
-  "素材・化学": [],
-  "商社・卸売": [
-    {
-      "title": "日本総合商社の丸紅が色調化粧品ブランド「ロムアンド(rom&nd)」を運営するコスダック上場企業のアイファミリーSC持分を公開買収方式で買い入れる。このようなニュースが伝えられ、アイファミリー..",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QVE10UmJ3REVzTjA1dU1JcFVmcVR6NzlVbm5UMzRZZUpQREE1Q29kR0wwRUJqSElTX25sRXA0a3ROWjF2RnYyTkF1dzNrV00?oc=5",
-      "date": "2026-10-24"
-    }
-  ],
-  "運輸・物流": [],
-  "情報通信・サービスその他": [],
-  "エネルギー資源": [
-    {
-      "title": "原油はあるのに燃料が足りない 世界を苦境に陥れている「石油危機」の本質",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBvZGNoSC0wZEViTlljRVlhSzlKNGpfVjRKc0wwY2M5UjVEZXpWbXF6OU9JYVZNc3dZNXNvc25hc1poLUJNV3ZSQlZ0OEFEcHVuWW41WGlB?oc=5",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "グリーン氏「原油の中東依存は賢明でない」 富士山会合",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5DTDhuNmhuRUFYbXdNMXdxemVPNnVTMzAxTHh1SmhBZEcwTzR5bmhPaGZ5bjBMYUNNUDRFaTk0TGNTZGY4VWp3MmhOa241a3JHYUJ0MUp4SFNvMmhfa21QOFBjcjFhRkZ6dlljaA?oc=5",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "ドル円見通し｜今後どうなる？ 158円台の膠着崩れ156円台へ 原油116ドルでも円高【相場の現在地】2026/10/24",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9CVloyMUtuT3otVkhDNEFpUHJkY2xEOEdLazVqeXRLckV3ZWE3MlFfUGJMUG5kdU9hMnFNaWZwdEJzNDdMMjRkU1p5MUMwSGJRcTJlLWNiTFlUSmhIYW8xLVQyUQ?oc=5",
-      "date": "2026-10-24"
-    }
-  ],
   "鉄鋼・非鉄": [],
-  "機械": [],
   "電機・精密": [
     {
       "title": "日経平均続落 売り一巡後はAI・半導体株下げ止まり、内需株シフトも【日経CNBC/きょうのポイント、明日のヒント】",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lZTNFZWJSeFl1WnBud0lZOGl6Ymg3MmpXTkZpNFYtMTl4TXNoSkg4X2UwY1BVVm9yb18yR3JrMjVXTFBhTE5HTWpZVFA3bnZNTktqblV4VjJXQnVnanlRSkhtM092YkU?oc=5",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "底抜けが漂う半導体株、決算に反発を託せるか｜池田伸太郎",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxcnlQUHk5VzBNdlRZb3o4Z2ZtNXBKalMxX0dMcXpCZ09HSG55Q1M3RWdiSUxYU1N2dEN6NWJad19zVTl4NmhoRHJKMmk1YjM3X2c?oc=5",
       "date": "2026-10-24"
     }
   ],
