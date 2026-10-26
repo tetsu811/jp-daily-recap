@@ -1,13 +1,19 @@
 {
-  "自動車・輸送機": [
+  "食品": [],
+  "小売": [
     {
-      "title": "三菱自動車(株)【MMTOY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1USTFpam5sNXg5WEpiaEVJZVhYbEdELTFaa1p5cWpTUkxZV3A0WnZNb3FNZFdrY0tNYUlXOVcxazhreE85RzBLZmdUcTByaVNu?oc=5",
+      "title": "百貨店内に厨房併設！？大阪の人気パティスリーが進化！ここだけの新作スイーツ＆500円台の“焼きたてバターケーキ”も",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFYTZXZXoySEFMWDFYXzNYV1hmb2h0Nk1LTHZZakZreThDTGZCSGVQcGFPSzhwRW01RTJwQUJaSGlMS2gyd3JRRXpSQ3pCSFVvOU9BRkdfZ21oT1VOOHZGYmpQTGoyZFczdnh3ckNJZVpaa2FER1pPc1V5WkJUcE0?oc=5",
       "date": "2026-10-26"
     },
     {
-      "title": "トヨタ自動車(株)【TM】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBBVUdJM0U0aFlkR0FQN05mMW1YR2VRTlVLdEE1d19aRE9MWndrR1NnWTJZb1VtZmtjSGxRTzZseVZQaVhNU1NNUUJFSU8?oc=5",
+      "title": "百貨店売上高１・１％増 ９月中四国、２カ月ぶり前年上回る 高額アクセサリーや食料品好調",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBzMzlqdFFlcGc4NTlJYkF3LVEzWk1HVXZjbmhDZWdOaHNKd0o2cWVnbGdGbGowTktIcnF3VTBPUFdNV2pCbDNaM0txYw?oc=5",
+      "date": "2026-10-25"
+    },
+    {
+      "title": "クリスマスまで2カ月、韓国百貨店が早くも装飾準備…恒例イベントの予約競争に関心",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vVjZmZDdBSlkwWnhra1VzaVhaV0duTTNxcGduUW02MUFJclBCenI3TTdMeUlmbDh0TTZtYnJJWjNFNzRMWEZrOXZGQkZlazNleGfSAVRBVV95cUxPUDlrUzloXzVzRjdaV056UVllNVVHNmtmZHBaTXhnakJzN21PZDBFNVB5c1ZidUYyZm9qdDZya3pVRkV4T1JSdGFrcG81SmtCb2IwNVI?oc=5",
       "date": "2026-10-25"
     }
   ],
@@ -18,39 +24,18 @@
       "date": "2026-10-25"
     }
   ],
-  "食品": [],
-  "建設・資材": [
+  "医薬品": [
     {
-      "title": "大アサリの稚貝が大量に… 画期的な養殖技術 漁師と大手ゼネコンがタッグ ｢最強のパターン｣ 愛知･篠島",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5PLXpIaUtqbkQtZlpaanlaMUVqNmtpZGdhVGh6UjQySGlYczlobXNYTEhrWWQ4MUE3RjN0b1ZVTS02clB6MjBnbllUSXpBUEZiUV9LZHhaUQ?oc=5",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "大アサリの稚貝が大量に… 画期的な養殖技術 漁師と大手ゼネコンがタッグ ｢最強のパターン｣ 愛知･篠島",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Ub3lfcEVrcWNmWGppdzVDUnBVYUFEWERjZm1jWlZpWk93eEFCQVJzM1QwNU5NUWRqU0V6U21xVkZDUUJ5TjJrQmRqR0F1WDJwcWJXQjBzaHdtN3MwVWlreA?oc=5",
-      "date": "2026-10-25"
+      "title": "中外製薬(株)【CHGCY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBCVnA4UjRCanhXVlZnUHJHU3c5ekpPdGpZTjd5QmYtdnQyd2Y1NzNJX1FpVjZFZ09zYjRTSzlzSlU2a0lNdksySUxhaU9WMFp0?oc=5",
+      "date": "2026-10-26"
     }
   ],
-  "不動産": [
+  "自動車・輸送機": [
     {
-      "title": "Oneリート投資法人が第26期決算を発表、1口当たり実績分配金は2,553円",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObjlmR3huZ3RWTmRuQjAyY093OHYtdnRUQUNBNFYwQnE1RGN6Z05WUjFBLVZ5WkVsdlY5Q2htcWswaEgtbjhDaGw3WGswVTVKVjh6ZlNwbU1fcVlaZW9sZjIyVlVLUV84VjdTenh5S0FLTUxPWkdvQWpDdHpaLXRhLXBKQlo3RGs?oc=5",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "【ＲＥＩＴ高配当利回り】ランキング (10月23日現在)",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBsSkg1aXZZa0VMNGg5bHBmWVd2OGZWS3pwWFlZWm5KcUtXX3NYYXIzTkxBeHBLUlRxN3UtcFdfb0QxX3k4eWdVb2IxN1BlbHJfUGN1WDdqT2lFVUJ3c3J4dQ?oc=5",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "【ＲＥＩＴ高配当利回り】ランキング (10月23日現在)(株探ニュース)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM2JoaFlLYkJKeklJMUh3VVZCZ29hZDg3RFpJMUVmekJ6LXVlbWNkYlBRZVdPRzNNSi10U2JIakt4ZmhGb3djQ3M5aVpCYnVBU1dmSV85QTEwWGRRdC1WbkRaWjJRQXNlMk95aXN1ZTZiUVZkbHZlWEZ0R1NXMmxodGFLMFBwalk?oc=5",
-      "date": "2026-10-25"
+      "title": "三菱自動車(株)【MMTOY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1USTFpam5sNXg5WEpiaEVJZVhYbEdELTFaa1p5cWpTUkxZV3A0WnZNb3FNZFdrY0tNYUlXOVcxazhreE85RzBLZmdUcTByaVNu?oc=5",
+      "date": "2026-10-26"
     }
   ],
   "金融(除く銀行)": [
@@ -60,27 +45,44 @@
       "date": "2026-10-25"
     }
   ],
-  "医薬品": [
+  "不動産": [
     {
-      "title": "中外製薬(株)【CHGCY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBCVnA4UjRCanhXVlZnUHJHU3c5ekpPdGpZTjd5QmYtdnQyd2Y1NzNJX1FpVjZFZ09zYjRTSzlzSlU2a0lNdksySUxhaU9WMFp0?oc=5",
+      "title": "Oneリート投資法人が第26期決算を発表、1口当たり実績分配金は2,553円",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObjlmR3huZ3RWTmRuQjAyY093OHYtdnRUQUNBNFYwQnE1RGN6Z05WUjFBLVZ5WkVsdlY5Q2htcWswaEgtbjhDaGw3WGswVTVKVjh6ZlNwbU1fcVlaZW9sZjIyVlVLUV84VjdTenh5S0FLTUxPWkdvQWpDdHpaLXRhLXBKQlo3RGs?oc=5",
       "date": "2026-10-25"
     }
   ],
-  "小売": [
+  "建設・資材": [
     {
-      "title": "クリスマスまで2カ月、韓国百貨店が早くも装飾準備…恒例イベントの予約競争に関心（KOREA WAVE）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLZ1c1dmNYYkVLMFNSc3haWGZJM1R1QnFxMzBDU0trdjFabi1ibFVaREoxQVgzMmNUMmpWXzh3MXVTN0xyRnA4SHFaWmljN2xaUFNkX1BNS1g3dTRNb2M4WjVFMFAxMTRjTFR5NUZCVnRJbGNLb2dhdUJuWHVGams?oc=5",
+      "title": "すごいベンチャー【35】Space Quarters／目指すは｢宇宙ゼネコン｣",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9zOVhGbWtTZ2hVNEJqaEkzYk51TlY4SjVPVDN0Wk5oX2syOU5qRmx5YkZFM3ZVa2FzbFRwUmlMZS1LbER2Z3NzeFJvci1ZOVYxUllpM0JIcXlYbE1HWDZj?oc=5",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "リニア静岡工区の年内着工に不透明感 ゼネコンの処分影響、「来春」との見方も：ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdzJBbklzeHd0Q3ktU0FtTUJlTl9vZHJsVXVlME1PeHlCdlo4cVROTEhIMERZb2xDWHhoSjZ2VnNILVRtQUdqWHBpNVZKUzJscTlhNjNfRE44bC10MlNv?oc=5",
       "date": "2026-10-25"
     },
     {
-      "title": "多様さで「おせち」離れさせない 百貨店が商戦入り 幅広いニーズに訴える：ニュース",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XUTkydUJFNG5xUEVRVmRBcXVLN3hNbXdpU1E2QnFmaWNXMG4yeHN0VHRNS0t4NXF2ZnhyM3owNFRqSVg1V25ZdWZXSXhmenMzTHJxVGxDMHlLZG5MaktB?oc=5",
+      "title": "大アサリの稚貝が大量に… 画期的な養殖技術 漁師と大手ゼネコンがタッグ ｢最強のパターン｣ 愛知･篠島",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5PLXpIaUtqbkQtZlpaanlaMUVqNmtpZGdhVGh6UjQySGlYczlobXNYTEhrWWQ4MUE3RjN0b1ZVTS02clB6MjBnbllUSXpBUEZiUV9LZHhaUQ?oc=5",
       "date": "2026-10-25"
+    }
+  ],
+  "機械": [
+    {
+      "title": "工作機械、増産体制を整備 受注急拡大、長納期化緩和",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jZGxpNm1GVGQzX1hjZ1pCbGxyc0FMMUpZTjd2WnhGWXVudFZQWUNNbGhwZU0yNEhiRFgzRUt1RGpNRi1BaXlIMUkyNTdSWFFFS2dvR0YydlU?oc=5",
+      "date": "2026-10-26"
     },
     {
-      "title": "百貨店売上高１・１％増 ９月中四国、２カ月ぶり前年上回る 高額アクセサリーや食料品好調",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBzMzlqdFFlcGc4NTlJYkF3LVEzWk1HVXZjbmhDZWdOaHNKd0o2cWVnbGdGbGowTktIcnF3VTBPUFdNV2pCbDNaM0txYw?oc=5",
+      "title": "三菱電機、フィジカルAIでヒューマノイドと工作機械が連携する自動化システムを開発",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1qSnFUZDQ3U3ctT1AwRVhMUGZqWWRWT1RzSkVMZi1QLWt3SlZQaEw3c1dpdjBtamZyY0JZcDBBMmZDUGxES1NJOE9CS1RaaldYT29Fbw?oc=5",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "【比較】受注6割増でも赤字？ DMG森精機・オークマら5社「工作機械バブル」の大勝ちは ｜Seizo Trend",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zOVZGQm9lU3huODVyYkRjRUo2YlltZWhVNHlEMkI4VVd3T1dIRndZZEpMOWk5ZnZwYlVNZnRlWFdGYndDaFczSVBZSG5SZ1U?oc=5",
       "date": "2026-10-25"
     }
   ],
@@ -89,14 +91,24 @@
     {
       "title": "三菱ガス化学(株)【MBSHY】：株価・株式情報",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zNGhXTHhMcjVWRzNtWnN6YlRXSHRTb0VseFlrTTA1azZOc29Kc1pMNndYc2Z5NE03UVJhWkFpNWZZbjhYckJXcTJGTEJXVDhZ?oc=5",
-      "date": "2026-10-25"
+      "date": "2026-10-26"
     }
   ],
-  "エネルギー資源": [
+  "電機・精密": [
     {
-      "title": "ビットコインは8万ドルを維持できるか──米原油在庫が300万バレル減、インフレ長期化を示唆【価格分析】(NADA NEWS)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTHNZaWt2SWhYSW1UQTZOMGdFZmc4SkFUXzJNakNBdEY2SGk5SUNQM18wc0FwSnFNNEYybVNkZWZjVG4zYmdYNVdFX1M4UGthWlZ6SmFJLWZjcE14ZUVyYVg3N081QTd6QnpmRy1leXNLTHlXWll6cjUzR1NsTml4Z1JxZXd3Z2M?oc=5",
+      "title": "日経平均株価、米半導体株高でも原油高が重荷（先読み株式相場）",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9oS0IwclZCS2FQR2szS21uTUcxZEZlcWVXTjZ5cV9HWWJzMUhfSk1iQjRHSEZ5NXlFTlpTMjh0UlpHSTlRcHQwY3pXT1dNS1F4VVV5dHB6WFg1RHY4V0d2U05nWnR6OUlURjMxdw?oc=5",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "日経平均続落 売り一巡後はAI・半導体株下げ止まり、内需株シフトも【日経CNBC/きょうのポイント、明日のヒント】",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lZTNFZWJSeFl1WnBud0lZOGl6Ymg3MmpXTkZpNFYtMTl4TXNoSkg4X2UwY1BVVm9yb18yR3JrMjVXTFBhTE5HTWpZVFA3bnZNTktqblV4VjJXQnVnanlRSkhtM092YkU?oc=5",
       "date": "2026-10-25"
+    },
+    {
+      "title": "利益見通しは上振れ、株価は急落…半導体株揺らすAI投資懸念",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQm9Fd1YxN1Jfb3ZGaDZUUlRlcENudEZiQ3NpUGN5a2NuLUJvVUIyZjBvbC05TGhwRXh0MlQ4aEdmTnhCYi11LVVDYkdYalRjMjU0M21CNVFWVzIxZk5fLWhWWWszWmhLbGNUTUtmTExKWmRsU3dzak95Nld3dktERQ?oc=5",
+      "date": "2026-10-26"
     }
   ],
   "運輸・物流": [
@@ -106,37 +118,35 @@
       "date": "2026-10-25"
     }
   ],
-  "機械": [
+  "商社・卸売": [],
+  "エネルギー資源": [
     {
-      "title": "【比較】受注6割増でも赤字？ DMG森精機・オークマら5社「工作機械バブル」の大勝ちは ｜Seizo Trend",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zOVZGQm9lU3huODVyYkRjRUo2YlltZWhVNHlEMkI4VVd3T1dIRndZZEpMOWk5ZnZwYlVNZnRlWFdGYndDaFczSVBZSG5SZ1U?oc=5",
-      "date": "2026-10-25"
+      "title": "WTI原油見通し(市況ニュース)：原油供給の懸念が続き、原油価格は2営業日続伸（2026年10月26日）",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9TaDJPUjk0VmVNTGJBQUVnQ1RZeHlGYjdRdTJkSHgzZEE1WWVhaUliMVJsUUV6dUtfUXBrUkFGOWduR1RTamR4dmNYX3ItbEtmWldYS0pIQk5RdFBZcm14Yzh0bi1LWlZqT3ZaWXJ4djN4VVU?oc=5",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "〔JPXエネルギー〕ドバイ原油、小幅続伸＝中東情勢警戒で（26日朝）(時事通信)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeXVVb0NkdWVmcVlTREMyY1FVcUUwUGJKeUo4NXA0RXdIYUpLUE85b1R5WVlZbTFuV2FjWGR6RVZTekdlcDNlaWpzSkVhYzI4VWx3OWhhWld5TTV0UHp5X1QxT2lERXhGakVTUU5DUzNuTXJFRjl3V1plNjh1NklRdmtlUTNKTFk?oc=5",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "（朝）米国市場は主要3指数が下落　原油高が相場の重荷、消費関連銘柄の軟調さ目立つ",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBDNzdiS1RSTmwzTWRFNmgtRUNIdVU0ZTFQSnl6eGZrbjByUnRwWUpBRnRDR0hBZURnbFVES3B4V1ZtVXRXNVZZQzNUMnVvUUtweHl5UNIBV0FVX3lxTE16UTZoQ1FwZzlMRVQzeHB0UlV2NmswTUdlWV9BODBOazhCRmk1Yld6aFNpV3RZWDZsbnlxUkhTdnJNNU9lRm9kUHN0QnFOM0RNdWJkX3A5OA?oc=5",
+      "date": "2026-10-26"
     }
   ],
   "鉄鋼・非鉄": [],
-  "電機・精密": [
-    {
-      "title": "日経平均続落 売り一巡後はAI・半導体株下げ止まり、内需株シフトも【日経CNBC/きょうのポイント、明日のヒント】",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lZTNFZWJSeFl1WnBud0lZOGl6Ymg3MmpXTkZpNFYtMTl4TXNoSkg4X2UwY1BVVm9yb18yR3JrMjVXTFBhTE5HTWpZVFA3bnZNTktqblV4VjJXQnVnanlRSkhtM092YkU?oc=5",
-      "date": "2026-10-25"
-    }
-  ],
-  "商社・卸売": [],
   "銀行": [
     {
-      "title": "2年半で金利は500倍に…メガバンク・ネット銀行・個人向け国債、預け先で利息はどれだけ変わる？",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11MFM2OXdrNDViSVhWaE9PdWZVQUhnUjA1eWtFOEpRWi13ZEdDRUgyTkY5Tnd4UFRucWtRRHJtd2NqeDF4Ni12Nkg5dXJ3RElvMVhtZmVyNnN1S29OOGc?oc=5",
-      "date": "2026-10-25"
+      "title": "2年半で金利は500倍に…メガバンク・ネット銀行・個人向け国債、預け先で利息はどれだけ変わる？（MONEY PLUS）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9RMGxqMVAzbmpTajk0bGQ5enZWOVA2VWFmeGFjek1jN05SSEpTd3FGU2d0bDBHamt0Nlc0LXM2d3NIdkZxNHJPOWx6a2o5ZTVFYTQyVmc3eWhhQzVsZ1Ftd3RhbDY0U19paHIwY090bmhRUTVMWjRaY2Q3VjNRU2M?oc=5",
+      "date": "2026-10-26"
     },
     {
-      "title": "３メガバンク、免許証確認を廃止 ネットの口座開設を厳格化",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ULUdrNGwwRGZycS1lWTJwMjFSS1MyTm5BTkZqeHVsQzBhNXRrVS1Mb2lDNkpGb1IzVndJQ01rb200Z0RYWWJ6QXNQSWRmTDYzWTgzUV9jYngxUUIwMGJDZnBlVDVUbmYySXRtSGpKVkFyT3pPYW0xb3IxZDlVZw?oc=5",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "金利が上がれば銀行株も上がる？日銀レポートで考えたい「3つの差」｜日本個別株デューデリジェンスセンター",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBZeHZRTkowOENNeUk1LUh4NVI0c0lXV1JVV3FpRlBtRDBfU0hBUFktTzRvejE0UVdROUEtYmhEcUtyczJKT291Q1lrQ1gyWllkcFBPRXhZcWtlSFU?oc=5",
-      "date": "2026-10-25"
+      "title": "【2026年11月から】メガバンク・ゆうちょ・地方銀行で預金金利アップ！増えた利息はいつ受け取れる？ [銀行・郵便局] All About",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBfRzh0LVJkelFBQjdFS0xQd1VBa29FREdJRVl4QXRMMFZxZFhaUXZxZGI5aWRHbktwVFJZQjJXY0U0WDJBUV8wbEt1RUQ?oc=5",
+      "date": "2026-10-26"
     }
   ]
 }
