@@ -1,16 +1,12 @@
 {
-  "checked_at": "2026-10-26T23:25:17.157532+09:00",
+  "checked_at": "2026-10-27T05:35:02.219003+09:00",
   "expected_session": "2026-10-26",
-  "status": "error",
+  "status": "ok",
   "expected": 458,
-  "available": 457,
+  "available": 458,
   "missing": [],
-  "stale": [
-    "9362.T"
-  ],
-  "problems": [
-    "9362.T"
-  ],
+  "stale": [],
+  "problems": [],
   "observations": {
     "2502.T": "2026-10-26",
     "2503.T": "2026-10-26",
@@ -348,7 +344,7 @@
     "9081.T": "2026-10-26",
     "9006.T": "2026-10-26",
     "9143.T": "2026-10-26",
-    "9362.T": "2026-10-23",
+    "9362.T": "2026-10-26",
     "8001.T": "2026-10-26",
     "8002.T": "2026-10-26",
     "8015.T": "2026-10-26",
@@ -2829,14 +2825,11 @@
       "errors": []
     },
     "9362.T": {
-      "date": "2026-10-23",
-      "source": "cache",
-      "status": "unavailable",
-      "bars": 158,
-      "errors": [
-        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=9362",
-        "Yahoo Japan: ValueError: Expected closing session is absent"
-      ]
+      "date": "2026-10-26",
+      "source": "Yahoo Finance",
+      "status": "ok",
+      "bars": 159,
+      "errors": []
     },
     "8001.T": {
       "date": "2026-10-26",
@@ -3687,7 +3680,7 @@
     },
     "^N225": {
       "date": "2026-10-26",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 159,
       "errors": []
@@ -3729,5 +3722,5 @@
       "reason": "Acquisition by another company(Share consolidation)"
     }
   },
-  "error": "RuntimeError: Expected 2026-10-26; incomplete symbols: ['9362.T']"
+  "summaries": 0
 }
