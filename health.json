@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T05:35:02.219003+09:00",
+  "checked_at": "2026-10-27T11:09:09.890644+09:00",
   "expected_session": "2026-10-26",
   "status": "ok",
   "expected": 458,
@@ -642,7 +642,7 @@
     },
     "2811.T": {
       "date": "2026-10-26",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 159,
       "errors": []
@@ -3680,7 +3680,7 @@
     },
     "^N225": {
       "date": "2026-10-26",
-      "source": "cache",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 159,
       "errors": []
