@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-28T02:21:39.951680+00:00",
+  "checked_at": "2026-10-28T14:04:48.083049+00:00",
   "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
   "delisted": {
     "2388.T": {
@@ -696,6 +696,11 @@
       "date": "2026-11-11",
       "name": "ART VIVANT CO.,LTD.",
       "reason": "MBO(TOB,Share consolidation)"
+    },
+    "4059.T": {
+      "date": "2027-04-01",
+      "name": "Magmag,Inc.",
+      "reason": "Failure to satisfy the continued listing criteria"
     }
   }
 }
