@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-28T05:08:37.557783+09:00",
+  "checked_at": "2026-10-28T11:22:17.222393+09:00",
   "expected_session": "2026-10-27",
   "status": "ok",
   "expected": 458,
@@ -468,8 +468,8 @@
     "3284.T": "2026-10-27"
   },
   "sources": {
-    "Yahoo Finance": 458,
-    "cache": 3
+    "Yahoo Finance": 460,
+    "cache": 1
   },
   "details": {
     "2502.T": {
@@ -670,7 +670,7 @@
     },
     "1379.T": {
       "date": "2026-10-27",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 160,
       "errors": []
@@ -3680,21 +3680,21 @@
     },
     "^N225": {
       "date": "2026-10-27",
-      "source": "cache",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 160,
       "errors": []
     },
     "1306.T": {
       "date": "2026-10-27",
-      "source": "cache",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 160,
       "errors": []
     },
     "1305.T": {
       "date": "2026-10-27",
-      "source": "cache",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 160,
       "errors": []
