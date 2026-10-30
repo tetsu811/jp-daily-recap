@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-30T23:17:28.491961+09:00",
+  "checked_at": "2026-10-31T04:57:40.363118+09:00",
   "expected_session": "2026-10-30",
   "status": "ok",
   "expected": 458,
@@ -469,7 +469,7 @@
   },
   "sources": {
     "Yahoo Finance": 460,
-    "Yahoo Japan": 1
+    "cache": 1
   },
   "details": {
     "2502.T": {
@@ -586,12 +586,10 @@
     },
     "2607.T": {
       "date": "2026-10-30",
-      "source": "Yahoo Japan",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 160,
-      "errors": [
-        "Kabutan: HTTPError: 405 Client Error: Not Allowed for url: https://kabutan.jp/stock/kabuka?code=2607"
-      ]
+      "errors": []
     },
     "2002.T": {
       "date": "2026-10-30",
@@ -3682,7 +3680,7 @@
     },
     "^N225": {
       "date": "2026-10-30",
-      "source": "Yahoo Finance",
+      "source": "cache",
       "status": "ok",
       "bars": 160,
       "errors": []
