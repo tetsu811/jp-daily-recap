@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-30T02:40:00.386389+00:00",
+  "checked_at": "2026-10-30T14:16:52.732368+00:00",
   "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
   "delisted": {
     "2388.T": {
@@ -701,6 +701,11 @@
       "date": "2027-04-01",
       "name": "Magmag,Inc.",
       "reason": "Failure to satisfy the continued listing criteria"
+    },
+    "7878.T": {
+      "date": "2026-12-01",
+      "name": "Kohsai Co.,Ltd.",
+      "reason": "Delisted based on application"
     }
   }
 }
