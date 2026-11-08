@@ -1,22 +1,28 @@
 {
   "運輸・物流": [],
+  "情報通信・サービスその他": [],
+  "医薬品": [],
   "自動車・輸送機": [
     {
       "title": "トヨタ自動車(株)【TM】：株価・株式情報",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBBVUdJM0U0aFlkR0FQN05mMW1YR2VRTlVLdEE1d19aRE9MWndrR1NnWTJZb1VtZmtjSGxRTzZseVZQaVhNU1NNUUJFSU8?oc=5",
-      "date": "2026-11-08"
+      "date": "2026-11-09"
     }
   ],
-  "情報通信・サービスその他": [],
-  "医薬品": [],
+  "機械": [
+    {
+      "title": "中国の全直駆式CNC工作機械大手・鉅鋭鍶（キョエイシ）、11月10日に上海証取科創板へ上場、公開価格は1株45.37元",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14bjNzLXVoZHBKVnlERkN1OHZwR1BFdFRLVjZCV3gxQllnQXFqa1VCek1GSWg0SDdlTFdodXllT05wTzRUTmRNcXBLZDZmQVpYdjZyMWMxZU5pSkQ1WnFvMC1jbjNQTVVLMjVFM3MySnVCY1FJ?oc=5",
+      "date": "2026-11-09"
+    }
+  ],
   "素材・化学": [
     {
       "title": "太陽化学(株)【2902】：株価・株式情報",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBRWNIcFZhTkZLM3ZlbmFPejI3a0lYOUFodW4tM0xqUW1RZzU0R0tkcE01cE5iOS1HSnBYSlNEV2FvTlB1aTV3cjJ1MTljN25UN0E?oc=5",
-      "date": "2026-11-08"
+      "date": "2026-11-09"
     }
   ],
-  "機械": [],
   "電機・精密": [
     {
       "title": "ニッセイ SOX指数インデックスファンド(米国半導体株)＜購入・換金手数料なし＞【29314233】：基準価格・投資信託情報",
@@ -52,15 +58,6 @@
     }
   ],
   "電気・ガス": [],
-  "鉄鋼・非鉄": [],
-  "建設・資材": [
-    {
-      "title": "大手ゼネコン、高層ビルの木造化を加速 法整備・脱炭素化が後押し",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1jUDc0eE1NVENoUUpuRTJQclJhODVvVlMyUVRCNUY0cHRIOGVSMk9pOTZGUUZtNE5yb3hQcGF4c1dTbzdkTVZ2RktQTS16YWNsWmhSTTJVb25sbmZTU2xtaXpKUTY2RnZ2Z2dzTg?oc=5",
-      "date": "2026-11-07"
-    }
-  ],
-  "金融(除く銀行)": [],
   "銀行": [
     {
       "title": "【メガバンク決算の焦点】三菱ＵＦＪ・三井住友・みずほ、金利上昇はどこまで利益と配当に結び付くか",
@@ -68,31 +65,25 @@
       "date": "2026-11-08"
     },
     {
-      "title": "金利の適用はいつから始まるのか？「ドコモの銀行」がメガバンクよりも早く金利の翌月改定を原則化した理由（＠ＤＩＭＥ）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4MEtBeTRIWVQ2WEcyQ1NsM2pVMi1ncDNVTmg0cFpQWmRiNnlVa0JGNDFwcGljcDBjODQtU0FGWUQteU5oVG5ObUdsZ0ltYnZCMzR6R2REOXpjNkZubWxqZThxYzYyVHFYY0R3SWctT2hRYXFLOFF1T0dLV1RUN2M?oc=5",
-      "date": "2026-11-07"
-    },
-    {
       "title": "「入ってきた配当金の金額を見て、にやにやする」42歳女性がATM無料目当てで買った銀行株",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA5ZEUwNVVEUHBxN3ZvSHBqWC1aajJ3Qm5uMzkzdTZIb2FaUFJYRkVybFRGRjBnRXF1TzdtVzloMDdpbE9pcDRJOWRCb0NpRVVzX3E3cmdDWllPaXpXXzBEOTc2LTJvTmpKV2ZTMHVCU1M1SG9EbWdCSdIBfkFVX3lxTFBOTGFKVEhfWmQyTDZCRTg3cWFGTDRaaDBtQXhmRTdCR01iZGd3OUd0eTc2bGJGQmJTdjh2QkNGRVlVdG1CZXBrZzNtNjNyMEY3WjBuTmo2SWFCR3FrMlhJVV8zOGNsdXVCX3FHMVVsSzQ5OExzblV5M0xOeWNZQQ?oc=5",
       "date": "2026-11-08"
     }
   ],
-  "商社・卸売": [
+  "建設・資材": [],
+  "鉄鋼・非鉄": [],
+  "金融(除く銀行)": [],
+  "商社・卸売": [],
+  "不動産": [
     {
-      "title": "“早稲田政経”の主将が引退→総合商社へ「ビジネスパーソンとして世界を」…その前に見たい箱根優勝の景色――早大・小平敦之 (THE ANSWER)",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQX0ItdFZTX3BkRjVPTWdpZHliN0ZoMnVoOVZJMWZub2RrLWd1UEJ4WDFNTWlxQkduQkZLaU9VOGg0bzFpTk5XXzVJVV9udHVOanNmU1poRUlYS3Q1TmhBRHI5NVFBaWRTb0l3U1ZjbzNUWFJNemIyS1lodEhMR0M4dUltM253WklMWlVuY1Jn?oc=5",
-      "date": "2026-11-07"
+      "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5cmY3bkVRNUR2Q09qLUdtTTNtM0Q2QkxxOXo1SlVhTDRCYnZNUDkyMmNERXc5RHFUYks5LUo4VFVLQ1MzOFJkTmdDa2hlWG5YZ2c?oc=5",
+      "date": "2026-11-08"
     },
     {
-      "title": "\"早稲田政経\"の主将が引退→総合商社へ「ビジネスパーソンとして世界を」…その前に見たい箱根優勝の景色――早大・小平敦之",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0xMGlQN0FodjZnR1dzdERBNjdrWDNfT2tES3lzYVpyZDZkU1NTWVI0NmN3QVlGQTBQTDU5YWo4cGl2UUR4RWFjc1hR?oc=5",
-      "date": "2026-11-07"
-    },
-    {
-      "title": "“早稲田政経”の主将が引退→総合商社へ「ビジネスパーソンとして世界を」…その前に見たい箱根優勝の景色――早大・小平敦之",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1rQWFTSFg2M28yblNKVnc5d2JORjBXX0hhTF9iZjl1SjY5V2NvTVdEaDg2OHRrOGs2VFcwSVFidkMtdXFnalVuWmYwWlpfNmNvNXVyNVlLQjFxOEhpNmo4NGpXUEpQRUN1X2t4QlI4U0pYaVlJc01Z0gFzQVVfeXFMTzJQc0Y2NjBVZmxLckd0c1dxNGhZNVZ1YXBJd2lhTEIwRWZTeHdXOHBYc2xMWFA1Y1BuWlVpQzdCakc5TzlCQjhQd09MRW9NTXJCX044WllUd3NDamtJN1RLYzRkclVWRG1fZUdlMjBDSDN4bw?oc=5",
-      "date": "2026-11-07"
+      "title": "【ＲＥＩＴ高配当利回り】ランキング (11月6日現在)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkOHVNMjFZQ2p0VE5UV3RQRU1nM29tZ2FTV2pYN2U0Zk9Wai01NTdXbmhBWUxHYUx4dHQyalc2OFJvTFNsMnlUQ3BoWFl6R3c5WHJpc0ozc01KY3BRcnREdQ?oc=5",
+      "date": "2026-11-08"
     }
   ],
   "エネルギー資源": [
@@ -105,24 +96,7 @@
       "title": "日経平均は底入れ反発か、中東緊迫後退でも原油高止まり COP31開幕へ",
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5kMk5HZEZ2MzlXeWVmNk5Ca2tPU1dHSEkzcXBsblFRTTNMa1NTblhMRloyeUdzVDZzM01PSGV4aTJuMHE2aHFqOG9XSlZrNUhkdDhILWFqci1hRnV0MmZuYmZWaTRCVDFMbHotOUJ6enNzLTBI?oc=5",
       "date": "2026-11-08"
-    },
-    {
-      "title": "壊れかけのAI半導体株 原油高騰と主要中銀の利上げが招いた世界同時急落（TBS CROSS DIG with Bloomberg）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ucDlSTkw0Ry1SZ0o0d1lNU096cm5sMU5tUWprbnJxZVU2NTlWeGFOOHdWOWVRQnBqX1VpTGZDZl83eUd0RXJleTlyM0Roci1OMU5qWVV0Wll2UzVtaUs5WWRjMlBFYmRUZmhUakNsZTF4NVhYelBFb1dqcG12ZEE?oc=5",
-      "date": "2026-11-08"
     }
   ],
-  "食品": [],
-  "不動産": [
-    {
-      "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5cmY3bkVRNUR2Q09qLUdtTTNtM0Q2QkxxOXo1SlVhTDRCYnZNUDkyMmNERXc5RHFUYks5LUo4VFVLQ1MzOFJkTmdDa2hlWG5YZ2c?oc=5",
-      "date": "2026-11-08"
-    },
-    {
-      "title": "【ＲＥＩＴ高配当利回り】ランキング (11月6日現在)",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkOHVNMjFZQ2p0VE5UV3RQRU1nM29tZ2FTV2pYN2U0Zk9Wai01NTdXbmhBWUxHYUx4dHQyalc2OFJvTFNsMnlUQ3BoWFl6R3c5WHJpc0ozc01KY3BRcnREdQ?oc=5",
-      "date": "2026-11-08"
-    }
-  ]
+  "食品": []
 }
