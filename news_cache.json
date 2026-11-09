@@ -2,6 +2,13 @@
   "運輸・物流": [],
   "情報通信・サービスその他": [],
   "医薬品": [],
+  "素材・化学": [
+    {
+      "title": "太陽化学(株)【2902】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBRWNIcFZhTkZLM3ZlbmFPejI3a0lYOUFodW4tM0xqUW1RZzU0R0tkcE01cE5iOS1HSnBYSlNEV2FvTlB1aTV3cjJ1MTljN25UN0E?oc=5",
+      "date": "2026-11-09"
+    }
+  ],
   "自動車・輸送機": [
     {
       "title": "トヨタ自動車(株)【TM】：株価・株式情報",
@@ -11,91 +18,122 @@
   ],
   "機械": [
     {
+      "title": "DMG森精機社長が目指す「止まらない工作機械」 無人化で残る「人の仕事」とは（MONOist）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HWHhlQzhhbTZaTDNMSDVmWUNrSzhMMFJod09QZTdQUGwyRGRRcHpsVDU4RUZUNldad3J5S2h2VTI1QjNXWnU0RE5kNHAxOHRVdDJIV1BJcUkweGJ3VkRVdWgwQUlDcE10VFNCV1lkcUV0WG1fbFpLT0dIc0lGOXc?oc=5",
+      "date": "2026-11-09"
+    },
+    {
       "title": "中国の全直駆式CNC工作機械大手・鉅鋭鍶（キョエイシ）、11月10日に上海証取科創板へ上場、公開価格は1株45.37元",
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14bjNzLXVoZHBKVnlERkN1OHZwR1BFdFRLVjZCV3gxQllnQXFqa1VCek1GSWg0SDdlTFdodXllT05wTzRUTmRNcXBLZDZmQVpYdjZyMWMxZU5pSkQ1WnFvMC1jbjNQTVVLMjVFM3MySnVCY1FJ?oc=5",
       "date": "2026-11-09"
     }
   ],
-  "素材・化学": [
+  "小売": [
     {
-      "title": "太陽化学(株)【2902】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBRWNIcFZhTkZLM3ZlbmFPejI3a0lYOUFodW4tM0xqUW1RZzU0R0tkcE01cE5iOS1HSnBYSlNEV2FvTlB1aTV3cjJ1MTljN25UN0E?oc=5",
+      "title": "百貨店が倒産、ショッピングモールの未来はますます危うくなるのか？",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXZmZlhGSjdKMWFrYTJwTUtCbzEtaDJXcjdZX1VtYkhBSW8xNDdEd05YMk1RbmtmaUQtSS1ONVdUWVNEbWhzY3lDSHdXM2psZFNTcmxSNndvRmtTaUJITWM1Q19yT3h5MW1VaElKZndpendjNTlET2lwV1ZmdERIYUxlZ3dYMFE0MUxPWFd6NHhER2J2d1VCa0lhSUo?oc=5",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "【「明日見世」の進化を聞く】大丸松坂屋百貨店 林直孝氏、和田房恵氏「”売るを解明するお店”へ役割を拡張」",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QVDVielF5RElqWVZUdENtYmJ1cndfZ3lQVlp2TDJYM0VYMUxqajNPc0ZZV2VIaS1YUU94ZHpuYXlCSUxvWHB0QkpoMWlfZzJrSXVHUjJB?oc=5",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "「京都本大賞」に卯月みかさんの「京都幽世百貨店のデパ地下ガール」…書店員らが投票で決定、「憧れの賞で夢がかなって感無量」",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1pcF9waTRXdFA4ZDhrWW15R25XaDVveHBUOGYwZDJhY3B6NWtQZ2FHdkkxMXM2Z2YxYjhuaTRKZTFxWGhkUzl5MDhBMGFrcl9jdGR0S0xIRzh2RzFTN05qWm9QRzZ6dm9va3p6aXZjM1JwZw?oc=5",
       "date": "2026-11-09"
     }
   ],
   "電機・精密": [
     {
-      "title": "ニッセイ SOX指数インデックスファンド(米国半導体株)＜購入・換金手数料なし＞【29314233】：基準価格・投資信託情報",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBjUnNYVHJyWXJoZERrRWxNYmZxR2pTNldkRUhjSzluQzVvaEt4X3FEUmtHUTE2amxWZGMta2laVnNrSjAwRGJpajFoaE5PZFhOd3dmbA?oc=5",
-      "date": "2026-11-08"
+      "title": "オルカンに何を組み合わせる？ AI半導体株調整で見えたバランスファンドの役割",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQM2tsZ0l1YmhzOUt5NnlHc1ZUZVp2QVRneklIMDR3MjY2d3I1TldRT3daWHJqeVAwT2Zpcm9qQTJTMzhwNE16WGZUZ09LVFV0cTA5YTZncEV3bzdZRVlUMlAtTkVGdmwtS2hnbjBuaElxOTRNdDB4LVAyVUt0U2VvY2Y2ZGY?oc=5",
+      "date": "2026-11-09"
     },
     {
-      "title": "半導体株は買い時か、それとも待つべきか？バンク・オブ・アメリカが3つのシナリオと注目銘柄を提示 - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9zZFRvTmlpNXFNWGZqY2RJeTB4OGJ1eGdYZ0lZQU90a01Ba3ZMeDBEb09SWURXMnZWcUZtOTFaYjAxUUlLQVVWWjAyal9YcnVsdnY0aXF6clk2b3dYQ25iSzk5dk1TTzJ1M0JmLXJBMzI?oc=5",
-      "date": "2026-11-08"
+      "title": "買い一巡後は半導体株の底堅さを見極め／オープニングコメント(フィスコ)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZF95czdxdjZBNlVzelVMUFhtZVREU3VSa2VtWHprSlhWQktJQ0JaeGZnZEtfTURpOEZFVzliSFhNTmVKdm5xd0dmYnBEYTNtRmtGQWFQdk9XZDMxYjlrRVkzT05SNG9jeVFKSkh1QVhGeHRtWXRGWnFEblhBVVF6WUdqczVwdE0?oc=5",
+      "date": "2026-11-09"
     },
     {
-      "title": "AI・半導体株が世界同時急落、S&P500は1日で4.4%安 市場は3中銀が12月に同時利上げするか注視",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IbUhfNXhKVGtxbF9ZYWZ2anV1LThXdHA0MjQ0U0lLZGlFdWtzWFZ6MlhOZ3VZYlJZbDNzRnlhdllMUVh6eDdlYkM2dDZPSi1GUEs3eXNpakR3cTZ5UUtnX0JMbVdwWWpjV3RvV3pILVJDaFN6?oc=5",
-      "date": "2026-11-08"
-    }
-  ],
-  "小売": [
-    {
-      "title": "お歳暮商戦スタート 百貨店にギフトセンター開設 1300点のギフトが並ぶ 青森県青森市",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBvS2JwaEoxMUxNVVAzY2ZEZFk4REo3WHhLRnhKUS1JSmVCbnpXMUlOQ2Q3MlRBaU5ZazIzSnJUQ3ZWdUUtYzNCTm9HTklGamhLZDZVMkFBVDlXeXoycjRsQVRVWkQ?oc=5",
-      "date": "2026-11-08"
-    },
-    {
-      "title": "お歳暮商戦スタート 百貨店にギフトセンター開設 1300点のギフトが並ぶ 青森県青森市 （ＡＴＶ青森テレビ）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhUHA1R0dJY2NSQnNmZ2l3d2hLWDJvN1c4czNpY2JLX2xKWWVvaUdFR3R5enNxclBzN1ZVXzlCN29zTzlYWEZrOGt5SldDcjNzN3hOMFpwV3hIZFVvU1JNM3pCZ1Ntb0hoOElrWlhlbHkxdW9uUXktTUN1WlBwWWs?oc=5",
-      "date": "2026-11-08"
-    },
-    {
-      "title": "名古屋の百貨店、一部店舗の開店見合わせや遅れも 東海の企業、地震の影響確認進める",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5qMXpuS3JjX1RQc1d2STN4dFRVelk4WEcxbW1LekRoNFhMeHVEZlVqQTYtSEw4VkhOdWpBMVRLTEtTZkdxR0M5QlhxN1JqaWN3QVkwcA?oc=5",
-      "date": "2026-11-08"
+      "title": "今日の株式見通し＝反発、米ナスダック高を好感 ＡＩ・半導体株中心に買い先行",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNDdYc3dfOXRoRk56SlZ3cGNxTkU0RlA0Si05bjM3SGRRQlVKYXB5NUswcnRtN09GYy0xcUZWN0ZCanktbUQ4T2htSC1DRUEtUklrX3BwRVNsU2Z6UW5VX0ZvWVdjaWR6Z2ROSjZnZFdvcTNFNFRLTE4weFdrYi1vMzMxN1ZmZw?oc=5",
+      "date": "2026-11-09"
     }
   ],
   "電気・ガス": [],
-  "銀行": [
+  "鉄鋼・非鉄": [
     {
-      "title": "【メガバンク決算の焦点】三菱ＵＦＪ・三井住友・みずほ、金利上昇はどこまで利益と配当に結び付くか",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5sNzUtZ3JRTmtNeG1uX2JYWkc0OUlUUFVQemRSdUMzSjVwdk9aS2RBMnRxUVkzLU1jVHZlbHRqQWlIX3h4MFFVZW1JZktpMXdjZ2FONQ?oc=5",
-      "date": "2026-11-08"
-    },
-    {
-      "title": "「入ってきた配当金の金額を見て、にやにやする」42歳女性がATM無料目当てで買った銀行株",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA5ZEUwNVVEUHBxN3ZvSHBqWC1aajJ3Qm5uMzkzdTZIb2FaUFJYRkVybFRGRjBnRXF1TzdtVzloMDdpbE9pcDRJOWRCb0NpRVVzX3E3cmdDWllPaXpXXzBEOTc2LTJvTmpKV2ZTMHVCU1M1SG9EbWdCSdIBfkFVX3lxTFBOTGFKVEhfWmQyTDZCRTg3cWFGTDRaaDBtQXhmRTdCR01iZGd3OUd0eTc2bGJGQmJTdjh2QkNGRVlVdG1CZXBrZzNtNjNyMEY3WjBuTmo2SWFCR3FrMlhJVV8zOGNsdXVCX3FHMVVsSzQ5OExzblV5M0xOeWNZQQ?oc=5",
-      "date": "2026-11-08"
+      "title": "本日の【業種】騰落ランキング ＝ 前引け 【上昇トップ】非鉄金属 【下落トップ】食料品 [11:32]",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00d2EzRU9LMGlVTFlUeWNTMDRLVVVwYmprLW5GbTlESVIyQWZXWk5OZm1qSUczc2lyLUl2bDY4S2Y1WEwxcUZPVksyd0loQ25NbnNLNlBERWtwSTVzSlF0Nw?oc=5",
+      "date": "2026-11-09"
     }
   ],
-  "建設・資材": [],
-  "鉄鋼・非鉄": [],
+  "建設・資材": [
+    {
+      "title": "株式会社みずほ銀行とみずほ信託銀行株式会社他1者が松井建設（株）＜1810＞株式の変更報告書を提出（保有減少）",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBucGZiaGI4N2prZE1YVFZUTFh3N01tU2JPOC1nTUM1TXEyZGN6T3BYcjhSdWZiMVFodDZDUUNkZzFTbklLVUkwX0tvX0Y1eWRwZzV4U1BkZEdTdXhtVGNFYXN1eEo3UVkyTVE?oc=5",
+      "date": "2026-11-09"
+    }
+  ],
+  "銀行": [
+    {
+      "title": "株価好調で伸長する金融業 AI関連株と銀行株がけん引する市場拡大の背景を統計で分析",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPblZlTkxsNVhRSzl4ZEdNWWxpdy1zbndDbDB1U3MzcFIxS0xZMDI0WG9xNThDRG9IdEc0azh6VlhoUE9RX19pNVZvTU1jcWpPU0ZSNW9ZaDlfM0ZTSGc2SDk1TlhJMmFRaU9UVHZ1Ym5FQ2REQUZyWEs4cDN3SFFTSGhpUUF1UQ?oc=5",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "〔シドニー株式〕続落＝銀行株安が重し（9日午前）(時事通信)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPS0J6Y01MTVFqUjhhVDRzSnB0R09wRGxjM2ZmVTNkMjFoYzFLenRsbi1xT3J6RVpOQVo2dTJ2YmRPSlRtUXlUYlJLaE43Zm9nNWl5RTNoSml4UlFYMlhuTVhuVl9vWVFBSmRLc0VnVjJBVjFjbi1DbDBqTTlIOXhOM1ZBNkJvajQ?oc=5",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "グラフの声を聞く：銀行株の下落が告げる国債の危機 市岡繁男",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96WU1KdW9ISl92OVd5SG40V3FMekNLemo1eFBjTmtjelI0eWZkaHRsZlppWDloM0ViYUtFdHlxbk1pVFVJM0RNLU83dDRIaWlha0dUb1Q1NmpkSm5kSDFFTkxRbWJpWW5BenA3Y0R3ZHNVNnE3elY4SkE5dENheGs?oc=5",
+      "date": "2026-11-09"
+    }
+  ],
   "金融(除く銀行)": [],
-  "商社・卸売": [],
+  "商社・卸売": [
+    {
+      "title": "総合商社5社がそろって増益､過去最高益も続出…資源高と事業改革が追い風も景気後退に耐える｢本当の稼ぐ力｣が焦点",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Pa2VYRndvVzJMNkR6b0FoZVFnMzlKMkNNVG93UEJpRlB0Y21XMVBPcG5QamVMaWpzRXd4SzFtUFQzcTVhT1U4QTRwUllKUjZGYnFjWnhtWFlrbkpMdkpz?oc=5",
+      "date": "2026-11-09"
+    }
+  ],
   "不動産": [
     {
       "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5cmY3bkVRNUR2Q09qLUdtTTNtM0Q2QkxxOXo1SlVhTDRCYnZNUDkyMmNERXc5RHFUYks5LUo4VFVLQ1MzOFJkTmdDa2hlWG5YZ2c?oc=5",
-      "date": "2026-11-08"
+      "date": "2026-11-09"
     },
     {
-      "title": "【ＲＥＩＴ高配当利回り】ランキング (11月6日現在)",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkOHVNMjFZQ2p0VE5UV3RQRU1nM29tZ2FTV2pYN2U0Zk9Wai01NTdXbmhBWUxHYUx4dHQyalc2OFJvTFNsMnlUQ3BoWFl6R3c5WHJpc0ozc01KY3BRcnREdQ?oc=5",
-      "date": "2026-11-08"
+      "title": "東証REIT指数先物：9日寄り付き＝37ポイント高、1678ポイント",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQU0t0YUFpX1kwd19fclNXajVVbjdicDdOd3BtaHBoeXhacFpvYWV3dXVKTURCb1BiNmxPNVl2Mk9sWkhSMTVkQXYwVkFFN0tYUXlzZExMU2plc1dkampla3FB?oc=5",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "東証REIT指数先物：9日寄り付き＝37ポイント高、1678ポイント 投稿日時： 2026/11/09 08:51[株探]",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBtTEh1ZE9PMmNGT1JDYk5OTW4wY3RRRk8tYlo1S0FOX3hqV1RHeHlkWlJPcmNPVHlucW50bm1BSEl4YVpPSlE?oc=5",
+      "date": "2026-11-09"
     }
   ],
   "エネルギー資源": [
     {
-      "title": "日経平均底入れで反発か、原油価格は高止まりに 今週の市場・予定",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE50c3BoNjZ2STlXdUZSWW1xR1pGaE1QdTctaENNSHllWFhBODVjaktvN25VVEpnSTAza2NIa2NPUE5ZUVc3YnJ2eW1QdXB2MjJpaDY0WVlmdHYyYnpYVFVoV2kyTHdHb1lKckZkcw?oc=5",
-      "date": "2026-11-08"
+      "title": "インド株・債券・通貨高の様相 AIトレードや原油高一服で資金環流",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mTFo1Z1ZFVElRTGJONHpMR0tJa1ItdEF6STE3SzNwYjM2RkZnd1N6N0oxaFJWb1pISGFEV3MxeWxDLTA3dGM5bVo0VExQLWp6bTZXTi1wZ1BUUFhYUkRDN0swT1RjSk8zZVBnMg?oc=5",
+      "date": "2026-11-09"
     },
     {
-      "title": "日経平均は底入れ反発か、中東緊迫後退でも原油高止まり COP31開幕へ",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5kMk5HZEZ2MzlXeWVmNk5Ca2tPU1dHSEkzcXBsblFRTTNMa1NTblhMRloyeUdzVDZzM01PSGV4aTJuMHE2aHFqOG9XSlZrNUhkdDhILWFqci1hRnV0MmZuYmZWaTRCVDFMbHotOUJ6enNzLTBI?oc=5",
-      "date": "2026-11-08"
+      "title": "原油先物が下落、イラン巡るトランプ氏発言受け",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4yZ0xxLWdETFFJQWdTRlFNWDh2YWtiS0xsQkIxeUpfT29HLVZXX3hFX0J1Tk1aVUIyenNEVXZ1TGtsTEdRMjBpTnRtTzBPT2tOTVA3VmZwN045bG5CSU5falQtNDJsNE1ZYnpHRGNmRkFpUi1nMDVwby1CM2RkZw?oc=5",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "新興国ｅｙｅ＞前週のインド株、原油急落や外国人投資家の買い越しを受け続伸＝ＢＲＩＣｓ市況(ウエルスアドバイザー)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTFZzWVdEWGg3bGVLQ09GRlFMVlRYNWhKaW9tR25ob2RKNTVJTFFSeTQyOUZoYWc1VG4tWVZuMFZZamdablREcXlwRVJRZFhySE1uNVc2R0tIZFg1WERzUU9zV0dWSzlCb1owbzFUZDEzb1JhYUs1RzhWM29BV1VvTkE3Smxsd3c?oc=5",
+      "date": "2026-11-09"
     }
   ],
   "食品": []
