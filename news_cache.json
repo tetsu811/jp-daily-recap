@@ -1,5 +1,4 @@
 {
-  "金融(除く銀行)": [],
   "建設・資材": [
     {
       "title": "スーパーゼネコン最高益の裏で都心再開発が続々頓挫！サブコンまでが「仕事を選ぶ側」に回る建設業界異常事態",
@@ -17,7 +16,36 @@
       "date": "2026-11-11"
     }
   ],
+  "素材・化学": [
+    {
+      "title": "太陽化学(株)【2902】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBRWNIcFZhTkZLM3ZlbmFPejI3a0lYOUFodW4tM0xqUW1RZzU0R0tkcE01cE5iOS1HSnBYSlNEV2FvTlB1aTV3cjJ1MTljN25UN0E?oc=5",
+      "date": "2026-11-12"
+    }
+  ],
+  "機械": [
+    {
+      "title": "10月の工作機械受注、42％増 16カ月連続プラス",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1faEhOc1dRSUxJYmcxdG05cl8wSGk0c1dGT3o5aXZBNldtenU0VEViblZiQXlFUVcyWkloSXJRNUFNYTdoeDRFRmRLWWZDckhHU2J1NkF5TWc?oc=5",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "2026年9月分工作機械受注総額は1978.7億円",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB4NWwydmdlX3kyQ2FxMXc2RGlWWngyWmRFT01oWVh3a0Q2MFQ5c3ZXOUZ5RkNQVDN0VlJQaXVpcnlPZEQ0LVNJLXV3?oc=5",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "10月工作機械受注は前年比42.5％増、前月比8.4％減＝工作機械工業会 | ロイター",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWUN2N3pTVk1PUkpTanVfY3duU1kwUFBJWFFkWWppd2V6NHZqYThXYmV6ODBJYkx1aFJhSGZqZ3Jhd1JBODVpMUZXUDVHMEF1OWQxTXYxLTNydnRnRW5YQS1nM2JGUl9KY3lZTnJLT1J0dXNfbVllQmFkdVdSdVBDSDVad0pVZw?oc=5",
+      "date": "2026-11-11"
+    }
+  ],
   "商社・卸売": [
+    {
+      "title": "就職人気企業ランキング28年卒【文系男子】！人気の総合商社の中でトップに立ったのは？（ダイヤモンド・オンライン）",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQmxpN2JXOVFDZS1kUFdfbG1qMV9SYlJOWktUTDI3enpVZTVrWFl1eGctNDYtUjRRM3ZVTUNwZ0JVTkw2b0tmNTI2MGU3NzBxVnl0SGE0aVp1NlZfZGlEMVZDaW5jYWRfOUZuYzNWaUMySG9vV3Z4MWpwdG1nV3RXNklWS0Q2SkRZ?oc=5",
+      "date": "2026-11-12"
+    },
     {
       "title": "【株価はどう動く？】バリューとハイテクが交互に上昇する展開、海運、造船、総合商社に注目",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTckxPLU9PTnllMjRPcmJVbEl6U2N4Sks1eS1XTTdtWVdOUEV0ZWRodUllTVhMam9sMnVMNVNWUU02XzhMNmNBa0xJbHpoTU5FVEVyenZhTDRNX0RHVUVNR0tqUVd2Zmts?oc=5",
@@ -29,25 +57,14 @@
       "date": "2026-11-11"
     }
   ],
-  "機械": [
-    {
-      "title": "10月工作機械受注は前年比42.5％増、前月比8.4％減＝工作機械工業会 | ロイター",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWUN2N3pTVk1PUkpTanVfY3duU1kwUFBJWFFkWWppd2V6NHZqYThXYmV6ODBJYkx1aFJhSGZqZ3Jhd1JBODVpMUZXUDVHMEF1OWQxTXYxLTNydnRnRW5YQS1nM2JGUl9KY3lZTnJLT1J0dXNfbVllQmFkdVdSdVBDSDVad0pVZw?oc=5",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "工作機械4社、10月受注40％増 米中好調持続",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9rTXBXYkJERVJmMUMzV24wMEZQT0NVaklOR2hNLVF3SmszVVVGcTF5SnhPaXE2UHdOS1RkM0ZPS0EzOHlBcnhpLVUwUnUxc2dJbDlMYTh4WXg?oc=5",
-      "date": "2026-11-12"
-    },
-    {
-      "title": "工作機械活況、裏では部品争奪戦 AI特需の半導体向けは顧客もライバル",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xS3RHRHpFQ1J3RDhZUEUtNFZPd05lUkJPekdELWJaYmFITWIwYkh6UkVCTC1kOU1MMzF2MlRuNXJULV9WczFSMS1KT3VQNnNYTjltUDQ0UlN0Znh1YVZySzBuOHdkSHRWb0w5Vw?oc=5",
-      "date": "2026-11-11"
-    }
-  ],
+  "金融(除く銀行)": [],
   "鉄鋼・非鉄": [],
   "銀行": [
+    {
+      "title": "銀行株に注目 地銀上位行が業績上方修正、3メガバンクあす13日に決算発表",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5IdHdlci02cl9KVXBUbTZyRzJubVFIeE5SZnFoUHY0QUd2by1ra29kdU9qdkNESUJtU01nMDhQQloyYS1qRWFLMDE1ZUQ4cFUyZGxXMQ?oc=5",
+      "date": "2026-11-12"
+    },
     {
       "title": "NTT・三菱電機・メガバンクらが連携！衛星群を活用した「通信・観測・宇宙データセンター」の事業化構想",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5NSGRjQ0t5TDhiZHBLZ3J2eGVubVhmbVFUVkV1Nk9hb0Z6cktjLVRVUUVsNkhzdXlQbG1UWFRXdXdvZVkxdWJrcmhiWGUyZw?oc=5",
@@ -66,24 +83,16 @@
       "date": "2026-11-12"
     },
     {
-      "title": "エヌビディアが時間外で5％超反発、米半導体株が全面高",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhcGllS1lVUHA5SEpMYXpnVTlmaktMSmRKVkdjTk9ZSjJUMGtvQmJIU2lnWHZuM1U1bHNOMFBSYUF3dS1yalR3SW5HS2JaTlVQcldodDlPQWxiMUVkY24zWV8wU3JpeTN1bFFOTkZoU0R5Zm1Y?oc=5",
-      "date": "2026-11-11"
+      "title": "日経平均株価、米半導体株高が支え（先読み株式相場）",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE04amtka0tCM0hrVkxtTmlEMV9XM09ZcXU5SG04ZjRRdmpKM0VJMDduTnlDVnpEUGlwWDkxMGpjZHNqaWpKTVM4c05OX0hjb0J3c1RyM2tZNWJpQUg5WWhWMEV5R0NSOUgtQnhnVg?oc=5",
+      "date": "2026-11-12"
     },
     {
-      "title": "半導体株が反発、CPIリスクを前に先物が高騰",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ0J2WTFFZlpQZTduX014UThNSUp5Ql9oWkNDWnNReGlkRlJBWUFBd1ZGYU1SS05tLUJudUFyck1vMVlhcVh4a0pNTVVBYjFxZ0ctRWVWTlJWOGh3c1E2Qlo3QUt3V0dzOFJQcnZmUHFiNEh3bHZ0SzRwRW5kTGszWmJpemFSZ3hMTnhVdVZjVUlTZHIxZHRuNXYyZGhYcS1lQ2VqNw?oc=5",
-      "date": "2026-11-11"
-    }
-  ],
-  "素材・化学": [
-    {
-      "title": "太陽化学(株)【2902】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBRWNIcFZhTkZLM3ZlbmFPejI3a0lYOUFodW4tM0xqUW1RZzU0R0tkcE01cE5iOS1HSnBYSlNEV2FvTlB1aTV3cjJ1MTljN25UN0E?oc=5",
+      "title": "米国株の半導体株が全面高、SanDiskが13%超急騰 フィラデルフィア半導体指数は下落分をほぼ回復",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BcjNRbW1ONnp0c0R6ek9rWE4zN0lZejRTbXhKN0JhVkE1WF9iMTVwQ1JuUy1OWVNXUFVGbnNOSHZQZHhUMTJtbkxCRGZGRkNnSTZjQXlXcGVyQ2MzNTZKYlRwRFBlUnFVUUcwb2QtS3R2V0Y5?oc=5",
       "date": "2026-11-12"
     }
   ],
-  "電気・ガス": [],
   "不動産": [
     {
       "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
@@ -91,17 +100,17 @@
       "date": "2026-11-12"
     },
     {
-      "title": "東証REIT指数先物：11日清算値＝7.5ポイント安、1636ポイント",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE10OTNXUTZCQ0VXSDJmTk0tLUtBR19mbi1XX1Q4RTdFR1VFT2h6Sy01cmRIX0xGc1NMWUVQNWlhS2hIMVNpR2FjUmVRZnBBQW84RWc?oc=5",
+      "title": "【戦略】サンケイREIT非公開化に対抗提案、PEファンドが買収検討",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBsaWliRmVTbUdpbTBaZU1HSUhSSlI5OFdUeldiRGh4VnpPU0RYeEhoLTdYUlRfODlzWEg2NnEzdXRIcnZ5RlVKaUxiNHpsOXl3OG5EOE1EUGNrakVnYXdtbFJ3?oc=5",
       "date": "2026-11-11"
     },
     {
-      "title": "東証REIT指数、1年7カ月ぶり安値 国内金利上昇で",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE43WklkZjJaVDdxZWswTUVJSnR2SjZCem12alU4aEljUmFIUV9wWGZIOHdtQTFkWWs0cmowb0loMkNuNGxROTIydGhoeHp1NUdDVnQzOWhET0p0Q09tQWVneVo0dGpKaXctekxFbA?oc=5",
-      "date": "2026-11-11"
+      "title": "CareTrust REIT、1700万株の公募増資を開始 - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBaRE5BNnN5RkprdXViVjBBQmtoOTNsY0FRa04wSDBfWHV4cmdTZ1NZMncwc1ljbXNTcGs3VnJnbHpOTHAxeUdBMVN4R2ZUMzlwUjJqcEllQWE5OFNoM3lEdFgxYTNuZ25zOGdMNC1qTG4?oc=5",
+      "date": "2026-11-12"
     }
   ],
-  "自動車・輸送機": [],
+  "電気・ガス": [],
   "情報通信・サービスその他": [
     {
       "title": "東自機について、光通信(株)は保有割合が増加したと報告 [変更報告書No.1]",
@@ -109,11 +118,24 @@
       "date": "2026-11-11"
     },
     {
+      "title": "中継光通信株の中継光通信（中際旭創）が本日上昇した理由とは - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OeFdDcjVxSkNocHFxYVFxMXp4YkxMUUJZaXdjSXhmQ29zYm50c0FlcTRMbE84Ty01aGl2dkhJbmNtMVhJaVJxTVVQRDNUU0N6MzdJN3RROC1iSko2Q1pTQ0trRUtIeXd2VFhTcF9sOExzTzJIS2g0?oc=5",
+      "date": "2026-11-12"
+    },
+    {
       "title": "【米株ザラ場速報】米ストレージ・光通信株が全面高",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaWdlV3ZTeFpOV3RtaFJ6WktSeXpRbGctTnRjQ0MwTlVrME0wbV9waERKUzloRS1pd3FQNmFJd09BY0xmQzlKZnN3TFBkQmhtalJlOWUyTHBvbW51cUJQMlJkWHp3czJkRC1kc2JSRlhiNjlvRHdDQW9KcllXSF9WaWpIbDlkdHR1T2RBa2tfQmJCSVM5U2lzZ3BNQmhOZmUzUk1qcElTVWpWOU9MY3ZaRElrWQ?oc=5",
       "date": "2026-11-11"
     }
   ],
+  "医薬品": [
+    {
+      "title": "シンバイオ製薬(株)【SYMQY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpLXdnazFVYk9IYmEwbm1TM2lvZTV4UWloWHpWMEpvcFk5WXVwVXlRTnBqSk44aDVDLW5ncnV5WnF5QTVtQWpweG5UZm9Edmkt?oc=5",
+      "date": "2026-11-11"
+    }
+  ],
+  "自動車・輸送機": [],
   "運輸・物流": [],
   "エネルギー資源": [
     {
@@ -122,21 +144,14 @@
       "date": "2026-11-11"
     },
     {
-      "title": "原油は０．５７％高＝ＮＹ原油終値",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBKQkM2WjQyaUhncDlBN0M5OXVpVUpZVUUtdjdpcV9MNVdOTmhNTGo2NlgyN3pHZU9yb0Y3X2c2WGtBNHlhdlJIUg?oc=5",
+      "title": "国内企業物価、10月は前年比7.1％上昇 原油上昇・価格改定などで",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMDBJUUtPR0NiM2pVVDNfVGRlUVFyeHBPMnpjYVRBQXNQc0tXVWV4Zll1YlNleE5wZlNrVjlDZFltNE1NZUpjN1NlZndqWko0Vk5vUDJGTFM2ODVoVlYzOVVnYnQ3UVNtQ0V0azl6eFQzYU1MX3dwTlVZN1IzTUJaTGpzRQ?oc=5",
       "date": "2026-11-12"
     },
     {
-      "title": "中東湾岸の原油生産、衝突前水準に迫る シャトル運航や迂回路駆使",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE05YVlTQnBkZTFfREo5RzN0dmxvcC1hbEpMMlB1V204MnV6WnBHOFdrcG9EODZqQVA5aV95akczemRKRHo3MnZhbWh1MDhoUHFTWTlsVkZ0U0FfWjZiQkxiUkUyNVdUenRQYlNRZg?oc=5",
+      "title": "原油タンカー動向：傭船料下落も、中東原油の調達減少のおそれ（西 勇太郎）",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5LUHpEb01fRGo1ZWJ6ZG5FUUx1Q2hKOGhPVHVOTmJfSFFnR1hobFp6RF85RzZqY3hfcVJESFJVRGM1ZEszZ3Y0NTlsc29jc2NyVm1LRDMyOXFHdw?oc=5",
       "date": "2026-11-12"
-    }
-  ],
-  "医薬品": [
-    {
-      "title": "シンバイオ製薬(株)【SYMQY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpLXdnazFVYk9IYmEwbm1TM2lvZTV4UWloWHpWMEpvcFk5WXVwVXlRTnBqSk44aDVDLW5ncnV5WnF5QTVtQWpweG5UZm9Edmkt?oc=5",
-      "date": "2026-11-11"
     }
   ],
   "食品": [],
@@ -147,14 +162,14 @@
       "date": "2026-11-12"
     },
     {
-      "title": "ドイツで日本産米をPR、ベルリン高級百貨店で販売促進(日本、ドイツ) | ビジネス短信",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBKWHo1dkIwa3RSZHBhc01lLTlhYVVabzhmLVREYlJXWTNNV2UwLTU0ODhBS05lVzBXamV1aXlBRWd4Rzh0VjdDaHIxSGY5cEZfaGxVU21Tekt3TUNYOUdqV1JvYnN1NEZSTFpLR2FB?oc=5",
-      "date": "2026-11-11"
+      "title": "百貨店に多世代交流の福祉拠点 介護予防、学習教室など〈奈良・生駒市〉（福祉新聞WEB）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1rZnUwNzdySXBWVEp5T3ZDZUVxbWwyUGtSTG1IeXBITEtxTHlrai1yTW5yVHk1Mkt5ZkN3SVNjNzhtN0x0RmNOdDVRbXQ2XzdmcTlXYl8yZExRbWcyWnNfT01FQmpZc1Rfc2V6ZlRJSE44MDRrdER5QzhyaTFOSTg?oc=5",
+      "date": "2026-11-12"
     },
     {
-      "title": "百貨店でお歳暮商戦スタート ２０００点の商品が並ぶ 群馬・高崎市（群馬テレビ）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aUzlSUVZMS3puNnRQMEFsMkxGdXJvcVFveFp2UEVrRjU2RGM3M1BuWEFBVnJFZWlHZnBGLU12cUxHMU1IN1FzbUUzam9KWFdEa2xrY054dmhUSEZveE9iR000eC1tQUZfdHgtbGNWOTUxYVNENmVlR1l4aGJ3OEE?oc=5",
-      "date": "2026-11-11"
+      "title": "阪急阪神百貨店運営のH2O、上期のインバウンド売上は21％増 百貨店事業が好調で増収増益（2027年3月期2Q決算）",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhR3hrS3I3SWZvYTRfRzNPcU5JUFRNWVJONXd1N2wyajVvWVJjaURXZnBqVVVCeUliTTJDdnNCczhzTjlac213dUdUdlZ0VHRZN0p3R3dRZzlETWk5YWxv?oc=5",
+      "date": "2026-11-12"
     }
   ]
 }
