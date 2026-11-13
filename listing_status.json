@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T16:12:14.089771+00:00",
+  "checked_at": "2026-11-13T03:27:15.832412+00:00",
   "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
   "delisted": {
     "2388.T": {
@@ -716,6 +716,11 @@
       "date": "2026-11-26",
       "name": "Sharing Innovations Inc.",
       "reason": "Becoming a wholly owned subsidiary of Orchestra Holdings Inc.(Stock Swap)"
+    },
+    "6044.T": {
+      "date": "2026-11-27",
+      "name": "SANKI SERVICE CORPORATION",
+      "reason": "Becoming a wholly owned subsidiary of SANKI Shin Maint Holdings Co.,Ltd.(Stock Swap)"
     }
   }
 }
