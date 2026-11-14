@@ -1,23 +1,17 @@
 {
-  "医薬品": [],
-  "食品": [],
-  "建設・資材": [
+  "電気・ガス": [
     {
-      "title": "決算:清水建設などゼネコン4社、赤字工事が減少 引当金がピークから半減",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZQlRQUzVfaFdMN2dwSTVldW1LQmtpNjV4Q3FEZ1VGZEJiSlJCTlM4VlhTOWt1cmdhYXBGMFJjcmtwYTNfQ0tZVjVhNjVWRUhkbC02bUtiRi1PYnB3OFBTc2k4SHEwOUZLNGMwdw?oc=5",
-      "date": "2026-11-13"
+      "title": "旧村上ファンド系、中国電力株を3%取得 「物言う株主」実質2位の保有数 経営に影響か（中国新聞デジタル）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xMWlGYzNXc2ZTeDdRLWp4Z0JoTmszbVhCVW5pNW9GZ0hMVjd1S1JrS2NEanlrSkxXRkNhbllHUXE0eER6YVItbFcycF9CbEZ0Z0U4eU1rSEFQdVJPc2JWYzBCbnh2b2xoU0JoR1N6eGJ4WnlJcFQ3TTMtb2xsc28?oc=5",
+      "date": "2026-11-14"
     },
     {
-      "title": "ゼネコン「経営耐久度」ワーストランキング【日建連加盟128社】プライム上場の日本国土開発は4位、ワースト1位は？",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1oQVVuWU9pNkVSWFQteE1kb2ppOGNQNDFhSzh0SFpMRUZ2cW5SZUg4LVFUXzdkSUhWbWR4MGhOaTRPTjBpZUcxdEdsM1k?oc=5",
-      "date": "2026-11-13"
-    },
-    {
-      "title": "スーパーゼネコン５社（鹿島建設、大林組、大成建設、清水建設、竹中工務店） 2027年3月期第２四半期の決算が出揃う 「大林組」が大幅に上方修正！",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rd1F3Y2RTRmVBSV9GX09RV2R6emJiZGZIWUJqSzVfY0pJSXdTODJpYkVoZHRMY0ZPbHVCV0pZZjVNNzllTG9CRGJnRTVPclo2RWNaU1VVemdPbXQ0dHd3OUFVNnVxLV94MjdYX3dveUszVXZEZ2FTWG9hd0hfdw?oc=5",
+      "title": "【独自】旧村上ファンド系、中国電力株を3%取得 「物言う株主」実質2位の保有数 経営に影響か",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1NcHM4SlhETzZZc2YwZ0d2UmhWQThoYlREQ0hEMldkX244cHJBLVZIRUFJN090QVJGLVFRVzJFQmJnS25jTk1PeXpyR3cxS0FMOXoyRWw5NFRjYjZ0RlZ0aHlZdmtZdWY1aFhXY2RB?oc=5",
       "date": "2026-11-14"
     }
   ],
+  "金融(除く銀行)": [],
   "不動産": [
     {
       "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
@@ -28,70 +22,54 @@
       "title": "「利回り8％」は本当にお得？ 不動産投資で失敗する人の共通点 プロが語る“甘い話”の落とし穴",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfc0hrZ3dnVFd3ODJrcjQyYlFJVHVYdk1zdnNCVlExZE9UUElZQmlYa2tKR2JFekF4MmxnLXZUQnJLOWl5Q0FQUjVqck9nVjQ2Z3ZTYmlNRzRMNmM?oc=5",
       "date": "2026-11-13"
+    }
+  ],
+  "医薬品": [],
+  "運輸・物流": [],
+  "建設・資材": [
+    {
+      "title": "大手・準大手2Q決算、事業収益の改善続く 利益を施工力強化に",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaU2xmVnlmemwyOHV3d1dodEZZdDhmcFB1ZnZiRnVPVGFwSldnOThtVTRVdUlpZlVNZEluQUhKSWVhSDl2YmJQNEw3aDl5Tkd5UDVTdE9n?oc=5",
+      "date": "2026-11-14"
     },
     {
-      "title": "東証REIT指数先物：13日寄り付き＝12ポイント安、1643ポイント",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWQmR6WldSY0RCclk0VC1ZNXBMbW5pOUhfRDdrM1NEV3FwdFdJYy1NQXZCYjI2TUZGdnBEZ1pRdUdIRmVqVEUxX1NxU0RCMkRleTI3MFZSNGl0bFJiNEswLQ?oc=5",
+      "title": "決算:清水建設などゼネコン4社、赤字工事が減少 引当金がピークから半減",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZQlRQUzVfaFdMN2dwSTVldW1LQmtpNjV4Q3FEZ1VGZEJiSlJCTlM4VlhTOWt1cmdhYXBGMFJjcmtwYTNfQ0tZVjVhNjVWRUhkbC02bUtiRi1PYnB3OFBTc2k4SHEwOUZLNGMwdw?oc=5",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "ゼネコン「経営耐久度」ワーストランキング【日建連加盟128社】プライム上場の日本国土開発は4位、ワースト1位は？",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1oQVVuWU9pNkVSWFQteE1kb2ppOGNQNDFhSzh0SFpMRUZ2cW5SZUg4LVFUXzdkSUhWbWR4MGhOaTRPTjBpZUcxdEdsM1k?oc=5",
       "date": "2026-11-13"
     }
   ],
-  "金融(除く銀行)": [],
-  "電気・ガス": [
+  "食品": [],
+  "小売": [
     {
-      "title": "旧村上ファンド系、中国電力株を3%取得 「物言う株主」実質2位の保有数 経営に影響か（中国新聞デジタル）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xMWlGYzNXc2ZTeDdRLWp4Z0JoTmszbVhCVW5pNW9GZ0hMVjd1S1JrS2NEanlrSkxXRkNhbllHUXE0eER6YVItbFcycF9CbEZ0Z0U4eU1rSEFQdVJPc2JWYzBCbnh2b2xoU0JoR1N6eGJ4WnlJcFQ3TTMtb2xsc28?oc=5",
+      "title": "京阪HD、LINE登録者情報漏洩 百貨店などアカウントから最大22万件",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZUWsxYmthTTVMNnQ1eTZpLUZmb25XZGNhTXh5R3g3NjdFcUloNVR4VEMxQXlYeXQ4ZFIxWEFRUnlBeGh2c2h1ZVdFUjdSSDU1WXFGS1VDUUlWYmhqd0MzemZoMDBCcUMzQjg4aQ?oc=5",
       "date": "2026-11-14"
     },
     {
-      "title": "【独自】旧村上ファンド系、中国電力株を3%取得 「物言う株主」実質2位の保有数 経営に影響か",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfcEV4elNjdHJhQWRTMDN3WFFhOGpRZEFaYlJUeFRGZkpJS1kwd1UyQU9FcWxQTFBZVWRtQjBDY2Z2c3ZnYVJWOFJoOFJGNGl4WEdBaXJyUjV2QQ?oc=5",
+      "title": "百貨店4社の中間決算、売上は全社増加 伊勢丹新宿は通期予想を4596億円に上方修正",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5kaGpSS25XVk9FcUU1TGJKWW9iLVFWN2xxRjk0X195N2ZTVDlYZVNENTdfWW5YUEdJaWJrdl8yRXBlcS10dTBfQ0t0bHdIYm9RYWlIZFhoVUJ3RlNlQTFBcjAxcjBTUHpONExZNjVKNks2RVdZ?oc=5",
       "date": "2026-11-14"
-    }
-  ],
-  "運輸・物流": [],
-  "小売": [
+    },
     {
       "title": "三越伊勢丹がホテル参入 百貨店と連携 新宿本店近く再開発",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xR3JJYmN2eGREeGpHVVdscDRsZFlETVhwdmlWMk1DUFpPUEo4NmZzR2IwZDNCZmVUdmZXaGFjMjdUaWVvZzBPLWR5WHFycnduMVlnSGpMSVRzWms2ZkZxcG40cWtpUS1qdGE0TWQyVl9Pdw?oc=5",
       "date": "2026-11-14"
-    },
-    {
-      "title": "「新潟県のポテンシャルは大きい」近鉄百貨店の秋田会長、ＰＲ催事の成果を花角知事に報告",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5GZGJiV1BvU0NNMU1mbURHd0RNeExmekNsazFmVzJrNDJxZkkteUhoakZjeWNCSHEtSG5lM3UyN3BYb3AzSVRDVWtwT2l2akV1U1BEZ05helROVDRfd0E?oc=5",
-      "date": "2026-11-14"
-    },
-    {
-      "title": "11/19(木)～11/25(水)冬のフードショーフェスティバル『味の逸品会』開催！〈AMAZON CACAOラ･カーサ･ディ･テツオ オオタ〉〈焼肉ジャンボ〉〈赤福〉〈金蜜芋〉など、約100種類のスイーツ･弁当･惣菜が大集合！ながの東急百貨店バイヤー厳選のグルメイベント♪＠長野県長野市",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5WVzVYWndsWVZDQjRPM1p6dW5fMWtoRmFBTklNX3pzYjR1SGNhZ3JRTHhXUEc0QUpJM3IzbWlTdE5SaUZWYUpxay1GUjVDQQ?oc=5",
-      "date": "2026-11-13"
     }
   ],
+  "素材・化学": [],
+  "商社・卸売": [],
   "自動車・輸送機": [
     {
       "title": "トヨタ自動車(株)【TM】：株価・株式情報",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBBVUdJM0U0aFlkR0FQN05mMW1YR2VRTlVLdEE1d19aRE9MWndrR1NnWTJZb1VtZmtjSGxRTzZseVZQaVhNU1NNUUJFSU8?oc=5",
-      "date": "2026-11-13"
+      "date": "2026-11-14"
     }
   ],
-  "情報通信・サービスその他": [
-    {
-      "title": "スパークスについて、光通信(株)は保有割合が5％を超えたと報告 [大量保有報告書]",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pa2JnSFBMZHlHalhXQ2JIei1xZ2hQYWljT05RUnBYZEdvY1p2STE1NFgyR0RUbC1IZ0k4cS1lUVU2ZzRlTXB5eVdjWGtSdFJPVk1ZU2EtQ3NHTzZSTnJjeQ?oc=5",
-      "date": "2026-11-13"
-    },
-    {
-      "title": "コスモバイオについて、光通信(株)は保有割合が増加したと報告 [変更報告書No.12]",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ad053RWJ6MWVmZUZQcGJVdlZfS0pKQ3RGVC1WeWxwY1ZXR0Y3dDdmRmVBYWRwSV9fX2cxSHljRWk4eW56Tmo2OWpSUEZkd3EwYUE?oc=5",
-      "date": "2026-11-13"
-    },
-    {
-      "title": "ヌーラボについて、光通信(株)は保有割合が増加したと報告 [変更報告書No.2]",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE95cFczMmZmVk5tZzIwZUZuTDNKdmRrai1FcjN4MEtjYXk3dzF0cHRXTTgwTHl5LWg0WG5lektWbEFRX0M3OEtMN0lYSEF3bVlqeWc?oc=5",
-      "date": "2026-11-13"
-    }
-  ],
-  "商社・卸売": [],
-  "素材・化学": [],
   "電機・精密": [
     {
       "title": "(NEXT FUNDS) 日経半導体株指数連動型上場投信【200A】：株価・株式情報（夜間PTS含む）",
@@ -109,40 +87,24 @@
       "date": "2026-11-14"
     }
   ],
-  "銀行": [
-    {
-      "title": "3メガバンクG 中間決算で過去最高益を更新",
-      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBaVkI4MXJUVXFENlhGUHZaVURaRzRKNTc5OE1fajB5Q0RfcWE3VFZMRDJ3MFBHQjV4Qm5j?oc=5",
-      "date": "2026-11-14"
-    },
-    {
-      "title": "3メガバンク中間決算 最高益更新",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE10S25mdHozQjVTM05UNmlRS0lnQkV1aGRObXVuRDVCWWZiNXJvQlp3OVNGLWd0ZFZBclhVaUhYTkpNVTdvSE9zeDZBR0JLZVl5?oc=5",
-      "date": "2026-11-14"
-    },
-    {
-      "title": "メガバンク3行の中間純利益は21%増の3.5兆円、通期見通しをそろって引き上げ",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1UM196T1NyNW4wZG9ZRUhjYlNJMDJER1RtT2cxdm5oUldxOVltMFRJVjFTelRLRjNNS0hYTHNyRTg3d21KdDlDanQyYmJhWHVYYTUydVZmb05uQ09iRkx4OF96UmxBUTh4QmZWTXVTeG8xNzVt?oc=5",
-      "date": "2026-11-13"
-    }
-  ],
   "エネルギー資源": [
+    {
+      "title": "米国中間選挙後の原油価格見通し WTI原油先物は75～95米ドルのレンジ相場になりやすいと予想 野村證券・髙島雄貴",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4ycmU3SXluaHZmWDhodEtjc19LSWRZc3pjZGdCeVZNMWp3LWJ1OWRGU0FibkVEdnlobF9IMF9QV0RPTE8ydERjRTdzODZpYmk1SmZEb2gxYlBQVkRPaTZn?oc=5",
+      "date": "2026-11-14"
+    },
     {
       "title": "原油先物、週間で2週続落の見通し 世界的な供給過剰の兆候意識",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNT3F5MEFtRENvaHFwMHBDVUZzbTd3cHhXM3dOLVo0cnRRT0N1VVN2WnZKaENDVnNfYXlfVWxyUWxXM3Q1M2tOSlpQNE1fQzBjbVY1ZXJmWkEzdXVJYWhwdk1HZEtoVllsUGFVVDBmT2F3VG5WbE8yZFc2Q25oenNsc2RZaw?oc=5",
       "date": "2026-11-14"
     },
     {
-      "title": "【原油ウォッチ】次の焦点は産油国の増産競争…イラン再攻撃の懸念後退、「戦争プレミアム」剥落後の市場は？(1/3)",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBiby00OTNTNlI1RFhEZThCNHhLaXRWLW9ITWtVSHdWRHhjRXptWVZBNGpHREZHd3drTVdZYV9BS3Bld3ZFLWhGYlBFRmZXcDJlam1VVWhB?oc=5",
-      "date": "2026-11-14"
-    },
-    {
-      "title": "ガソリン「200円/L」時代へ？「世界の原油事情」で読み解く景気動向…補助金「12月縮小」の“ビジネスインパクト”とは",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UQk82TEZTQTYwbFdvakNTTGdaYjJuSUluU1JoT012MzBpdE1CNFJteE01MUpkWDM5Y0t6dlp4LVBOUnRyeEJQUllNWVdJeHczOVM0NzNxblZZeEVwd01PaXlQOUFlVTdYdDhNRUJJMGYxcDNreTZIbExWNVRFR3M?oc=5",
+      "title": "小反落、週末は方向感の乏しい展開に＝ＮＹ原油概況",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBuVUgyQnpvc1huWUlDZ09iZmJIVEkwaUZTeG1vVEN3ZzgtTnJCMWVWa1JLX3JCQ015bTNmMDNfQXZlejctM01Wcw?oc=5",
       "date": "2026-11-14"
     }
   ],
+  "情報通信・サービスその他": [],
   "機械": [
     {
       "title": "ブラザー工業 工作機械にＡＩチャット機能 作業者の質問に自動回答 年度内提供目指す",
@@ -153,9 +115,36 @@
       "title": "ブラザー工業 工作機械にＡＩチャット機能 作業者の質問に自動回答 年度内提供目指す",
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1RdXZXVldRNHRTWHRaX2JKcng3T29Mb1ZSZFlwQXZ1cHN1eUxYN2dnX1VDb1FLLVFFQkptSlR5c2Q2cWFkLVV5blpQZw?oc=5",
       "date": "2026-11-14"
+    },
+    {
+      "title": "超精密CNC工作機械の世界市場（2026年～2032年）、市場規模（旋盤、フライス盤、研削盤、その他）・分析レポートを発表",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ydHNvZ0hDNVg0TmtyT0kwVWRTTVUxN2NpT0RZeEV0eVlaeVdMWXM1Q0doLTkyR3MzenRheGc1Y1I5aV8ybm1FUjJFVWxEWFk?oc=5",
+      "date": "2026-11-14"
+    }
+  ],
+  "銀行": [
+    {
+      "title": "3メガバンク中間決算 最高益更新",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE10S25mdHozQjVTM05UNmlRS0lnQkV1aGRObXVuRDVCWWZiNXJvQlp3OVNGLWd0ZFZBclhVaUhYTkpNVTdvSE9zeDZBR0JLZVl5?oc=5",
+      "date": "2026-11-14"
+    },
+    {
+      "title": "3メガバンクG 中間決算で過去最高益を更新",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PWElYSmRqUGFNejFvdXBrN2d1ME03THdqeC0xWmw1N2RSOWtMcjlHc1hQcE1tQ1pFNkozMnplcDdyR2ZqeHRNbTRnc2x2TkdFaU94RU5na3RaV2s?oc=5",
+      "date": "2026-11-14"
+    },
+    {
+      "title": "メガバンク3行の中間純利益は21%増の3.5兆円、通期見通しをそろって引き上げ",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1UM196T1NyNW4wZG9ZRUhjYlNJMDJER1RtT2cxdm5oUldxOVltMFRJVjFTelRLRjNNS0hYTHNyRTg3d21KdDlDanQyYmJhWHVYYTUydVZmb05uQ09iRkx4OF96UmxBUTh4QmZWTXVTeG8xNzVt?oc=5",
+      "date": "2026-11-13"
     }
   ],
   "鉄鋼・非鉄": [
+    {
+      "title": "東証業種別ランキング：非鉄金属が下落率トップ",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85WkZfQkdSdlhYT2tYTFNDWEc4UklzWms2alJ3OHlaUkRrMW5FWVlKZ180dDZyTE9Sbk1lTWQtcUhYcWJDdVI1WG13MC03bHByMkRfNE1fdUV3SXdFUHZMTw?oc=5",
+      "date": "2026-11-13"
+    },
     {
       "title": "株式＝非鉄金属、銀行が安い｜四国新聞WEB朝刊",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9GQ3JzODF5RXlIYmVrQkszQ3FER3ZKTmY0RkE5ZVRFWG5EcEJoeW5mZXMtRVcxQnJQZFM5Qml5aVFhendwTUQzOHBwUVppTzB1eW1zV2tKbHFURHNTdlFjYm9jbUF5WEdyMkc5c01OMmtZbHJja0VR0gF8QVVfeXFMTWpOeVJIbXJQMUZjREc0NlJsVEhvNXg4azVqNnRuOXlnSTlGUnFjWU5SU3ljOFNZa3NTczE5NkNCUGp3djFxdHZ6RHc0UDE0UHZSZ3M1VUt4cGFWeWxiY25RbHRoVEtucGNDcnduRVgyMWx2ejhMYkZVUDRSbQ?oc=5",
@@ -163,12 +152,7 @@
     },
     {
       "title": "東証業種別ランキング：非鉄金属が下落率トップ",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85WkZfQkdSdlhYT2tYTFNDWEc4UklzWms2alJ3OHlaUkRrMW5FWVlKZ180dDZyTE9Sbk1lTWQtcUhYcWJDdVI1WG13MC03bHByMkRfNE1fdUV3SXdFUHZMTw?oc=5",
-      "date": "2026-11-13"
-    },
-    {
-      "title": "本日の【業種】騰落ランキング ＝ 大引け 【上昇トップ】サービス業 【下落トップ】非鉄金属 [15:35](株探ニュース)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbEpfeWVWRkF3dW9aV19GTnoyZm1QbVJTTXFhczVTYTFZSGpvWWZUSnkxSDZVLTNsZkFEZTR6Q0FFUHMxb1VieUM4Q1FteTJCYmJIRWJIV2JyQW84MmRKTnNRVlRUZm05NEV5cElZaTVwR2NIWkRKYlhhTjFEZm0wQk4wb1BnZWs?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV0ZJVDM0ODJDdTFOazlLV3pHMWJhNkVGMU9HUHlPTmFwYlhzb1I4dXN4WVVUZV9RVVd2REQ5ZXBkX1BwcWpqUFMtYWR4OUNreVJuT1F0NEVKT3JPWnhIUTRnTzZMaG9kckJ6Rk1xRDl6dXQyRkk2MnpnWHZuMjdETVRCbmN1ZG_SAYwBQVVfeXFMT1pLOU12cVJsOEl3U2hBTm93N2pWUG44YklmSzRGNjV3QlNaMXdkc0ZMeU1Oa0hvZW4tRDdDWHdBamtwdUdqV3JCMWZtb2hmRDM1VDNFTTJZUF9hLU1xaUVySEFsVEpKaDVHRTlZNXpqdkpvcHFLa2dpSXREOEU2NTdRUjhNUWJzdlF0VU4?oc=5",
       "date": "2026-11-13"
     }
   ]
