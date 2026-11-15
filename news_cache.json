@@ -1,6 +1,5 @@
 {
   "食品": [],
-  "金融(除く銀行)": [],
   "電気・ガス": [
     {
       "title": "【独自】旧村上ファンド系、中国電力株を3%取得 「物言う株主」実質2位の保有数 経営に影響か",
@@ -8,12 +7,26 @@
       "date": "2026-11-14"
     },
     {
-      "title": "旧村上ファンド系、中国電力株を3%取得 「物言う株主」実質2位の保有数 経営に影響か（中国新聞デジタル）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xMWlGYzNXc2ZTeDdRLWp4Z0JoTmszbVhCVW5pNW9GZ0hMVjd1S1JrS2NEanlrSkxXRkNhbllHUXE0eER6YVItbFcycF9CbEZ0Z0U4eU1rSEFQdVJPc2JWYzBCbnh2b2xoU0JoR1N6eGJ4WnlJcFQ3TTMtb2xsc28?oc=5",
+      "title": "関西電力(株)【KAEPY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE54bGVvOG1fOG5leWJWM3N4Tkd4MTZScHlsa0VYRzRpVUhZQ0lHOGNtUVFaU1g1XzBxT1RhR0c4TVlKY1VJTGc5R0pXSzJVRE5r?oc=5",
+      "date": "2026-11-15"
+    }
+  ],
+  "運輸・物流": [],
+  "医薬品": [],
+  "建設・資材": [
+    {
+      "title": "大手・準大手2Q決算、事業収益の改善続く 利益を施工力強化に",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaU2xmVnlmemwyOHV3d1dodEZZdDhmcFB1ZnZiRnVPVGFwSldnOThtVTRVdUlpZlVNZEluQUhKSWVhSDl2YmJQNEw3aDl5Tkd5UDVTdE9n?oc=5",
+      "date": "2026-11-14"
+    },
+    {
+      "title": "スーパーゼネコン５社（鹿島建設、大林組、大成建設、清水建設、竹中工務店） 2027年3月期第２四半期の決算が出揃う 「大林組」が大幅に上方修正！",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rd1F3Y2RTRmVBSV9GX09RV2R6emJiZGZIWUJqSzVfY0pJSXdTODJpYkVoZHRMY0ZPbHVCV0pZZjVNNzllTG9CRGJnRTVPclo2RWNaU1VVemdPbXQ0dHd3OUFVNnVxLV94MjdYX3dveUszVXZEZ2FTWG9hd0hfdw?oc=5",
       "date": "2026-11-14"
     }
   ],
-  "医薬品": [],
+  "金融(除く銀行)": [],
   "不動産": [
     {
       "title": "SBI・J-REIT(分配)ファンド(年4回決算型)【89311245】：基準価格・投資信託情報",
@@ -24,35 +37,12 @@
       "title": "【ＲＥＩＴ高配当利回り】ランキング (11月13日現在)",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE50WE00d3N5LW1LelJWd0RsTjYzbGcyZkY0cFcxSHBURWdOWUlyc3c3NUszVEVIMXRHNkdYekJoeTlRX2QtUGVUV0w2dWFqdVFqdmc?oc=5",
       "date": "2026-11-15"
-    },
-    {
-      "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5cmY3bkVRNUR2Q09qLUdtTTNtM0Q2QkxxOXo1SlVhTDRCYnZNUDkyMmNERXc5RHFUYks5LUo4VFVLQ1MzOFJkTmdDa2hlWG5YZ2c?oc=5",
-      "date": "2026-11-14"
     }
   ],
-  "建設・資材": [
-    {
-      "title": "大手・準大手2Q決算、事業収益の改善続く 利益を施工力強化に",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaU2xmVnlmemwyOHV3d1dodEZZdDhmcFB1ZnZiRnVPVGFwSldnOThtVTRVdUlpZlVNZEluQUhKSWVhSDl2YmJQNEw3aDl5Tkd5UDVTdE9n?oc=5",
-      "date": "2026-11-15"
-    },
-    {
-      "title": "スーパーゼネコン５社（鹿島建設、大林組、大成建設、清水建設、竹中工務店） 2027年3月期第２四半期の決算が出揃う 「大林組」が大幅に上方修正！",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rd1F3Y2RTRmVBSV9GX09RV2R6emJiZGZIWUJqSzVfY0pJSXdTODJpYkVoZHRMY0ZPbHVCV0pZZjVNNzllTG9CRGJnRTVPclo2RWNaU1VVemdPbXQ0dHd3OUFVNnVxLV94MjdYX3dveUszVXZEZ2FTWG9hd0hfdw?oc=5",
-      "date": "2026-11-14"
-    },
-    {
-      "title": "高市政権の巨額財政出動の是非を問う…元ゼネコントップが「国策ビジネス」の舞台裏を明かした！",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1uUWgyeDEyMEkzbGVXaXNDclZSVUpDT0tBYUk3eF9vNlBhdDNUcmtaRHE4Ym9jXzB3YnJOQ3VyZXNteTJrMjQydVFzNA?oc=5",
-      "date": "2026-11-14"
-    }
-  ],
-  "運輸・物流": [],
   "小売": [
     {
-      "title": "新潟三越だけじゃない…地方で消える百貨店、跡地活用が難航 再生の成功例は",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0yVEhMUUFXLVNBZzhvSjFNREZrZkZyV0Q5cktGNE9iNUdlWnRwT3VpWWp2cHJaZ3JmTUhITUwzQ3ZnQmR2VVlvVHZFcFNtaTNDb01EVmxBVEF5aHRuQkE?oc=5",
+      "title": "個性派おせち人気、岡山県内の百貨店やスーパー スイーツやウナギづくし、アニメキャラも",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PekhWSmVIQkJDNFlncUhnN2ZzVl8yOWJTVl9xYkJuajdBaFpxRUJvLWd5U0tuQlZMdmF6ZWhZUFZCYTlwWHVaQkNGYWhzRTVRakE?oc=5",
       "date": "2026-11-15"
     },
     {
@@ -61,20 +51,21 @@
       "date": "2026-11-15"
     },
     {
-      "title": "京阪HD、LINE登録者情報漏洩 百貨店などアカウントから最大22万件",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZUWsxYmthTTVMNnQ1eTZpLUZmb25XZGNhTXh5R3g3NjdFcUloNVR4VEMxQXlYeXQ4ZFIxWEFRUnlBeGh2c2h1ZVdFUjdSSDU1WXFGS1VDUUlWYmhqd0MzemZoMDBCcUMzQjg4aQ?oc=5",
-      "date": "2026-11-14"
+      "title": "富澤商店、鹿児島市の老舗百貨店「山形屋」に新店 11月28日オープン",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pazFQQXV2UFdKXzVVSVpkM1V6TkdYTW5GNnpUX2J2TldrYVRXeFhDN2ZKU3d0NWRqZXlsQ3gtNm05d2IyLWowaEI1cXAzM0lFdXNN?oc=5",
+      "date": "2026-11-15"
     }
   ],
   "素材・化学": [],
   "情報通信・サービスその他": [],
   "商社・卸売": [
     {
-      "title": "就職人気企業ランキング28年卒【理系女子】！総合商社に食い込みトップ5入りしたデベロッパーは？(ダイヤモンド・オンライン)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMmFKQjQzdks2aUdfb0hHT2p3QnRCS0tROFBTUUV0SXZWY0U0bU1vYW5LeEh5d2tsU29wNU4yNWwyN2txWTRwVnV0VTBhUTg4NEVDMWQ4dVIzZnlUZ0RjOVYxV05NZWVQZkx4MGpZZUo4MXQ4SFp3VWJxYWVTWDBCQUpGUFVESlk?oc=5",
+      "title": "就職人気企業ランキング28年卒【理系女子】！総合商社に食い込みトップ5入りしたデベロッパーは？（ダイヤモンド・オンライン）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hU0d6bkU1ZG1YOFRVUllhV1dKNXUydE5oWEJBaTRFdTY3YW93UkpLY2hQUGFFcXJqSG1MTlhIWVR3ODBPdFFLLURjeVVpOVpjR3lKUVZHY19OdlJXSFpvbVljTHlyQ1VaVDVCV1FXbUZKTG9EYmItektOZWZ4Y2s?oc=5",
       "date": "2026-11-15"
     }
   ],
+  "自動車・輸送機": [],
   "エネルギー資源": [
     {
       "title": "米国中間選挙後の原油価格見通し WTI原油先物は75～95米ドルのレンジ相場になりやすいと予想 野村證券・髙島雄貴",
@@ -82,25 +73,13 @@
       "date": "2026-11-14"
     },
     {
+      "title": "世界の原油価格が2週連続で急落、ベトナム国内も4回目の値下げ",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1pUjdYMUl2UUhGSU5maDlnaDA2ZDJNOElCMUxfRnh4YmU4NVdTTFl3R1pxNjU4dUxVaGhjeV9TZVBkZVVTYWx0djdOb3FLVE83b1haQndIeWlvUzZDOFViOE4xNzVrYXZydHdwQXFMRndPT2xE?oc=5",
+      "date": "2026-11-15"
+    },
+    {
       "title": "NY原油先物終値 88.56ドル",
       "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9rb3RhRlozMDExYm0xWEJHSXdFTW1lcGFSUjNvU2xld2NpOFlBSV92QmJBeG5kUmo3YUpWR1hZaUNtdi1Xc3hGWQ?oc=5",
-      "date": "2026-11-14"
-    },
-    {
-      "title": "【原油ウォッチ】次の焦点は産油国の増産競争…イラン再攻撃の懸念後退、「戦争プレミアム」剥落後の市場は？(1/3)",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBiby00OTNTNlI1RFhEZThCNHhLaXRWLW9ITWtVSHdWRHhjRXptWVZBNGpHREZHd3drTVdZYV9BS3Bld3ZFLWhGYlBFRmZXcDJlam1VVWhB?oc=5",
-      "date": "2026-11-14"
-    }
-  ],
-  "機械": [
-    {
-      "title": "ブラザー工業 工作機械にＡＩチャット機能 作業者の質問に自動回答 年度内提供目指す",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1RdXZXVldRNHRTWHRaX2JKcng3T29Mb1ZSZFlwQXZ1cHN1eUxYN2dnX1VDb1FLLVFFQkptSlR5c2Q2cWFkLVV5blpQZw?oc=5",
-      "date": "2026-11-14"
-    },
-    {
-      "title": "超精密CNC工作機械の世界市場（2026年～2032年）、市場規模（旋盤、フライス盤、研削盤、その他）・分析レポートを発表",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ydHNvZ0hDNVg0TmtyT0kwVWRTTVUxN2NpT0RZeEV0eVlaeVdMWXM1Q0doLTkyR3MzenRheGc1Y1I5aV8ybm1FUjJFVWxEWFk?oc=5",
       "date": "2026-11-14"
     }
   ],
@@ -121,21 +100,37 @@
       "date": "2026-11-14"
     }
   ],
-  "自動車・輸送機": [],
   "電機・精密": [
     {
-      "title": "(NEXT FUNDS) 日経半導体株指数連動型上場投信【200A】：株価・株式情報（夜間PTS含む）",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9VS2pDdHZPSTQtaE56MUxrRUxzVENvU2QwdTlpclBITmt5aGhlWnRKaGNNNk9YT0dsRUtTT0ZHUmxLNEY0elMwTmJIN2NNY0ltOGc?oc=5",
+      "title": "ニッセイ SOX指数インデックスファンド(米国半導体株)＜購入・換金手数料なし＞【29314233】：基準価格・投資信託情報",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBjUnNYVHJyWXJoZERrRWxNYmZxR2pTNldkRUhjSzluQzVvaEt4X3FEUmtHUTE2amxWZGMta2laVnNrSjAwRGJpajFoaE5PZFhOd3dmbA?oc=5",
       "date": "2026-11-15"
     },
     {
-      "title": "来週（11/16～20）の日経平均株価の予想レンジは、5万9500～6万3500円！ 6万2000円(200日移動平均線)近辺での攻防や、好決算の内需株･金融株に注目",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBoSk9wSU5EU1JHRnRGUVdDd01Vb3FvOFNETmZOdlIxTm1EUDh0X1pvRzNXUHVPaGVOakh0eEdJZ3N2SVUtVmlyMXRVS0FmYmlwbkRJ?oc=5",
+      "title": "米国株の売りは終了したのか？ S&P 500と半導体株が2027年に向けて乖離する中、ウォール街でAIバブル論争",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNekd3T0ZFMTI1WE5zdkhYOTFTX3NVSk1pd3hTdDltMmdmRkdpdDlLWXZWOEVvZnl2RHEwaEZXSEtEQmdWS1dCTmJobXIwZGpfYnNXQjlRdjFUd0I4X1Bld2U1OFdEODFaRG5sbTFmdGJSa1RVeWdrUHFGT1RtVG5RTkhSaEpyTFp5RzdCb3VIOEZSSzRLUWFFVUdWTy1pdm9nSjJwUHBrZkRRN1RucVBONWxVbkxPdXNVU2NKQ0I3LTllS3oyNTU0MUsxUmNyakJ4YW1SbUJMSjF1MVMtWTlMOA?oc=5",
       "date": "2026-11-15"
     },
     {
-      "title": "Nvidia経営陣交代の余波…中国「レアアース報復」警告で半導体株動揺",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1CdXpKNHJzNkYtVllCZnY0Z2UyWDlpbnlmN1VBbE1qNFhQM0p5RkczWlBPTnRPbkx0aXpRelY3dXRBQnlrVndfZnBzUFVoNlU2U3AzRkduY3hEZXp1WGp4cTNkYk5nYm1wNkRHUlRfdGVyVDll?oc=5",
+      "title": "半導体株、ビッグイベントが重なる激動の週へ｜池田伸太郎",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tbnc3Y0N6UFhrQ2ladFVBUjVSdUFPRC1SY3Nwc0NweXhzMTFBQVY2VmU5TE14UkZmMjVnTUZJQTctVEtsUDZadUN3XzEwcUxfQnc?oc=5",
+      "date": "2026-11-15"
+    }
+  ],
+  "機械": [
+    {
+      "title": "景況7年半ぶりプラス圏に浮上 半導体、工作機械の需要が回復 長岡信金2026年度上半期の景気動向調査",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DNVdvbFd2MkMxQWR1b1I0U3ZYLVI0Yk4xT09TNkZKTmJMeXh5Q2lIRko0ZFN0MFY0VzdIUGtkaDh6eU5uN2xXUExNTk96aktZN0k4bklYZWxjd1ptX3c?oc=5",
+      "date": "2026-11-15"
+    },
+    {
+      "title": "景況7年半ぶりプラス圏に浮上 半導体、工作機械の需要が回復 長岡信金2026年度上半期の景気動向調査",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0zVGI4azQ0aVVWTUh3S25iZ0ZIa2RsWTd4YmFwUHZkZHQ0N3B0ZkJabmVUX3VBcG9XVGxGejlQTlAwV3BkcnZTNnNtUQ?oc=5",
+      "date": "2026-11-15"
+    },
+    {
+      "title": "ブラザー工業 工作機械にＡＩチャット機能 作業者の質問に自動回答 年度内提供目指す（中部経済新聞）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MTnExTU83QVRFTXM1a05ESDRFLUV2WlF2T014aHZicGhQV3M3bmR1R2p6cmJWZ3JDUmQ2WVBBdXpLN3Y3WnJCWkNybVV0SzJXLTEyX3ZsdTFpTXdQaVdrZ2R5TkVBUW4wb2dRbzd5WXVQOVBMVjJqREJHQ09oSHc?oc=5",
       "date": "2026-11-14"
     }
   ],
