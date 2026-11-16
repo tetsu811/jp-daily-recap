@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-16T02:48:57.934566+00:00",
+  "checked_at": "2026-11-16T17:18:37.597346+00:00",
   "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
   "delisted": {
     "2388.T": {
@@ -721,6 +721,11 @@
       "date": "2026-11-27",
       "name": "SANKI SERVICE CORPORATION",
       "reason": "Becoming a wholly owned subsidiary of SANKI Shin Maint Holdings Co.,Ltd.(Stock Swap)"
+    },
+    "2997.T": {
+      "date": "2026-12-16",
+      "name": "STORAGE-OH Co.,Ltd.",
+      "reason": "Acquisition by another company(TOB,Share consolidation)"
     }
   }
 }
