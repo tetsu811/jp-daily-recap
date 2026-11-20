@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-20T04:01:17.472422+00:00",
+  "checked_at": "2026-11-20T16:23:37.623826+00:00",
   "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
   "delisted": {
     "2388.T": {
@@ -731,6 +731,11 @@
       "date": "2026-12-11",
       "name": "ProjectHoldings,Inc.",
       "reason": "Acquisition by another company(TOB,Acquisition by a demand for share, etc. cash-out)"
+    },
+    "3676.T": {
+      "date": "2026-12-11",
+      "name": "DIGITAL HEARTS HOLDINGS Co.,Ltd.",
+      "reason": "MBO(TOB,Share consolidation)"
     }
   }
 }
