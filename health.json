@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-22T12:15:49.142733+09:00",
+  "checked_at": "2026-11-23T00:27:07.364787+09:00",
   "expected_session": "2026-11-20",
   "status": "ok",
   "expected": 458,
@@ -468,8 +468,7 @@
     "3284.T": "2026-11-20"
   },
   "sources": {
-    "Yahoo Finance": 460,
-    "cache": 1
+    "Yahoo Finance": 461
   },
   "details": {
     "2502.T": {
@@ -824,7 +823,7 @@
     },
     "5233.T": {
       "date": "2026-11-20",
-      "source": "cache",
+      "source": "Yahoo Finance",
       "status": "ok",
       "bars": 160,
       "errors": []
