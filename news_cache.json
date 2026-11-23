@@ -1,58 +1,62 @@
 {
-  "電気・ガス": [],
-  "自動車・輸送機": [
+  "金融(除く銀行)": [],
+  "医薬品": [],
+  "運輸・物流": [],
+  "自動車・輸送機": [],
+  "電気・ガス": [
     {
-      "title": "トヨタ自動車(株)【TM】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBBVUdJM0U0aFlkR0FQN05mMW1YR2VRTlVLdEE1d19aRE9MWndrR1NnWTJZb1VtZmtjSGxRTzZseVZQaVhNU1NNUUJFSU8?oc=5",
-      "date": "2026-11-22"
+      "title": "韓国電力株が3%安、株安に150万件の個人情報流出重なる",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWW9NUmg5LUN1a1p0THBsYXF5bERKY1h6NTliQzZUR1J6WVphbjJvS2UyWG5hMEp2WEc5LUNOc3pJWEZGaUctNlBUa1VZRXloVWo4c25GVWNTTjNXa3lCOGlEVmFNNF80aDdDa0xlZzJTZ1BRUEtKa1hXT1ZHSlk3ZNIBlAFBVV95cUxNamNBQTFJdVdfWkZKdFZ1Z0RsLVdlcjFOLTNqQTBUdi0tXzkwcWh6d29wdzBXVE1IUVpnbFFidENfbVRUbGhCa3JmVFhTRXBBQXBjRXFDcFhTa0Zrc1VvZDFSdW1qM1VTRkV5dHJVSlBjRkFmNkJQVGtWeWFNZm91eEJCZmNBQ3Q1V0lUQmlUaEZxbGZF?oc=5",
+      "date": "2026-11-23"
     }
   ],
-  "商社・卸売": [],
-  "金融(除く銀行)": [],
   "エネルギー資源": [
     {
-      "title": "世界の原油価格が3週連続下落、ベトナム国内ガソリン価格は高止まり",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40QkJXc3BxZEI4Q2UyNTRNVk5yZVdibXhmMVhDQlo2TEdST2ZDMEJPTG5YZXN6US1MdnRBYUJ2b2hsMnItTzMtRFk5NWpjV09faV9kZkhQN2xzRHlseGVFbnozZnI3THBPd01rb09LQjJkMF82?oc=5",
-      "date": "2026-11-22"
+      "title": "原油先物下落、中東情勢が下支え",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCOVNWN09QcVkyU21CSnhUd3dpUmxJMVlneFptX2Z0WTk0dWMzbm9Kb2ZnUlRxdnA1aC1TSUtRNEhON2IxajQ0RXRmYkUtSkVzVXVMSGx6MUlCUQ?oc=5",
+      "date": "2026-11-23"
     },
     {
-      "title": "日本、サウジアラビアの原油貯蔵容量を拡大へ エネルギー協力強化",
-      "link": "https://news.google.com/rss/articles/CBMisANBVV95cUxPaG0zNHExbEh3QmlvUUppU1hucHlDRGxSUC1tTGl5ZDJlYmZ2WVFWdlpGdFhpS01wWGFOanY1ZkVYSU1jQjNrLVk2TnA3MlQ3dVM0a19UZ0dqWFZyWkhpSzhvSHBxYW1jNDI3d1dDTVZybHBfY1pOWnRPS19hUld2Z2V1NjVfOUJIakhsTGktdkwtQTNDTkktc2pubmNzVDc2MG5OclZmSnRoWDdBNUdmaXRzS3hRNl81dFZEMXUyM0F2dVFfMEh6ckFYY2xoZFRFR1QyWG9fNUs0dnJmMEpBbFA4OW94SWdGTVAwQlg3b1RiZFViakRDX0c2TmlFZVZvSzVpWE95eWc4LVFMNkVZQm1lc3VUVjV3VEptMHlCamxMUUh1VUR4bVd6WUZBMVZuWWxMZWR0S29faXFKajJkcEpIank0WGlBcTluWXBMbmNwVUdIQ2Zaa3V1TTJiTXZHNzVEeHJnb0NUQ2dsMGtYazFoQlNRT0lxOTJWTHpOVDVTRUxESDhVRTRWT1pqVkVodlBGVWZ0YWc3QnFpTDZrZnNWdkhqN0hNRzNFRWphUEI?oc=5",
-      "date": "2026-11-22"
+      "title": "産業春秋／原油価格、急騰せず越年か",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HQk1WaU1YLTJJWVUwUTFnSExzU2R4OGlxWWY4amtUUXJiU0RlM2NCYVN6dlN3X25RbmlsRWRyb1N2SjAyQXB0ckpxNEdMcUlLeUcyRUxPVHo?oc=5",
+      "date": "2026-11-23"
     },
     {
-      "title": "今年の漢字は高に決定、物価高と原油高が直撃した世相のリアル",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5LWGs4UDUzTndtZlc4cTZkVGFDVUZER0xObVdEVDBYcy1JNUxFekFaRi1taXo1dTd0ckpEaWVHWFVMa01tU3pnX0t3OWEybzNFVklJZnlzcVgtQQ?oc=5",
-      "date": "2026-11-22"
+      "title": "原油先物が続落、AI相場調整が波及 ホルムズ周辺の船舶攻撃が下支え",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WenBMQnliWFF3dmN1bEp6SVFFNUNHN2F0WUNPSEZIVHFyQ0plc0J0VHIzanZGX2FjZXVVS1dtQTJwMWw3cnNDUUk3NDk5eHVaaVhOWHc3U2dGVjRERVNEQmY0SWxUd21TOTdZa3ppZS1jaENL?oc=5",
+      "date": "2026-11-23"
     }
   ],
-  "医薬品": [],
   "小売": [
+    {
+      "title": "阪急阪神百貨店の「神戸阪急」 「新館」の「ケイ・エスビル区画」が2027年春頃に営業終了 店舗面積の約15％（約7,000㎡）が消失する！: 陽は西から昇る！ 関西のプロジェクト探訪",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBmNktxcnl3Rkt0ZEdnaGx3V3ZkM0FOU1pqYThBUlpHbFpPYjBkVkprTTdjV1FpY0pETkdMRU5CMDFIWmZUckZ5cmh2R09LZ3N5R3dQSkV5ZmdZQmpJRFNRWGdQZFNRczBvc29jcV9tSmZheG51?oc=5",
+      "date": "2026-11-23"
+    },
     {
       "title": "静岡県内百貨店おせち商戦、物価高でも堅調 連休短く、巣ごもり需要に照準 「手に取りやすい価格と量」で追い込み",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBNM25MazdVc3FXc2phNWR5VWFYSmxYZXZQNkxnQVQ2d2VHQVRrb0JGUVJZOGluZENWbkh2dUFsVDNJLXRUazNzTENFeDlFZw?oc=5",
       "date": "2026-11-22"
     },
     {
-      "title": "【韓国】ソウル江南エリアのクリスマススポット巡り！話題の図書館と百貨店へ",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1oZlFMcXJVQjJNRGIxNWlrSU92TGxrTWtleVFjOHluZjhEbldGV3Bpb3ZVejd5c2xaQVIwQzAzVVVtZzdneEhiaGc1VTFCeXE3eDJnX2xIMA?oc=5",
-      "date": "2026-11-22"
+      "title": "新世界百貨店に爆破予告ファクス、警察が安全確認",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbWozajJHNFNXV0lSaUo5Um1VbW9OWUFDLVU1d1JVaUV5RzA1MXVpQ053dnpoTGZtaXA4Z3B2TUZHTmRhMi1jMDlXbkJ3czNHcmlIblpwcTBQR1dQRWpIdU0tUnlDV29zUmVmVWhKUmFNZVB1MVRWMFVoV2J3R05iSdIBlAFBVV95cUxQczN3SVBVTDhHTGl2YmpEYlBJR3Rndl9hY0lfU2ctcEdYU2thaTdtUXpYWkM5ZU9nRkRMR2hLSk04VzBxVlJ5MDIwNTNBN0EtLXJrbDk0NThxd3lTdTk3bFo0UXVGZjVWT2lnZnpCeWZVRm1yNDBZZjVsVS14U2ktS3FRMXR4dGplVjdVVXhEWTEzSEZV?oc=5",
+      "date": "2026-11-23"
     }
   ],
-  "運輸・物流": [
+  "商社・卸売": [],
+  "建設・資材": [
     {
-      "title": "東日本旅客鉄道(株)【EJPRY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1oN3Z2OGJ5ODZuQ3piZlB0bUh3YW5YUm95NXE0WDZ1a2t4M2xqTFo4czVQSjZXanBteGxzbkY2bnk4cGtXY0JqRlFmNmNLN3pf?oc=5",
+      "title": "ゼネコン・不動産 建設費高騰の呪縛",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9aaXhSVldlb016akdfd1QyeG9JQXJMcE9OZ292Q2ZCR1Q3WVJSMlk0NEJvY2l2UFhxMkppR3VmbWYxZ1p2d1VBcXR5eGM1N09Oa0tNMl9HaXI?oc=5",
       "date": "2026-11-22"
     }
   ],
-  "機械": [],
-  "食品": [],
   "不動産": [
     {
-      "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5cmY3bkVRNUR2Q09qLUdtTTNtM0Q2QkxxOXo1SlVhTDRCYnZNUDkyMmNERXc5RHFUYks5LUo4VFVLQ1MzOFJkTmdDa2hlWG5YZ2c?oc=5",
-      "date": "2026-11-22"
+      "title": "【販売会社情報】さがみ信金、資産運用セミナーを開催 米国市場・J-REIT動向を解説",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0eXkza0RMUUtncWE3T2Jjd3FJMVoxS2o5ZDVEQlpENWNOSHJ3SE0yV01fOFdGMS12ckRnbWoyNUtTSGZoemduMTZvTEtOejdHNXg4bjE2NE14SkJpS0VRSjNiMWVYSi13T1E?oc=5",
+      "date": "2026-11-23"
     },
     {
       "title": "【ＲＥＩＴ高配当利回り】ランキング (11月20日現在)",
@@ -60,26 +64,19 @@
       "date": "2026-11-22"
     },
     {
-      "title": "配当年5万円「配当金が出たら、テニスウエアを買う。妻にもプレゼント」37歳男性が持つ不動産株",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9RdWRYRWdHZWdwT3EwVHNyMjZMV3E0RnJNV2UwMm9QeDFtblFSUkp2ZHdqbkdHRXc3d1lOR01hUVFkbzVXcVN5akx0b0U?oc=5",
-      "date": "2026-11-22"
+      "title": "【高利回り投資の新局面】東証ＲＥＩＴ高利回り３０指数が初の定期入替、４０年国債との違いを比較",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RNWRncFo4MHEwWkRtQkcyRS1xYmZIS1RVVk1xV3FCTjEzbnZIVnU2YzRVTzZlWVRkYl9zWDl5MXU5UC1uQlIwNDEzWUo0VkYxS3BxUw?oc=5",
+      "date": "2026-11-23"
     }
   ],
-  "素材・化学": [],
-  "建設・資材": [
+  "素材・化学": [
     {
-      "title": "がっちりマンデー!!社長出演インフロニア！１兆円超え謎企業と天井３０ｍ巨大アリーナ",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95UXFhcWtHR1FZLUJ2Q0NvSWhfM3NuUEpjOEp5NHhWLUdjUlJNUW1hUTZDWnExSjJwdG1JdVF4cG5zYVdTZS1fOVFteGdETjNuekYzb193?oc=5",
+      "title": "三井化学(株)【MITUY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9vQzdlT3o4WS0yX3gydW45VWVUNHRUcnhGSzRvYjVselI2TXdzY25zUE1rQ0ZBS2hEUzNvSi1ESnE1NFhZTW1OYkxaQnhCTDZC?oc=5",
       "date": "2026-11-22"
     }
   ],
-  "銀行": [
-    {
-      "title": "マネーのまなび【不正アクセス急増！今すぐできる資産防衛術／銀行株の選び方】",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNa3BlRHpCNGV4U3pYWnlHRmRLMEhkdnlCTEJpUUtVS2d2VGt6eTdTU0dZRHhTc25rS2RqeHhidUdncVJ6SDRYelI5OFA1QnA1NDAweXhRaEVHOEZONUU4Sm5RaFhxd2dha1FuN2puVWJkZGJhOEJaRGVXSmN3eVVWOFZBUUxVYjJLcElaTTFrVGk2dw?oc=5",
-      "date": "2026-11-22"
-    }
-  ],
+  "食品": [],
   "情報通信・サービスその他": [
     {
       "title": "信用残ランキング【売り残減少】 Ｊディスプレ、ＪＴ、日本通信(株探ニュース)",
@@ -87,22 +84,46 @@
       "date": "2026-11-22"
     }
   ],
+  "銀行": [
+    {
+      "title": "「どこまでズレてんだ、うちの銀行…」年末のカレンダー配りを廃止したメガバンクが始めた「まさかの新サービス」〈注目記事〉",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Kam9hbWcxYl9Calk1blBjM0FNT1JMYnFtcG1PNkJUSVBNdkFkaGF1WHBQYVh2Wk9mUTJjckc0aTRjYW9FMGtfNnFXOE8?oc=5",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "マネーのまなび【不正アクセス急増！今すぐできる資産防衛術／銀行株の選び方】",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNa3BlRHpCNGV4U3pYWnlHRmRLMEhkdnlCTEJpUUtVS2d2VGt6eTdTU0dZRHhTc25rS2RqeHhidUdncVJ6SDRYelI5OFA1QnA1NDAweXhRaEVHOEZONUU4Sm5RaFhxd2dha1FuN2puVWJkZGJhOEJaRGVXSmN3eVVWOFZBUUxVYjJLcElaTTFrVGk2dw?oc=5",
+      "date": "2026-11-22"
+    }
+  ],
+  "機械": [
+    {
+      "title": "丸紅、インドの工作機械５割増員 車向け強化",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE01T05xNVpscHg1UnFieVlrV2RYU216Tnk1Q0tPczJrXzRSSGFJRmo3UHY1LUE5Y01HbTdDQjFHdjNBTXFwZmotWGNxMThZeF9vX2FINjFVWkY?oc=5",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "工作機械受注が示す日本株と世界経済 高水準維持も伸び率拡大の局面は終了か",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1lUnVfUGlvMFhxdEV2NTZzdHd2bTVYT3luOHcycm4xM25sRE1sLVdVeXF3S240U0l0RzZHUmZIMGdLZ0hCVFU1dFkxRWxjLTh2OWgwUHFldkZBSHc1RUVZ?oc=5",
+      "date": "2026-11-22"
+    }
+  ],
+  "鉄鋼・非鉄": [],
   "電機・精密": [
+    {
+      "title": "アジア半導体株が下落、AI売り加速でソウル市場は4.4%急落",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE80Q0RyMDRZM3J3NXJ2aENucFdnLUx4b1paWnhGWDdXVzNKWVYzSmFwX0hCaE9KcnVBaDF5M1laNFdQWFNGa2lBVUpxZzNFNnh4b09mWXpqZzd3U191S2VaS3l2dEs5XzJjNUZnX3BhLVNhN1M1?oc=5",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "eMAXIS 日経半導体株インデックス【03311247】：基準価格・投資信託情報",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1WcnBkNXkzRS1PdnNIWkxieGVIMWw3YjRKMXZON1NIZlpIQjd1Z09ETlVHUWdXUmthamQ3LWdyakFSd1hMU0Z5cWVuSkF3Z0tGY0Q1Vg?oc=5",
+      "date": "2026-11-23"
+    },
     {
       "title": "日経平均は下値探る展開か、AI半導体株の期待揺らぐ 今週の市場・予定",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Oc0xqWnlYdndfbGtyREVpYzY2c1g1RlJJT3dqd3NZbHg2Z3dOUm1Zb0kwcEQ0SVpKbGlLbEZPTWtacVJBWFU2V2pGMmlWamx1bjVkQ2ZLemE5YXQ4MlBjeDU0bWRySDZqUkFSUQ?oc=5",
       "date": "2026-11-22"
-    },
-    {
-      "title": "野村 世界業種別投資シリーズ(世界半導体株投資)【01313098】：基準価格・投資信託情報",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE13U2tSeDgwM2x6NWhvM3FQd3VfcU94dTd0MFRoUFVUZVZGOGNpWDdXQ1FoQk5kSmkxWHpxNkZyWDJoWjVrcVNZNWh4WWlVMUkxMDZHRA?oc=5",
-      "date": "2026-11-22"
-    },
-    {
-      "title": "下落続く半導体株、「やや強めの成長痛」か「疲労骨折」か｜池田伸太郎",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zX2tMTW5pRmxmeDcxVEJjUXFVR2Y1VW9vNjRFTFdLY1YtcWJCUGNVLWo3anpjZ0JrWWpkS0k3WTRPcFpxZEVtb0pzTnN5bVJkRHc?oc=5",
-      "date": "2026-11-22"
     }
-  ],
-  "鉄鋼・非鉄": []
+  ]
 }
