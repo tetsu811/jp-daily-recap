@@ -1,5 +1,40 @@
 {
-  "運輸・物流": [],
+  "食品": [],
+  "素材・化学": [],
+  "鉄鋼・非鉄": [
+    {
+      "title": "【市況】 本日の【業種】騰落ランキング ＝ 後場寄付 【上昇トップ】非鉄金属 【下落トップ】鉱業 [12:33]",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JSFBkZlMxN2V1NG4ycEJxa2xuMmR3enhxekJxdE9ocWhBVjc5cE5TdjVMY1EtZkswRUZVMVp2MXltRFdYdlpPdzkxNmtKM2tESkZ4X3lHdFlfXzNleXRPZQ?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "本日の【業種】騰落ランキング ＝ 前引け 【上昇トップ】非鉄金属 【下落トップ】その他製品 [11:31](株探ニュース)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcjBqcDZYZm1uZW14aVBsTmZvMS1YWThfSUFueERNVlVuUURTNXhRSDFSRTduS0llaEk4Um40aXVENjAwZk04TXJ4WGdkUlA1dk1wdGJ5cXl0SjFiVVFkU1padno1S1BLSW01SC1RVXZ5YTRoOVlhdWN0VnoyZGdnMzF1M3VxU2M?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "本日の【業種】騰落ランキング ＝ 大引け 【上昇トップ】非鉄金属 【下落トップ】鉱業 [15:35](株探ニュース)",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPX0l6RW5IaGFzc1ktaHEzMGdtU1Y0VXhZdW8yZm9mS1I4ODJDS0RHbGZoZGpTLXVhUGZNTmdVUVdDR1ZPWGFKdnJpUGNnWUdTWVNET3BfdEE3Yy1TVUN2M1d2ODdSRnZuYzN0Vi0zQjJ0d3QwMXltMGs5Nmh1T1Rsa24zLXAzRzQ?oc=5",
+      "date": "2026-11-24"
+    }
+  ],
+  "銀行": [
+    {
+      "title": "みずほＦＧなど銀行株が上昇、ＡＩ投資継続で金利上昇の可能性に期待",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWaFctU1FTLUdMYWxFQ05WNHFYeDlTRFhGNEJ3cUZWLUh5dUpyRVBoVlRUOFJ4YmhyOWh2aGZkQWRHb3R2SjlJTmxIU3NuRUlNdFFtQnZDRWNEWDNZQV9NOA?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "マネーのまなび【不正アクセス急増！今すぐできる資産防衛術／銀行株の選び方】",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNa3BlRHpCNGV4U3pYWnlHRmRLMEhkdnlCTEJpUUtVS2d2VGt6eTdTU0dZRHhTc25rS2RqeHhidUdncVJ6SDRYelI5OFA1QnA1NDAweXhRaEVHOEZONUU4Sm5RaFhxd2dha1FuN2puVWJkZGJhOEJaRGVXSmN3eVVWOFZBUUxVYjJLcElaTTFrVGk2dw?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "プレスリリース：アトム、3メガバンクと総額45億円の融資枠契約を締結（PR TIMES）",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE92b3lpVGlsWnRJNDBsRHRTUjFSXzZzMjYzSmlyQ0Vpdy1ldTc2WGZvWElJUlZMZnF2cWlnRTBqYTFkMGRtWk5LVWVqR2N6Q2taMnhySlVWLXJMWDVlWUVYZmZuNF9lWHdK?oc=5",
+      "date": "2026-11-24"
+    }
+  ],
   "金融(除く銀行)": [
     {
       "title": "医療保険株が軟調 政府のメディケア評価制度見直し案が収益圧迫の懸念＝米国株個別(株探ニュース)",
@@ -12,23 +47,50 @@
       "date": "2026-11-23"
     }
   ],
-  "自動車・輸送機": [
+  "電機・精密": [
     {
-      "title": "Leapmotor急落13%で香港株の自動車株を主導、中汽協の支払調査と第3四半期利益で明暗",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xU3BrbTJfalJPR1lvUjBZYVNyTzZUZUlKaHJWYUUydEY1bm1Pa0ZTeTg3VF9sR0xRTEV1VjQyOTdwM2hwakdmRDczMnFSTDhFS0Z3RGlvX29rSEVwXy02cUVoMkpDbXNPSjV5S2VDMWVZLW9k?oc=5",
+      "title": "【アメリカNOW！】AIインフラ・半導体株の下落が続く中で、株価が堅調な「ブルーチップ」銘柄",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE52cHYzQ01PcjB0aXo2OThRR2pLVW8ySXN5Y0NWaUdRNTBsX0lOQkJmYWtVSFVtcUdpcUMwSWxpNjVzLVUtVks0ODZqT05udzViY25kcnV0WFBJM3JwLU91WTRZUExraU1KUWw2S1F3VVduUUIyVmVXOGpR?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "午前の日経平均は急反発、米株高受けＡＩ・半導体株買い先行 一時5万9000円回復",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRzZtTVJzeGxXYkw5NG9sdElkMXgxSTltX2ZZNjZ0YWlkcmUyYXo3OHROdFJJWTNLWmN0c203YnBOWEZvOXVGbF8wdktJLXJrVHlrSF9uRDBBb2NUMTJ2SlJFR0hvYlhYSVdfNzE4SHJ2VmozWVZQLXBxTnBuQnhhbjlzc2ZmZw?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "東京株式（前引け）＝大幅反発、米半導体株高好感し韓国・台湾市場の急伸も追い風に",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5oZ1V0T2QydjVFaTFKQVJmVGJZdk9zMkRQQ1NpaEVlZVpONnRUUXlmQ3pzTUxmZnZBNzRhRU1FLTZLN1BWUDRFSlRsbkRnMjlQR2RoOWFteWgtM005dTNwNA?oc=5",
+      "date": "2026-11-24"
+    }
+  ],
+  "機械": [
+    {
+      "title": "商社ＹＵＡＳＡが工作機械「通算5年保証」開始 メーカー保証終了後の故障に安心提供",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLZUwyNURET2JVcnVIcEpfcGpyeFAwb3h0V1dQTXR2bzZRb0RxcjhTaVZJaGtVeFA1d05zaVRkMWRqMkk4ZEVfWG0zZjdIbUREV3NremxhWTlWeFdXZjNSdWU5SW1QcENCOExKam9PMA?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "株式会社つくば精工様 | 工作機械 | ニデック株式会社",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYVNsbGpmd3ZDcnhJV19ZZGp5VmZiQi1id3lGV1JMdElSVUVvMWJpbS04blBoUW16Z2tPYktZclJWV3JoWlQyY0VMcXBkV2k4M2hmY3hQVUh2MWQ4OGQ1UHJETFp3RFFFa3A2TlBKSk9XTXUzX0d1UVktOHlnYVZhMFRxaTMta194WkozUkd3?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "［徹底予測2027 機械］工作機械、AI特需で受注が過去最高へ 部品供給追いつかず",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUU5lUXBsUGtOemFJOE9tWjluenlfekhWaXp5Nng1MS0tRnh3UlpOSGRlVVl2ZDVmRDAxLXdfNlhGQTBBYlhLSkVrWWtxdnBaaDNIaDVPTEJyVG54VmtyWXAxNE5jRjh1bEVxRnJzT2Q3bUE1TXFoSEtuVV9tZ2JQQ2pPR09aT2pITkE?oc=5",
       "date": "2026-11-23"
     }
   ],
-  "電気・ガス": [
+  "建設・資材": [
     {
-      "title": "韓国電力株が3%安、株安に150万件の個人情報流出重なる",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWW9NUmg5LUN1a1p0THBsYXF5bERKY1h6NTliQzZUR1J6WVphbjJvS2UyWG5hMEp2WEc5LUNOc3pJWEZGaUctNlBUa1VZRXloVWo4c25GVWNTTjNXa3lCOGlEVmFNNF80aDdDa0xlZzJTZ1BRUEtKa1hXT1ZHSlk3ZNIBlAFBVV95cUxNamNBQTFJdVdfWkZKdFZ1Z0RsLVdlcjFOLTNqQTBUdi0tXzkwcWh6d29wdzBXVE1IUVpnbFFidENfbVRUbGhCa3JmVFhTRXBBQXBjRXFDcFhTa0Zrc1VvZDFSdW1qM1VTRkV5dHJVSlBjRkFmNkJQVGtWeWFNZm91eEJCZmNBQ3Q1V0lUQmlUaEZxbGZF?oc=5",
+      "title": "がっちりマンデー!!社長出演インフロニア！１兆円超え謎企業と天井３０ｍ巨大アリーナ",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95UXFhcWtHR1FZLUJ2Q0NvSWhfM3NuUEpjOEp5NHhWLUdjUlJNUW1hUTZDWnExSjJwdG1JdVF4cG5zYVdTZS1fOVFteGdETjNuekYzb193?oc=5",
       "date": "2026-11-23"
     },
     {
-      "title": "東北電力(株)【TEPCY】：株価・株式情報",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5VczdrYjBCUUZ0ZE8wUDZkNmRreUg2OHF2czg1QzlQd1hvMUVobjlDVzB5Q2VuenFUVHVTWTNNQ2Jqc3JOcjJHb1VIa3FqVEtY?oc=5",
-      "date": "2026-11-23"
+      "title": "15歳でアルバイト、大学中退、ゼネコンの現場監督を経て起業した代表が初の高卒採用｜都内の求人倍率は約15倍｜日本デザイン、高校生2名が内定",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9HTVRFQzlxZGJwd01vVkNrQ09oX0JCRlZzczJGLTRWcHhnZEtJSVhHNmRhNlk0blduWktMRjZQUGVkaWM1emc0Q29McUVSQkNQYXpxSnlrSzlDWHh3LWxKVVRDMmFuUkNGblVN?oc=5",
+      "date": "2026-11-24"
     }
   ],
   "商社・卸売": [
@@ -43,108 +105,87 @@
       "date": "2026-11-23"
     },
     {
-      "title": "総合商社5社の平均年収、1位は三菱商事の「2112万5472円」。伊藤忠商事は1年で186万円増え、5社とも全国平均487万円の3倍超",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5JTzRGNXRwWVRhYXE3dlJvQmdzcnlFaUtkNi1wS0ZNOWlkcHFzbzdkaXNGVlBOTm5oOUl3X0FNNUNuNlBmaWdQeEdCdDE?oc=5",
-      "date": "2026-11-23"
+      "title": "【新着情報更新のお知らせ】オフィス移転で「医療総合商社」を目指し事業拡大で、「リードタイム短縮」と「一括発注」でクリニックを支える新体制へ",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56SV8zZ3lteDJpTnd0WndFXzhPYzlVOW5Rbnp4T0E5a0NpTm5FVVZOSG0zM1RBZVIya0xUR3l3SGlBamg0c2hBdUZxY242UVFrblNrS21DWUQ5SlJFczZjWVhmOHlBd2lHUHc?oc=5",
+      "date": "2026-11-24"
     }
   ],
-  "医薬品": [],
   "小売": [
     {
-      "title": "阪急百貨店 催事出展のご案内",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrRTEtdmJ5enRoNEh2ZEJQSUVYQmQ1QThXX3Znd2hxRmk0RTM4TjFicG5ERHdSVWtsc3BHcmtGWGNzTUlrQWVOVWxwVWVuZ1JSdXNFVzdSTlpSeDJHeHZBVGY2b3REeG9YTXNn?oc=5",
-      "date": "2026-11-23"
-    }
-  ],
-  "エネルギー資源": [
-    {
-      "title": "原油先物下落、中東情勢が下支え（ロイター）",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ha1YzeVE5VnFRVW9jV3d5Rm9Scjg0c2FQZjhXMzMtTjc1cVBPZ3YwaVp1REtFa1hKREJBVjA5SVVrUTNRVW42WHVHZmo2eEdwaGs4V2x5X1pXVzJ2cEhPTzd4bUtEcmp4b2VxTzNvLW01ZGozMWlHNmZabEU4b1E?oc=5",
-      "date": "2026-11-23"
+      "title": "産学連携、子ども主体の学び 百貨店で多彩な出し物 吹奏楽やダンス、作品展示も",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1SakFfZWR3bVN2ZDZrdzZWZFhud1pEZWdpNlhGWERPQ05BNktaeXJXQVczSEo3UE9LRzFTdHVoc3pjemtEQUw2T29MZHR6bkluN0Jv?oc=5",
+      "date": "2026-11-24"
     },
     {
-      "title": "原油先物下落、中東情勢が下支え",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE10SVpJQW15UEpnU002OUdfdEl2MElLVXEyNlBfUXgwVEhkcU5XSFVjY1BYbE5UTWZtcmxBNnJuVkxkaGZDWjBWYVFqeFhDM3hXTWJrTGY1bDlUeDFlZWdtNzBMOTRDSXhrVVpUaE40TE9HOGxDanhtWENQUFV2WHc?oc=5",
-      "date": "2026-11-23"
+      "title": "地震でガス漏れ想定に百貨店で訓練 従業員が避難誘導や救助活動を確認 大分",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NOHo1NTZQaGwzU1BuNkJvblR3cllWTk5RdXZGVmdfRFFmWm52Sy1FYkNQRFFXdnNGSk1UX2cwTDFpVnZfelRuQWptaWF4MUF4djltTTkyMk90QQ?oc=5",
+      "date": "2026-11-24"
     },
     {
-      "title": "原油は大幅安で始まる＝ＮＹ原油オープン",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBLQ05DVmtFRWNJOFZ4Zm8xMFVWcEc2aXhnRlpYTlBLdUkyTE51SlUwOXhtYVBfTl9oYWExTXlMY2Rmb0JQQUZxNw?oc=5",
-      "date": "2026-11-23"
+      "title": "地方百貨店のいま 消える街の顔、活路探る ４県で店舗ゼロ ピークの６割に",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WR3ExQjJrZVd0QXM2YlJPMW5YVGYwMDg2YUVabGQ2YVRKVzhfSkhYbDM2R2poQkR2VW1lM1FaSUV2dWhEbXo2UW5NT0NNU1R3aUVNa1htZ2ZiQzJ5UzFnekx2eHVjdWl3Q2tMVGhaQmZfZ00?oc=5",
+      "date": "2026-11-24"
     }
   ],
-  "素材・化学": [],
   "不動産": [
     {
-      "title": "ユナイテッド・アーバン投資法人が御堂筋フロンティアを取得(JAPAN-REIT.COM)",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWG45czJGS3lWck1pTlNROEFYczkyNF96S0Q2THBmMGw5Q0xMRDI2WENSSE9CVkhSZHJvcFd3SXN0Z0NVcWpvakVZblhpbnJVM09LNzNRaFpxalR0aHhxOVRCSFVrYW5ZUi0tR1ItR2xZdEJGSGNCTGJ4Yjh2cUg3NTF3V2RqanM?oc=5",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "J-REITトピックス",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfWFNPQjF3UDRtT3RLelR0R3FEVzBFVTJzTVFuckY2dWdFN2Q5dzRlcU9rSC1wMThQR3FyV2J5M3VMdHI0NHpTMjR1a0lWTGRFeEE?oc=5",
+      "title": "(NEXT FUNDS)東証REIT指数連動型上場投信【1343】：株価・株式情報（夜間PTS含む）",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5cmY3bkVRNUR2Q09qLUdtTTNtM0Q2QkxxOXo1SlVhTDRCYnZNUDkyMmNERXc5RHFUYks5LUo4VFVLQ1MzOFJkTmdDa2hlWG5YZ2c?oc=5",
       "date": "2026-11-24"
     },
     {
-      "title": "11/23：VN指数が5日ぶり反発、IT・不動産株主導も商いは低調",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ORmkwVFhQTDM0bFlmNWhpU1Q4SngybWNKazhXbFZpcW92cTY5Mkk5YTY5S0JfWDA4c0M5cUh2TS1FTjBWQW9HTVc4WjNIdVNKeWZDNzBvcjJYUnNvRFJvTlR0NUxHdw?oc=5",
-      "date": "2026-11-23"
-    }
-  ],
-  "建設・資材": [
-    {
-      "title": "がっちりマンデー!!社長出演インフロニア！１兆円超え謎企業と天井３０ｍ巨大アリーナ",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95UXFhcWtHR1FZLUJ2Q0NvSWhfM3NuUEpjOEp5NHhWLUdjUlJNUW1hUTZDWnExSjJwdG1JdVF4cG5zYVdTZS1fOVFteGdETjNuekYzb193?oc=5",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "ゼネコン・不動産 建設費高騰の呪縛",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9aaXhSVldlb016akdfd1QyeG9JQXJMcE9OZ292Q2ZCR1Q3WVJSMlk0NEJvY2l2UFhxMkppR3VmbWYxZ1p2d1VBcXR5eGM1N09Oa0tNMl9HaXI?oc=5",
-      "date": "2026-11-23"
-    }
-  ],
-  "食品": [],
-  "機械": [
-    {
-      "title": "丸紅、インドの工作機械５割増員 車向け強化",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE01T05xNVpscHg1UnFieVlrV2RYU216Tnk1Q0tPczJrXzRSSGFJRmo3UHY1LUE5Y01HbTdDQjFHdjNBTXFwZmotWGNxMThZeF9vX2FINjFVWkY?oc=5",
-      "date": "2026-11-23"
-    }
-  ],
-  "電機・精密": [
-    {
-      "title": "ニッセイ SOX指数インデックスファンド(米国半導体株)＜購入・換金手数料なし＞【29314233】：基準価格・投資信託情報",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBjUnNYVHJyWXJoZERrRWxNYmZxR2pTNldkRUhjSzluQzVvaEt4X3FEUmtHUTE2amxWZGMta2laVnNrSjAwRGJpajFoaE5PZFhOd3dmbA?oc=5",
+      "title": "東証REIT指数先物：24日清算値＝3.5ポイント安、1656.5ポイント",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9VQUJEbW5yV25EVDYxbV8ySDMyZjdNWklEaEJTRGEyMzk5b0lfNnhBZUVrbXN2Nnl5YnRHRTMwNW1vLUt3c0Fycnk2YjlNb1lRSWc?oc=5",
       "date": "2026-11-24"
     },
     {
-      "title": "Meritz証券「半導体株が安いからといって拾うのは禁物…AI資金調達の空白が足かせ」",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1seE1VTWE1UjRFM2k3VXdqblJiWTVPdFQ0QVdoakloUklNQ3l0a3lwVmNOaWpRMG02dFdWNTUxT3NoeWxaRHJ3VUFCNHlwZDdoS19XaGt6WWcwRW9USnF6dTdtYnBNLTJVb0c0alFzTC1xYzZz?oc=5",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "野村 世界業種別投資シリーズ(世界半導体株投資)【01313098】：基準価格・投資信託情報",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE13U2tSeDgwM2x6NWhvM3FQd3VfcU94dTd0MFRoUFVUZVZGOGNpWDdXQ1FoQk5kSmkxWHpxNkZyWDJoWjVrcVNZNWh4WWlVMUkxMDZHRA?oc=5",
+      "title": "ＮＺＡＭ ＥＴＦ 東証ＲＥＩＴ指数[1595]：2026年10月期 決算短信（2026年４月16日～2026年10月15日） 2026年11月24日(適時開示) ：日経会社情報DIGITAL",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vcE9aYm9Na2xiVUh4N0RXUkhZX3FsYmxTejN6T2wydEthRllOUFI1SGd0ckhjZS13eXhEc3hQLXhjU2xGX0RPNzZnSmxyTmxKMUhSeVp1cGM4cDI1SHVWMEt5Y1pEN3ktdWc?oc=5",
       "date": "2026-11-24"
     }
   ],
-  "銀行": [
+  "自動車・輸送機": [
     {
-      "title": "不正アクセス急増！今すぐできる資産防衛術／銀行株の選び方｜マネーのまなび",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05ai1LaEU4RW5OeGZrbGJ2NWhZcWdWVVpJdUQ2b2p2Zmk2UlR5Y0NLUzlqMkQ0YmNPbnU0WElBZC01MUpDaV9fcVdQWXJWcnhEdGJLeFlIeFd3M0VUdk5VOWxQZXFGcWc?oc=5",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "FTSE 100上昇、銀行株・金鉱株が牽引―英PMIは予想上回る - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9mUjk3WjJzOGxyVUhmUDZ3VHlZRzRVQk5KRG9rUW83N0M3RFNUMElKeks3Y1Fma0E5Q1c3d1FRa1UxQ3ZMY0JrVHM3cVA0Ny1MdWxLek05WFEzakRnQXhGSU9zVU5UZ2lGRHIwZHZPVGQ?oc=5",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "「どこまでズレてんだ、うちの銀行…」年末のカレンダー配りを廃止したメガバンクが始めた「まさかの新サービス」〈注目記事〉",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TeUprUG1oVEE1MXotWGVZQ2lXaUNJZ2tCWnZSZWp0Uk1OQnNEYkd2YzNqY2tmT29FX1pjZHN3UXZ2N1ZLd1liMnlqaGxTa0JTQzliR1pn?oc=5",
+      "title": "Leapmotor急落13%で香港株の自動車株を主導、中汽協の支払調査と第3四半期利益で明暗",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xU3BrbTJfalJPR1lvUjBZYVNyTzZUZUlKaHJWYUUydEY1bm1Pa0ZTeTg3VF9sR0xRTEV1VjQyOTdwM2hwakdmRDczMnFSTDhFS0Z3RGlvX29rSEVwXy02cUVoMkpDbXNPSjV5S2VDMWVZLW9k?oc=5",
       "date": "2026-11-23"
     }
   ],
   "情報通信・サービスその他": [],
-  "鉄鋼・非鉄": []
+  "運輸・物流": [],
+  "医薬品": [],
+  "エネルギー資源": [
+    {
+      "title": "原油先物が下落、約3カ月ぶり安値圏 供給増と供給過剰懸念で（ロイター）",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WVWlrcEFRbUhYMGdpWjM0UVUxZGdPanN2QnBZdU1FajFtMGx0Z2NvenY2MU43ZVVBc2pRVHkyRGpOck85M3VyRm91M3VsVzExTzVBQmwzQnVyeTltc3RZaEFUU2haS1c0YUtmbEh3R2pxYU4xMGlPR0g4VlJheGM?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "原油先物が下落、約3カ月ぶり安値圏 供給増と供給過剰懸念で",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GWUgtaGZfSnBXNTVyUWc2Y3FhcWYzdDhmSFFlX3gwSUJIZDc2MlZFeXlCRDNkYkpzcFR3dklNeV92dV9LYzB0cGRpaGNwdUZYY3hzRndtU0hPV0ZYY2FkblhWRktyNlRHNl96RzMwc2tNR1N0YWhnWW0yX1pRSVU?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "原油タンカー運賃、いびつな高騰 船主の「言い値」と輸送実態に開き",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1wUjRlNDh5aEM2QW5LM2JfQXpwZ0s5a1BGUElsVk9ZUU5aMERhMmFvWGhnRWlRb09GV3hWVjJtVXQ0Vkg5Wi1jR1BsZk9ZUFZnWHFYcV9uNkJJTGsxZHMyY1JrWjYxc29mLVBhcQ?oc=5",
+      "date": "2026-11-24"
+    }
+  ],
+  "電気・ガス": [
+    {
+      "title": "中国電力(株)【CGKEY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBzUWI1Ymc3dzZBTE12Y0VoQXRCUkJVZWw1TnkwRWdiRlRVb1FNWjltR1lmMHhuZURBZTh3ZExfYTRwVEd5VUtrTmt6ZVBMd0Rx?oc=5",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "韓国電力株が3%安、株安に150万件の個人情報流出重なる",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWW9NUmg5LUN1a1p0THBsYXF5bERKY1h6NTliQzZUR1J6WVphbjJvS2UyWG5hMEp2WEc5LUNOc3pJWEZGaUctNlBUa1VZRXloVWo4c25GVWNTTjNXa3lCOGlEVmFNNF80aDdDa0xlZzJTZ1BRUEtKa1hXT1ZHSlk3ZNIBlAFBVV95cUxNamNBQTFJdVdfWkZKdFZ1Z0RsLVdlcjFOLTNqQTBUdi0tXzkwcWh6d29wdzBXVE1IUVpnbFFidENfbVRUbGhCa3JmVFhTRXBBQXBjRXFDcFhTa0Zrc1VvZDFSdW1qM1VTRkV5dHJVSlBjRkFmNkJQVGtWeWFNZm91eEJCZmNBQ3Q1V0lUQmlUaEZxbGZF?oc=5",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "東北電力(株)【TEPCY】：株価・株式情報",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5VczdrYjBCUUZ0ZE8wUDZkNmRreUg2OHF2czg1QzlQd1hvMUVobjlDVzB5Q2VuenFUVHVTWTNNQ2Jqc3JOcjJHb1VIa3FqVEtY?oc=5",
+      "date": "2026-11-23"
+    }
+  ]
 }
