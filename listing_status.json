@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T05:06:03.980216+00:00",
+  "checked_at": "2026-11-27T17:40:14.600154+00:00",
   "source": "https://www.jpx.co.jp/english/listing/stocks/delisted/",
   "delisted": {
     "2388.T": {
@@ -8,9 +8,9 @@
       "reason": "Failure to satisfy the continued listing criteria"
     },
     "8254.T": {
-      "date": "2027-03-01",
+      "date": "2026-12-11",
       "name": "Saikaya Department Store Co.,Ltd.",
-      "reason": "Failure to satisfy the continued listing criteria"
+      "reason": "Becoming a wholly owned subsidiary of AFC-HD AMS Life Science Co.,Ltd.(Stock Swap)"
     },
     "4760.T": {
       "date": "2027-03-01",
@@ -741,6 +741,11 @@
       "date": "2026-12-17",
       "name": "SOFT99corporation",
       "reason": "Acquisition by controlling shareholder, etc.(TOB,Share consolidation)"
+    },
+    "3276.T": {
+      "date": "2026-12-29",
+      "name": "Japan Property Management Center Co.,Ltd.",
+      "reason": "MBO(TOB,Share consolidation)"
     }
   }
 }
